@@ -1,0 +1,164 @@
+{
+  "project_name": "DevOps Institute - AWS, Azure & GCP Course Mumbai",
+  "theme_strategy": {
+    "direction": "Simple, Clean, Trustworthy & High-Conversion Swiss Light Theme",
+    "rationale": "Client rejected the previous dark navy terminal look (#0A192F). The new direction uses crisp bone/white background (#F8FAFC / #FFFFFF), authoritative Royal Blue (#1E40AF) for brand confidence, Vivid Blue (#2563EB) for interactive elements, and High-Trust Emerald Green (#10B981) for placement stats and badges. Designed for maximum readability, fast mobile loading, and instant conversion within 5 seconds.",
+    "emotional_archetype": "High-Trust Academy & Career Launchpad",
+    "primary_focus": "Local SEO, Mobile Responsiveness, 4-Month Career Outcome, Classroom + Placement Trust Signals"
+  },
+  "typography": {
+    "heading_font": "'Plus Jakarta Sans', 'Outfit', sans-serif",
+    "body_font": "'DM Sans', 'Work Sans', sans-serif",
+    "mono_font": "'JetBrains Mono', monospace",
+    "font_imports": "@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap');",
+    "hierarchy": {
+      "h1_hero": "text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.15]",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-900 leading-tight",
+      "h3_card": "text-xl sm:text-2xl font-semibold text-slate-900 leading-snug",
+      "subtitle": "text-base sm:text-lg text-slate-600 leading-relaxed font-normal",
+      "badge_label": "text-xs uppercase font-bold tracking-widest text-blue-700 bg-blue-50 px-3 py-1 rounded-full border border-blue-200"
+    }
+  },
+  "color_system": {
+    "mode": "Light Theme (High Accessibility & Fast Render)",
+    "palette": {
+      "bg_main": "#F8FAFC",
+      "bg_card": "#FFFFFF",
+      "bg_card_hover": "#F1F5F9",
+      "bg_subtle_blue": "#EFF6FF",
+      "text_main": "#0F172A",
+      "text_muted": "#475569",
+      "text_subtle": "#64748B",
+      "primary_brand": "#1E40AF",
+      "primary_hover": "#1D4ED8",
+      "accent_vivid_blue": "#2563EB",
+      "accent_cyan": "#0EA5E9",
+      "success_green": "#059669",
+      "success_bg": "#ECFDF5",
+      "warning_amber": "#D97706",
+      "warning_bg": "#FFFBEB",
+      "border_light": "#E2E8F0",
+      "border_strong": "#CBD5E1",
+      "whatsapp_green": "#25D366"
+    },
+    "tailwind_vars": {
+      "--background": "210 40% 98%",
+      "--foreground": "222.2 84% 4.9%",
+      "--card": "0 0% 100%",
+      "--card-foreground": "222.2 84% 4.9%",
+      "--primary": "221.2 83.2% 53.3%",
+      "--primary-foreground": "210 40% 98%",
+      "--secondary": "210 40% 96.1%",
+      "--secondary-foreground": "222.2 47.4% 11.2%",
+      "--muted": "210 40% 96.1%",
+      "--muted-foreground": "215.4 16.3% 46.9%",
+      "--accent": "210 40% 96.1%",
+      "--accent-foreground": "222.2 47.4% 11.2%",
+      "--border": "214.3 31.8% 91.4%",
+      "--radius": "0.75rem"
+    }
+  },
+  "spacing_and_layout": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "section_padding": "py-12 sm:py-16 lg:py-20",
+    "card_padding": "p-6 sm:p-8",
+    "grid_gap": "gap-6 sm:gap-8",
+    "card_style": "bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md hover:border-blue-300 transition-all duration-200",
+    "hero_layout": "Clean split grid: Left 60% high-conversion copy + bullet trust points + direct enquiry CTA form trigger; Right 40% crisp campus photo frame with floating placement success card.",
+    "navigation_bar": "Sticky top bar with zero transparency glitches: `sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs`. Includes quick contact details and prominent 'Book Free Demo Class' primary CTA."
+  },
+  "components": {
+    "header": {
+      "style": "Clean white header with Blue infinity logo, key nav links (AWS, Azure, GCP, Placements, Campus, Contact), phone click-to-call link (+91 98200 12345), and 'Enquire Now' button.",
+      "mobile_nav": "Slide-out drawer with direct phone, WhatsApp, and course quick links."
+    },
+    "hero_section": {
+      "value_prop_h1": "Become a Certified DevOps Engineer in 4 Months",
+      "sub_text": "100% Practical Classroom Training in Powai & Chandivali, Mumbai. Weekend & Weekday Batches with Dedicated Placement Support.",
+      "trust_badges": [
+        "100% Placement Support",
+        "AWS, Azure & GCP Hands-on Labs",
+        "Powai & Chandivali Campus",
+        "Weekend Batches Available"
+      ],
+      "hero_cta_primary": "Book Free Demo Class",
+      "hero_cta_secondary": "Download Course Syllabus (PDF)"
+    },
+    "course_cards_grid": {
+      "structure": "3x2 grid with clear blue tags for Duration, Mode (Classroom), and Placement Guarantee badge.",
+      "card_features": [
+        "Badge (e.g., 'Most Popular', 'High Hiring Demand')",
+        "Icon/Logo for Cloud Provider (AWS / Azure / GCP / Kubernetes / Linux / Terraform)",
+        "Key skills covered & salary potential callout",
+        "View Details CTA + Quick Enquiry Modal launcher"
+      ]
+    },
+    "campus_video_reels": {
+      "structure": "3-column vertical reel layout (9:16 aspect ratio cards) showing campus environment, lab sessions, and student project presentations.",
+      "interactivity": "Click to view reel in custom light-box overlay or video player."
+    },
+    "testimonials": {
+      "style": "Clean white review cards with 5-star rating, verified student photo, former role -> placed DevOps role (e.g. 'Package Raised to 12 LPA'), company logo tag, and LinkedIn verify link."
+    },
+    "floating_actions": {
+      "whatsapp_button": "Fixed bottom-right floating pill (`fixed bottom-6 right-6 z-40 bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-4 py-3 rounded-full shadow-lg flex items-center gap-2 hover:scale-105 transition-all`)",
+      "call_button": "Fixed bottom-left or top sticky bar phone icon for instant click-to-call (`tel:+919820012345`)."
+    },
+    "local_nap_map_block": {
+      "structure": "Exact NAP consistency container: Name: DevOps Institute - AWS, Azure & GCP Course | Address: Powai & Chandivali, Off Saki Vihar Road, Andheri East, Mumbai, Maharashtra 400072 | Phone: +91 98200 12345 | Hours: Mon-Sun 8 AM - 9 PM. Integrated responsive Google Map embed."
+    }
+  },
+  "image_urls": {
+    "campus_photos": [
+      {
+        "url": "https://images.pexels.com/photos/10638075/pexels-photo-10638075.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "DevOps Institute Mumbai Modern IT Classroom Lab",
+        "caption": "DevOps Practical Classroom Lab in Powai, Mumbai"
+      },
+      {
+        "url": "https://images.pexels.com/photos/10638070/pexels-photo-10638070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Students undergoing hands-on cloud computing lab session",
+        "caption": "Hands-on Weekend AWS & Azure Practice Session"
+      }
+    ],
+    "lab_servers": [
+      {
+        "url": "https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Cloud Server & Kubernetes Infrastructure Practice Lab",
+        "caption": "Live Infrastructure & Kubernetes Practice"
+      }
+    ],
+    "student_portraits": [
+      {
+        "name": "Rahul Sharma",
+        "role": "DevOps Engineer placed at TCS",
+        "url": "https://images.unsplash.com/photo-1752738372136-2602aaafdcb7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBwcm9mZXNzaW9uYWwlMjBzb2Z0d2FyZSUyMGVuZ2luZWVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzg5NTY1OTc4fDA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "name": "Amit Varma",
+        "role": "Cloud Architect placed at Wipro",
+        "url": "https://images.unsplash.com/photo-1737574994780-e31827afaed7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHw0fHxpbmRpYW4lMjBwcm9mZXNzaW9uYWwlMjBzb2Z0d2FyZSUyMGVuZ2luZWVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzg5NTY1OTc4fDA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "name": "Suresh Patel",
+        "role": "AWS Engineer placed at Accenture",
+        "url": "https://images.unsplash.com/photo-1752952952773-80378cefc23d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBwcm9mZXNzaW9uYWwlMjBzb2Z0d2FyZSUyMGVuZ2luZWVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzg5NTY1OTc4fDA&ixlib=rb-4.1.0&q=85"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Update `src/index.css` to import Plus Jakarta Sans & DM Sans fonts and set up the crisp light theme CSS variables.",
+    "Replace dark navy backgrounds (#0A192F) and terminal grids in `Hero`, `Header`, `Footer`, `CourseDetail`, and cards with clean white/slate styling (#F8FAFC / #FFFFFF with #1E40AF & #2563EB blue accents).",
+    "Ensure the hero section instantly communicates 'Become a DevOps Engineer in 4 Months' with classroom + weekend batch + placement details within 5 seconds of scanning.",
+    "Ensure all interactive components (buttons, links, enquiry form, phone call button, WhatsApp floating trigger, FAQ accordions) have precise `data-testid` attributes.",
+    "Do NOT drop any existing pages or routes: Keep all 12 pages (Home, About, Courses, 6 course pages, Contact, FAQs, Privacy Policy) fully functional.",
+    "Optimize images with responsive tags and lazy loading for high PageSpeed performance."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Do not use dark backgrounds for hero or page wrappers unless specifically styled as a high-contrast callout block. Keep the background light (#F8FAFC).",
+    "Never use generic Inter for main headings; use 'Plus Jakarta Sans' or 'Outfit'.",
+    "Never rely on transparent dropdowns or header overlays without proper background colors or backdrop blurs.",
+    "Add data-testid attributes to every button, form input, modal trigger, card link, and sticky CTA.",
+    "Maintain strict NAP consistency across Header, Footer, Contact page, and Google Map block."
+  ]
+}

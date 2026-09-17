@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/enquiries",
+      "destination": "https://formspree.io/f/maenwgnn"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
+}

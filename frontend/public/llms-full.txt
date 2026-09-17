@@ -1,0 +1,75 @@
+# DevOps Institute — Full Syllabus & Course Knowledge Base
+
+> Organization: DevOps Institute - AWS, Azure & GCP Course
+> Address: Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali, Powai, Mumbai, Maharashtra 400072
+> Phone: 083695 18569 | WhatsApp: +91 8369518569
+> Google Reviews: 4.8 / 5.0 Star Rating (132 Verified Reviews, 5+ Years in Training)
+> Website: https://devopsinstitute.co.in
+
+---
+
+## 1. DevOps Engineering Master Program with Placement
+
+### Overview
+A comprehensive 4-month classroom training program in Powai, Mumbai, designed to take students and working IT professionals from foundational Linux skills to advanced multi-cloud CI/CD automation and production cluster management.
+
+### Key Highlights
+- 100% Practical Classroom Training at Lodha Supremus, Powai
+- Live Cloud Labs on AWS, Azure, and GCP
+- Dedicated Placement Assistance, Mock Technical Interviews, and Resume Optimization
+- Weekend and Weekday Batches for Working Professionals
+
+### Syllabus & Tool Stack
+1. **Linux Fundamentals & Shell Scripting**: Bash automation, user management, file permissions, networking (IP, DNS, SSH), and system troubleshooting.
+2. **Version Control & Collaboration**: Git branching workflows, GitHub Actions, pull requests, merge conflict resolution.
+3. **Continuous Integration & Continuous Delivery (CI/CD)**: Jenkins master-agent architecture, declarative pipelines, automated unit testing, artifact management.
+4. **Containerization & Microservices**: Docker engine, multi-stage Dockerfiles, Docker Compose networking, image security scanning.
+5. **Container Orchestration**: Kubernetes architecture, Pods, Deployments, ReplicaSets, Services (ClusterIP, NodePort, LoadBalancer), ConfigMaps, Secrets, Ingress controllers.
+6. **Infrastructure as Code (IaC)**: Terraform providers, state management, modules, remote backends on AWS S3/DynamoDB, multi-environment provisioning.
+7. **Configuration Management**: Ansible playbooks, inventory management, roles, and server hardening.
+8. **GitOps Automation**: ArgoCD continuous deployment to Kubernetes clusters.
+9. **Observability & Monitoring**: Prometheus metrics collection, Grafana dashboards, Alertmanager configuration.
+
+---
+
+## 2. AWS Cloud Architect & Operations Course
+
+### Syllabus
+- **Compute**: Amazon EC2, AMI creation, Auto Scaling groups, Elastic Load Balancing (ALB/NLB).
+- **Storage**: Amazon S3 (bucket policies, lifecycle rules, versioning), EBS volumes, EFS network storage.
+- **Networking**: Amazon VPC design, public and private subnets, Internet Gateways, NAT Gateways, Route Tables, Security Groups, Network ACLs.
+- **Security & IAM**: IAM users, groups, roles, multi-factor authentication (MFA), least privilege policy design.
+- **Databases**: Amazon RDS (MySQL/PostgreSQL), DynamoDB NoSQL basics, automated backups and read replicas.
+- **Monitoring & Logging**: Amazon CloudWatch metrics, alarms, and AWS CloudTrail audit logs.
+
+---
+
+## 3. Microsoft Azure Administrator & DevOps Track
+
+### Syllabus
+- Azure Virtual Machines, Availability Sets, and Availability Zones
+- Virtual Networks (VNet), VNet Peering, Network Security Groups (NSG)
+- Microsoft Entra ID (Azure AD), Role-Based Access Control (RBAC)
+- Azure Storage Accounts, Blob containers, File shares
+- Azure Kubernetes Service (AKS) deployment and scaling
+- Azure DevOps Pipelines (Build & Release), Azure Repos, and Artifacts
+
+---
+
+## 4. Google Cloud Platform (GCP) Track
+
+### Syllabus
+- Google Compute Engine (GCE), custom VM sizing, startup scripts
+- Google Cloud Storage (GCS), storage classes, IAM binding
+- Virtual Private Cloud (VPC), firewall rules, Cloud NAT
+- Google Kubernetes Engine (GKE) autopilot and standard clusters
+- Cloud Build CI/CD automation and Cloud Monitoring (Stackdriver)
+
+---
+
+## 5. Frequently Asked Questions (Verified Facts)
+
+- **Where is the institute located?** Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali, Powai, Mumbai 400072.
+- **Is placement support provided?** Yes, complete placement assistance with resume preparation, mock interview loops, and hiring partner referrals in Mumbai.
+- **What are the batch options?** Flexible weekend batches for working professionals and weekday batches for freshers.
+- **How to contact?** Call 083695 18569 or visit https://devopsinstitute.co.in/contact.

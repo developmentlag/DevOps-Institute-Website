@@ -1,0 +1,26 @@
+# DevOps Institute - AWS, Azure & GCP Course
+
+> Practitioner-led classroom training and hands-on cloud labs for DevOps, Cloud Computing, Kubernetes, and Infrastructure as Code in Powai, Chandivali, Mumbai.
+
+DevOps Institute provides practical, lab-first technology training for students and working IT professionals in Mumbai. All sessions are conducted on live cloud infrastructure with weekday and weekend batch options.
+
+- **Campus Address:** Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali, Powai, Mumbai, Maharashtra 400072
+- **Direct Phone:** 083695 18569
+- **WhatsApp:** +91 8369518569
+- **Google Reviews & Rating:** 4.8 / 5.0 Star Rating across 132 Verified Google Reviews (5+ Years of Training Excellence)
+- **Primary Website:** https://devopsinstitute.co.in
+
+## Core Courses & Certifications
+
+- [DevOps Engineering Course](https://devopsinstitute.co.in/courses/devops): Complete CI/CD pipeline automation, Git, Jenkins, Docker, Kubernetes, Terraform, and Linux administration.
+- [AWS Cloud Course](https://devopsinstitute.co.in/courses/aws): Amazon Web Services infrastructure, IAM, EC2, S3, VPC networking, RDS databases, and CloudWatch monitoring.
+- [Microsoft Azure Course](https://devopsinstitute.co.in/courses/azure): Azure Virtual Machines, Azure VNet, Blob Storage, Entra ID (Azure AD), Resource Manager, and ARM/Bicep templates.
+- [Google Cloud Platform (GCP) Course](https://devopsinstitute.co.in/courses/gcp): Google Compute Engine, Cloud Storage, VPC networks, IAM, BigQuery fundamentals, and Google Kubernetes Engine (GKE).
+- [Kubernetes & Docker Training](https://devopsinstitute.co.in/courses/kubernetes-docker): Containerization, Dockerfiles, multi-stage builds, Kubernetes Pods, Deployments, Services, Helm charts, and cluster operations.
+- [Linux & Terraform Course](https://devopsinstitute.co.in/courses/linux-terraform): Enterprise Linux administration, Bash shell scripting, and Infrastructure as Code (IaC) with Terraform state management.
+
+## Key Information
+- **Location Advantage:** Situated in Chandivali, Powai — accessible from Andheri East, Saki Naka Metro, Hiranandani, Ghatkopar, and Kanjurmarg.
+- **Training Format:** 100% Practical Classroom Training + Live Cloud Labs.
+- **Batch Schedule:** Weekend batches for working IT professionals & Weekday batches for graduates.
+- **Career Support:** Resume building, DevOps project portfolio, mock interviews, and dedicated placement assistance in Mumbai's tech ecosystem.
