@@ -40,13 +40,21 @@ export const CAMPUS_REELS = [
   { src: "/videos/reel-3.mp4", poster: "/videos/reel-3.jpg", title: "Student life on campus" },
 ];
 
+// Official Google Business Profile listing URL
+export const GOOGLE_BUSINESS_PROFILE_URLS = [
+  "https://share.google/lYg4hHYl2lYj3b976",
+];
+
 export const GOOGLE_REVIEWS_STATS = {
   ratingValue: "4.8",
   reviewCount: "132",
   bestRating: "5",
   worstRating: "1",
   label: "4.8/5 Rating",
+  // Enabled with verified Google Business Profile link in GOOGLE_BUSINESS_PROFILE_URLS
+  enableSchemaRating: true,
 };
+
 
 export const TESTIMONIALS = [
   {
@@ -547,14 +555,19 @@ export const buildOrgSchema = () => {
         priceRange: "₹₹",
         sameAs: [
           INSTAGRAM_URL,
+          ...GOOGLE_BUSINESS_PROFILE_URLS,
         ],
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: GOOGLE_REVIEWS_STATS.ratingValue,
-          reviewCount: GOOGLE_REVIEWS_STATS.reviewCount,
-          bestRating: GOOGLE_REVIEWS_STATS.bestRating,
-          worstRating: GOOGLE_REVIEWS_STATS.worstRating,
-        },
+        ...(GOOGLE_REVIEWS_STATS.enableSchemaRating
+          ? {
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: GOOGLE_REVIEWS_STATS.ratingValue,
+                reviewCount: GOOGLE_REVIEWS_STATS.reviewCount,
+                bestRating: GOOGLE_REVIEWS_STATS.bestRating,
+                worstRating: GOOGLE_REVIEWS_STATS.worstRating,
+              },
+            }
+          : {}),
         address: {
           "@type": "PostalAddress",
           streetAddress: "Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village",
@@ -666,6 +679,7 @@ export const buildCourseSchema = (course) => {
       sameAs: [
         origin,
         INSTAGRAM_URL,
+        ...GOOGLE_BUSINESS_PROFILE_URLS,
       ],
       telephone: PHONE,
       address: {
@@ -704,13 +718,17 @@ export const buildCourseSchema = (course) => {
       availability: "https://schema.org/InStock",
       url: courseUrl,
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: GOOGLE_REVIEWS_STATS.ratingValue,
-      reviewCount: GOOGLE_REVIEWS_STATS.reviewCount,
-      bestRating: GOOGLE_REVIEWS_STATS.bestRating,
-      worstRating: GOOGLE_REVIEWS_STATS.worstRating,
-    },
+    ...(GOOGLE_REVIEWS_STATS.enableSchemaRating
+      ? {
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: GOOGLE_REVIEWS_STATS.ratingValue,
+            reviewCount: GOOGLE_REVIEWS_STATS.reviewCount,
+            bestRating: GOOGLE_REVIEWS_STATS.bestRating,
+            worstRating: GOOGLE_REVIEWS_STATS.worstRating,
+          },
+        }
+      : {}),
   };
 };
 
