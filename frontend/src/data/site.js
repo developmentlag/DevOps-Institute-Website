@@ -612,6 +612,11 @@ export const buildOrgSchema = () => {
             name: c.name,
             description: c.cardDesc,
             url: `${origin}/courses/${c.slug}`,
+            provider: {
+              "@type": "EducationalOrganization",
+              name: BUSINESS_NAME,
+              sameAs: origin,
+            },
           })),
         },
       },
