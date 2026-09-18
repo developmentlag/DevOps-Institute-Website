@@ -1,4 +1,5 @@
 export const BUSINESS_NAME = "DevOps Institute - AWS, Azure & GCP Course";
+export const PROVIDER_NAME = "DevOps Institute";
 export const ADDRESS =
   "Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali, Powai, Mumbai, Maharashtra 400072";
 export const PHONE = "083695 18569";
@@ -614,7 +615,7 @@ export const buildOrgSchema = () => {
             url: `${origin}/courses/${c.slug}`,
             provider: {
               "@type": "EducationalOrganization",
-              name: BUSINESS_NAME,
+              name: PROVIDER_NAME,
               sameAs: origin,
             },
           })),
@@ -680,7 +681,7 @@ export const buildCourseSchema = (course) => {
     ],
     provider: {
       "@type": "EducationalOrganization",
-      name: BUSINESS_NAME,
+      name: PROVIDER_NAME,
       sameAs: [
         origin,
         INSTAGRAM_URL,
