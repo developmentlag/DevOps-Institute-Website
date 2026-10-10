@@ -4,11 +4,11 @@ import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL } from "@/data/site";
 const SECTIONS = [
   {
     title: "1. Information We Collect",
-    body: "When you submit an enquiry form on this website, we collect your name, phone number, and optionally your email address, course of interest and message. We also collect standard, non-identifying technical information such as browser type and pages visited to help us improve the website.",
+    body: "When you submit an enquiry form on this website, we collect your name, phone number, and optionally your email address, course of interest and message. We also keep how you reached us, when that is known, including campaign details from the link you clicked (such as UTM parameters and Google click IDs), and save those details with your enquiry. Through Google Analytics and Google Ads we record the pages you visit, clicks on our Call and WhatsApp buttons, and those campaign details, along with standard technical information such as browser type. Your name, phone number and email are not sent to Google.",
   },
   {
     title: "2. How We Use Your Information",
-    body: "We use the information you provide only to respond to your enquiry, share course details, batch timings and fee information, and to contact you about the courses you have expressed interest in. We do not sell, rent or share your personal information with third parties for their marketing purposes.",
+    body: "We use the information you provide only to respond to your enquiry, share course details, batch timings and fee information, and to contact you about the courses you have expressed interest in. Page visits, Call and WhatsApp clicks, and campaign details help us see which advertisements and pages lead people to get in touch. We do not sell, rent or share your personal information with third parties for their marketing purposes.",
   },
   {
     title: "3. Data Storage & Security",
@@ -16,7 +16,7 @@ const SECTIONS = [
   },
   {
     title: "4. Third-Party Services",
-    body: "This website embeds Google Maps to help you locate our campus. When you interact with the map, Google may collect information as described in Google's own privacy policy. Our click-to-call links simply open your device's dialler and do not transmit data to us.",
+    body: "This website embeds Google Maps to help you locate our campus. When you interact with the map, Google may collect information as described in Google's own privacy policy. Call and WhatsApp buttons open your phone dialler or WhatsApp, and those clicks are recorded in Google Analytics and Google Ads as described above.",
   },
   {
     title: "5. Your Choices & Rights",
@@ -44,7 +44,7 @@ export default function PrivacyPolicy() {
             Privacy Policy
           </h1>
           <p className="mt-5 text-base text-slate-600 max-w-3xl">
-            Last updated: July 2026. This policy explains how {BUSINESS_NAME} handles the information you share with us.
+            Last updated: October 2026. This policy explains how {BUSINESS_NAME} handles the information you share with us.
           </p>
         </div>
       </section>
