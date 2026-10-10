@@ -226,4 +226,15 @@ const configureDevServer = webpackConfig.devServer;
 webpackConfig.devServer = (devServerConfig) =>
   makeDevServerV5Compatible(configureDevServer(devServerConfig));
 
+// Jest does not read the webpack alias. Keep the app's @/ imports working in tests.
+webpackConfig.jest = {
+  configure: (jestConfig) => {
+    jestConfig.moduleNameMapper = {
+      ...jestConfig.moduleNameMapper,
+      "^@/(.*)$": "<rootDir>/src/$1",
+    };
+    return jestConfig;
+  },
+};
+
 module.exports = webpackConfig;

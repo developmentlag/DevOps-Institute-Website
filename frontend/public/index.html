@@ -19,16 +19,17 @@
             href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
             rel="stylesheet"
         />
-            <!-- Google tag (gtag.js) -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11481832955">
-            </script>
-            <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-            
-              gtag('config', 'AW-11481832955');
-            </script>
+        <!-- Google tag (gtag.js): Powai GA4 + Powai Google Ads.
+             Automatic page views are off. The React app sends one page view
+             per page, including client-side route changes. -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9F90BVFTF9"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-9F90BVFTF9', { send_page_view: false });
+          gtag('config', 'AW-18499665938', { send_page_view: false });
+        </script>
         
         <title>DevOps Institute - AWS, Azure & GCP Course | Chandivali, Powai, Mumbai</title>
     </head>
