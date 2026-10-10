@@ -22,7 +22,34 @@ app = FastAPI()
 api_router = APIRouter(prefix="/api")
 
 
-class EnquiryCreate(BaseModel):
+class AttributionFields(BaseModel):
+    """Marketing source captured in the browser. All optional so older forms still submit."""
+
+    utm_source: str = Field(default="", max_length=300)
+    utm_medium: str = Field(default="", max_length=300)
+    utm_campaign: str = Field(default="", max_length=300)
+    utm_term: str = Field(default="", max_length=300)
+    utm_content: str = Field(default="", max_length=300)
+    gclid: str = Field(default="", max_length=500)
+    gbraid: str = Field(default="", max_length=500)
+    wbraid: str = Field(default="", max_length=500)
+    fbclid: str = Field(default="", max_length=500)
+    referrer: str = Field(default="", max_length=500)
+    landing_page: str = Field(default="", max_length=500)
+    first_utm_source: str = Field(default="", max_length=300)
+    first_utm_medium: str = Field(default="", max_length=300)
+    first_utm_campaign: str = Field(default="", max_length=300)
+    first_utm_term: str = Field(default="", max_length=300)
+    first_utm_content: str = Field(default="", max_length=300)
+    first_gclid: str = Field(default="", max_length=500)
+    first_gbraid: str = Field(default="", max_length=500)
+    first_wbraid: str = Field(default="", max_length=500)
+    first_fbclid: str = Field(default="", max_length=500)
+    first_referrer: str = Field(default="", max_length=500)
+    first_landing_page: str = Field(default="", max_length=500)
+
+
+class EnquiryCreate(AttributionFields):
     name: str = Field(min_length=2, max_length=100)
     phone: str = Field(min_length=8, max_length=20)
     email: Optional[str] = ""
@@ -31,7 +58,7 @@ class EnquiryCreate(BaseModel):
     source: Optional[str] = "website"
 
 
-class Enquiry(BaseModel):
+class Enquiry(AttributionFields):
     model_config = ConfigDict(extra="ignore")
 
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))

@@ -5,6 +5,8 @@ import { CheckCircle2, Phone, Send } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { PHONE, PHONE_TEL, COURSES } from "@/data/site";
+import { attributionFormFields } from "@/lib/attribution";
+import { trackGenerateLead } from "@/lib/analytics";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
@@ -47,14 +49,21 @@ export default function EnquiryForm({ defaultCourse = "", source = "website", te
 
     setSubmitting(true);
     try {
+      const course = form.course || "General Enquiry";
       await axios.post(`${API}/enquiries`, {
         name: nameTrimmed,
         phone: phoneTrimmed,
         email: emailTrimmed,
-        course: form.course || "General Enquiry",
+        course,
         message: form.message.trim(),
         source,
+        ...attributionFormFields(),
       });
+      try {
+        trackGenerateLead({ formSource: source, course });
+      } catch {
+        /* analytics must not block a saved enquiry */
+      }
       setDone(true);
       toast.success("Enquiry submitted. Our counsellor will call you back shortly.");
     } catch (err) {
