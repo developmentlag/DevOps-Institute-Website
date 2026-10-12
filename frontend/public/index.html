@@ -30,6 +30,36 @@
           gtag('config', 'G-9F90BVFTF9', { send_page_view: false });
           gtag('config', 'AW-18499665938', { send_page_view: false });
         </script>
+        <!-- Meta Pixel: Powai. Loaded once. The first PageView is for this
+             document; the React app sends PageView again on client-side
+             route changes. -->
+        <script>
+          (function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+              n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s);
+          })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+          if (!window.__doiPowaiMetaPixel) {
+            window.__doiPowaiMetaPixel = '1173828687057674';
+            window.__doiPowaiMetaInitialHref = window.location.href;
+            fbq('init', '1173828687057674');
+            fbq('track', 'PageView');
+          }
+        </script>
+        <noscript>
+          <img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1173828687057674&ev=PageView&noscript=1" />
+        </noscript>
         
         <title>DevOps Institute - AWS, Azure & GCP Course | Chandivali, Powai, Mumbai</title>
     </head>

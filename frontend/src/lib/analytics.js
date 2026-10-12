@@ -4,6 +4,10 @@
  * gtag.js is installed once in public/index.html with automatic page views
  * turned off. This module sends one page view per route (GA4 + Google Ads)
  * and lead events for call clicks, WhatsApp clicks, and enquiry submissions.
+ *
+ * The Meta pixel is installed once in that same file (init plus the first
+ * PageView). This module sends PageView again when the route changes in the
+ * app, Lead when an enquiry is saved, and Contact on call and WhatsApp clicks.
  */
 
 import {
@@ -17,6 +21,8 @@ export const GA_MEASUREMENT_ID = "G-9F90BVFTF9";
 export const ADS_ID = "AW-18499665938";
 export const ADS_CALL_SEND_TO = "AW-18499665938/jnVVCMDY35cdEJKAqvVE";
 export const ADS_WHATSAPP_SEND_TO = "AW-18499665938/GL5-CMPY35cdEJKAqvVE";
+export const ADS_LEAD_SEND_TO = "AW-18499665938/4du6CIXeqpodEJKAqvVE";
+export const META_PIXEL_ID = "1173828687057674";
 
 const GA_PARAM_LIMIT = 25;
 const GA_VALUE_LIMIT = 100;
@@ -26,6 +32,7 @@ const NAV_TIMEOUT_MS = 1000;
 
 let lastPageView = { key: "", at: 0 };
 let lastLead = { key: "", at: 0 };
+let skippedInitialMetaPageView = false;
 
 export const capParams = (params, limit = GA_PARAM_LIMIT) => {
   const out = {};
@@ -122,7 +129,29 @@ const gtag = (...args) => {
   if (typeof window.gtag === "function") window.gtag(...args);
 };
 
+const fbq = (...args) => {
+  if (typeof window.fbq === "function") window.fbq(...args);
+};
+
+/**
+ * The base snippet already sends PageView for the document that loaded it.
+ * Later calls (route changes, and a restored page) send another PageView.
+ * If that snippet did not run, the first call sends PageView itself.
+ */
+const trackMetaPageView = (pageLocation) => {
+  if (typeof window.fbq !== "function") return;
+  const initialHref = window.__doiPowaiMetaInitialHref;
+  if (!skippedInitialMetaPageView && initialHref && pageLocation === initialHref) {
+    skippedInitialMetaPageView = true;
+    return;
+  }
+  skippedInitialMetaPageView = true;
+  window.fbq("track", "PageView");
+};
+
 const sendPair = (gaEventName, conversionSendTo, params, onDone) => {
+  fbq("track", "Contact");
+
   if (typeof window.gtag !== "function") {
     if (onDone) onDone();
     return;
@@ -232,15 +261,17 @@ export const installLeadClickTracker = () => {
 };
 
 export const trackPageView = () => {
-  if (typeof window.gtag !== "function") return;
   const page_path = `${window.location.pathname}${window.location.search}`;
   const page_location = window.location.href;
   const page_title = document.title || "";
   if (isDuplicate(lastPageView, page_location, PAGEVIEW_DEDUPE_MS)) return;
 
-  const payload = { page_path, page_location, page_title };
-  gtag("event", "page_view", { ...payload, send_to: GA_MEASUREMENT_ID });
-  gtag("event", "page_view", { ...payload, send_to: ADS_ID });
+  if (typeof window.gtag === "function") {
+    const payload = { page_path, page_location, page_title };
+    gtag("event", "page_view", { ...payload, send_to: GA_MEASUREMENT_ID });
+    gtag("event", "page_view", { ...payload, send_to: ADS_ID });
+  }
+  trackMetaPageView(page_location);
 };
 
 export const trackGenerateLead = ({ formSource = "", course = "" } = {}) => {
@@ -252,10 +283,18 @@ export const trackGenerateLead = ({ formSource = "", course = "" } = {}) => {
     ...attributionEventParams(),
   });
   gtag("event", "generate_lead", { ...params, send_to: GA_MEASUREMENT_ID, transport_type: "beacon" });
+  gtag("event", "conversion", {
+    send_to: ADS_LEAD_SEND_TO,
+    value: 0,
+    currency: "INR",
+    transport_type: "beacon",
+  });
+  fbq("track", "Lead");
 };
 
 /** Test helper. */
 export const resetAnalyticsDedupe = () => {
   lastPageView = { key: "", at: 0 };
   lastLead = { key: "", at: 0 };
+  skippedInitialMetaPageView = false;
 };

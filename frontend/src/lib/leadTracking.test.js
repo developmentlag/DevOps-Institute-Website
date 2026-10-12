@@ -4,8 +4,10 @@ import { WHATSAPP_MESSAGE, WHATSAPP_URL } from "@/data/site";
 import {
   ADS_CALL_SEND_TO,
   ADS_ID,
+  ADS_LEAD_SEND_TO,
   ADS_WHATSAPP_SEND_TO,
   GA_MEASUREMENT_ID,
+  META_PIXEL_ID,
   capParams,
   classifyLeadLink,
   handleLeadClick,
@@ -39,6 +41,9 @@ beforeEach(() => {
   clearStoredAttribution();
   resetAnalyticsDedupe();
   window.gtag = jest.fn();
+  window.fbq = jest.fn();
+  delete window.__doiPowaiMetaInitialHref;
+  delete window.__doiPowaiMetaPixel;
   window.history.pushState({}, "", "/");
 });
 
@@ -104,6 +109,46 @@ describe("attribution", () => {
     });
     expect(attributionFormFields().utm_medium).toBeUndefined();
   });
+
+  test("stores fbclid with the campaign and keeps it when a later visit has no click id", () => {
+    const now = Date.now();
+    captureAttribution({
+      search: "?utm_source=facebook&utm_medium=paid&utm_campaign=powai-meta&fbclid=fb123",
+      referrer: "https://l.facebook.com/",
+      landingPage: "/?utm_source=facebook&utm_medium=paid&utm_campaign=powai-meta&fbclid=fb123",
+      pageHost: "devopsinstitute.co.in",
+      now,
+    });
+    captureAttribution({
+      search: "",
+      referrer: "",
+      landingPage: "/courses",
+      pageHost: "devopsinstitute.co.in",
+      now: now + 1_000,
+    });
+
+    expect(getFirstTouch().fbclid).toBe("fb123");
+    expect(getLastTouch().fbclid).toBe("fb123");
+    expect(attributionFormFields()).toMatchObject({
+      utm_source: "facebook",
+      utm_campaign: "powai-meta",
+      fbclid: "fb123",
+      first_fbclid: "fb123",
+    });
+    expect(formatSourceRef(getLastTouch())).toBe("facebook / powai-meta");
+  });
+
+  test("reads a bare fbclid as a facebook source", () => {
+    const touch = buildSnapshot({
+      search: "?fbclid=IwAR0abc",
+      referrer: "https://l.facebook.com/",
+      landingPage: "/courses?fbclid=IwAR0abc",
+      now: 1_000,
+    });
+    expect(touch.fbclid).toBe("IwAR0abc");
+    expect(touch.gclid).toBe("");
+    expect(formatSourceRef(touch)).toBe("facebook");
+  });
 });
 
 describe("lead events", () => {
@@ -155,6 +200,8 @@ describe("lead events", () => {
     });
     expect(window.gtag.mock.calls[1][2].send_to).toBe(ADS_CALL_SEND_TO);
     expect(typeof window.gtag.mock.calls[0][2].event_callback).toBe("function");
+    expect(window.fbq).toHaveBeenCalledTimes(1);
+    expect(window.fbq).toHaveBeenCalledWith("track", "Contact");
 
     jest.clearAllTimers();
     jest.useRealTimers();
@@ -196,6 +243,30 @@ describe("lead events", () => {
       gclid: "click123",
     });
     expect(window.gtag.mock.calls[1][2].send_to).toBe(ADS_WHATSAPP_SEND_TO);
+    expect(window.fbq).toHaveBeenCalledTimes(1);
+    expect(window.fbq).toHaveBeenCalledWith("track", "Contact");
+  });
+
+  test("fires Contact once when the same call link is clicked again immediately", () => {
+    document.body.innerHTML = '<a href="tel:08369518569" data-testid="hero-call-now-button">Call Now</a>';
+    const anchor = document.querySelector("a");
+    const event = () => ({
+      type: "click",
+      button: 0,
+      metaKey: false,
+      ctrlKey: false,
+      shiftKey: false,
+      altKey: false,
+      cancelable: true,
+      target: anchor,
+      preventDefault: jest.fn(),
+    });
+
+    handleLeadClick(event());
+    handleLeadClick(event());
+
+    expect(window.fbq).toHaveBeenCalledTimes(1);
+    expect(window.gtag.mock.calls.filter((call) => call[1] === "conversion")).toHaveLength(1);
   });
 
   test("records a saved enquiry as generate_lead with the campaign attached", () => {
@@ -223,6 +294,22 @@ describe("lead events", () => {
         first_utm_source: "google",
       }),
     );
+    expect(window.gtag).toHaveBeenCalledWith("event", "conversion", {
+      send_to: ADS_LEAD_SEND_TO,
+      value: 0,
+      currency: "INR",
+      transport_type: "beacon",
+    });
+    expect(window.gtag).toHaveBeenCalledTimes(2);
+    expect(window.fbq).toHaveBeenCalledTimes(1);
+    expect(window.fbq).toHaveBeenCalledWith("track", "Lead");
+  });
+
+  test("does not fire the enquiry conversion when gtag is missing, and still records the Meta lead", () => {
+    delete window.gtag;
+    trackGenerateLead({ formSource: "contact", course: "AWS Course" });
+    expect(window.fbq).toHaveBeenCalledTimes(1);
+    expect(window.fbq).toHaveBeenCalledWith("track", "Lead");
   });
 
   test("sends one page view to GA4 and one to Ads, and ignores a duplicate", () => {
@@ -231,11 +318,25 @@ describe("lead events", () => {
     expect(window.gtag).toHaveBeenCalledTimes(2);
     expect(window.gtag.mock.calls[0][2].send_to).toBe(GA_MEASUREMENT_ID);
     expect(window.gtag.mock.calls[1][2].send_to).toBe(ADS_ID);
+    expect(window.fbq).toHaveBeenCalledTimes(1);
+    expect(window.fbq).toHaveBeenCalledWith("track", "PageView");
 
     window.history.pushState({}, "", "/courses/devops");
     trackPageView();
     expect(window.gtag).toHaveBeenCalledTimes(4);
     expect(window.gtag.mock.calls[2][2].page_path).toBe("/courses/devops");
+    expect(window.fbq).toHaveBeenCalledTimes(2);
+  });
+
+  test("does not send a second Meta PageView for the document the base pixel already counted", () => {
+    window.__doiPowaiMetaInitialHref = window.location.href;
+    trackPageView();
+    expect(window.fbq).not.toHaveBeenCalled();
+
+    window.history.pushState({}, "", "/contact");
+    trackPageView();
+    expect(window.fbq).toHaveBeenCalledTimes(1);
+    expect(window.fbq).toHaveBeenCalledWith("track", "PageView");
   });
 
   test("caps event parameters at 25 and drops empty values", () => {
@@ -260,5 +361,16 @@ describe("installed tag", () => {
     OLD_TAG_IDS.forEach((id) => expect(html).not.toContain(id));
     expect(html).not.toContain(ADS_CALL_SEND_TO);
     expect(html).not.toContain(ADS_WHATSAPP_SEND_TO);
+    expect(html).not.toContain(ADS_LEAD_SEND_TO);
+  });
+
+  test("loads the Powai Meta pixel once, with a PageView and a double-load guard", () => {
+    expect(html.match(/connect\.facebook\.net\/en_US\/fbevents\.js/g)).toHaveLength(1);
+    expect(html.match(new RegExp(META_PIXEL_ID, "g"))).toHaveLength(3);
+    expect(html).toContain("if (f.fbq) return;");
+    expect(html).toContain("if (!window.__doiPowaiMetaPixel)");
+    expect(html).toContain(`fbq('init', '${META_PIXEL_ID}')`);
+    expect(html).toContain("fbq('track', 'PageView')");
+    expect(html).toContain(`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`);
   });
 });
