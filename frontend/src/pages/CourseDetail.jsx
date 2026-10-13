@@ -3,6 +3,7 @@ import { Cloud, Cloudy, CloudCog, GitBranch, Container, Terminal, CheckCircle2, 
 import Seo from "@/components/Seo";
 import EnquiryForm from "@/components/EnquiryForm";
 import FaqAccordion from "@/components/FaqAccordion";
+import Testimonials from "@/components/Testimonials";
 import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, COURSES, buildCourseSchema, buildBreadcrumbSchema, buildFaqSchema } from "@/data/site";
 
 const ICONS = { cloud: Cloud, cloudy: Cloudy, cloudCog: CloudCog, gitBranch: GitBranch, container: Container, terminal: Terminal };
@@ -161,6 +162,8 @@ export default function CourseDetail() {
           </div>
         </div>
       </section>
+
+      <Testimonials />
 
       <section className="py-16 sm:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

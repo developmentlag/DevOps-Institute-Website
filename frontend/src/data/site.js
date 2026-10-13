@@ -47,11 +47,12 @@ export const GOOGLE_BUSINESS_PROFILE_URLS = [
 ];
 
 export const GOOGLE_REVIEWS_STATS = {
-  ratingValue: "4.8",
-  reviewCount: "132",
+  ratingValue: "4.7",
+  reviewCount: "130",
+  ratingCount: "130",
   bestRating: "5",
   worstRating: "1",
-  label: "4.8/5 Rating",
+  label: "4.7/5 Rating",
   // Enabled with verified Google Business Profile link in GOOGLE_BUSINESS_PROFILE_URLS
   enableSchemaRating: true,
 };
@@ -59,41 +60,41 @@ export const GOOGLE_REVIEWS_STATS = {
 
 export const TESTIMONIALS = [
   {
-    name: "Rahul S.",
-    role: "DevOps Engineer",
-    company: "placed via campus training",
+    name: "Rajeswari Singh",
+    role: "Placed at 6.5 LPA",
+    company: "2025 Vasai College Graduate",
     quote:
-      "The classroom sessions were fully hands-on. I went from zero cloud knowledge to building real CI/CD pipelines, and the placement team helped me crack my first DevOps interview.",
+      "I wasted more than a year on online courses where you learn on your own with no support. At DevOps Institute, you learn from mentors in the classroom. Labs are top-notch with real CI/CD pipelines and Terraform scripts. Got a package of 6.5 LPA as a fresher!",
+    rating: 5,
+  },
+  {
+    name: "Raj Lad",
+    role: "Cloud & DevOps Trainee",
+    company: "DevOps & Kubernetes Track",
+    quote:
+      "The learning vibe is genuinely inspiring. Classes were interactive, energetic, and full of live examples. Even tough concepts like Helm Charts and Infrastructure as Code became manageable. They also guide you beyond the course for interviews and certifications.",
+    rating: 5,
+  },
+  {
+    name: "Umesh Sonawane",
+    role: "Working IT Professional",
+    company: "Career Shift to DevOps",
+    quote:
+      "Being a working IT professional, I wanted to upskill. DevOps Institute offered flexible batches and weekend support, which helped a lot. Training was in-depth and focused on real-world implementation with personal feedback and interview preparation.",
     rating: 5,
   },
   {
     name: "Sneha P.",
     role: "Cloud Support Engineer",
-    company: "AWS & Azure track",
+    company: "AWS & Azure Track",
     quote:
-      "I joined the weekend batch while working. Trainers explained AWS, Docker and Kubernetes with live labs, not slides. Best decision for my cloud career in Mumbai.",
-    rating: 5,
-  },
-  {
-    name: "Amit K.",
-    role: "Junior DevOps Engineer",
-    company: "4-month program",
-    quote:
-      "Small batches and real practice on AWS, Jenkins and Terraform. The campus at Powai is easy to reach and the placement guidance was genuine and consistent.",
-    rating: 5,
-  },
-  {
-    name: "Farhan M.",
-    role: "Site Reliability Trainee",
-    company: "DevOps + Kubernetes",
-    quote:
-      "What I liked most was the classroom energy — doubts get solved on the spot. Learned Linux, Docker and Kubernetes properly and now work with production-style setups.",
+      "I joined the weekend batch while working. Trainers explained AWS, Docker and Kubernetes with live labs, not slides. Doubts get solved on the spot and the classroom energy is great.",
     rating: 5,
   },
 ];
 
 export const HERO_STATS = [
-  { value: "4.8 ★", label: "Google Reviews (5+ Yrs)" },
+  { value: "4.7 ★", label: "Google Reviews (5+ Yrs)" },
   { value: "4 Months", label: "To become job-ready" },
   { value: "100%", label: "Classroom + placement support" },
   { value: "Weekend", label: "& weekday batches" },
@@ -564,6 +565,7 @@ export const buildOrgSchema = () => {
                 "@type": "AggregateRating",
                 ratingValue: GOOGLE_REVIEWS_STATS.ratingValue,
                 reviewCount: GOOGLE_REVIEWS_STATS.reviewCount,
+                ratingCount: GOOGLE_REVIEWS_STATS.ratingCount,
                 bestRating: GOOGLE_REVIEWS_STATS.bestRating,
                 worstRating: GOOGLE_REVIEWS_STATS.worstRating,
               },
@@ -660,6 +662,101 @@ export const buildBreadcrumbSchema = (items) => {
   };
 };
 
+export const buildFlagshipCourseSchema = () => {
+  const origin = typeof window !== "undefined" ? window.location.origin : "https://devopsinstitute.co.in";
+  return {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "@id": `${origin}/#flagship-course`,
+    name: "DevOps Course in Mumbai with Placement",
+    description:
+      "4-month classroom DevOps training in Mumbai covering AWS, Azure, GCP, Docker, Kubernetes, Terraform & CI/CD pipelines with hands-on labs and 100% placement support.",
+    url: origin,
+    inLanguage: "en-IN",
+    educationalLevel: "Beginner to Advanced",
+    teaches: [
+      "Linux & Shell Scripting",
+      "AWS, Azure & Multi-Cloud Services",
+      "Docker Containers & Kubernetes Orchestration",
+      "Infrastructure as Code with Terraform",
+      "CI/CD Pipelines with Jenkins & GitOps",
+      "Monitoring with Prometheus & Grafana",
+    ],
+    provider: {
+      "@type": "EducationalOrganization",
+      name: PROVIDER_NAME,
+      url: origin,
+      sameAs: [
+        origin,
+        INSTAGRAM_URL,
+        ...GOOGLE_BUSINESS_PROFILE_URLS,
+      ],
+      telephone: PHONE,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village",
+        addressLocality: "Chandivali, Powai, Mumbai",
+        addressRegion: "Maharashtra",
+        postalCode: "400072",
+        addressCountry: "IN",
+      },
+    },
+    offers: {
+      "@type": "Offer",
+      category: "Paid",
+      priceCurrency: "INR",
+      price: "24999",
+      availability: "https://schema.org/InStock",
+      url: origin,
+    },
+    hasCourseInstance: [
+      {
+        "@type": "CourseInstance",
+        courseMode: ["Onsite", "Online"],
+        courseWorkload: "PT160H",
+        location: {
+          "@type": "Place",
+          name: "DevOps Institute Powai Campus",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali",
+            addressLocality: "Powai, Mumbai",
+            addressRegion: "Maharashtra",
+            postalCode: "400072",
+            addressCountry: "IN",
+          },
+        },
+      },
+    ],
+    ...(GOOGLE_REVIEWS_STATS.enableSchemaRating
+      ? {
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: GOOGLE_REVIEWS_STATS.ratingValue,
+            reviewCount: GOOGLE_REVIEWS_STATS.reviewCount,
+            ratingCount: GOOGLE_REVIEWS_STATS.ratingCount,
+            bestRating: GOOGLE_REVIEWS_STATS.bestRating,
+            worstRating: GOOGLE_REVIEWS_STATS.worstRating,
+          },
+          review: TESTIMONIALS.map((t) => ({
+            "@type": "Review",
+            author: {
+              "@type": "Person",
+              name: t.name,
+            },
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: String(t.rating),
+              bestRating: "5",
+              worstRating: "1",
+            },
+            reviewBody: t.quote,
+          })),
+        }
+      : {}),
+  };
+};
+
 export const buildCourseSchema = (course) => {
   const origin = typeof window !== "undefined" ? window.location.origin : "https://devopsinstitute.co.in";
   const courseUrl = `${origin}/courses/${course.slug}`;
@@ -671,6 +768,7 @@ export const buildCourseSchema = (course) => {
     name: course.name,
     description: course.metaDescription,
     url: courseUrl,
+    inLanguage: "en-IN",
     educationalLevel: "Beginner to Advanced",
     teaches: course.skills || [
       "Cloud Infrastructure",
@@ -730,9 +828,24 @@ export const buildCourseSchema = (course) => {
             "@type": "AggregateRating",
             ratingValue: GOOGLE_REVIEWS_STATS.ratingValue,
             reviewCount: GOOGLE_REVIEWS_STATS.reviewCount,
+            ratingCount: GOOGLE_REVIEWS_STATS.ratingCount,
             bestRating: GOOGLE_REVIEWS_STATS.bestRating,
             worstRating: GOOGLE_REVIEWS_STATS.worstRating,
           },
+          review: TESTIMONIALS.map((t) => ({
+            "@type": "Review",
+            author: {
+              "@type": "Person",
+              name: t.name,
+            },
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: String(t.rating),
+              bestRating: "5",
+              worstRating: "1",
+            },
+            reviewBody: t.quote,
+          })),
         }
       : {}),
   };

@@ -12,7 +12,7 @@ import Testimonials from "@/components/Testimonials";
 import FaqAccordion from "@/components/FaqAccordion";
 import {
   BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, WHATSAPP_URL,
-  COURSE_CARDS, WHY_CHOOSE, HOME_FAQS, NEARBY_AREAS, HERO_STATS, buildOrgSchema, buildFaqSchema,
+  COURSE_CARDS, WHY_CHOOSE, HOME_FAQS, NEARBY_AREAS, HERO_STATS, buildFlagshipCourseSchema, buildOrgSchema, buildFaqSchema,
 } from "@/data/site";
 
 const CARD_ICONS = [Cloud, Cloudy, CloudCog, GitBranch, Container, Container, Terminal, Terminal, GitBranch];
@@ -33,7 +33,11 @@ export default function Home() {
         title="DevOps Course in Mumbai | Classroom DevOps Training with Placement, Powai - DevOps Institute"
         siteName={BUSINESS_NAME}
         description="Become a DevOps Engineer in 4 months. Classroom DevOps, AWS, Azure & GCP training in Powai, Chandivali, Mumbai with hands-on labs, weekend batches & placement support. Call 083695 18569."
-        jsonLd={[buildOrgSchema(), buildFaqSchema(HOME_FAQS)]}
+        jsonLd={[
+          buildFlagshipCourseSchema(),
+          buildOrgSchema(),
+          buildFaqSchema(HOME_FAQS),
+        ]}
       />
 
       {/* HERO */}
