@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { getSiteOrigin } from "@/data/site";
 
 // Tags are written at runtime so absolute URLs come from the live origin —
 // the template cannot know which domain an app will be deployed on.
@@ -52,43 +54,10 @@ const upsertJsonLd = (data) => {
   if (!el) document.head.appendChild(script);
 };
 
-// Route changes must retrigger the effect: <Seo /> may sit outside the router
-// (App.js mounts it above <BrowserRouter>), where navigating re-renders nothing.
-// history.pushState/replaceState fire no event, so patch them once, globally.
-const routeListeners = new Set();
-let historyPatched = false;
-
-const patchHistoryOnce = () => {
-  if (historyPatched) return;
-  historyPatched = true;
-  const notify = () => routeListeners.forEach((fn) => fn());
-  const { pushState, replaceState } = window.history;
-  window.history.pushState = function (...args) {
-    pushState.apply(this, args);
-    notify();
-  };
-  window.history.replaceState = function (...args) {
-    replaceState.apply(this, args);
-    notify();
-  };
-  window.addEventListener("popstate", notify);
-};
-
-const usePathname = () => {
-  const [pathname, setPathname] = useState(() => window.location.pathname);
-  useEffect(() => {
-    patchHistoryOnce();
-    const sync = () => setPathname(window.location.pathname);
-    routeListeners.add(sync);
-    sync();
-    return () => routeListeners.delete(sync);
-  }, []);
-  return pathname;
-};
-
 /**
  * Seo — sets title, canonical, Open Graph, Twitter card and JSON-LD.
  * Renders nothing. Omit a prop and its tag is left out rather than guessed.
+ * Must be rendered inside the router so each route keeps its own tags.
  */
 export default function Seo({
   title,
@@ -98,10 +67,10 @@ export default function Seo({
   siteName,
   jsonLd,
 }) {
-  const pathname = usePathname();
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    const { origin } = window.location;
+    const origin = getSiteOrigin();
     const url = `${origin}${pathname}`;
     const imageUrl = image ? new URL(image, origin).href : undefined;
 
@@ -124,6 +93,7 @@ export default function Seo({
     upsertMeta("name", "twitter:image", imageUrl);
 
     upsertJsonLd(jsonLd);
+    document.documentElement.setAttribute("data-seo-ready", pathname);
   }, [pathname, title, description, image, type, siteName, jsonLd]);
 
   return null;

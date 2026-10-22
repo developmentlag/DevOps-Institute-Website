@@ -85,6 +85,11 @@
     }
 }
 
+/* Closed accordion answers stay in the DOM for non-JS crawlers. */
+.accordion-content[data-state="closed"] {
+    display: none;
+}
+
 @layer base {
     [data-debug-wrapper="true"] {
         display: contents !important;
