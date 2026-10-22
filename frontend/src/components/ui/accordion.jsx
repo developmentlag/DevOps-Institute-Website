@@ -31,7 +31,10 @@ AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName
 const AccordionContent = React.forwardRef(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+    // Keep answers in the HTML while closed so crawlers that do not run
+    // JavaScript can read them. Closed panels stay visually collapsed.
+    forceMount
+    className="accordion-content overflow-hidden text-sm"
     {...props}>
     <div className={cn("pb-4 pt-0", className)}>{children}</div>
   </AccordionPrimitive.Content>

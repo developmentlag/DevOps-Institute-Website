@@ -1,3 +1,17 @@
+export const SITE_ORIGIN = "https://devopsinstitute.co.in";
+
+// Absolute URLs in canonicals and JSON-LD follow the live origin so a preview
+// host does not advertise itself as production. The prerender sets
+// window.__DOI_SITE_ORIGIN__ so the saved HTML uses the public site origin.
+export function getSiteOrigin() {
+  if (typeof window !== "undefined") {
+    const forced = window.__DOI_SITE_ORIGIN__;
+    if (typeof forced === "string" && forced) return forced.replace(/\/$/, "");
+    if (window.location && window.location.origin) return window.location.origin;
+  }
+  return SITE_ORIGIN;
+}
+
 export const BUSINESS_NAME = "DevOps Institute - AWS, Azure & GCP Course";
 export const PROVIDER_NAME = "DevOps Institute";
 export const ADDRESS =
@@ -539,7 +553,7 @@ export const ALL_FAQS = [
 ];
 
 export const buildOrgSchema = () => {
-  const origin = typeof window !== "undefined" ? window.location.origin : "https://devopsinstitute.co.in";
+  const origin = getSiteOrigin();
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -634,7 +648,7 @@ export const buildOrgSchema = () => {
 };
 
 export const buildCourseCatalogSchema = () => {
-  const origin = typeof window !== "undefined" ? window.location.origin : "https://devopsinstitute.co.in";
+  const origin = getSiteOrigin();
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -649,7 +663,7 @@ export const buildCourseCatalogSchema = () => {
 };
 
 export const buildBreadcrumbSchema = (items) => {
-  const origin = typeof window !== "undefined" ? window.location.origin : "https://devopsinstitute.co.in";
+  const origin = getSiteOrigin();
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -663,7 +677,7 @@ export const buildBreadcrumbSchema = (items) => {
 };
 
 export const buildFlagshipCourseSchema = () => {
-  const origin = typeof window !== "undefined" ? window.location.origin : "https://devopsinstitute.co.in";
+  const origin = getSiteOrigin();
   return {
     "@context": "https://schema.org",
     "@type": "Course",
@@ -758,7 +772,7 @@ export const buildFlagshipCourseSchema = () => {
 };
 
 export const buildCourseSchema = (course) => {
-  const origin = typeof window !== "undefined" ? window.location.origin : "https://devopsinstitute.co.in";
+  const origin = getSiteOrigin();
   const courseUrl = `${origin}/courses/${course.slug}`;
 
   return {

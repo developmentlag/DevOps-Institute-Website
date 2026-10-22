@@ -24,3 +24,15 @@ DevOps Institute provides practical, lab-first technology training for students 
 - **Training Format:** 100% Practical Classroom Training + Live Cloud Labs.
 - **Batch Schedule:** Weekend batches for working IT professionals & Weekday batches for graduates.
 - **Career Support:** Resume building, DevOps project portfolio, mock interviews, and dedicated placement assistance in Mumbai's tech ecosystem.
+
+## Campuses (DevOps Institute)
+- Thane (main): DevOps Institute, 2nd Floor, Awfis, Kalpataru Prime, Neheru Nagar, Wagle Industrial Estate, Thane West, Thane, Maharashtra 400604. Phone: 084510 86339. https://devopsinstitutemumbai.co.in/
+- Vashi, Navi Mumbai: Cyberone, opp. CIDCO Exhibition Centre, Sector 30, Vashi, Navi Mumbai, Maharashtra 400703. Phone: 084510 86339. https://devopsinstitutemumbai.co.in/devops-institute-vashi-navi-mumbai/
+- Ghatkopar, Mumbai: RCity Offices, Lal Bahadur Shastri Marg, adjoining RCity Mall, Ghatkopar West, Mumbai, Maharashtra 400086. Phone: 088282 24247. https://devopsinstitutemumbai.co.in/devops-institute-ghatkopar/
+- Powai, Mumbai: Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali, Powai, Mumbai, Maharashtra 400072. Phone: 083695 18569. https://www.devopsinstitute.co.in/
+- Sister brand: Data Engineering Institute (AI Engineer & Agentic AI Course), Kalpataru Prime, Thane 400604. Phone: 099870 58393. https://datainstitute.in/
+
+## Key facts
+- In Collaboration With IIT, Microsoft
+- 100% Placement Assurance, 350+ hiring partners, 450+ placed, 5–35 LPA salary range
+- Courses: DevOps course, DevOps course with placement, DevOps and cloud computing course, AWS, Azure, GCP, Kubernetes & Docker, SRE

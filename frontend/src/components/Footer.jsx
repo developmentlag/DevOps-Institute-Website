@@ -82,6 +82,17 @@ export default function Footer() {
             <li><Link to="/faqs" data-testid="footer-faqs-link" className="hover:text-sky-400 transition-colors">FAQs</Link></li>
             <li><Link to="/contact" data-testid="footer-contact-link" className="hover:text-sky-400 transition-colors">Contact Us</Link></li>
             <li><Link to="/privacy-policy" data-testid="footer-privacy-link" className="hover:text-sky-400 transition-colors">Privacy Policy</Link></li>
+            <li>
+              <a
+                href="https://devopsinstitutemumbai.co.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="footer-thane-navi-mumbai-link"
+                className="hover:text-sky-400 transition-colors"
+              >
+                Thane &amp; Navi Mumbai campus
+              </a>
+            </li>
           </ul>
         </nav>
 
