@@ -96,5 +96,34 @@ export default function Seo({
     document.documentElement.setAttribute("data-seo-ready", pathname);
   }, [pathname, title, description, image, type, siteName, jsonLd]);
 
-  return null;
+  // The browser copy above runs after paint. Prerender has no document, so the
+  // same tags are rendered into the static HTML for crawlers.
+  if (typeof document !== "undefined") return null;
+
+  const origin = getSiteOrigin();
+  const url = `${origin}${pathname}`;
+  const imageUrl = image ? new URL(image, origin).href : undefined;
+  const robots = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
+
+  return (
+    <>
+      {title ? <title>{title}</title> : null}
+      {description ? <meta name="description" content={description} data-seo="" /> : null}
+      <link rel="canonical" href={url} data-seo="" />
+      <meta name="robots" content={robots} data-seo="" />
+      <meta property="og:type" content={type} data-seo="" />
+      <meta property="og:url" content={url} data-seo="" />
+      {title ? <meta property="og:title" content={title} data-seo="" /> : null}
+      {description ? <meta property="og:description" content={description} data-seo="" /> : null}
+      {(siteName || title) ? <meta property="og:site_name" content={siteName || title} data-seo="" /> : null}
+      {imageUrl ? <meta property="og:image" content={imageUrl} data-seo="" /> : null}
+      <meta name="twitter:card" content={imageUrl ? "summary_large_image" : "summary"} data-seo="" />
+      {title ? <meta name="twitter:title" content={title} data-seo="" /> : null}
+      {description ? <meta name="twitter:description" content={description} data-seo="" /> : null}
+      {imageUrl ? <meta name="twitter:image" content={imageUrl} data-seo="" /> : null}
+      {jsonLd ? (
+        <script type="application/ld+json" data-seo="" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      ) : null}
+    </>
+  );
 }
