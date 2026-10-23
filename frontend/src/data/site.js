@@ -1,8 +1,7 @@
 export const SITE_ORIGIN = "https://devopsinstitute.co.in";
 
-// Absolute URLs in canonicals and JSON-LD follow the live origin so a preview
-// host does not advertise itself as production. The prerender sets
-// window.__DOI_SITE_ORIGIN__ so the saved HTML uses the public site origin.
+// In the browser, canonicals and JSON-LD follow the live origin. Prerender
+// runs without a window, so those URLs use the public site origin.
 export function getSiteOrigin() {
   if (typeof window !== "undefined") {
     const forced = window.__DOI_SITE_ORIGIN__;

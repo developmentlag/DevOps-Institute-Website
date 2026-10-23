@@ -23,9 +23,9 @@ const ScrollToTop = () => {
   return null;
 };
 
-function App() {
+export function AppShell() {
   return (
-    <BrowserRouter>
+    <>
       <ScrollToTop />
       <div className="min-h-screen flex flex-col bg-white">
         <Header />
@@ -49,6 +49,14 @@ function App() {
       <Toaster position="top-center" richColors />
       <Analytics />
       <SiteAnalytics />
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AppShell />
     </BrowserRouter>
   );
 }
