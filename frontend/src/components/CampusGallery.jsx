@@ -41,6 +41,8 @@ export default function CampusGallery() {
               <img
                 src={photo.src}
                 alt={photo.alt}
+                width={photo.width}
+                height={photo.height}
                 loading="lazy"
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />

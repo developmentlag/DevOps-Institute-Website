@@ -37,5 +37,8 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://devopsinstitute.co.in/sitemap.xml
 Host: https://devopsinstitute.co.in

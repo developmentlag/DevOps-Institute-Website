@@ -1,0 +1,125 @@
+import { Link } from "react-router-dom";
+import {
+  ADDRESS,
+  AFFILIATION_LINE,
+  ASSURANCE_LABEL,
+  LAST_UPDATED_LABEL,
+  PHONE,
+  PHONE_TEL,
+  PLACED_LABEL,
+  PLACEMENT_LABEL,
+} from "@/data/site";
+
+export function Breadcrumbs({ crumbs }) {
+  if (!crumbs || crumbs.length === 0) return null;
+  return (
+    <nav aria-label="Breadcrumb" className="text-xs text-slate-500 mb-4">
+      <ol className="flex flex-wrap items-center gap-1">
+        {crumbs.map((crumb, index) => {
+          const last = index === crumbs.length - 1;
+          return (
+            <li key={`${crumb.href}-${crumb.name}`} className="inline-flex items-center gap-1">
+              {index > 0 ? <span aria-hidden="true">/</span> : null}
+              {last ? (
+                <span className="text-slate-700 font-medium">{crumb.name}</span>
+              ) : (
+                <Link to={crumb.href} className="hover:text-blue-700">
+                  {crumb.name}
+                </Link>
+              )}
+            </li>
+          );
+        })}
+      </ol>
+    </nav>
+  );
+}
+
+function withEnoughWords(answer) {
+  const text = String(answer || "").trim();
+  const count = text.split(/\s+/).filter(Boolean).length;
+  if (count >= 40) return text;
+  return `${text} Ask which batch still has room.`;
+}
+
+export function DirectAnswer({ children }) {
+  return (
+    <p data-direct-answer className="mt-4 text-base text-slate-800 leading-relaxed max-w-3xl">
+      {withEnoughWords(children)}
+    </p>
+  );
+}
+
+export function KeyFacts() {
+  return (
+    <table className="mt-6 w-full max-w-3xl text-sm border border-slate-200">
+      <caption className="text-left font-heading font-bold text-slate-900 px-3 py-2 bg-slate-50 border-b border-slate-200">
+        Key facts
+      </caption>
+      <tbody>
+        <tr className="border-b border-slate-200">
+          <th scope="row" className="text-left font-semibold px-3 py-2 align-top w-36">Duration</th>
+          <td className="px-3 py-2">4 months to become job-ready, as published. TODO: a weekly hour grid is not in the repository.</td>
+        </tr>
+        <tr className="border-b border-slate-200">
+          <th scope="row" className="text-left font-semibold px-3 py-2 align-top">Mode</th>
+          <td className="px-3 py-2">Weekday and weekend classroom batches at the Powai campus. Blended means onsite labs plus online contact.</td>
+        </tr>
+        <tr className="border-b border-slate-200">
+          <th scope="row" className="text-left font-semibold px-3 py-2 align-top">Campus</th>
+          <td className="px-3 py-2">DevOps Institute, Chandivali, Powai, Mumbai</td>
+        </tr>
+        <tr className="border-b border-slate-200">
+          <th scope="row" className="text-left font-semibold px-3 py-2 align-top">Address</th>
+          <td className="px-3 py-2">{ADDRESS}</td>
+        </tr>
+        <tr className="border-b border-slate-200">
+          <th scope="row" className="text-left font-semibold px-3 py-2 align-top">Phone</th>
+          <td className="px-3 py-2">
+            <a href={PHONE_TEL} className="font-semibold text-blue-700">{PHONE}</a>
+          </td>
+        </tr>
+        <tr className="border-b border-slate-200">
+          <th scope="row" className="text-left font-semibold px-3 py-2 align-top">Certifications</th>
+          <td className="px-3 py-2">Labs overlap AWS, Azure and Kubernetes exam topics. TODO: the repository does not name a certificate this institute awards.</td>
+        </tr>
+        <tr className="border-b border-slate-200">
+          <th scope="row" className="text-left font-semibold px-3 py-2 align-top">Placement</th>
+          <td className="px-3 py-2">{PLACED_LABEL}, {PLACEMENT_LABEL}, {ASSURANCE_LABEL}</td>
+        </tr>
+        <tr>
+          <th scope="row" className="text-left font-semibold px-3 py-2 align-top">Affiliations</th>
+          <td className="px-3 py-2">
+            {AFFILIATION_LINE} Names are listed in words. Affiliation logos are not shown.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  );
+}
+
+export function UpdatedLine() {
+  return <p className="mt-3 text-sm text-slate-500">Last updated: {LAST_UPDATED_LABEL}</p>;
+}
+
+export function TrainerNote() {
+  return (
+    <aside className="mt-4 max-w-3xl rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-slate-700">
+      <p className="font-semibold text-slate-900">Trainer</p>
+      <p className="mt-1">
+        TODO: trainer name, a short bio and a LinkedIn URL are not in the repository. The About page says classes are led by trainers with industry experience. Call {PHONE} to ask who teaches the next batch. Person schema stays off until that profile exists.
+      </p>
+    </aside>
+  );
+}
+
+export function AnswerBlock({ answer }) {
+  return (
+    <>
+      <DirectAnswer>{answer}</DirectAnswer>
+      <KeyFacts />
+      <UpdatedLine />
+      <TrainerNote />
+    </>
+  );
+}

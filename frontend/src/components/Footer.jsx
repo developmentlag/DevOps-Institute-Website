@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { CloudCog, Phone, MapPin, Navigation, Instagram, MessageCircle } from "lucide-react";
 import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, MAP_DIRECTIONS_URL, COURSES, INSTAGRAM_URL, WHATSAPP_URL } from "@/data/site";
+import { AREA_ROUTES, GUIDE_ROUTES } from "@/data/seoRoutes";
 
 export const MobileStickyBar = () => (
   <div
@@ -34,6 +35,8 @@ export default function Footer() {
             <img
               src="/logo-white.png"
               alt="DevOps Institute Powai"
+              width="600"
+              height="600"
               className="h-16 sm:h-20 w-auto object-contain shrink-0"
             />
             <span className="font-heading font-extrabold text-white text-lg">DevOps Institute</span>
@@ -138,6 +141,50 @@ export default function Footer() {
             <Phone className="h-4 w-4" aria-hidden="true" />
             Call {PHONE}
           </a>
+        </div>
+      </div>
+
+      <div className="border-t border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-sm">
+          <nav aria-label="Course guides">
+            <p className="font-heading font-bold text-white text-sm uppercase tracking-wider">Courses</p>
+            <ul className="mt-4 space-y-2">
+              <li><Link to="/devops-course" className="hover:text-sky-400">DevOps course</Link></li>
+              <li><Link to="/devops-course-in-mumbai-with-placement" className="hover:text-sky-400">DevOps course in Mumbai with placement</Link></li>
+              <li><Link to="/cloud-computing-course" className="hover:text-sky-400">Cloud computing course</Link></li>
+              <li><Link to="/cloud-computing-course-with-placement" className="hover:text-sky-400">Cloud computing course with placement</Link></li>
+              {COURSES.map((course) => (
+                <li key={`guide-${course.slug}`}>
+                  <Link to={`/courses/${course.slug}`} className="hover:text-sky-400">{course.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <nav aria-label="DevOps course near you">
+            <p className="font-heading font-bold text-white text-sm uppercase tracking-wider">DevOps course near you</p>
+            <ul className="mt-4 space-y-2">
+              {AREA_ROUTES.map((route) => (
+                <li key={route.path}>
+                  <Link to={route.path} className="hover:text-sky-400">{route.h1}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <nav aria-label="Guides">
+            <p className="font-heading font-bold text-white text-sm uppercase tracking-wider">Guides</p>
+            <ul className="mt-4 space-y-2">
+              {GUIDE_ROUTES.map((route) => (
+                <li key={route.path}>
+                  <Link to={route.path} className="hover:text-sky-400">{route.h1}</Link>
+                </li>
+              ))}
+              <li>
+                <a href="https://devopsinstitutemumbai.co.in/" className="hover:text-sky-400" target="_blank" rel="noopener noreferrer">
+                  Thane &amp; Navi Mumbai campus
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
 

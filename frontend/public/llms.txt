@@ -7,7 +7,7 @@ DevOps Institute provides practical, lab-first technology training for students 
 - **Campus Address:** Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali, Powai, Mumbai, Maharashtra 400072
 - **Direct Phone:** 083695 18569
 - **WhatsApp:** +91 8369518569
-- **Google Reviews & Rating:** 4.8 / 5.0 Star Rating across 132 Verified Google Reviews (5+ Years of Training Excellence)
+- **Google Reviews & Rating:** 4.7 / 5.0 Star Rating across 130 Verified Google Reviews (5+ Years of Training Excellence)
 - **Primary Website:** https://devopsinstitute.co.in
 
 ## Core Courses & Certifications
@@ -33,6 +33,7 @@ DevOps Institute provides practical, lab-first technology training for students 
 - Sister brand: Data Engineering Institute (AI Engineer & Agentic AI Course), Kalpataru Prime, Thane 400604. Phone: 099870 58393. https://datainstitute.in/
 
 ## Key facts
+- Affiliated with NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna
 - In Collaboration With IIT, Microsoft
 - 100% Placement Assurance, 350+ hiring partners, 450+ placed, 5–35 LPA salary range
 - Courses: DevOps course, DevOps course with placement, DevOps and cloud computing course, AWS, Azure, GCP, Kubernetes & Docker, SRE

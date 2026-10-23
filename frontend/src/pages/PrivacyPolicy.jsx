@@ -1,4 +1,6 @@
 import Seo from "@/components/Seo";
+import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
+import { staticPage } from "@/data/pageMeta";
 import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL } from "@/data/site";
 
 const SECTIONS = [
@@ -29,20 +31,23 @@ const SECTIONS = [
 ];
 
 export default function PrivacyPolicy() {
+  const meta = staticPage("/privacy-policy");
   return (
     <div data-testid="privacy-policy-page">
       <Seo
-        title="Privacy Policy | DevOps Institute - AWS, Azure & GCP Course, Mumbai"
+        title={meta.title}
         siteName={BUSINESS_NAME}
-        description="Privacy policy of DevOps Institute - AWS, Azure & GCP Course, Chandivali, Powai, Mumbai. How we collect, use and protect your enquiry information."
+        description={meta.description}
       />
 
       <section className="bg-gradient-to-b from-blue-50 via-white to-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <Breadcrumbs crumbs={[{ name: "Home", href: "/" }, { name: "Privacy Policy", href: "/privacy-policy" }]} />
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600">Legal</p>
           <h1 className="mt-3 font-heading text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.15]">
             Privacy Policy
           </h1>
+          <AnswerBlock answer={meta.answer} />
           <p className="mt-5 text-base text-slate-600 max-w-3xl">
             Last updated: October 2026. This policy explains how {BUSINESS_NAME} handles the information you share with us.
           </p>

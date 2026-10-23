@@ -1,12 +1,17 @@
 {
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.devopsinstitute.co.in" }],
+      "destination": "https://devopsinstitute.co.in/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/api/enquiries",
       "destination": "https://formspree.io/f/maenwgnn"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/"
     }
   ]
 }

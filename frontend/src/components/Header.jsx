@@ -7,6 +7,8 @@ const NAV = [
   { to: "/", label: "Home", testId: "header-nav-home-link" },
   { to: "/about", label: "About", testId: "header-nav-about-link" },
   { to: "/courses", label: "Courses", testId: "header-nav-courses-link" },
+  { to: "/devops-course-in-mumbai", label: "Mumbai", testId: "header-nav-mumbai-link" },
+  { to: "/placements", label: "Placements", testId: "header-nav-placements-link" },
   { to: "/faqs", label: "FAQs", testId: "header-nav-faqs-link" },
   { to: "/contact", label: "Contact Us", testId: "header-nav-contact-link" },
 ];
@@ -46,6 +48,8 @@ export default function Header() {
               <img
                 src="/logo-color.png"
                 alt="DevOps Institute Powai"
+                width="600"
+                height="600"
                 className="h-16 sm:h-20 lg:h-24 w-auto object-contain shrink-0"
               />
               <span className="leading-tight min-w-0">

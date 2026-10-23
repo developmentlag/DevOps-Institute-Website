@@ -1,15 +1,18 @@
 import { Phone, MapPin, Navigation, Clock, Train, Bus } from "lucide-react";
 import Seo from "@/components/Seo";
 import EnquiryForm from "@/components/EnquiryForm";
+import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
 import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, MAP_EMBED_URL, MAP_DIRECTIONS_URL, buildBreadcrumbSchema, buildOrgSchema } from "@/data/site";
+import { staticPage } from "@/data/pageMeta";
 
 export default function Contact() {
+  const meta = staticPage("/contact");
   return (
     <div data-testid="contact-page">
       <Seo
-        title="Contact Us | DevOps Institute - AWS, Azure & GCP Course, Chandivali, Powai"
+        title={meta.title}
         siteName={BUSINESS_NAME}
-        description="Contact DevOps Institute at Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali, Powai, Mumbai 400072. Call 083695 18569 for course enquiries and campus directions."
+        description={meta.description}
         jsonLd={[
           buildOrgSchema(),
           buildBreadcrumbSchema([
@@ -21,10 +24,12 @@ export default function Contact() {
 
       <section className="bg-gradient-to-b from-blue-50 via-white to-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <Breadcrumbs crumbs={[{ name: "Home", href: "/" }, { name: "Contact", href: "/contact" }]} />
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600">Contact Us</p>
           <h1 className="mt-3 font-heading text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 max-w-3xl leading-[1.15]">
             Contact DevOps Institute in Chandivali, Powai
           </h1>
+          <AnswerBlock answer={meta.answer} />
           <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl">
             Questions about an AWS course in Mumbai, Azure training in Powai, or our DevOps programs? Call us, send an
             enquiry, or visit the campus — we are happy to help you plan your cloud career.

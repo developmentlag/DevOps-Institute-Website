@@ -20,6 +20,31 @@ export const PHONE_TEL = "tel:08369518569";
 export const INSTAGRAM_URL = "https://www.instagram.com/devopsinstituteinmumbai/";
 export const INSTAGRAM_HANDLE = "@devopsinstituteinmumbai";
 
+export const LAST_UPDATED_LABEL = "October 2026";
+export const LAST_UPDATED_ISO = "2026-10-23";
+
+export const THANE_ORIGIN = "https://devopsinstitutemumbai.co.in";
+export const THANE_HOME = "https://devopsinstitutemumbai.co.in/";
+export const VASHI_URL = "https://devopsinstitutemumbai.co.in/devops-institute-vashi-navi-mumbai/";
+export const GHATKOPAR_URL = "https://devopsinstitutemumbai.co.in/devops-institute-ghatkopar/";
+export const DATA_INSTITUTE_URL = "https://datainstitute.in/";
+export const THANE_PHONE = "084510 86339";
+export const GHATKOPAR_PHONE = "088282 24247";
+export const THANE_ADDRESS =
+  "2nd Floor, Awfis, Kalpataru Prime, Neheru Nagar, Wagle Industrial Estate, Thane West, Thane, Maharashtra 400604";
+export const VASHI_ADDRESS =
+  "Cyberone, opp. CIDCO Exhibition Centre, Sector 30, Vashi, Navi Mumbai, Maharashtra 400703";
+export const GHATKOPAR_ADDRESS =
+  "RCity Offices, Lal Bahadur Shastri Marg, adjoining RCity Mall, Ghatkopar West, Mumbai, Maharashtra 400086";
+
+export const PLACED_LABEL = "450+ placed";
+export const PLACEMENT_LABEL = "100% Placement";
+export const ASSURANCE_LABEL = "360° Placement Assurance";
+export const HIRING_PARTNERS_LABEL = "350+ hiring partners";
+export const SALARY_RANGE_LABEL = "5–35 LPA";
+export const AFFILIATION_LINE =
+  "DevOps Institute is affiliated with NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna, and works in collaboration with IIT and Microsoft.";
+
 export const WHATSAPP_NUMBER = "918369518569";
 export const WHATSAPP_MESSAGE =
   "Hi! I'm interested in the DevOps classroom training in Powai, Mumbai. Please share batch timings, fees and placement details.";
@@ -30,21 +55,29 @@ export const CAMPUS_PHOTOS = [
     src: "/campus/campus-branded-1.jpg",
     alt: "Full DevOps classroom batch training on live cloud labs at DevOps Institute, Chandivali, Powai, Mumbai",
     caption: "Live classroom batch in Powai, Mumbai",
+    width: 960,
+    height: 1200,
   },
   {
     src: "/campus/campus-branded-2.jpg",
     alt: "Students in a hands-on DevOps and cloud lab session at the Powai campus in Mumbai",
     caption: "Hands-on cloud & DevOps lab session",
+    width: 960,
+    height: 1200,
   },
   {
     src: "/campus/campus-classroom.webp",
     alt: "Students working on real cloud labs in the DevOps Institute classroom at Lodha Supremus, Chandivali, Powai",
     caption: "Practical lab-first training",
+    width: 675,
+    height: 1200,
   },
   {
     src: "/campus/campus-team.webp",
     alt: "A batch of DevOps Institute students and trainers at the Chandivali, Powai campus in Mumbai",
     caption: "Our latest DevOps & cloud batch",
+    width: 1200,
+    height: 675,
   },
 ];
 
@@ -139,9 +172,9 @@ export const COURSES = [
     tagline: "Amazon Web Services Cloud Training with Placement",
     cardDesc:
       "A practical AWS course in Mumbai with placement support covering IAM, EC2, S3, VPC, monitoring and live cloud labs.",
-    metaTitle: "AWS Course in Mumbai with Placement | AWS Cloud Training in Powai - DevOps Institute",
+    metaTitle: "AWS Course in Mumbai with Placement | Powai",
     metaDescription:
-      "Best AWS course in Mumbai with 100% placement support. Master IAM, EC2, S3, VPC, RDS and real application deployment at DevOps Institute, Chandivali, Powai. Call 083695 18569.",
+      "AWS course in Mumbai with placement support. IAM, EC2, S3 and VPC labs at the Chandivali, Powai campus. Call 083695 18569.",
     h1: "AWS Course in Mumbai with Placement — Practical Cloud Training in Powai",
     intro:
       "Our AWS course in Mumbai is built around doing, not just watching. At our Chandivali campus in Powai, you work on real AWS accounts: designing networks, launching servers, securing access and deploying applications the way working cloud engineers do with complete placement guidance. If you are searching for an AWS course near Chandivali or AWS training in Powai that focuses on career-relevant skills, this program is designed for you.",
@@ -196,9 +229,9 @@ export const COURSES = [
     tagline: "Microsoft Azure Cloud & DevOps Training",
     cardDesc:
       "Azure training in Powai covering virtual machines, networking, identity, AKS and Azure DevOps pipelines with hands-on labs.",
-    metaTitle: "Azure Course in Mumbai | Azure Training in Powai, Chandivali - DevOps Institute",
+    metaTitle: "Azure Course in Mumbai with Placement | Powai",
     metaDescription:
-      "Learn Microsoft Azure in Powai, Mumbai. Hands-on Azure course covering VMs, VNet, Entra ID, AKS and Azure DevOps at DevOps Institute, Chandivali. Call 083695 18569.",
+      "Azure course in Mumbai with placement support. VMs, VNet, Entra ID and AKS labs at the Chandivali, Powai campus. Call 083695 18569.",
     h1: "Azure Course in Mumbai — Microsoft Azure Training in Powai",
     intro:
       "This Azure course in Mumbai takes you from cloud basics to running real workloads on Microsoft Azure. Training happens at our Chandivali, Powai campus with live lab sessions on virtual machines, networking, identity and DevOps pipelines. For learners looking for Azure training in Powai or a cloud computing course in Mumbai with genuine hands-on practice, this program delivers exactly that.",
@@ -253,9 +286,9 @@ export const COURSES = [
     tagline: "Google Cloud Platform Training",
     cardDesc:
       "GCP course in Mumbai covering Compute Engine, GKE, networking, Cloud Build and monitoring through guided, practical labs.",
-    metaTitle: "GCP Course in Mumbai | Google Cloud Training in Powai, Chandivali - DevOps Institute",
+    metaTitle: "GCP Course in Mumbai with Placement | Powai",
     metaDescription:
-      "Google Cloud training in Powai, Mumbai. Hands-on GCP course covering Compute Engine, GKE, VPC, Cloud Build and more at DevOps Institute, Chandivali. Call 083695 18569.",
+      "GCP course in Mumbai with placement support. Compute Engine, GKE and Cloud Build labs at the Chandivali, Powai campus. Call 083695 18569.",
     h1: "GCP Course in Mumbai — Google Cloud Training in Powai",
     intro:
       "Our GCP course in Mumbai helps you build real Google Cloud skills through practical sessions at our Chandivali, Powai campus. From Compute Engine and Cloud Storage to GKE and CI/CD with Cloud Build, you learn by doing. If you are comparing options for Google Cloud training in Powai or a cloud course near Chandivali, this hands-on program is built around job-ready skills.",
@@ -310,9 +343,9 @@ export const COURSES = [
     tagline: "End-to-End DevOps & CI/CD Training with 100% Placement",
     cardDesc:
       "A practical DevOps course in Mumbai with 100% placement support covering Git, Jenkins, Docker, Kubernetes, Terraform and CI/CD pipelines.",
-    metaTitle: "DevOps Course in Mumbai with Placement | DevOps Training in Powai - DevOps Institute",
+    metaTitle: "DevOps Course with Placement | Powai Campus",
     metaDescription:
-      "Top-rated DevOps course in Mumbai with 100% placement support & live classroom labs. Learn Git, Jenkins, Docker, Kubernetes, Terraform & AWS in Powai. Call 083695 18569.",
+      "DevOps course in Mumbai with placement support. Git, Jenkins, Docker, Kubernetes and Terraform labs in Powai. Call 083695 18569.",
     h1: "DevOps Course in Mumbai with Placement — Practical DevOps Training in Powai",
     intro:
       "This DevOps course in Mumbai teaches the complete modern toolchain: version control, CI/CD pipelines, containers, orchestration, infrastructure as code and monitoring with dedicated placement support. Classes run at our campus near Saki Vihar Road in Chandivali, Powai, with every concept backed by a lab. For anyone searching for practical DevOps training in Mumbai or a DevOps course with placement in Powai, this program is built around production-style workflows.",
@@ -367,9 +400,9 @@ export const COURSES = [
     tagline: "Containers & Orchestration Masterclass",
     cardDesc:
       "Kubernetes course in Mumbai with Docker training in Powai: images, compose, pods, deployments, ingress, Helm and cluster operations.",
-    metaTitle: "Kubernetes & Docker Course in Mumbai | Docker Training in Powai - DevOps Institute",
+    metaTitle: "Kubernetes & Docker Course in Mumbai | Powai",
     metaDescription:
-      "Kubernetes course in Mumbai and Docker training in Powai. Learn containers, deployments, ingress, Helm and cluster ops at DevOps Institute, Chandivali. Call 083695 18569.",
+      "Kubernetes and Docker course in Mumbai. Images, pods, ingress and Helm labs at the Chandivali, Powai campus. Call 083695 18569.",
     h1: "Kubernetes & Docker Course in Mumbai — Docker Training in Powai",
     intro:
       "Containers run the modern internet, and this course teaches them properly. Starting with Docker images and Docker Compose, you progress to Kubernetes clusters, deployments, services, ingress and Helm at our Chandivali, Powai campus. It is a focused Kubernetes course in Mumbai for engineers who want hands-on Docker training in Powai rather than slide-based theory.",
@@ -424,9 +457,9 @@ export const COURSES = [
     tagline: "Linux Administration & Infrastructure as Code",
     cardDesc:
       "Linux administration and Terraform training in Mumbai: shell, scripting, users, networking, HCL, state and multi-cloud provisioning.",
-    metaTitle: "Linux & Terraform Course in Mumbai | Cloud Training in Powai - DevOps Institute",
+    metaTitle: "Linux & Terraform Course in Mumbai | Powai",
     metaDescription:
-      "Learn Linux administration and Terraform in Powai, Mumbai. Bash scripting, system administration and Infrastructure as Code at DevOps Institute, Chandivali. Call 083695 18569.",
+      "Linux and Terraform course in Mumbai. Shell, Bash and Infrastructure as Code labs at the Chandivali, Powai campus. Call 083695 18569.",
     h1: "Linux & Terraform Course in Mumbai — Cloud Infrastructure Training in Powai",
     intro:
       "Linux runs the cloud, and Terraform builds it. This combined course at our Chandivali, Powai campus takes you from confident command-line administration to provisioning real infrastructure as code across AWS and Azure. It is an ideal foundation for anyone joining cloud and DevOps classes in Mumbai who wants strong fundamentals before advanced tooling.",
@@ -551,47 +584,138 @@ export const ALL_FAQS = [
   },
 ];
 
+const POWAI_STREET = "Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village";
+
+export const AREA_SERVED = [
+  "Chandivali",
+  "Powai",
+  "Andheri East",
+  "Andheri West",
+  "Hiranandani",
+  "Saki Naka",
+  "Saki Vihar Road",
+  "Kanjurmarg",
+  "Ghatkopar",
+  "Vikhroli",
+  "Bhandup",
+  "Mulund",
+  "Goregaon",
+  "Malad",
+  "Bandra",
+  "BKC",
+  "Kurla",
+  "Sion",
+  "Dadar",
+  "Borivali",
+  "Juhu",
+  "Santacruz",
+  "Thane",
+  "Navi Mumbai",
+  "Mumbai",
+];
+
+function powaiPostal() {
+  return {
+    "@type": "PostalAddress",
+    streetAddress: POWAI_STREET,
+    addressLocality: "Chandivali, Powai, Mumbai",
+    addressRegion: "Maharashtra",
+    postalCode: "400072",
+    addressCountry: "IN",
+  };
+}
+
+function paidOffer(url) {
+  return {
+    "@type": "Offer",
+    category: "Paid",
+    availability: "https://schema.org/InStock",
+    url,
+  };
+}
+
+function courseInstance(origin, duration) {
+  const schedule = {
+    "@type": "Schedule",
+    repeatFrequency: "P1W",
+  };
+  if (duration) schedule.duration = duration;
+  return {
+    "@type": "CourseInstance",
+    courseMode: ["onsite", "blended"],
+    courseWorkload: duration === "P4M" ? "PT160H" : "PT40H",
+    location: { "@id": `${origin}/#institute` },
+    courseSchedule: schedule,
+  };
+}
+
+function visibleReviewSchema() {
+  if (!GOOGLE_REVIEWS_STATS.enableSchemaRating) return {};
+  return {
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: GOOGLE_REVIEWS_STATS.ratingValue,
+      reviewCount: GOOGLE_REVIEWS_STATS.reviewCount,
+      ratingCount: GOOGLE_REVIEWS_STATS.ratingCount,
+      bestRating: GOOGLE_REVIEWS_STATS.bestRating,
+      worstRating: GOOGLE_REVIEWS_STATS.worstRating,
+    },
+    review: TESTIMONIALS.map((t) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: t.name },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: String(t.rating),
+        bestRating: "5",
+        worstRating: "1",
+      },
+      reviewBody: t.quote,
+    })),
+  };
+}
+
 export const buildOrgSchema = () => {
   const origin = getSiteOrigin();
+  // TODO: add sameAs profiles when the URLs exist: YouTube, LinkedIn, Facebook, Justdial, Sulekha.
+  const sameAs = [INSTAGRAM_URL, THANE_HOME, ...GOOGLE_BUSINESS_PROFILE_URLS];
+  const memberOf = ["NASSCOM", "IBM", "Govt. of India (MEITY)", "IIT Patna"].map((name) => ({
+    "@type": "Organization",
+    name,
+  }));
   return {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["EducationalOrganization", "LocalBusiness"],
+        "@type": "Organization",
+        "@id": `${origin}/#organization`,
+        name: PROVIDER_NAME,
+        legalName: BUSINESS_NAME,
+        url: origin,
+        logo: `${origin}/logo-color.png`,
+        telephone: PHONE,
+        sameAs,
+        memberOf,
+        subOrganization: [
+          { "@id": `${origin}/#institute` },
+          { "@id": `${THANE_ORIGIN}/#campus` },
+        ],
+      },
+      {
+        "@type": ["EducationalOrganization", "School", "LocalBusiness"],
         "@id": `${origin}/#institute`,
         name: BUSINESS_NAME,
         alternateName: "DevOps Institute Mumbai",
         description:
-          "Classroom DevOps, AWS, Azure and GCP training institute in Chandivali, Powai, Mumbai. Become a DevOps engineer in 4 months with hands-on labs, weekend batches and placement support.",
+          "Classroom DevOps, AWS, Azure and GCP training institute in Chandivali, Powai, Mumbai. Become a DevOps engineer in 4 months with hands-on labs, weekend batches and placement support. The institute publishes an IIT and Microsoft collaboration. It is affiliated with NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna.",
         url: origin,
         telephone: PHONE,
         image: `${origin}/campus/campus-branded-1.jpg`,
         logo: `${origin}/logo-color.png`,
         priceRange: "₹₹",
-        sameAs: [
-          INSTAGRAM_URL,
-          ...GOOGLE_BUSINESS_PROFILE_URLS,
-        ],
-        ...(GOOGLE_REVIEWS_STATS.enableSchemaRating
-          ? {
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: GOOGLE_REVIEWS_STATS.ratingValue,
-                reviewCount: GOOGLE_REVIEWS_STATS.reviewCount,
-                ratingCount: GOOGLE_REVIEWS_STATS.ratingCount,
-                bestRating: GOOGLE_REVIEWS_STATS.bestRating,
-                worstRating: GOOGLE_REVIEWS_STATS.worstRating,
-              },
-            }
-          : {}),
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village",
-          addressLocality: "Chandivali, Powai, Mumbai",
-          addressRegion: "Maharashtra",
-          postalCode: "400072",
-          addressCountry: "IN",
-        },
+        parentOrganization: { "@id": `${origin}/#organization` },
+        sameAs,
+        memberOf,
+        address: powaiPostal(),
         geo: {
           "@type": "GeoCoordinates",
           latitude: 19.1076,
@@ -606,20 +730,7 @@ export const buildOrgSchema = () => {
             closes: "21:00",
           },
         ],
-        areaServed: [
-          "Chandivali",
-          "Powai",
-          "Andheri East",
-          "Hiranandani",
-          "Saki Naka",
-          "Saki Vihar Road",
-          "Kanjurmarg",
-          "Ghatkopar",
-          "Vikhroli",
-          "Thane",
-          "Navi Mumbai",
-          "Mumbai",
-        ],
+        areaServed: AREA_SERVED,
         hasOfferCatalog: {
           "@type": "OfferCatalog",
           name: "Cloud & DevOps Courses in Mumbai",
@@ -632,15 +743,63 @@ export const buildOrgSchema = () => {
               "@type": "EducationalOrganization",
               name: PROVIDER_NAME,
               sameAs: origin,
+              url: origin,
             },
           })),
         },
+      },
+      {
+        "@type": ["EducationalOrganization", "School"],
+        "@id": `${THANE_ORIGIN}/#campus`,
+        name: "DevOps Institute",
+        url: THANE_HOME,
+        telephone: THANE_PHONE,
+        parentOrganization: { "@id": `${origin}/#organization` },
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "2nd Floor, Awfis, Kalpataru Prime, Neheru Nagar, Wagle Industrial Estate",
+          addressLocality: "Thane West, Thane",
+          addressRegion: "Maharashtra",
+          postalCode: "400604",
+          addressCountry: "IN",
+        },
+        department: [
+          {
+            "@type": "EducationalOrganization",
+            name: "DevOps Institute Vashi, Navi Mumbai",
+            url: VASHI_URL,
+            telephone: THANE_PHONE,
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Cyberone, opp. CIDCO Exhibition Centre, Sector 30",
+              addressLocality: "Vashi, Navi Mumbai",
+              addressRegion: "Maharashtra",
+              postalCode: "400703",
+              addressCountry: "IN",
+            },
+          },
+          {
+            "@type": "EducationalOrganization",
+            name: "DevOps Institute Ghatkopar",
+            url: GHATKOPAR_URL,
+            telephone: GHATKOPAR_PHONE,
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "RCity Offices, Lal Bahadur Shastri Marg, adjoining RCity Mall",
+              addressLocality: "Ghatkopar West, Mumbai",
+              addressRegion: "Maharashtra",
+              postalCode: "400086",
+              addressCountry: "IN",
+            },
+          },
+        ],
       },
       {
         "@type": "WebSite",
         "@id": `${origin}/#website`,
         url: origin,
         name: BUSINESS_NAME,
+        publisher: { "@id": `${origin}/#organization` },
       },
     ],
   };
@@ -685,7 +844,8 @@ export const buildFlagshipCourseSchema = () => {
     description:
       "4-month classroom DevOps training in Mumbai covering AWS, Azure, GCP, Docker, Kubernetes, Terraform & CI/CD pipelines with hands-on labs and 100% placement support.",
     url: origin,
-    inLanguage: "en-IN",
+    courseCode: "DOI-DEVOPS",
+    inLanguage: "en",
     educationalLevel: "Beginner to Advanced",
     teaches: [
       "Linux & Shell Scripting",
@@ -697,83 +857,23 @@ export const buildFlagshipCourseSchema = () => {
     ],
     provider: {
       "@type": "EducationalOrganization",
+      "@id": `${origin}/#institute`,
       name: PROVIDER_NAME,
       url: origin,
-      sameAs: [
-        origin,
-        INSTAGRAM_URL,
-        ...GOOGLE_BUSINESS_PROFILE_URLS,
-      ],
+      sameAs: [origin, INSTAGRAM_URL, THANE_HOME, ...GOOGLE_BUSINESS_PROFILE_URLS],
       telephone: PHONE,
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village",
-        addressLocality: "Chandivali, Powai, Mumbai",
-        addressRegion: "Maharashtra",
-        postalCode: "400072",
-        addressCountry: "IN",
-      },
+      address: powaiPostal(),
     },
-    offers: {
-      "@type": "Offer",
-      category: "Paid",
-      priceCurrency: "INR",
-      price: "24999",
-      availability: "https://schema.org/InStock",
-      url: origin,
-    },
-    hasCourseInstance: [
-      {
-        "@type": "CourseInstance",
-        courseMode: ["Onsite", "Online"],
-        courseWorkload: "PT160H",
-        location: {
-          "@type": "Place",
-          name: "DevOps Institute Powai Campus",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali",
-            addressLocality: "Powai, Mumbai",
-            addressRegion: "Maharashtra",
-            postalCode: "400072",
-            addressCountry: "IN",
-          },
-        },
-      },
-    ],
-    ...(GOOGLE_REVIEWS_STATS.enableSchemaRating
-      ? {
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: GOOGLE_REVIEWS_STATS.ratingValue,
-            reviewCount: GOOGLE_REVIEWS_STATS.reviewCount,
-            ratingCount: GOOGLE_REVIEWS_STATS.ratingCount,
-            bestRating: GOOGLE_REVIEWS_STATS.bestRating,
-            worstRating: GOOGLE_REVIEWS_STATS.worstRating,
-          },
-          review: TESTIMONIALS.map((t) => ({
-            "@type": "Review",
-            author: {
-              "@type": "Person",
-              name: t.name,
-            },
-            reviewRating: {
-              "@type": "Rating",
-              ratingValue: String(t.rating),
-              bestRating: "5",
-              worstRating: "1",
-            },
-            reviewBody: t.quote,
-          })),
-        }
-      : {}),
+    offers: paidOffer(origin),
+    hasCourseInstance: [courseInstance(origin, "P4M")],
+    ...visibleReviewSchema(),
   };
 };
 
 export const buildCourseSchema = (course) => {
   const origin = getSiteOrigin();
   const courseUrl = `${origin}/courses/${course.slug}`;
-
+  const duration = course.slug === "devops" ? "P4M" : undefined;
   return {
     "@context": "https://schema.org",
     "@type": "Course",
@@ -781,86 +881,22 @@ export const buildCourseSchema = (course) => {
     name: course.name,
     description: course.metaDescription,
     url: courseUrl,
-    inLanguage: "en-IN",
+    courseCode: `DOI-${course.slug.toUpperCase()}`,
+    inLanguage: "en",
     educationalLevel: "Beginner to Advanced",
-    teaches: course.skills || [
-      "Cloud Infrastructure",
-      "DevOps Automation",
-      "CI/CD Pipelines",
-      "Containerization",
-      "Infrastructure as Code",
-    ],
+    teaches: course.skills,
     provider: {
       "@type": "EducationalOrganization",
+      "@id": `${origin}/#institute`,
       name: PROVIDER_NAME,
-      sameAs: [
-        origin,
-        INSTAGRAM_URL,
-        ...GOOGLE_BUSINESS_PROFILE_URLS,
-      ],
+      url: origin,
+      sameAs: [origin, INSTAGRAM_URL, THANE_HOME, ...GOOGLE_BUSINESS_PROFILE_URLS],
       telephone: PHONE,
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village",
-        addressLocality: "Chandivali, Powai, Mumbai",
-        addressRegion: "Maharashtra",
-        postalCode: "400072",
-        addressCountry: "IN",
-      },
+      address: powaiPostal(),
     },
-    hasCourseInstance: [
-      {
-        "@type": "CourseInstance",
-        courseMode: ["Onsite", "Online"],
-        courseWorkload: "PT40H",
-        location: {
-          "@type": "Place",
-          name: "DevOps Institute Powai Campus",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali",
-            addressLocality: "Powai, Mumbai",
-            addressRegion: "Maharashtra",
-            postalCode: "400072",
-            addressCountry: "IN",
-          },
-        },
-      },
-    ],
-    offers: {
-      "@type": "Offer",
-      category: "Paid",
-      priceCurrency: "INR",
-      price: "24999",
-      availability: "https://schema.org/InStock",
-      url: courseUrl,
-    },
-    ...(GOOGLE_REVIEWS_STATS.enableSchemaRating
-      ? {
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: GOOGLE_REVIEWS_STATS.ratingValue,
-            reviewCount: GOOGLE_REVIEWS_STATS.reviewCount,
-            ratingCount: GOOGLE_REVIEWS_STATS.ratingCount,
-            bestRating: GOOGLE_REVIEWS_STATS.bestRating,
-            worstRating: GOOGLE_REVIEWS_STATS.worstRating,
-          },
-          review: TESTIMONIALS.map((t) => ({
-            "@type": "Review",
-            author: {
-              "@type": "Person",
-              name: t.name,
-            },
-            reviewRating: {
-              "@type": "Rating",
-              ratingValue: String(t.rating),
-              bestRating: "5",
-              worstRating: "1",
-            },
-            reviewBody: t.quote,
-          })),
-        }
-      : {}),
+    hasCourseInstance: [courseInstance(origin, duration)],
+    offers: paidOffer(courseUrl),
+    ...visibleReviewSchema(),
   };
 };
 
@@ -873,4 +909,3 @@ export const buildFaqSchema = (faqs) => ({
     acceptedAnswer: { "@type": "Answer", text: f.a },
   })),
 });
-

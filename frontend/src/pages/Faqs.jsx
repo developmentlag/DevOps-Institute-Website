@@ -1,15 +1,18 @@
 import Seo from "@/components/Seo";
 import FaqAccordion from "@/components/FaqAccordion";
+import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
 import { CallNowButton, DarkCtaBand } from "@/components/CallButtons";
 import { BUSINESS_NAME, PHONE, ALL_FAQS, buildFaqSchema, buildBreadcrumbSchema } from "@/data/site";
+import { staticPage } from "@/data/pageMeta";
 
 export default function Faqs() {
+  const meta = staticPage("/faqs");
   return (
     <div data-testid="faqs-page">
       <Seo
-        title="FAQs | DevOps Institute - AWS, Azure & GCP Course, Powai, Mumbai"
+        title={meta.title}
         siteName={BUSINESS_NAME}
-        description="Frequently asked questions about DevOps Institute in Chandivali, Powai, Mumbai: location, AWS/Azure/GCP/DevOps courses, batches, tools covered and how to visit. Call 083695 18569."
+        description={meta.description}
         jsonLd={[
           buildFaqSchema(ALL_FAQS),
           buildBreadcrumbSchema([
@@ -21,10 +24,12 @@ export default function Faqs() {
 
       <section className="bg-gradient-to-b from-blue-50 via-white to-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <Breadcrumbs crumbs={[{ name: "Home", href: "/" }, { name: "FAQs", href: "/faqs" }]} />
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600">Help Centre</p>
           <h1 className="mt-3 font-heading text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 max-w-3xl leading-[1.15]">
             Frequently Asked Questions
           </h1>
+          <AnswerBlock answer={meta.answer} />
           <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl">
             Answers about our courses, campus location in Chandivali, Powai, batch options and how to get started with
             cloud and DevOps training in Mumbai.
