@@ -66,19 +66,22 @@ export default function Seo({
   type = "website",
   siteName,
   jsonLd,
+  robots = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  canonicalPath,
 }) {
   const { pathname } = useLocation();
+  const canonical = canonicalPath || pathname;
 
   useEffect(() => {
     const origin = getSiteOrigin();
-    const url = `${origin}${pathname}`;
+    const url = `${origin}${canonical}`;
     const imageUrl = image ? new URL(image, origin).href : undefined;
 
     document.title = title || fallbackTitle;
 
     upsertLink("canonical", url);
     upsertMeta("name", "description", description);
-    upsertMeta("name", "robots", "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1");
+    upsertMeta("name", "robots", robots);
 
     upsertMeta("property", "og:type", type);
     upsertMeta("property", "og:url", url);
@@ -94,16 +97,16 @@ export default function Seo({
 
     upsertJsonLd(jsonLd);
     document.documentElement.setAttribute("data-seo-ready", pathname);
-  }, [pathname, title, description, image, type, siteName, jsonLd]);
+  }, [pathname, canonical, title, description, image, type, siteName, jsonLd, robots]);
 
   // The browser copy above runs after paint. Prerender has no document, so the
   // same tags are rendered into the static HTML for crawlers.
   if (typeof document !== "undefined") return null;
 
   const origin = getSiteOrigin();
-  const url = `${origin}${pathname}`;
+  const url = `${origin}${canonical}`;
   const imageUrl = image ? new URL(image, origin).href : undefined;
-  const robots = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
+  const jsonLdText = jsonLd ? JSON.stringify(jsonLd).replace(/</g, "\\u003c") : "";
 
   return (
     <>
@@ -122,7 +125,7 @@ export default function Seo({
       {description ? <meta name="twitter:description" content={description} data-seo="" /> : null}
       {imageUrl ? <meta name="twitter:image" content={imageUrl} data-seo="" /> : null}
       {jsonLd ? (
-        <script type="application/ld+json" data-seo="" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <script type="application/ld+json" data-seo="" dangerouslySetInnerHTML={{ __html: jsonLdText }} />
       ) : null}
     </>
   );

@@ -121,3 +121,11 @@
         border-bottom-color: inherit;
     }
 }
+
+@media print {
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+}

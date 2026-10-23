@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import { GraduationCap, FlaskConical, Users, Briefcase, ArrowRight } from "lucide-react";
 import Seo from "@/components/Seo";
 import CampusMap from "@/components/CampusMap";
+import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
 import { CallNowButton, DarkCtaBand } from "@/components/CallButtons";
 import { BUSINESS_NAME, ADDRESS, PHONE, buildBreadcrumbSchema, buildOrgSchema } from "@/data/site";
+import { staticPage } from "@/data/pageMeta";
 
 const PILLARS = [
   {
@@ -29,12 +31,13 @@ const PILLARS = [
 ];
 
 export default function About() {
+  const meta = staticPage("/about");
   return (
     <div data-testid="about-page">
       <Seo
-        title="About DevOps Institute | Cloud & DevOps Training in Powai, Mumbai"
+        title={meta.title}
         siteName={BUSINESS_NAME}
-        description="About DevOps Institute - AWS, Azure & GCP Course: a practical cloud and DevOps training institute at Lodha Supremus, Chandivali, Powai, Mumbai. Call 083695 18569."
+        description={meta.description}
         jsonLd={[
           buildOrgSchema(),
           buildBreadcrumbSchema([
@@ -46,10 +49,12 @@ export default function About() {
 
       <section className="bg-gradient-to-b from-blue-50 via-white to-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <Breadcrumbs crumbs={[{ name: "Home", href: "/" }, { name: "About", href: "/about" }]} />
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600">About Us</p>
           <h1 className="mt-3 font-heading text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 max-w-3xl leading-[1.15]">
             About DevOps Institute — A Cloud Training Institute in Powai, Mumbai
           </h1>
+          <AnswerBlock answer={meta.answer} />
           <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl">
             {BUSINESS_NAME} is a technology training institute in Chandivali, Powai, built for students and working
             professionals who want practical, career-focused cloud skills — not just certificates.
@@ -79,6 +84,14 @@ export default function About() {
                 Village in Chandivali. The campus is easy to reach from Powai, Hiranandani, Saki Naka, Kanjurmarg and
                 Andheri East, with classroom and lab setups designed for hands-on learning.
               </p>
+              <h2 className="mt-10 font-heading text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
+                Facts still to publish
+              </h2>
+              <ul className="mt-4 list-disc pl-5 text-base text-slate-600 leading-relaxed space-y-2">
+                <li>TODO: founding year. The site says 5+ years of training and does not give a calendar year.</li>
+                <li>TODO: team names and photos. Campus photos show batches and trainers without naming them.</li>
+                <li>TODO: proof URL for the published line “In Collaboration With IIT, Microsoft.” NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna are not claimed here.</li>
+              </ul>
               <address className="not-italic mt-6 rounded-xl bg-slate-50 border border-slate-200 p-5 text-sm text-slate-700" data-testid="about-nap">
                 <p className="font-semibold text-slate-900">{BUSINESS_NAME}</p>
                 <p className="mt-1">{ADDRESS}</p>
@@ -96,8 +109,26 @@ export default function About() {
               <img
                 src="/campus/campus-team.webp"
                 alt="A batch of DevOps Institute students and trainers at the Chandivali, Powai campus in Mumbai"
+                width="1200"
+                height="675"
                 loading="lazy"
                 className="rounded-xl border border-slate-200 object-cover w-full h-full min-h-[220px] sm:col-span-2"
+              />
+              <img
+                src="/campus/campus-branded-2.jpg"
+                alt="Students in a hands-on DevOps and cloud lab session at the Powai campus in Mumbai"
+                width="960"
+                height="1200"
+                loading="lazy"
+                className="rounded-xl border border-slate-200 object-cover w-full h-64"
+              />
+              <img
+                src="/campus/campus-classroom.webp"
+                alt="Students working on real cloud labs in the DevOps Institute classroom at Lodha Supremus, Chandivali, Powai"
+                width="675"
+                height="1200"
+                loading="lazy"
+                className="rounded-xl border border-slate-200 object-cover w-full h-64"
               />
             </div>
           </div>

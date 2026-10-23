@@ -4,6 +4,8 @@ import {
   Phone, ArrowRight, CheckCircle2, MapPin, MessageCircle, Award, Users, CalendarClock, Star,
 } from "lucide-react";
 import Seo from "@/components/Seo";
+import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
+import { staticPage } from "@/data/pageMeta";
 import EnquiryForm from "@/components/EnquiryForm";
 import CampusMap from "@/components/CampusMap";
 import CampusGallery from "@/components/CampusGallery";
@@ -12,7 +14,7 @@ import Testimonials from "@/components/Testimonials";
 import FaqAccordion from "@/components/FaqAccordion";
 import {
   BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, WHATSAPP_URL,
-  COURSE_CARDS, WHY_CHOOSE, HOME_FAQS, NEARBY_AREAS, HERO_STATS, buildFlagshipCourseSchema, buildOrgSchema, buildFaqSchema,
+  COURSE_CARDS, WHY_CHOOSE, HOME_FAQS, HERO_STATS, GHATKOPAR_URL, buildFlagshipCourseSchema, buildOrgSchema, buildFaqSchema, buildBreadcrumbSchema,
 } from "@/data/site";
 
 const CARD_ICONS = [Cloud, Cloudy, CloudCog, GitBranch, Container, Container, Terminal, Terminal, GitBranch];
@@ -25,18 +27,33 @@ const HERO_CHIPS = [
 ];
 
 const STAT_ICONS = [Star, CalendarClock, Award, Users];
+const HOME_META = staticPage("/");
+
+const NEARBY_LINKS = [
+  { label: "Chandivali", href: "/devops-course-in-chandivali" },
+  { label: "Powai", href: "/devops-course-in-powai" },
+  { label: "Saki Vihar Road", href: "/devops-course-in-chandivali" },
+  { label: "Tunga Village", href: "/devops-course-in-chandivali" },
+  { label: "Andheri East", href: "/devops-course-in-andheri" },
+  { label: "Hiranandani", href: "/devops-course-in-powai" },
+  { label: "Saki Naka", href: "/devops-course-in-saki-naka" },
+  { label: "Kanjurmarg", href: "/devops-course-in-kanjurmarg" },
+  { label: "Ghatkopar", href: GHATKOPAR_URL, external: true },
+  { label: "Vikhroli", href: "/devops-course-in-vikhroli" },
+];
 
 export default function Home() {
   return (
     <div data-testid="home-page">
       <Seo
-        title="DevOps Course in Mumbai | Classroom DevOps Training with Placement, Powai - DevOps Institute"
+        title={HOME_META.title}
         siteName={BUSINESS_NAME}
-        description="Become a DevOps Engineer in 4 months. Classroom DevOps, AWS, Azure & GCP training in Powai, Chandivali, Mumbai with hands-on labs, weekend batches & placement support. Call 083695 18569."
+        description={HOME_META.description}
         jsonLd={[
           buildFlagshipCourseSchema(),
           buildOrgSchema(),
           buildFaqSchema(HOME_FAQS),
+          buildBreadcrumbSchema([{ name: "Home", url: "/" }]),
         ]}
       />
 
@@ -49,9 +66,11 @@ export default function Home() {
                 <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
                 Classroom Training in Powai, Mumbai
               </p>
+              <Breadcrumbs crumbs={[{ name: "Home", href: "/" }]} />
               <h1 className="mt-5 font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.12]">
                 Become a <span className="text-blue-700">DevOps Engineer</span> in Just 4 Months
               </h1>
+              <AnswerBlock answer={HOME_META.answer} />
               <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl">
                 100% practical <strong className="font-semibold text-slate-800">classroom DevOps training</strong> in
                 Chandivali, Powai — with hands-on AWS, Azure &amp; GCP labs, weekend &amp; weekday batches, and
@@ -105,6 +124,8 @@ export default function Home() {
                 <img
                   src="/campus/campus-branded-1.jpg"
                   alt="DevOps classroom training batch in progress at DevOps Institute, Chandivali, Powai, Mumbai"
+                  width="960"
+                  height="1200"
                   className="w-full h-full object-cover aspect-[4/3]"
                   fetchPriority="high"
                   decoding="async"
@@ -226,15 +247,20 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            {NEARBY_AREAS.map((area) => (
-              <span
-                key={area}
-                className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700"
-              >
-                <MapPin className="h-4 w-4 text-blue-600" aria-hidden="true" />
-                {area}
-              </span>
-            ))}
+            {NEARBY_LINKS.map((area) => {
+              const className = "inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 hover:border-blue-400";
+              const inner = (
+                <>
+                  <MapPin className="h-4 w-4 text-blue-600" aria-hidden="true" />
+                  {area.label}
+                </>
+              );
+              return area.external ? (
+                <a key={area.label} href={area.href} className={className} rel="noopener noreferrer" target="_blank">{inner}</a>
+              ) : (
+                <Link key={area.label} to={area.href} className={className}>{inner}</Link>
+              );
+            })}
           </div>
         </div>
       </section>

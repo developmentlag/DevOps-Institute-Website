@@ -2,7 +2,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export default function FaqAccordion({ items, idPrefix = "faq" }) {
   return (
-    <Accordion type="single" collapsible className="w-full" data-testid={`${idPrefix}-accordion`}>
+    <Accordion type="multiple" defaultValue={items.map((_, i) => `item-${i}`)} className="w-full" data-testid={`${idPrefix}-accordion`}>
       {items.map((item, i) => (
         <AccordionItem key={i} value={`item-${i}`} data-testid={`${idPrefix}-accordion-item-${i + 1}`}>
           <AccordionTrigger

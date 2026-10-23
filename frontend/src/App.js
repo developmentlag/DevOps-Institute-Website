@@ -8,12 +8,18 @@ import Header from "@/components/Header";
 import Footer, { MobileStickyBar } from "@/components/Footer";
 import FloatingActions from "@/components/FloatingActions";
 import Home from "@/pages/Home";
-import About from "@/pages/About";
-import Courses from "@/pages/Courses";
-import CourseDetail from "@/pages/CourseDetail";
-import Contact from "@/pages/Contact";
-import Faqs from "@/pages/Faqs";
-import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import { lazyPage } from "@/lib/lazyPage";
+import { LOADERS } from "@/lib/pageLoaders";
+import { SEO_ROUTES } from "@/data/seoRoutes";
+
+const About = lazyPage("about", LOADERS.about);
+const Courses = lazyPage("courses", LOADERS.courses);
+const CourseDetail = lazyPage("courseDetail", LOADERS.courseDetail);
+const Contact = lazyPage("contact", LOADERS.contact);
+const Faqs = lazyPage("faqs", LOADERS.faqs);
+const PrivacyPolicy = lazyPage("privacy", LOADERS.privacy);
+const SeoLanding = lazyPage("seo", LOADERS.seo);
+const NotFound = lazyPage("notFound", LOADERS.notFound);
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -38,7 +44,11 @@ export function AppShell() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/faqs" element={<Faqs />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="*" element={<Home />} />
+            {SEO_ROUTES.filter((route) => route.path !== "/404").map((route) => (
+              <Route key={route.path} path={route.path} element={<SeoLanding />} />
+            ))}
+            <Route path="/404" element={<NotFound />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />

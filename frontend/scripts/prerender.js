@@ -5,7 +5,8 @@
  * used to fail the whole deployment. This script renders each public route
  * with React in Node and writes build/<route>/index.html. If rendering cannot
  * run, it logs the error and leaves the CRA shell in place so the deploy
- * still succeeds.
+ * still succeeds. scripts/validate-seo.js then fails the build when the HTML
+ * or JSON-LD is wrong.
  */
 const fs = require("fs");
 const path = require("path");
@@ -15,84 +16,22 @@ if (!process.env.NODE_ENV) process.env.NODE_ENV = "production";
 const SITE_ORIGIN = "https://devopsinstitute.co.in";
 const BUILD_DIR = path.resolve(__dirname, "../build");
 const SOURCE_DIR = path.resolve(__dirname, "../src");
+const PUBLIC_DIR = path.resolve(__dirname, "../public");
 const SITE_SOURCE = path.join(SOURCE_DIR, "data/site.js");
 
-const AI_CRAWLERS = ["Googlebot", "GPTBot", "PerplexityBot", "Google-Extended", "ClaudeBot"];
-
-const PAGES = [
-  {
-    route: "/",
-    text: "Become a",
-    title: "DevOps Course in Mumbai | Classroom DevOps Training with Placement, Powai - DevOps Institute",
-    jsonLd: true,
-  },
-  {
-    route: "/about",
-    text: "About DevOps Institute",
-    title: "About DevOps Institute | Cloud & DevOps Training in Powai, Mumbai",
-    jsonLd: true,
-  },
-  {
-    route: "/courses",
-    text: "Cloud & DevOps Courses in Mumbai",
-    title: "Cloud & DevOps Courses in Mumbai | AWS, Azure, GCP, Kubernetes - DevOps Institute",
-    jsonLd: true,
-  },
-  {
-    route: "/courses/aws",
-    text: "AWS Course in Mumbai with Placement",
-    title: "AWS Course in Mumbai with Placement | AWS Cloud Training in Powai - DevOps Institute",
-    jsonLd: true,
-  },
-  {
-    route: "/courses/azure",
-    text: "Azure Course in Mumbai",
-    title: "Azure Course in Mumbai | Azure Training in Powai, Chandivali - DevOps Institute",
-    jsonLd: true,
-  },
-  {
-    route: "/courses/gcp",
-    text: "GCP Course in Mumbai",
-    title: "GCP Course in Mumbai | Google Cloud Training in Powai, Chandivali - DevOps Institute",
-    jsonLd: true,
-  },
-  {
-    route: "/courses/devops",
-    text: "DevOps Course in Mumbai with Placement",
-    title: "DevOps Course in Mumbai with Placement | DevOps Training in Powai - DevOps Institute",
-    jsonLd: true,
-  },
-  {
-    route: "/courses/kubernetes-docker",
-    text: "Kubernetes & Docker Course in Mumbai",
-    title: "Kubernetes & Docker Course in Mumbai | Docker Training in Powai - DevOps Institute",
-    jsonLd: true,
-  },
-  {
-    route: "/courses/linux-terraform",
-    text: "Linux & Terraform Course in Mumbai",
-    title: "Linux & Terraform Course in Mumbai | Cloud Training in Powai - DevOps Institute",
-    jsonLd: true,
-  },
-  {
-    route: "/contact",
-    text: "Contact DevOps Institute in Chandivali, Powai",
-    title: "Contact Us | DevOps Institute - AWS, Azure & GCP Course, Chandivali, Powai",
-    jsonLd: true,
-  },
-  {
-    route: "/faqs",
-    text: "Frequently Asked Questions",
-    title: "FAQs | DevOps Institute - AWS, Azure & GCP Course, Powai, Mumbai",
-    jsonLd: true,
-  },
-  {
-    route: "/privacy-policy",
-    text: "Privacy Policy",
-    title: "Privacy Policy | DevOps Institute - AWS, Azure & GCP Course, Mumbai",
-    jsonLd: false,
-  },
+const AI_CRAWLERS = [
+  "Googlebot",
+  "GPTBot",
+  "OAI-SearchBot",
+  "ChatGPT-User",
+  "PerplexityBot",
+  "ClaudeBot",
+  "Google-Extended",
+  "Applebot-Extended",
+  "Bingbot",
 ];
+
+let PAGES = [];
 
 function courseSlugs() {
   const source = fs.readFileSync(SITE_SOURCE, "utf8");
@@ -125,9 +64,11 @@ function assertCrawlerFiles() {
 
   const sitemap = fs.readFileSync(path.join(BUILD_DIR, "sitemap.xml"), "utf8");
   for (const page of PAGES) {
+    if (page.index === false) continue;
     const loc = `${SITE_ORIGIN}${page.route === "/" ? "/" : page.route}`;
     if (!sitemap.includes(`<loc>${loc}</loc>`)) throw new Error(`sitemap.xml is missing ${loc}`);
   }
+  if (sitemap.includes(`${SITE_ORIGIN}/404`)) throw new Error("sitemap.xml must not list /404");
 
   const llms = fs.readFileSync(path.join(BUILD_DIR, "llms.txt"), "utf8");
   for (const snippet of [
@@ -181,11 +122,12 @@ function installSourceLoader() {
 
 function decodeHtml(value) {
   return value
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCharCode(parseInt(hex, 16)))
+    .replace(/&#(\d+);/g, (_, num) => String.fromCharCode(Number(num)))
     .replace(/&amp;/g, "&")
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'");
+    .replace(/&quot;/g, '"');
 }
 
 function metaContent(html, attr, key) {
@@ -202,6 +144,7 @@ function assertPage(page, html) {
   if (title !== page.title) {
     throw new Error(`${page.route} title mismatch.\n expected: ${page.title}\n actual:   ${title}`);
   }
+  if (title.length > 60) throw new Error(`${page.route} title is ${title.length} characters`);
   const escapedText = page.text.replace(/&/g, "&amp;");
   if (!html.includes(page.text) && !html.includes(escapedText)) {
     throw new Error(`${page.route} HTML is missing visible copy: ${page.text}`);
@@ -213,6 +156,10 @@ function assertPage(page, html) {
   }
   const description = metaContent(html, "name", "description");
   if (description.length < 40) throw new Error(`${page.route} is missing a meta description`);
+  if (description.length > 155) throw new Error(`${page.route} description is ${description.length} characters`);
+  if (page.description && description !== page.description) {
+    throw new Error(`${page.route} description mismatch.\n expected: ${page.description}\n actual:   ${description}`);
+  }
   const jsonLd = [...html.matchAll(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
   if (page.jsonLd) {
     if (jsonLd.length === 0) throw new Error(`${page.route} is missing JSON-LD`);
@@ -230,7 +177,9 @@ function assertPage(page, html) {
   }
   const rootAt = html.indexOf('id="root"');
   const rootHtml = rootAt === -1 ? html : html.slice(rootAt).replace(/<script[\s\S]*?<\/script>/gi, "");
-  if (/\bguaranteed\b/i.test(rootHtml)) throw new Error(`${page.route} contains the word guaranteed`);
+  if (/\bguaranteed\b/i.test(rootHtml) || /\bguarantee\b/i.test(rootHtml)) {
+    throw new Error(`${page.route} contains the word guarantee`);
+  }
   return description;
 }
 
@@ -262,8 +211,79 @@ function applyDocument(shell, tags, body) {
   return html;
 }
 
-function renderRoutes(shell) {
+function writeCrawlFiles() {
+  const lastmod = new Date().toISOString().slice(0, 10);
+  const urls = PAGES.filter((page) => page.index !== false)
+    .map((page) => {
+      const loc = `${SITE_ORIGIN}${page.route === "/" ? "/" : page.route}`;
+      return `  <url><loc>${loc}</loc><lastmod>${lastmod}</lastmod></url>`;
+    })
+    .join("\n");
+  fs.writeFileSync(
+    path.join(BUILD_DIR, "sitemap.xml"),
+    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`,
+  );
+
+  let robots = fs.readFileSync(path.join(PUBLIC_DIR, "robots.txt"), "utf8");
+  if (!robots.includes("User-agent: Applebot-Extended")) {
+    robots = robots.replace("Sitemap:", "User-agent: Applebot-Extended\nAllow: /\n\nSitemap:");
+  }
+  fs.writeFileSync(path.join(BUILD_DIR, "robots.txt"), robots);
+
+  const { SEO_ROUTES } = require("../src/data/seoRoutes");
+  const { COURSES } = require("../src/data/site");
+  const baseLlms = fs.readFileSync(path.join(PUBLIC_DIR, "llms.txt"), "utf8").trimEnd();
+  const lines = [
+    `- [Home](${SITE_ORIGIN}/): Classroom DevOps training in Powai, Mumbai with placement support.`,
+    `- [About](${SITE_ORIGIN}/about): Campus story, labs and the Chandivali address.`,
+    `- [Courses](${SITE_ORIGIN}/courses): AWS, Azure, GCP, DevOps, Kubernetes and Terraform.`,
+    ...COURSES.map((course) => `- [${course.name}](${SITE_ORIGIN}/courses/${course.slug}): ${course.metaDescription}`),
+    `- [Contact](${SITE_ORIGIN}/contact): Phone, map and enquiry form for the Powai campus.`,
+    `- [FAQs](${SITE_ORIGIN}/faqs): Published answers about courses, batches and the campus.`,
+    `- [Privacy](${SITE_ORIGIN}/privacy-policy): How enquiry details are handled.`,
+    ...SEO_ROUTES.filter((route) => route.index !== false).map(
+      (route) => `- [${route.title}](${SITE_ORIGIN}${route.path}): ${route.summary}`,
+    ),
+  ];
+  fs.writeFileSync(path.join(BUILD_DIR, "llms.txt"), `${baseLlms}\n\n## Pages\n${lines.join("\n")}\n`);
+
+  const { getSeoPage } = require("../src/data/seoCopy");
+  const chunks = ["# DevOps Institute, Powai", "Address: Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali, Powai, Mumbai, Maharashtra 400072", "Phone: 083695 18569", ""];
+  for (const route of SEO_ROUTES) {
+    const page = getSeoPage(route.path);
+    if (!page) continue;
+    chunks.push(`# ${page.route.h1}`);
+    chunks.push(page.answer);
+    for (const section of page.sections || []) {
+      chunks.push(`## ${section.h2}`);
+      chunks.push(...section.paragraphs);
+    }
+    for (const faq of page.faqs || []) {
+      chunks.push(`Q: ${faq.q}`);
+      chunks.push(`A: ${faq.a}`);
+    }
+    chunks.push("");
+  }
+  fs.writeFileSync(path.join(BUILD_DIR, "llms-full.txt"), `${chunks.join("\n")}\n`);
+}
+
+function loadPages() {
   installSourceLoader();
+  globalThis.__DOI_SYNC_PAGES__ = {
+    about: require("../src/pages/About"),
+    courses: require("../src/pages/Courses"),
+    courseDetail: require("../src/pages/CourseDetail"),
+    contact: require("../src/pages/Contact"),
+    faqs: require("../src/pages/Faqs"),
+    privacy: require("../src/pages/PrivacyPolicy"),
+    seo: require("../src/pages/SeoLanding"),
+    notFound: require("../src/pages/NotFound"),
+  };
+  const { buildPrerenderPages } = require("../src/data/pageMeta");
+  PAGES = buildPrerenderPages();
+}
+
+function renderRoutes(shell) {
   const React = require("react");
   const { renderToString } = require("react-dom/server");
   const { StaticRouter } = require("react-router");
@@ -292,9 +312,11 @@ function prerender() {
     console.warn("Prerender disabled. Shipping the client-rendered build.");
     return;
   }
-  assertRoutesMatchCourses();
   const shellPath = path.join(BUILD_DIR, "index.html");
   if (!fs.existsSync(shellPath)) throw new Error("frontend/build/index.html is missing. Run the CRA build first.");
+  loadPages();
+  assertRoutesMatchCourses();
+  writeCrawlFiles();
   assertCrawlerFiles();
   const shell = fs.readFileSync(shellPath, "utf8");
   const files = renderRoutes(shell);
@@ -302,6 +324,7 @@ function prerender() {
     const file = outputFile(page.route);
     fs.mkdirSync(path.dirname(file), { recursive: true });
     fs.writeFileSync(file, html);
+    if (page.route === "/404") fs.writeFileSync(path.join(BUILD_DIR, "404.html"), html);
     console.log(`prerendered ${page.route} -> ${path.relative(BUILD_DIR, file)}`);
   }
 }
@@ -311,4 +334,5 @@ try {
 } catch (error) {
   console.warn("Prerender failed. Shipping the client-rendered build.");
   console.warn(error && error.stack ? error.stack : error);
+  process.exitCode = 0;
 }

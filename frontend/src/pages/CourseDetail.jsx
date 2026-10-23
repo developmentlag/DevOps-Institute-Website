@@ -4,7 +4,9 @@ import Seo from "@/components/Seo";
 import EnquiryForm from "@/components/EnquiryForm";
 import FaqAccordion from "@/components/FaqAccordion";
 import Testimonials from "@/components/Testimonials";
+import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
 import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, COURSES, buildCourseSchema, buildBreadcrumbSchema, buildFaqSchema } from "@/data/site";
+import { COURSE_ANSWERS } from "@/data/pageMeta";
 
 const ICONS = { cloud: Cloud, cloudy: Cloudy, cloudCog: CloudCog, gitBranch: GitBranch, container: Container, terminal: Terminal };
 
@@ -35,13 +37,11 @@ export default function CourseDetail() {
 
       <section className="bg-gradient-to-b from-blue-50 via-white to-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <nav className="text-xs text-slate-500 mb-5" aria-label="Breadcrumb">
-            <Link to="/" className="hover:text-blue-700">Home</Link>
-            <span className="mx-2">/</span>
-            <Link to="/courses" className="hover:text-blue-700">Courses</Link>
-            <span className="mx-2">/</span>
-            <span className="text-slate-700 font-medium">{course.name}</span>
-          </nav>
+          <Breadcrumbs crumbs={[
+            { name: "Home", href: "/" },
+            { name: "Courses", href: "/courses" },
+            { name: course.name, href: `/courses/${course.slug}` },
+          ]} />
           <div className="flex items-start gap-5">
             <span className="hidden sm:flex h-14 w-14 items-center justify-center rounded-xl bg-blue-600 border border-blue-500 shrink-0">
               <Icon className="h-7 w-7 text-white" aria-hidden="true" />
@@ -51,6 +51,7 @@ export default function CourseDetail() {
               <h1 className="mt-3 font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 max-w-3xl leading-[1.15]">
                 {course.h1}
               </h1>
+              <AnswerBlock answer={COURSE_ANSWERS[course.slug]} />
               <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl">{course.intro}</p>
               <div className="mt-7 flex flex-col sm:flex-row gap-3">
                 <a

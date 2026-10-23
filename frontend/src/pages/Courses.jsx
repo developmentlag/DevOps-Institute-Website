@@ -1,18 +1,21 @@
 import { Link } from "react-router-dom";
 import { Cloud, Cloudy, CloudCog, GitBranch, Container, Terminal, ArrowRight, Clock, MapPin } from "lucide-react";
 import Seo from "@/components/Seo";
+import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
 import { DarkCtaBand } from "@/components/CallButtons";
 import { BUSINESS_NAME, COURSES, buildCourseCatalogSchema, buildBreadcrumbSchema } from "@/data/site";
+import { staticPage } from "@/data/pageMeta";
 
 const ICONS = { cloud: Cloud, cloudy: Cloudy, cloudCog: CloudCog, gitBranch: GitBranch, container: Container, terminal: Terminal };
 
 export default function Courses() {
+  const meta = staticPage("/courses");
   return (
     <div data-testid="courses-page">
       <Seo
-        title="Cloud & DevOps Courses in Mumbai | AWS, Azure, GCP, Kubernetes - DevOps Institute"
+        title={meta.title}
         siteName={BUSINESS_NAME}
-        description="Explore practical cloud courses in Mumbai: AWS, Azure, GCP, DevOps, Kubernetes, Docker, Linux & Terraform. Hands-on training at our Chandivali, Powai campus. Call 083695 18569."
+        description={meta.description}
         jsonLd={[
           buildCourseCatalogSchema(),
           buildBreadcrumbSchema([
@@ -24,10 +27,12 @@ export default function Courses() {
 
       <section className="bg-gradient-to-b from-blue-50 via-white to-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <Breadcrumbs crumbs={[{ name: "Home", href: "/" }, { name: "Courses", href: "/courses" }]} />
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600">Course Catalog</p>
           <h1 className="mt-3 font-heading text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 max-w-3xl leading-[1.15]">
             Cloud &amp; DevOps Courses in Mumbai
           </h1>
+          <AnswerBlock answer={meta.answer} />
           <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl">
             Every course at our Chandivali, Powai campus is taught hands-on, with labs on real cloud platforms. Choose a
             single cloud or build a complete multi-cloud and DevOps skill set.
