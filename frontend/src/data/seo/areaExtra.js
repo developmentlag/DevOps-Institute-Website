@@ -14,7 +14,7 @@ export const AREA_EXTRA = {
     paragraphs: [
       "Plan the visit as a local errand. Save Lodha Supremus, B 1307, Saki Vihar Road, Tunga Village. If you are starting at Powai Lake, Galleria or Hiranandani Gardens, you are going toward Chandivali, not toward the eastern express highway. Nirlon Knowledge Park is a useful intermediate landmark because office traffic already knows it. The institute is not inside the park. It is the Lodha Supremus building on the Saki Vihar side.",
       "Ask three questions when you arrive, because they are not printed with enough precision on the site. What time does the next weekday batch meet, and what time does the weekend batch meet? Which track has seats, the DevOps toolchain or a single cloud? Can you see the room where the labs run? The About page says about 80% of a session is hands-on, and the campus photos show a classroom, but a visit is how you check that the photos match the room.",
-      "Powai learners sometimes assume the course is affiliated with IIT Bombay because the campus is nearby. It is not. The only collaboration line this institute publishes is “In Collaboration With IIT, Microsoft,” and even that line still needs a proof URL. TODO: add that URL. Do not tell a neighbour this is an IIT Bombay programme.",
+      "Powai learners sometimes assume the course is affiliated with IIT Bombay because the campus is nearby. It is not an IIT Bombay programme. The approved affiliations are NASSCOM, IBM, Govt. of India (MEITY), IIT Patna, and an IIT and Microsoft collaboration. Those names are written in words, without affiliation logos.",
     ],
   },
   chandivali: {

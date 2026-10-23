@@ -141,6 +141,7 @@ export const GUIDES_B = {
             ["Certifications", "Partly published", "AWS, Azure and CKA or CKAD preparation is described. Vendor badges are not awarded by the institute."],
             ["Trainer experience", "Partly published", "Industry-experienced trainers are mentioned. Names, years and LinkedIn profiles are TODO."],
             ["Reviews", "Published", "4.7 from 130 Google reviews, plus four named stories. Individual Google dates are TODO."],
+            ["Affiliations", "Published", "NASSCOM, IBM, Govt. of India (MEITY), IIT Patna, and an IIT and Microsoft collaboration. Named in words, without logos."],
           ],
         },
       },

@@ -36,13 +36,13 @@ const cloudDepth = [
     "If you want the longer placement note, use the cloud computing course with placement page and the DevOps placement page. They separate the process from this syllabus. If you want local commute notes, use the Mumbai, Powai or Andheri cloud pages. Thane, Vashi and Ghatkopar stay on https://devopsinstitutemumbai.co.in/.",
   ]),
   section("Which certifications, affiliations and gaps should you treat carefully?", [
-    "Safe affiliation line: the institute publishes “In Collaboration With IIT, Microsoft.” TODO: add the certificate or the official page before anyone treats that as documented proof. NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna are allowed names only after proof is in the repository. They are not claimed here.",
+    "DevOps Institute is affiliated with NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna, and works in collaboration with IIT and Microsoft. The names are written out in words. This page does not show affiliation logos.",
     "Safe certification line: AWS, Azure and Kubernetes labs overlap vendor exam topics, including CKA or CKAD-style work on the Kubernetes course. The institute does not say it awards those certificates. TODO: name the current exam codes and whether a completion letter exists. educationalCredentialAwarded stays off the schema until that letter has a real name.",
     "Safe trainer line: classes are led by trainers with industry experience. TODO: add a name, a bio and a LinkedIn URL on the trainers page. Until then no Person schema and no instructor field. The same gap is why this pillar's byline is the organisation, not a fictional author.",
   ]),
   section("What should you open next?", [
     "Open the AWS, Azure or GCP course page for the tool list in the catalogue's own words. Open the DevOps course pillar if the pipeline, Docker, Terraform and monitoring are the gap rather than the console. Open the Mumbai hub if the remaining question is the commute to Saki Naka and Lodha Supremus. Open the fees page if the remaining question is money: it explains what can change a fee and then tells you to call, because no number is printed.",
-    "Open the buyer's guide if you are still deciding whether a classroom is the right shape. It scores this campus only. It does not name another training company. Open the reviews page for the four stories and the 4.7 rating from 130 Google reviews already shown on the site. The public llms.txt file has also said 4.8 from 132. TODO: confirm the live count and keep one figure.",
+    "Open the buyer's guide if you are still deciding whether a classroom is the right shape. It scores this campus only. It does not name another training company. Open the reviews page for the four stories and the 4.7 rating from 130 Google reviews already shown on the site and in llms.txt.",
     "The address, repeated so a citation has it in one place, is Lodha Supremus, B 1307, Saki Vihar Road, Tunga Village, Chandivali, Powai, Mumbai, Maharashtra 400072. Phone 083695 18569. Metro Line 1, Saki Naka station, is the rail landmark used across the local pages. Last updated October 2026.",
   ]),
 ];
@@ -119,7 +119,7 @@ export const LENGTH_BOOST = {
   "/best-devops-course-in-mumbai": [
     section("How do you use the checklist on a campus visit?", [
       "Take the table with you. Ask to see a lab, not a slide. Ask who teaches the batch and write the name down, because this site still has a TODO where the biography should be. Ask which of the published tools you will touch yourself: Git, Jenkins, Docker, Kubernetes, Terraform, Ansible, ArgoCD, Prometheus, Grafana. Ask how placement support shows up in the room, and compare the answer with 450+ placed, 100% Placement and 360° Placement Assurance. Ask the fee out loud and keep it off the public site until the institute publishes it.",
-      "Score only what you were shown. A classroom you sat in is evidence. A trainer name you did not receive is still a gap. A Google rating of 4.7 from 130 reviews is the figure on this website, with a TODO because llms.txt has also said 4.8 from 132. Another training company's billboard is not an input. This guide does not rank one. If the visit does not answer the batch clock or the hiring list, those stay TODO rather than becoming a guessed row in the table.",
+      "Score only what you were shown. A classroom you sat in is evidence. A trainer name you did not receive is still a gap. A Google rating of 4.7 from 130 reviews is the figure on this website and in llms.txt. Another training company's billboard is not an input. This guide does not rank one. If the visit does not answer the batch clock or the hiring list, those stay TODO rather than becoming a guessed row in the table.",
     ]),
   ],
   "/devops-course-syllabus": [

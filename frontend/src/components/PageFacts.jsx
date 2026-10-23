@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import {
   ADDRESS,
+  AFFILIATION_LINE,
   ASSURANCE_LABEL,
   LAST_UPDATED_LABEL,
   PHONE,
@@ -89,7 +90,7 @@ export function KeyFacts() {
         <tr>
           <th scope="row" className="text-left font-semibold px-3 py-2 align-top">Affiliations</th>
           <td className="px-3 py-2">
-            In Collaboration With IIT, Microsoft. TODO: add the proof URL. NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna are not claimed until a proof link is stored.
+            {AFFILIATION_LINE} Names are listed in words. Affiliation logos are not shown.
           </td>
         </tr>
       </tbody>

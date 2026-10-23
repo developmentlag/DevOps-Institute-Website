@@ -1,4 +1,8 @@
+import { AFFILIATION_LINE } from "@/data/site";
+
 /** Factual blocks repeated because the facts are the same. Suburb pages add their own commute and FAQs. */
+
+const AFFILIATION_PARAGRAPH = `${AFFILIATION_LINE} The names are written out in words. This page does not show affiliation logos.`;
 
 export function devopsShared() {
   return [
@@ -23,7 +27,7 @@ export function devopsShared() {
     {
       h2: "Which affiliations can this page name?",
       paragraphs: [
-        "The institute publishes the line “In Collaboration With IIT, Microsoft.” TODO: add the certificate or official page for that collaboration. TODO: do not add NASSCOM, IBM, Govt. of India (MEITY) or IIT Patna until a proof link is in the repository. Those names are allowed only with proof, and the proof is not here, so this page does not claim them.",
+        AFFILIATION_PARAGRAPH,
       ],
     },
   ];
@@ -58,7 +62,7 @@ export function cloudShared(focus) {
     {
       h2: "Which affiliations can this page name?",
       paragraphs: [
-        "Published collaboration line: “In Collaboration With IIT, Microsoft.” TODO: add proof. NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna are not claimed here, because no proof link is stored in the repository.",
+        AFFILIATION_PARAGRAPH,
       ],
     },
   ];

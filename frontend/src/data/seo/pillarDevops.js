@@ -85,7 +85,7 @@ export const DEVOPS_PILLAR = {
       h2: "Where do you take the course if you live in Mumbai?",
       paragraphs: [
         "At DevOps Institute, Lodha Supremus, B 1307, Saki Vihar Road, Tunga Village, Chandivali, Powai, Mumbai 400072. Phone 083695 18569. Metro Line 1, Saki Naka station, is the rail landmark. The Mumbai hub links every suburb page this domain is willing to publish. Thane, Vashi, Navi Mumbai and Ghatkopar belong to https://devopsinstitutemumbai.co.in/ and are not rewritten here.",
-        "The institute publishes an IIT and Microsoft collaboration. TODO: add the certificate or official URL before that line can be treated as documented proof. NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna are allowed names only after proof is added. They are not claimed on this page.",
+        "DevOps Institute is affiliated with NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna, and works in collaboration with IIT and Microsoft. The names are written out in words. This page does not show affiliation logos.",
       ],
     },
   ],

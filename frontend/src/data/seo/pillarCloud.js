@@ -46,7 +46,7 @@ export const CLOUD_PILLAR = {
     {
       h2: "Where do you take the cloud course in Mumbai?",
       paragraphs: [
-        "At Lodha Supremus, B 1307, Saki Vihar Road, Tunga Village, Chandivali, Powai, Mumbai 400072. Phone 083695 18569. Metro Line 1 to Saki Naka is the rail landmark. Area pages for Powai and Andheri exist for the cloud course, and the Mumbai cloud page is the hub. Thane, Vashi and Ghatkopar stay on https://devopsinstitutemumbai.co.in/. The collaboration line the institute publishes is “In Collaboration With IIT, Microsoft.” TODO: add proof. Other affiliation names are not claimed on this page.",
+        "At Lodha Supremus, B 1307, Saki Vihar Road, Tunga Village, Chandivali, Powai, Mumbai 400072. Phone 083695 18569. Metro Line 1 to Saki Naka is the rail landmark. Area pages for Powai and Andheri exist for the cloud course, and the Mumbai cloud page is the hub. Thane, Vashi and Ghatkopar stay on https://devopsinstitutemumbai.co.in/. DevOps Institute is affiliated with NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna, and works in collaboration with IIT and Microsoft. The names are written out in words. This page does not show affiliation logos.",
       ],
     },
   ],

@@ -9,7 +9,7 @@ import { GUIDES_A } from "@/data/seo/guidesA";
 import { GUIDES_B, SYLLABUS_MODULES } from "@/data/seo/guidesB";
 import { devopsShared, cloudShared } from "@/data/seo/sharedBlocks";
 import { LENGTH_BOOST } from "@/data/seo/lengthBoost";
-import { TESTIMONIALS, GOOGLE_REVIEWS_STATS, GOOGLE_BUSINESS_PROFILE_URLS } from "@/data/site";
+import { AFFILIATION_LINE, TESTIMONIALS, GOOGLE_REVIEWS_STATS, GOOGLE_BUSINESS_PROFILE_URLS } from "@/data/site";
 
 const AREAS = { ...AREA_EAST, ...AREA_WEST };
 
@@ -73,6 +73,20 @@ function areaLinks(slug) {
   ];
 }
 
+function withAffiliationSection(sections) {
+  const list = sections || [];
+  if (JSON.stringify(list).includes("NASSCOM")) return list;
+  return [
+    ...list,
+    {
+      h2: "Which affiliations does DevOps Institute claim?",
+      paragraphs: [
+        `${AFFILIATION_LINE} The names are written out in words. This page does not show affiliation logos.`,
+      ],
+    },
+  ];
+}
+
 function withExtra(base, extra) {
   const sections = [...(base.sections || [])];
   if (extra) sections.push(extra);
@@ -112,7 +126,7 @@ const TRUST = {
       {
         h2: "What review facts are on this website?",
         paragraphs: [
-          `The site data records ${GOOGLE_REVIEWS_STATS.ratingValue} out of 5 from ${GOOGLE_REVIEWS_STATS.reviewCount} Google reviews. The public llms.txt file has also said 4.8 from 132 reviews. TODO: confirm the live Google count and keep one figure. This page shows the figure used by the on-page badge, which is 4.7 from 130.`,
+          `The site shows ${GOOGLE_REVIEWS_STATS.ratingValue} out of 5 from ${GOOGLE_REVIEWS_STATS.reviewCount} Google reviews. llms.txt uses the same figure, 4.7 from 130.`,
           "The four stories below are copied from the testimonials already rendered on the homepage and course pages. They are not a fresh scrape, and they do not include a review date. TODO: add the Google review date beside each quote. TODO: replace the review link below with the Google Business Profile “write a review” URL. The only profile URL stored today is the share link.",
         ],
       },
@@ -215,7 +229,7 @@ export function getSeoPage(path) {
     return {
       route,
       ...page,
-      sections: [...page.sections, ...devopsShared()],
+      sections: withAffiliationSection([...page.sections, ...devopsShared()]),
       links: areaLinks(slug),
       showMap: true,
       crumbs: slug === "mumbai"
@@ -237,7 +251,7 @@ export function getSeoPage(path) {
     return {
       route,
       ...base,
-      sections: [...base.sections, ...cloudShared(topicFocus(path)), ...(LENGTH_BOOST[path] || [])],
+      sections: withAffiliationSection([...base.sections, ...cloudShared(topicFocus(path)), ...(LENGTH_BOOST[path] || [])]),
       links: topicLinks(path),
       showMap: true,
       crumbs: [
@@ -258,7 +272,7 @@ export function getSeoPage(path) {
   return {
     route,
     ...guide,
-    sections: [...(guide.sections || []), ...(LENGTH_BOOST[path] || [])],
+    sections: withAffiliationSection([...(guide.sections || []), ...(LENGTH_BOOST[path] || [])]),
     links: guide.links || [
       { href: "/devops-course-in-mumbai", label: "DevOps course in Mumbai" },
       { href: "/courses/devops", label: "DevOps course" },

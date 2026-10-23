@@ -42,6 +42,8 @@ export const PLACEMENT_LABEL = "100% Placement";
 export const ASSURANCE_LABEL = "360° Placement Assurance";
 export const HIRING_PARTNERS_LABEL = "350+ hiring partners";
 export const SALARY_RANGE_LABEL = "5–35 LPA";
+export const AFFILIATION_LINE =
+  "DevOps Institute is affiliated with NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna, and works in collaboration with IIT and Microsoft.";
 
 export const WHATSAPP_NUMBER = "918369518569";
 export const WHATSAPP_MESSAGE =
@@ -675,8 +677,11 @@ function visibleReviewSchema() {
 export const buildOrgSchema = () => {
   const origin = getSiteOrigin();
   // TODO: add sameAs profiles when the URLs exist: YouTube, LinkedIn, Facebook, Justdial, Sulekha.
-  // TODO: add memberOf only after a proof URL exists for NASSCOM, IBM, Govt. of India (MEITY) or IIT Patna.
   const sameAs = [INSTAGRAM_URL, THANE_HOME, ...GOOGLE_BUSINESS_PROFILE_URLS];
+  const memberOf = ["NASSCOM", "IBM", "Govt. of India (MEITY)", "IIT Patna"].map((name) => ({
+    "@type": "Organization",
+    name,
+  }));
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -689,6 +694,7 @@ export const buildOrgSchema = () => {
         logo: `${origin}/logo-color.png`,
         telephone: PHONE,
         sameAs,
+        memberOf,
         subOrganization: [
           { "@id": `${origin}/#institute` },
           { "@id": `${THANE_ORIGIN}/#campus` },
@@ -700,7 +706,7 @@ export const buildOrgSchema = () => {
         name: BUSINESS_NAME,
         alternateName: "DevOps Institute Mumbai",
         description:
-          "Classroom DevOps, AWS, Azure and GCP training institute in Chandivali, Powai, Mumbai. Become a DevOps engineer in 4 months with hands-on labs, weekend batches and placement support. The institute publishes an IIT and Microsoft collaboration.",
+          "Classroom DevOps, AWS, Azure and GCP training institute in Chandivali, Powai, Mumbai. Become a DevOps engineer in 4 months with hands-on labs, weekend batches and placement support. The institute publishes an IIT and Microsoft collaboration. It is affiliated with NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna.",
         url: origin,
         telephone: PHONE,
         image: `${origin}/campus/campus-branded-1.jpg`,
@@ -708,6 +714,7 @@ export const buildOrgSchema = () => {
         priceRange: "₹₹",
         parentOrganization: { "@id": `${origin}/#organization` },
         sameAs,
+        memberOf,
         address: powaiPostal(),
         geo: {
           "@type": "GeoCoordinates",

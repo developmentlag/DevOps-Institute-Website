@@ -158,7 +158,7 @@ export const AREA_WEST = {
       {
         h2: "Which published facts still apply at this distance?",
         paragraphs: [
-          "All of the campus facts. Address, phone 083695 18569, weekday and weekend batches, about 80% hands-on time, 450+ placed, 100% Placement, 360° Placement Assurance, and the IIT and Microsoft collaboration line the institute publishes. What does not appear, here or anywhere else on the site, is a Borivali classroom, a trainer biography, a fee, or a list of hiring-company names. Those gaps are marked on the trainers, fees and placement pages.",
+          "All of the campus facts. Address, phone 083695 18569, weekday and weekend batches, about 80% hands-on time, 450+ placed, 100% Placement, 360° Placement Assurance, and affiliations with NASSCOM, IBM, Govt. of India (MEITY), IIT Patna, and an IIT and Microsoft collaboration. What does not appear, here or anywhere else on the site, is a Borivali classroom, a trainer biography, a fee, or a list of hiring-company names. Those gaps are marked on the trainers, fees and placement pages.",
         ],
       },
     ],

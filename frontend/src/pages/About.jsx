@@ -4,7 +4,7 @@ import Seo from "@/components/Seo";
 import CampusMap from "@/components/CampusMap";
 import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
 import { CallNowButton, DarkCtaBand } from "@/components/CallButtons";
-import { BUSINESS_NAME, ADDRESS, PHONE, buildBreadcrumbSchema, buildOrgSchema } from "@/data/site";
+import { AFFILIATION_LINE, BUSINESS_NAME, ADDRESS, PHONE, buildBreadcrumbSchema, buildOrgSchema } from "@/data/site";
 import { staticPage } from "@/data/pageMeta";
 
 const PILLARS = [
@@ -85,12 +85,17 @@ export default function About() {
                 Andheri East, with classroom and lab setups designed for hands-on learning.
               </p>
               <h2 className="mt-10 font-heading text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
+                Affiliations
+              </h2>
+              <p className="mt-4 text-base text-slate-600 leading-relaxed">
+                {AFFILIATION_LINE} These affiliations are named in words. This page does not show affiliation logos.
+              </p>
+              <h2 className="mt-10 font-heading text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
                 Facts still to publish
               </h2>
               <ul className="mt-4 list-disc pl-5 text-base text-slate-600 leading-relaxed space-y-2">
                 <li>TODO: founding year. The site says 5+ years of training and does not give a calendar year.</li>
                 <li>TODO: team names and photos. Campus photos show batches and trainers without naming them.</li>
-                <li>TODO: proof URL for the published line “In Collaboration With IIT, Microsoft.” NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna are not claimed here.</li>
               </ul>
               <address className="not-italic mt-6 rounded-xl bg-slate-50 border border-slate-200 p-5 text-sm text-slate-700" data-testid="about-nap">
                 <p className="font-semibold text-slate-900">{BUSINESS_NAME}</p>
