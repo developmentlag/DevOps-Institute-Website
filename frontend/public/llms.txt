@@ -43,7 +43,7 @@ Named mentors at the Powai campus. Each person is a mentor at DevOps Institute. 
 - Priyanka Gawada — Technology Trainer, Mastek. Java, AWS, DevOps, Jenkins, Python. https://www.linkedin.com/in/priyanka-gawada-09106618/
 - Ankit S. — Lead Module DevOps SRE Engineer, Wipro. 9+ years. DevSecOps, Kubernetes, Terraform, AWS. https://www.linkedin.com/in/ankitshukla11/
 - Mehar Nafis — GenAI and cloud architect. GenAI Solution Architect, Frontier Business Systems Pvt. Ltd. Generative AI on AWS and Azure. https://www.linkedin.com/in/meharnafis/
-- Armugharaj Nadar — Senior DevOps Engineer and Senior Cloud Platform Engineer, Zeidler Group. 12+ years. AWS, Terraform, Kubernetes, CI/CD. https://www.linkedin.com/in/senior-devops-engineer/
+- Armugharaj Nadar — Senior Cloud Platform Engineer, Zeidler Group. Formerly Senior DevOps Engineer (Manager) at Reliance Jio. 12+ years. AWS, Terraform, Ansible, Docker, Kubernetes, Jenkins. https://www.linkedin.com/in/senior-devops-engineer/
 
 ## Key facts
 - Affiliated with NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna

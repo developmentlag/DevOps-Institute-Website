@@ -104,14 +104,14 @@ export const MENTORS = [
   {
     slug: "armugharaj-nadar",
     name: "Armugharaj Nadar",
-    headline: "Senior DevOps and cloud platform engineer. Mentor at DevOps Institute.",
-    jobTitle: "Senior DevOps Engineer and Senior Cloud Platform Engineer",
+    headline: "Senior Cloud Platform Engineer. Mentor at DevOps Institute.",
+    jobTitle: "Senior Cloud Platform Engineer",
     employer: "Zeidler Group",
     experience: "12+ years",
-    expertise: ["AWS", "Terraform", "Ansible", "Docker", "Kubernetes", "CI/CD", "FinOps"],
+    expertise: ["AWS", "Terraform", "Ansible", "Docker", "Kubernetes", "Jenkins"],
     linkedin: "https://www.linkedin.com/in/senior-devops-engineer/",
     detail:
-      "Senior Cloud Platform Engineer and Senior DevOps Engineer at Zeidler Group, based in Navi Mumbai. Earlier: Senior Engineer DevOps (Manager) at Reliance Jio in Mumbai. The profile states 12+ years in DevOps and about 13 years in total, covering AWS, Terraform, CloudFormation, Ansible, Docker, Kubernetes, Jenkins and Bitbucket CI/CD, Prometheus, CloudWatch, WAF, GuardDuty, FinOps and AIOps. AWS Certified Solutions Architect (SAA-C03) is listed with the profile.",
+      "Senior Cloud Platform Engineer at Zeidler Group, and also a Senior DevOps Engineer there. Earlier: Senior DevOps Engineer (Manager) at Reliance Jio in Mumbai. About 12+ years in DevOps, across AWS, Terraform, Ansible, Docker, Kubernetes and Jenkins.",
   },
 ];
 
