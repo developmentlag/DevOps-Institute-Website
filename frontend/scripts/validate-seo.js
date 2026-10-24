@@ -6,7 +6,7 @@ const fs = require("fs");
 const path = require("path");
 
 const BUILD_DIR = path.resolve(__dirname, "../build");
-const SITE_ORIGIN = "https://devopsinstitute.co.in";
+const SITE_ORIGIN = "https://www.devopsinstitute.co.in";
 
 function walk(dir, acc = []) {
   if (!fs.existsSync(dir)) return acc;

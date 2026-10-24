@@ -7,7 +7,7 @@ const fs = require("fs");
 const path = require("path");
 
 const KEY = "7c4e9a1b8d2f46c0a5e3b917d6f04a28";
-const HOST = "devopsinstitute.co.in";
+const HOST = "www.devopsinstitute.co.in";
 const ENDPOINT = "https://api.indexnow.org/indexnow";
 
 async function main() {

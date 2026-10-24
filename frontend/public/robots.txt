@@ -1,4 +1,4 @@
-# robots.txt for DevOps Institute (https://devopsinstitute.co.in)
+# robots.txt for DevOps Institute (https://www.devopsinstitute.co.in)
 User-agent: *
 Allow: /
 Disallow: /api/
@@ -40,5 +40,5 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://devopsinstitute.co.in/sitemap.xml
-Host: https://devopsinstitute.co.in
+Sitemap: https://www.devopsinstitute.co.in/sitemap.xml
+Host: https://www.devopsinstitute.co.in
