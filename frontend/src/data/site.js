@@ -1,4 +1,4 @@
-export const SITE_ORIGIN = "https://devopsinstitute.co.in";
+export const SITE_ORIGIN = "https://www.devopsinstitute.co.in";
 
 // In the browser, canonicals and JSON-LD follow the live origin. Prerender
 // runs without a window, so those URLs use the public site origin.

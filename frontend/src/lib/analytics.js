@@ -58,7 +58,7 @@ export const phoneFromHref = (href) => {
     return decodeURIComponent(href.slice(4)).replace(/\s+/g, "");
   }
   try {
-    const url = new URL(href, "https://devopsinstitute.co.in");
+    const url = new URL(href, "https://www.devopsinstitute.co.in");
     if (/wa\.me$/i.test(url.hostname)) {
       return decodeURIComponent(url.pathname.replace(/^\//, "").split("/")[0] || "");
     }
@@ -72,7 +72,7 @@ export const shortLinkUrl = (href) => {
   if (!href) return "";
   if (/^tel:/i.test(href)) return href.slice(0, GA_VALUE_LIMIT);
   try {
-    const url = new URL(href, "https://devopsinstitute.co.in");
+    const url = new URL(href, "https://www.devopsinstitute.co.in");
     return `${url.origin}${url.pathname}`.slice(0, GA_VALUE_LIMIT);
   } catch {
     return String(href).slice(0, GA_VALUE_LIMIT);
@@ -84,7 +84,7 @@ export const withSourceRef = (href, ref) => {
   const safeRef = String(ref).replace(/[\r\n]+/g, " ").trim();
   if (!safeRef) return href;
   try {
-    const url = new URL(href, "https://devopsinstitute.co.in");
+    const url = new URL(href, "https://www.devopsinstitute.co.in");
     const text = url.searchParams.get("text") || "";
     const stripped = text.replace(/\n*Ref:\s*[^\n]*$/i, "").trimEnd();
     const nextText = stripped ? `${stripped}\n\nRef: ${safeRef}` : `Ref: ${safeRef}`;

@@ -8,16 +8,16 @@ DevOps Institute provides practical, lab-first technology training for students 
 - **Direct Phone:** 083695 18569
 - **WhatsApp:** +91 8369518569
 - **Google Reviews & Rating:** 4.7 / 5.0 Star Rating across 130 Verified Google Reviews (5+ Years of Training Excellence)
-- **Primary Website:** https://devopsinstitute.co.in
+- **Primary Website:** https://www.devopsinstitute.co.in
 
 ## Core Courses & Certifications
 
-- [DevOps Engineering Course](https://devopsinstitute.co.in/courses/devops): Complete CI/CD pipeline automation, Git, Jenkins, Docker, Kubernetes, Terraform, and Linux administration.
-- [AWS Cloud Course](https://devopsinstitute.co.in/courses/aws): Amazon Web Services infrastructure, IAM, EC2, S3, VPC networking, RDS databases, and CloudWatch monitoring.
-- [Microsoft Azure Course](https://devopsinstitute.co.in/courses/azure): Azure Virtual Machines, Azure VNet, Blob Storage, Entra ID (Azure AD), Resource Manager, and ARM/Bicep templates.
-- [Google Cloud Platform (GCP) Course](https://devopsinstitute.co.in/courses/gcp): Google Compute Engine, Cloud Storage, VPC networks, IAM, BigQuery fundamentals, and Google Kubernetes Engine (GKE).
-- [Kubernetes & Docker Training](https://devopsinstitute.co.in/courses/kubernetes-docker): Containerization, Dockerfiles, multi-stage builds, Kubernetes Pods, Deployments, Services, Helm charts, and cluster operations.
-- [Linux & Terraform Course](https://devopsinstitute.co.in/courses/linux-terraform): Enterprise Linux administration, Bash shell scripting, and Infrastructure as Code (IaC) with Terraform state management.
+- [DevOps Engineering Course](https://www.devopsinstitute.co.in/courses/devops): Complete CI/CD pipeline automation, Git, Jenkins, Docker, Kubernetes, Terraform, and Linux administration.
+- [AWS Cloud Course](https://www.devopsinstitute.co.in/courses/aws): Amazon Web Services infrastructure, IAM, EC2, S3, VPC networking, RDS databases, and CloudWatch monitoring.
+- [Microsoft Azure Course](https://www.devopsinstitute.co.in/courses/azure): Azure Virtual Machines, Azure VNet, Blob Storage, Entra ID (Azure AD), Resource Manager, and ARM/Bicep templates.
+- [Google Cloud Platform (GCP) Course](https://www.devopsinstitute.co.in/courses/gcp): Google Compute Engine, Cloud Storage, VPC networks, IAM, BigQuery fundamentals, and Google Kubernetes Engine (GKE).
+- [Kubernetes & Docker Training](https://www.devopsinstitute.co.in/courses/kubernetes-docker): Containerization, Dockerfiles, multi-stage builds, Kubernetes Pods, Deployments, Services, Helm charts, and cluster operations.
+- [Linux & Terraform Course](https://www.devopsinstitute.co.in/courses/linux-terraform): Enterprise Linux administration, Bash shell scripting, and Infrastructure as Code (IaC) with Terraform state management.
 
 ## Key Information
 - **Location Advantage:** Situated in Chandivali, Powai — accessible from Andheri East, Saki Naka Metro, Hiranandani, Ghatkopar, and Kanjurmarg.

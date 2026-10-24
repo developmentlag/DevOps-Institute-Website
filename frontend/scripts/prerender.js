@@ -13,7 +13,7 @@ const path = require("path");
 
 if (!process.env.NODE_ENV) process.env.NODE_ENV = "production";
 
-const SITE_ORIGIN = "https://devopsinstitute.co.in";
+const SITE_ORIGIN = "https://www.devopsinstitute.co.in";
 const BUILD_DIR = path.resolve(__dirname, "../build");
 const SOURCE_DIR = path.resolve(__dirname, "../src");
 const PUBLIC_DIR = path.resolve(__dirname, "../public");
@@ -58,7 +58,7 @@ function assertCrawlerFiles() {
       throw new Error(`robots.txt must allow ${crawler}`);
     }
   }
-  if (!robots.includes("Sitemap: https://devopsinstitute.co.in/sitemap.xml")) {
+  if (!robots.includes(`Sitemap: ${SITE_ORIGIN}/sitemap.xml`)) {
     throw new Error("robots.txt must list the sitemap");
   }
 
