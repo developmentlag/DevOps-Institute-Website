@@ -57,7 +57,7 @@ function SyllabusTable({ modules }) {
       </div>
       <table className="mt-4 w-full text-sm border border-slate-200">
         <caption className="text-left font-semibold px-3 py-2 bg-slate-50 border-b border-slate-200">
-          DevOps course syllabus. Hours stay TODO until published.
+          DevOps course syllabus. Per-module hours are not published.
         </caption>
         <thead>
           <tr>
@@ -94,7 +94,7 @@ function ReviewsBlock() {
             <p className="font-semibold text-slate-900">{item.name}</p>
             <p className="text-sm text-slate-600">{item.role}. {item.company}.</p>
             <blockquote className="mt-2 text-slate-800">{item.quote}</blockquote>
-            <p className="mt-2 text-sm text-slate-500">TODO: add the Google review date. Rating on the card: {item.rating} out of 5.</p>
+            <p className="mt-2 text-sm text-slate-500">Google review dates are not published. Rating on the card: {item.rating} out of 5.</p>
           </li>
         ))}
       </ul>
@@ -104,7 +104,7 @@ function ReviewsBlock() {
         </a>
       </p>
       <p className="mt-2 text-sm text-slate-600">
-        TODO: this is the stored Google Business Profile share link, not a write-a-review URL. A place id is not in the repository.
+        This is the stored Google Business Profile share link, not a write-a-review URL. A place id is not published.
       </p>
     </section>
   );
@@ -148,8 +148,8 @@ function PlacementsBlock() {
             <p className="font-semibold text-slate-900">{item.name}</p>
             <p className="text-sm text-slate-700">{item.role}</p>
             <p className="text-sm text-slate-600">Published detail: {item.company}</p>
-            <p className="text-sm text-slate-600">TODO: employer name is not in the repository.</p>
-            <p className="text-sm text-slate-600">TODO: consented photo is not in the repository.</p>
+            <p className="text-sm text-slate-600">Employer name is not published.</p>
+            <p className="text-sm text-slate-600">A consented photo is not published.</p>
             <p className="mt-2 text-slate-800">{item.quote}</p>
           </li>
         ))}

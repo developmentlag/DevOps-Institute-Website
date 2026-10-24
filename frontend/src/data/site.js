@@ -676,7 +676,7 @@ function visibleReviewSchema() {
 
 export const buildOrgSchema = () => {
   const origin = getSiteOrigin();
-  // TODO: add sameAs profiles when the URLs exist: YouTube, LinkedIn, Facebook, Justdial, Sulekha.
+  // sameAs profiles can be added when the URLs exist: YouTube, LinkedIn, Facebook, Justdial, Sulekha.
   const sameAs = [INSTAGRAM_URL, THANE_HOME, ...GOOGLE_BUSINESS_PROFILE_URLS];
   const memberOf = ["NASSCOM", "IBM", "Govt. of India (MEITY)", "IIT Patna"].map((name) => ({
     "@type": "Organization",

@@ -71,7 +71,7 @@ export default function Home() {
               <h1 className="mt-5 font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.12]">
                 Become a <span className="text-blue-700">DevOps Engineer</span> in Just 4 Months
               </h1>
-              <AnswerBlock answer={HOME_META.answer} mentors={false} />
+              <AnswerBlock answer={HOME_META.answer} />
               <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl">
                 100% practical <strong className="font-semibold text-slate-800">classroom DevOps training</strong> in
                 Chandivali, Powai — with hands-on AWS, Azure &amp; GCP labs, weekend &amp; weekday batches, and

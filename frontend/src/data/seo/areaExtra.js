@@ -78,7 +78,7 @@ export const AREA_EXTRA = {
     paragraphs: [
       "Decide the path: central line north from Sion, or the Eastern Express Highway north, then west to Saki Naka and Saki Vihar Road. Sion Circle and Sion Hospital tell you where you started. They do not tell you where class is. Class is Lodha Supremus, B 1307. If that path on a weekday defeats the point of studying, weekend batches exist. Test the path once.",
       "Decide the track. DevOps if you want the pipeline and the cluster. Cloud if you want AWS, Azure and GCP consoles first. Kubernetes if containers are the only gap. The three are linked from this page. They share the Powai room and the published placement lines: 450+ placed, 100% Placement, 360° Placement Assurance.",
-      "Do not decide a batch size or a module hour from this page. Mentor names are on the trainers page. The syllabus page says TODO where a module hour would otherwise be invented.",
+      "Do not decide a batch size or a module hour from this page. Mentor names are on the trainers page. The syllabus page leaves the hour blank where a module hour would otherwise be invented.",
     ],
   },
   andheri: {

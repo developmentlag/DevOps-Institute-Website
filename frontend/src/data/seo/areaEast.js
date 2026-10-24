@@ -200,7 +200,7 @@ export const AREA_EAST = {
       { q: "Is the course only for experienced engineers?", a: "No. Basic computer skills are the published starting point. Working professionals and freshers both appear in the course descriptions." },
       { q: "Where are alumni names?", a: "On the placements page and in the testimonials already on the site. This page does not add new names." },
       { q: "How do I get the syllabus?", a: "Open the DevOps course syllabus. It is also offered as a printable HTML page." },
-      { q: "Are fees on this page?", a: "No. Call for the current fees. EMI and scholarships are not confirmed in the repository." },
+      { q: "Are fees on this page?", a: "No. Call for the current fees. EMI and scholarships are not confirmed on this site." },
     ],
   },
   mulund: {
@@ -283,7 +283,7 @@ export const AREA_EAST = {
       { q: "Is the Eastern Express Highway relevant?", a: "Yes, as the road north out of Sion. You still need to turn west to reach Chandivali." },
       { q: "Can working professionals in Sion use weekend batches?", a: `Yes. Call ${phone} and ask for the weekend batch if weekday travel is too heavy.` },
       { q: "Where do I read placement details?", a: "On the DevOps course in Mumbai with placement page. It keeps the published claims and the alumni names already on the site." },
-      { q: "Does the syllabus list hours per module?", a: "Not yet. The syllabus page lists tools and published projects, and marks hours as TODO until the institute adds them." },
+      { q: "Does the syllabus list hours per module?", a: "Not yet. The syllabus page lists tools and published projects, and marks hours as not published until the institute adds them." },
       { q: "What phone number is printed in the footer?", a: `083695 18569, the Powai campus. The address in the footer matches Lodha Supremus, Chandivali.` },
     ],
   },

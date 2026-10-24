@@ -1,19 +1,20 @@
 import { Link } from "react-router-dom";
 import { MENTORS, mentorInitials } from "@/data/mentors";
 
-function MentorAvatar({ mentor }) {
+function MentorAvatar({ mentor, size = 96 }) {
   const initials = mentorInitials(mentor.name);
+  const px = `${size}px`;
   return (
-    <span className="relative inline-flex h-24 w-24 shrink-0 overflow-hidden rounded-full bg-blue-700">
+    <span className="relative inline-flex shrink-0 overflow-hidden rounded-full bg-blue-700" style={{ width: px, height: px }}>
       <span className="absolute inset-0 flex items-center justify-center text-base font-bold tracking-wide text-white" aria-hidden="true">
         {initials}
       </span>
       <img
         src={`/mentors/${mentor.slug}.jpg`}
         alt={`${mentor.name} portrait`}
-        width="96"
-        height="96"
-        className="relative h-24 w-24 rounded-full object-cover"
+        width={size}
+        height={size}
+        className="relative h-full w-full rounded-full object-cover"
         onError={(event) => {
           event.currentTarget.style.display = "none";
         }}
@@ -86,12 +87,22 @@ export function MentorCards() {
 
 export function MentorTeaser() {
   return (
-    <aside className="mt-4 max-w-3xl rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700">
+    <aside className="mt-4 max-w-3xl rounded-lg border border-slate-200 bg-white px-4 py-4 text-sm text-slate-700">
       <p className="font-semibold text-slate-900">Learn from industry mentors</p>
-      <p className="mt-1">
-        Classes draw on mentors who work in cloud, DevOps, delivery and AI/ML roles. The trainers page lists each person, the employer when the profile states one, and a LinkedIn profile.
-      </p>
-      <p className="mt-2">
+      <ul className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {MENTORS.map((mentor) => (
+          <li key={mentor.slug} className="flex items-start gap-3">
+            <MentorAvatar mentor={mentor} size={64} />
+            <div>
+              <p className="font-semibold text-slate-900">{mentor.name}</p>
+              <p className="text-slate-600">{mentor.jobTitle}</p>
+              <EmployerLine mentor={mentor} />
+              <LinkedInLink mentor={mentor} />
+            </div>
+          </li>
+        ))}
+      </ul>
+      <p className="mt-3">
         <Link to="/trainers" className="font-semibold text-blue-700 hover:text-blue-800">
           Meet the mentors
         </Link>

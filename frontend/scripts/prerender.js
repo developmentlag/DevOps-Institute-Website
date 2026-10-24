@@ -180,6 +180,9 @@ function assertPage(page, html) {
   if (/\bguaranteed\b/i.test(rootHtml) || /\bguarantee\b/i.test(rootHtml)) {
     throw new Error(`${page.route} contains the word guarantee`);
   }
+  if (rootHtml.includes("TODO") || /not in the repository/i.test(rootHtml)) {
+    throw new Error(`${page.route} contains a developer note (TODO or "not in the repository")`);
+  }
   return description;
 }
 

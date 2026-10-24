@@ -60,7 +60,7 @@ export function KeyFacts() {
       <tbody>
         <tr className="border-b border-slate-200">
           <th scope="row" className="text-left font-semibold px-3 py-2 align-top w-36">Duration</th>
-          <td className="px-3 py-2">4 months to become job-ready, as published. TODO: a weekly hour grid is not in the repository.</td>
+          <td className="px-3 py-2">4 months to become job-ready, as published. A weekly hour grid is not published.</td>
         </tr>
         <tr className="border-b border-slate-200">
           <th scope="row" className="text-left font-semibold px-3 py-2 align-top">Mode</th>
@@ -82,7 +82,7 @@ export function KeyFacts() {
         </tr>
         <tr className="border-b border-slate-200">
           <th scope="row" className="text-left font-semibold px-3 py-2 align-top">Certifications</th>
-          <td className="px-3 py-2">Labs overlap AWS, Azure and Kubernetes exam topics. TODO: the repository does not name a certificate this institute awards.</td>
+          <td className="px-3 py-2">Labs overlap AWS, Azure and Kubernetes exam topics. This site does not name a certificate the institute awards.</td>
         </tr>
         <tr className="border-b border-slate-200">
           <th scope="row" className="text-left font-semibold px-3 py-2 align-top">Placement</th>
