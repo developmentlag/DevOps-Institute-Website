@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { MentorTeaser } from "@/components/Mentors";
 import {
   ADDRESS,
   AFFILIATION_LINE,
@@ -102,24 +103,13 @@ export function UpdatedLine() {
   return <p className="mt-3 text-sm text-slate-500">Last updated: {LAST_UPDATED_LABEL}</p>;
 }
 
-export function TrainerNote() {
-  return (
-    <aside className="mt-4 max-w-3xl rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-slate-700">
-      <p className="font-semibold text-slate-900">Trainer</p>
-      <p className="mt-1">
-        TODO: trainer name, a short bio and a LinkedIn URL are not in the repository. The About page says classes are led by trainers with industry experience. Call {PHONE} to ask who teaches the next batch. Person schema stays off until that profile exists.
-      </p>
-    </aside>
-  );
-}
-
-export function AnswerBlock({ answer }) {
+export function AnswerBlock({ answer, mentors = true }) {
   return (
     <>
       <DirectAnswer>{answer}</DirectAnswer>
       <KeyFacts />
       <UpdatedLine />
-      <TrainerNote />
+      {mentors ? <MentorTeaser /> : null}
     </>
   );
 }

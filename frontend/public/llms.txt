@@ -32,6 +32,19 @@ DevOps Institute provides practical, lab-first technology training for students 
 - Powai, Mumbai: Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali, Powai, Mumbai, Maharashtra 400072. Phone: 083695 18569. https://www.devopsinstitute.co.in/
 - Sister brand: Data Engineering Institute (AI Engineer & Agentic AI Course), Kalpataru Prime, Thane 400604. Phone: 099870 58393. https://datainstitute.in/
 
+## Mentors
+Named mentors at the Powai campus. Each person is a mentor at DevOps Institute. The employer is their current job, written in words, and is not an endorsement. Profiles: https://www.devopsinstitute.co.in/trainers
+
+- Yogesh Devpura — DevOps Architect, Simple Logic IT Pvt Ltd. 18+ years. AWS, Kubernetes (EKS), CI/CD, cloud transformation. https://www.linkedin.com/in/yogesh-devpura-baa8366
+- Sirin Ali — Subject Matter Expert, CloudThat. Microsoft Certified Trainer. 11+ years. Azure, Kubernetes, Terraform, Ansible. https://www.linkedin.com/in/sirin-ali/
+- Ninad Samudre — DevOps Tech Lead, CloudThat. Docker, Kubernetes, CI/CD. CKA and CKAD. https://www.linkedin.com/in/ninad-samudre-19439b1a5/
+- Amit Mishra — Delivery Solution Architect, Databricks. 18+ years. Multi-cloud architecture, data platforms and MLOps. Not a DevOps job title. https://www.linkedin.com/in/amit-mishra-aa77477b/
+- Arshad Mitha — General Manager, Mathcoms. Project management, AWS, Azure, VMware, Jenkins, Terraform, Git. https://www.linkedin.com/in/arshadmitha/
+- Priyanka Gawada — Technology Trainer, Mastek. Java, AWS, DevOps, Jenkins, Python. https://www.linkedin.com/in/priyanka-gawada-09106618/
+- Ankit S. — Lead Module DevOps SRE Engineer, Wipro. 9+ years. DevSecOps, Kubernetes, Terraform, AWS. https://www.linkedin.com/in/ankitshukla11/
+- Mehar Nafis — GenAI and cloud architect. GenAI Solution Architect, Frontier Business Systems Pvt. Ltd. Generative AI on AWS and Azure. https://www.linkedin.com/in/meharnafis/
+- Armugharaj Nadar — Senior DevOps Engineer and Senior Cloud Platform Engineer, Zeidler Group. 12+ years. AWS, Terraform, Kubernetes, CI/CD. https://www.linkedin.com/in/senior-devops-engineer/
+
 ## Key facts
 - Affiliated with NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna
 - In Collaboration With IIT, Microsoft

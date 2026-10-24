@@ -83,6 +83,7 @@ export default function Footer() {
             <li><Link to="/about" data-testid="footer-about-link" className="hover:text-sky-400 transition-colors">About DevOps Institute</Link></li>
             <li><Link to="/courses" data-testid="footer-courses-link" className="hover:text-sky-400 transition-colors">All Courses</Link></li>
             <li><Link to="/faqs" data-testid="footer-faqs-link" className="hover:text-sky-400 transition-colors">FAQs</Link></li>
+            <li><Link to="/trainers" data-testid="footer-trainers-link" className="hover:text-sky-400 transition-colors">Trainers</Link></li>
             <li><Link to="/contact" data-testid="footer-contact-link" className="hover:text-sky-400 transition-colors">Contact Us</Link></li>
             <li><Link to="/privacy-policy" data-testid="footer-privacy-link" className="hover:text-sky-400 transition-colors">Privacy Policy</Link></li>
             <li>

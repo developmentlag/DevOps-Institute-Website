@@ -1,3 +1,4 @@
+import { buildMentorPersonSchemas } from "@/data/mentors";
 import {
   ADDRESS,
   GOOGLE_REVIEWS_STATS,
@@ -99,6 +100,7 @@ export function buildSeoSchema(page) {
     );
   }
   if (page.route.group === "guide" || page.route.group === "trust") blocks.push(article(page));
+  if (path === "/trainers") blocks.push(...buildMentorPersonSchemas());
   if (path === "/devops-course-in-mumbai" || path === "/cloud-computing-course-in-mumbai" || path === "/sitemap") {
     const origin = getSiteOrigin();
     blocks.push({

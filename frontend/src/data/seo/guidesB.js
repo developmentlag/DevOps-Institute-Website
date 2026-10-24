@@ -139,7 +139,7 @@ export const GUIDES_B = {
             ["Batch size", "TODO", "Not published. Ask before you enrol."],
             ["Placement process", "Partly published", "Resume support, mock interviews, career guidance, 450+ placed, 100% Placement, 360° Placement Assurance. Company list TODO."],
             ["Certifications", "Partly published", "AWS, Azure and CKA or CKAD preparation is described. Vendor badges are not awarded by the institute."],
-            ["Trainer experience", "Partly published", "Industry-experienced trainers are mentioned. Names, years and LinkedIn profiles are TODO."],
+            ["Trainer experience", "Published", "Named mentors, roles, employers and LinkedIn profiles are on the trainers page. Years appear only where a profile states them."],
             ["Reviews", "Published", "4.7 from 130 Google reviews, plus four named stories. Individual Google dates are TODO."],
             ["Affiliations", "Published", "NASSCOM, IBM, Govt. of India (MEITY), IIT Patna, and an IIT and Microsoft collaboration. Named in words, without logos."],
           ],
@@ -164,7 +164,7 @@ export const GUIDES_B = {
     faqs: [
       { q: "Does this page rank other institutes?", a: "No. It gives a checklist and applies it only to DevOps Institute's Powai campus." },
       { q: "Is batch size published?", a: "No. TODO: add the maximum batch size." },
-      { q: "Are trainers named?", a: "No. TODO: add a name, bio and LinkedIn URL on the trainers page." },
+      { q: "Are trainers named?", a: "Yes. The trainers page lists each mentor, the current employer in plain text, and a LinkedIn profile." },
       { q: "What review score is on the site?", a: "4.7 from 130 Google reviews, as shown in the site data and on the review badge." },
       { q: "Is self-paced available?", a: "No." },
       { q: "How do I visit before I decide?", a: `Call ${phone} and use the map. The address is the Powai campus.` },
