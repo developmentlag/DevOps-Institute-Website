@@ -523,7 +523,7 @@ export const COURSE_CARDS = [
 export const WHY_CHOOSE = [
   { title: "Practical, Lab-First Training", desc: "Every concept is followed by a guided lab on real cloud services, so you build skills by doing, not just listening." },
   { title: "Multi-Cloud Expertise", desc: "Train across AWS, Azure and GCP under one roof and understand how the platforms compare in real projects." },
-  { title: "Industry-Experienced Trainers", desc: "Sessions are led by trainers with hands-on industry experience in cloud, DevOps and infrastructure roles." },
+  { title: "Industry-Experienced Trainers", desc: "Sessions draw on mentors who work in cloud, DevOps, platform and GenAI roles. Names, employers and LinkedIn profiles are on the trainers page." },
   { title: "Weekday & Weekend Batches", desc: "Flexible batch options for college students and working professionals across Mumbai." },
   { title: "Career & Interview Guidance", desc: "Resume support, mock interviews and guidance on cloud and DevOps career paths in Mumbai's IT market." },
   { title: "Easy to Reach Campus", desc: "Located at Lodha Supremus on Saki Vihar Road, minutes from Chandivali, Powai, Andheri East and Hiranandani." },

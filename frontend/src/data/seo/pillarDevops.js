@@ -78,7 +78,7 @@ export const DEVOPS_PILLAR = {
       h2: "What should you read next on this site?",
       paragraphs: [
         "Read the Mumbai hub if the remaining question is how you will reach Chandivali. Read the fees page if the remaining question is money: it explains what can change a fee and then tells you to call, because no number is printed. Read the buyer's guide if you are still deciding whether a classroom course is the right shape. It scores this institute only against a checklist, and it names no other training company.",
-        "Read the reviews page for the four student stories and the 4.7 rating from 130 Google reviews already shown on the site. Read the placements page for how 450+ placed, 100% Placement and 360° Placement Assurance are worded, and for the alumni names the site actually has. Read the trainers page to see the honest gap: industry-experienced trainers are mentioned, and a named biography is not.",
+        "Read the reviews page for the four student stories and the 4.7 rating from 130 Google reviews already shown on the site. Read the placements page for how 450+ placed, 100% Placement and 360° Placement Assurance are worded, and for the alumni names the site actually has. Read the trainers page for the named mentors, their current employers and LinkedIn profiles.",
       ],
     },
     {

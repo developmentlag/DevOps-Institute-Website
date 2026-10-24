@@ -32,6 +32,19 @@ DevOps Institute provides practical, lab-first technology training for students 
 - Powai, Mumbai: Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali, Powai, Mumbai, Maharashtra 400072. Phone: 083695 18569. https://www.devopsinstitute.co.in/
 - Sister brand: Data Engineering Institute (AI Engineer & Agentic AI Course), Kalpataru Prime, Thane 400604. Phone: 099870 58393. https://datainstitute.in/
 
+## Mentors
+Named mentors at the Powai campus. Each person is a mentor at DevOps Institute. The employer is their current job, written in words, and is not an endorsement. Profiles: https://www.devopsinstitute.co.in/trainers
+
+- Yogesh Devpura — DevOps Architect, 18+ years. Formerly VP, Lead DevOps & Architect at ICICI Securities. No current employer is stated. Kubernetes, ArgoCD, GitOps, Terraform, CI/CD, AWS. https://www.linkedin.com/in/yogesh-devpura-baa8366
+- Sirin Ali — Subject Matter Expert, CloudThat. Microsoft Certified Trainer. 13+ years. Kubernetes, OpenShift, Docker, Azure, Ansible, Terraform. https://www.linkedin.com/in/sirin-ali/
+- Ninad Samudre — DevOps Tech Lead, CloudThat. 10+ years. Docker, Kubernetes, Amazon EKS, cybersecurity. https://www.linkedin.com/in/ninad-samudre-19439b1a5/
+- Amit Mishra — Delivery Solution Architect, Databricks. 18+ years. Multi-cloud and hybrid architecture, data platforms and cloud migration. Not a DevOps job title. https://www.linkedin.com/in/amit-mishra-aa77477b/
+- Arshad Mitha — Project Manager, Mathcoms. Project and delivery leader with cloud and DevOps experience. 9+ years. https://www.linkedin.com/in/arshadmitha/
+- Priyanka Gawada — Specialist II, Technology Training, Mastek. 18+ years. Full-stack Java, AWS, DevOps. https://www.linkedin.com/in/priyanka-gawada-09106618/
+- Ankit Shukla — Lead Module Engineer DevOps SRE, Wipro. 9+ years. DevSecOps, SRE, AWS, Kubernetes, Terraform. https://www.linkedin.com/in/ankitshukla11/
+- Mehar Nafis — Solution Architect, AI/ML, Frontier Business Systems. The profile also lists DevOps and corporate training. No year count is shown. https://www.linkedin.com/in/meharnafis/
+- Armugharaj Nadar — Senior Cloud Platform Engineer, Zeidler Group. 12+ years. AWS, Terraform, cloud-native platforms, DevOps. https://www.linkedin.com/in/senior-devops-engineer/
+
 ## Key facts
 - Affiliated with NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna
 - In Collaboration With IIT, Microsoft

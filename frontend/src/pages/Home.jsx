@@ -11,6 +11,7 @@ import CampusMap from "@/components/CampusMap";
 import CampusGallery from "@/components/CampusGallery";
 import VideoReels from "@/components/VideoReels";
 import Testimonials from "@/components/Testimonials";
+import { MentorPreview } from "@/components/Mentors";
 import FaqAccordion from "@/components/FaqAccordion";
 import {
   BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, WHATSAPP_URL,
@@ -70,7 +71,7 @@ export default function Home() {
               <h1 className="mt-5 font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.12]">
                 Become a <span className="text-blue-700">DevOps Engineer</span> in Just 4 Months
               </h1>
-              <AnswerBlock answer={HOME_META.answer} />
+              <AnswerBlock answer={HOME_META.answer} mentors={false} />
               <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl">
                 100% practical <strong className="font-semibold text-slate-800">classroom DevOps training</strong> in
                 Chandivali, Powai — with hands-on AWS, Azure &amp; GCP labs, weekend &amp; weekday batches, and
@@ -206,6 +207,7 @@ export default function Home() {
       <CampusGallery />
       <VideoReels />
       <Testimonials />
+      <MentorPreview />
 
       {/* WHY CHOOSE */}
       <section className="py-12 sm:py-16 lg:py-20 bg-white" data-testid="why-choose-section">

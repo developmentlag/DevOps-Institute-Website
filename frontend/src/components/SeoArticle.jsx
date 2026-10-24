@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import EnquiryForm from "@/components/EnquiryForm";
 import CampusMap from "@/components/CampusMap";
 import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
+import { MentorCards } from "@/components/Mentors";
 import {
   ADDRESS,
   GHATKOPAR_URL,
@@ -223,7 +224,8 @@ export default function SeoArticle({ page }) {
       <h1 className="font-heading text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 leading-tight">
         {page.route.h1}
       </h1>
-      <AnswerBlock answer={page.answer} />
+      <AnswerBlock answer={page.answer} mentors={page.route.path !== "/trainers"} />
+      {page.route.path === "/trainers" ? <MentorCards /> : null}
 
       {page.sections.map((section) => (
         <section key={section.h2} className="mt-10">

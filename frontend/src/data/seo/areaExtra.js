@@ -20,7 +20,7 @@ export const AREA_EXTRA = {
   chandivali: {
     h2: "What should a Chandivali resident prepare before the first lab?",
     paragraphs: [
-      "You have the shortest trip on this website, so use the saved time to prepare the basics the course assumes. The eligibility line is basic computer skills. The first technical step published is Linux and Git. If you have never used a terminal, say that when you call 083695 18569. The trainers are described as industry-experienced, but no trainer name is published, so you cannot request a person by name yet. TODO: add the lead trainer before anyone on this page is treated as the author.",
+      "You have the shortest trip on this website, so use the saved time to prepare the basics the course assumes. The eligibility line is basic computer skills. The first technical step published is Linux and Git. If you have never used a terminal, say that when you call 083695 18569. The trainers page names the mentors, so you can ask for a person by name. This page does not assign one mentor as the author.",
       "Chandivali Farm Road and the studio belt mean a lot of people already work shifts near the building. A weekday batch may be a walk. A weekend batch is still available if your shift covers the weekday slot. The site does not publish the slot clock, so do not guess it from a suburb blog. Bring a photo ID if the building asks for one at Lodha Supremus. The unit line to remember is B 1307.",
       "Because you live beside the campus, you are also the person friends will ask for directions. Send them the full NAP, not a pin dropped on Saki Naka station. The station is the city's landmark. Your landmark is the building. Placement claims you can repeat without adding adjectives are 450+ placed, 100% Placement and 360° Placement Assurance.",
     ],
@@ -54,7 +54,7 @@ export const AREA_EXTRA = {
     paragraphs: [
       "Write down the ride: Bhandup or Nahur on the central line, south to Ghatkopar, Metro Line 1 to Saki Naka, Saki Vihar Road to Lodha Supremus. If you cannot do that twice a week on top of a job, ask for the weekend batch first. The institute publishes both modes. It does not publish a Bhandup satellite classroom, and this page will not imply one.",
       "Second, write down the work. Four months is the published job-ready duration. The toolchain is Linux, Git, Jenkins, Docker, Kubernetes, Ansible, Terraform, ArgoCD, Prometheus and Grafana. About 80% of a session is hands-on. If you want only Azure or only AWS, say that, because those courses exist and are shorter workloads on their own schema entries (PT40H) than the flagship PT160H figure.",
-      "Third, write down what you will not be shown online: a fee, a trainer CV, a hiring-company list, and module hours. The fees, trainers and syllabus pages mark those TODOs. Calling 083695 18569 is how you fill the fee and the timetable. The other gaps wait for the institute to publish proof.",
+      "Third, write down what you will not be shown online: a fee, a hiring-company list, and module hours. Mentor names are on the trainers page. Calling 083695 18569 is how you fill the fee and the timetable. The other gaps wait for the institute to publish proof.",
     ],
   },
   mulund: {
@@ -78,7 +78,7 @@ export const AREA_EXTRA = {
     paragraphs: [
       "Decide the path: central line north from Sion, or the Eastern Express Highway north, then west to Saki Naka and Saki Vihar Road. Sion Circle and Sion Hospital tell you where you started. They do not tell you where class is. Class is Lodha Supremus, B 1307. If that path on a weekday defeats the point of studying, weekend batches exist. Test the path once.",
       "Decide the track. DevOps if you want the pipeline and the cluster. Cloud if you want AWS, Azure and GCP consoles first. Kubernetes if containers are the only gap. The three are linked from this page. They share the Powai room and the published placement lines: 450+ placed, 100% Placement, 360° Placement Assurance.",
-      "Do not decide a trainer, a batch size or a module hour from this page. Those facts are not in the repository. The trainers page and the syllabus page say TODO in the cells where a number would otherwise be invented.",
+      "Do not decide a batch size or a module hour from this page. Mentor names are on the trainers page. The syllabus page says TODO where a module hour would otherwise be invented.",
     ],
   },
   andheri: {

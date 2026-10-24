@@ -95,7 +95,7 @@ export default function About() {
               </h2>
               <ul className="mt-4 list-disc pl-5 text-base text-slate-600 leading-relaxed space-y-2">
                 <li>TODO: founding year. The site says 5+ years of training and does not give a calendar year.</li>
-                <li>TODO: team names and photos. Campus photos show batches and trainers without naming them.</li>
+                <li>Mentor names, employers and LinkedIn profiles are on the <Link to="/trainers" className="font-semibold text-blue-700">trainers page</Link>. TODO: portrait photos. Campus photos still do not caption individuals.</li>
               </ul>
               <address className="not-italic mt-6 rounded-xl bg-slate-50 border border-slate-200 p-5 text-sm text-slate-700" data-testid="about-nap">
                 <p className="font-semibold text-slate-900">{BUSINESS_NAME}</p>

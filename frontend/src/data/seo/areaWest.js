@@ -140,7 +140,7 @@ export const AREA_WEST = {
       { q: "Does Shivaji Park have a batch?", a: "No. It is a Dadar West landmark. Batches run at the Powai campus." },
       { q: "Who can join?", a: "Freshers and working professionals with basic computer skills. The course teaches Linux and Git before the later tools." },
       { q: "Where are the placement steps?", a: "On the placement page. This suburb page only points at the published claims and the alumni names the site already uses." },
-      { q: "Is a trainer name listed for Dadar?", a: "No trainer name is stored for any suburb. The trainers page marks that gap instead of inventing a person." },
+      { q: "Is a trainer name listed for Dadar?", a: "The same mentors teach at the Powai campus for every suburb, including Dadar. Names, employers and LinkedIn profiles are on the trainers page. The page does not assign one mentor to Dadar." },
       { q: "How do I enquire?", a: `Call ${phone}, use WhatsApp, or send the form on this page.` },
     ],
   },
@@ -158,7 +158,7 @@ export const AREA_WEST = {
       {
         h2: "Which published facts still apply at this distance?",
         paragraphs: [
-          "All of the campus facts. Address, phone 083695 18569, weekday and weekend batches, about 80% hands-on time, 450+ placed, 100% Placement, 360° Placement Assurance, and affiliations with NASSCOM, IBM, Govt. of India (MEITY), IIT Patna, and an IIT and Microsoft collaboration. What does not appear, here or anywhere else on the site, is a Borivali classroom, a trainer biography, a fee, or a list of hiring-company names. Those gaps are marked on the trainers, fees and placement pages.",
+          "All of the campus facts. Address, phone 083695 18569, weekday and weekend batches, about 80% hands-on time, 450+ placed, 100% Placement, 360° Placement Assurance, and affiliations with NASSCOM, IBM, Govt. of India (MEITY), IIT Patna, and an IIT and Microsoft collaboration. Mentor names are on the trainers page. What does not appear is a Borivali classroom, a fee, or a list of hiring-company names. Those gaps are marked on the fees and placement pages.",
         ],
       },
     ],

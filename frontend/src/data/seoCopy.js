@@ -9,6 +9,7 @@ import { GUIDES_A } from "@/data/seo/guidesA";
 import { GUIDES_B, SYLLABUS_MODULES } from "@/data/seo/guidesB";
 import { devopsShared, cloudShared } from "@/data/seo/sharedBlocks";
 import { LENGTH_BOOST } from "@/data/seo/lengthBoost";
+import { MENTORS } from "@/data/mentors";
 import { AFFILIATION_LINE, TESTIMONIALS, GOOGLE_REVIEWS_STATS, GOOGLE_BUSINESS_PROFILE_URLS } from "@/data/site";
 
 const AREAS = { ...AREA_EAST, ...AREA_WEST };
@@ -96,27 +97,41 @@ function withExtra(base, extra) {
 const TRUST = {
   "/trainers": {
     answer:
-      "DevOps Institute in Chandivali, Powai says its classes are led by trainers with industry experience in cloud and DevOps. This page does not name a trainer, because no name, bio or LinkedIn profile is stored in the site repository. Call 083695 18569 to ask who is teaching the next batch.",
+      "DevOps Institute in Chandivali, Powai lists the mentors who teach its cloud, DevOps and AI batches. Each card names the person, an employer only when the profile states one, and a LinkedIn profile. Call 083695 18569 to ask who leads the next batch.",
     sections: [
       {
-        h2: "What is published about the trainers?",
+        h2: "How should you read a mentor card?",
         paragraphs: [
-          "The About page says classes are led by trainers who have worked with cloud infrastructure and DevOps toolchains in real industry environments. The Why Choose list repeats “Industry-Experienced Trainers.” The campus photos show batches with trainers, without captions that name them. That is the whole biography the repository contains.",
-          "TODO: add the lead trainer’s name, a short bio and a LinkedIn URL. Until that exists, this page will not invent a person, and the course schema will not name an instructor. A made-up instructor would be worse than a blank one.",
+          "Each card names one mentor at DevOps Institute. The headline follows the public profile: a DevOps title stays a DevOps title, and an architecture or training title stays that. Years use the lower figure the profile supports, such as 18+ years. A missing number is not a claim of zero experience.",
+          "Where a profile names a current employer, it is written in words. It is not a logo, and it is not an endorsement of this institute. Yogesh Devpura's card names a former role and does not name a current employer. LinkedIn links point at the profile the institute was given. A card does not assign that person to a particular batch. Call 083695 18569 to ask who teaches the batch you would join.",
         ],
       },
       {
-        h2: "Who should you ask instead?",
-        paragraphs: [
-          "Call the Powai campus on 083695 18569 and ask who teaches the batch you would join, and what they have operated. Write the answer down. If the institute wants that answer on the website, add it here and only then add Person schema. The same gap is marked on the buyer's guide, in the trainer row.",
-        ],
+        h2: "What does each profile support?",
+        paragraphs: MENTORS.map((mentor) => `${mentor.name}: ${mentor.detail}`),
       },
     ],
     faqs: [
-      { q: "Who is the lead trainer?", a: "TODO: the name is not in this repository. Do not treat any name in a review as the faculty list." },
-      { q: "Do testimonials name trainers?", a: "They say mentors and trainers. They do not give a legal name for the faculty." },
-      { q: "Where are classes held?", a: "Lodha Supremus, B 1307, Saki Vihar Road, Chandivali, Powai, Mumbai 400072." },
-      { q: "Is there a LinkedIn profile to cite?", a: "TODO: add the trainer’s LinkedIn URL. The institute Instagram is https://www.instagram.com/devopsinstituteinmumbai/ and that is not a trainer profile." },
+      {
+        q: "Who are the mentors?",
+        a: "The trainers page lists Yogesh Devpura, Sirin Ali, Ninad Samudre, Amit Mishra, Arshad Mitha, Priyanka Gawada, Ankit Shukla, Mehar Nafis and Armugharaj Nadar.",
+      },
+      {
+        q: "Does an employer endorse DevOps Institute?",
+        a: "No. The employer is the mentor's current job, written in plain text. The name is not a logo and it is not an endorsement.",
+      },
+      {
+        q: "What does Mehar Nafis do?",
+        a: "He is a Solution Architect for AI/ML at Frontier Business Systems. The profile also lists DevOps and corporate training. The card does not state a year count.",
+      },
+      {
+        q: "Who teaches the next batch?",
+        a: "The page does not assign a mentor to a batch. Call 083695 18569 and ask who is teaching the batch you would join.",
+      },
+      {
+        q: "Where are classes held?",
+        a: "Lodha Supremus, B 1307, Saki Vihar Road, Chandivali, Powai, Mumbai 400072.",
+      },
     ],
   },
   "/reviews": {

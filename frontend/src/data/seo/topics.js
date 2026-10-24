@@ -11,7 +11,7 @@ export const TOPIC_PAGES = {
         h2: "What is the cloud computing course in Mumbai?",
         paragraphs: [
           "On this site the cloud computing course means the practical AWS, Microsoft Azure and Google Cloud classes taught at the Powai campus, not a separate city-centre brand. AWS covers IAM, EC2, S3, VPC, RDS and CloudWatch. Azure covers virtual machines, virtual networks, Entra ID, storage, App Service, AKS and Azure DevOps pipelines. GCP covers Compute Engine, VPC, Cloud Storage, GKE, Cloud Build and Cloud Monitoring. Those lists are copied from the course pages already on this website.",
-          "People searching for a cloud computing course with placement want the career line as well as the console. The institute publishes 450+ placed, 100% Placement and 360° Placement Assurance, plus resume support, mock interviews and career guidance. It does not publish a fee, a hiring-company roster, or a trainer biography. Those gaps stay marked rather than filled with guesses.",
+          "People searching for a cloud computing course with placement want the career line as well as the console. The institute publishes 450+ placed, 100% Placement and 360° Placement Assurance, plus resume support, mock interviews and career guidance. Mentor names are on the trainers page. It does not publish a fee or a hiring-company roster. Those gaps stay marked rather than filled with guesses.",
           "The Mumbai hub for DevOps lists every suburb. This page is the cloud equivalent: one campus, many origins. Metro Line 1 and Saki Naka station are the rail landmark. The address is Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali, Powai, Mumbai 400072.",
         ],
       },
