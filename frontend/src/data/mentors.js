@@ -2,116 +2,119 @@ import { PROVIDER_NAME, getSiteOrigin } from "@/data/site";
 
 /**
  * Public mentors for the Powai campus.
- * Included when the source row is verified, high, or medium-high.
- * Rows marked slug-only or unknown are omitted (including the unresolved Mujahed profile).
- * Ankit is published as "Ankit S." because the surname was not verified.
- * Employer names are the mentor's other job, written as text, not an endorsement.
+ * Facts follow the LinkedIn profile table. Mujahed stays off the page.
+ * Employer names are plain text, not logos and not endorsements.
+ * Years use the profile About claim when one exists, otherwise the counted
+ * experience rounded down. Mehar Nafis has no year figure.
  */
 
 export const MENTORS = [
   {
-    slug: "yogesh-devpura",
+    slug: "yogesh-devpura-baa8366",
     name: "Yogesh Devpura",
-    headline: "DevOps Architect. Mentor at DevOps Institute.",
+    headline: "DevOps Architect, 18+ years. Mentor at DevOps Institute.",
     jobTitle: "DevOps Architect",
-    employer: "Simple Logic IT Pvt Ltd",
+    former: "Formerly VP, Lead DevOps & Architect at ICICI Securities",
     experience: "18+ years",
-    expertise: ["AWS", "Kubernetes (EKS)", "CI/CD", "Cloud transformation"],
+    expertise: ["Kubernetes", "ArgoCD", "GitOps", "Terraform", "CI/CD", "AWS"],
     linkedin: "https://www.linkedin.com/in/yogesh-devpura-baa8366",
     detail:
-      "DevOps Architect at Simple Logic IT Pvt Ltd in Mumbai, with about 18 years in AWS, Kubernetes on EKS, CI/CD automation and cloud transformation. Earlier roles on the profile: VP Lead DevOps and Architect at ICICI Securities, Lead DevOps at SS&C, and Manager DevOps at Reliance Jio.",
+      "DevOps Architect with 18+ years in cloud and IT services. Formerly VP, Lead DevOps & Architect at ICICI Securities. The profile highlights Kubernetes, ArgoCD, GitOps, Terraform, CI/CD, AWS, Prometheus, Grafana, release management and incident response. No current employer is stated.",
   },
   {
     slug: "sirin-ali",
     name: "Sirin Ali",
-    headline: "Cloud subject-matter expert and Microsoft Certified Trainer. Mentor at DevOps Institute.",
+    headline: "Microsoft Certified Trainer and cloud subject-matter expert. Mentor at DevOps Institute.",
     jobTitle: "Subject Matter Expert",
     employer: "CloudThat",
-    experience: "11+ years",
-    expertise: ["Azure", "Kubernetes", "Terraform", "Ansible", "DevOps automation"],
+    experience: "13+ years",
+    expertise: ["Kubernetes", "OpenShift", "Docker", "Azure", "Ansible", "Terraform"],
     linkedin: "https://www.linkedin.com/in/sirin-ali/",
     detail:
-      "Subject Matter Expert at CloudThat, and a Microsoft Certified Trainer. 11+ years in Azure, Kubernetes, DevOps automation, Terraform and Ansible. Credentials named on the profile include CKA, Terraform Associate and Azure DevOps Engineer Expert. The profile also records the name Sirin Kausar Isak Ali.",
+      "Subject Matter Expert at CloudThat and a Microsoft Certified Trainer. 13+ years across Kubernetes, OpenShift, Docker, Azure, Azure DevOps, Ansible, Terraform and CI/CD.",
   },
   {
-    slug: "ninad-samudre",
+    slug: "ninad-samudre-19439b1a5",
     name: "Ninad Samudre",
     headline: "DevOps Tech Lead and Kubernetes trainer. Mentor at DevOps Institute.",
     jobTitle: "DevOps Tech Lead",
     employer: "CloudThat",
-    expertise: ["Docker", "Kubernetes", "CI/CD", "CKA", "CKAD"],
+    experience: "10+ years",
+    expertise: ["Docker", "Kubernetes", "Amazon EKS", "Cybersecurity", "DevOps"],
     linkedin: "https://www.linkedin.com/in/ninad-samudre-19439b1a5/",
     detail:
-      "DevOps Tech Lead at CloudThat, previously a Kubernetes subject-matter expert at the same company. Trains Docker and Kubernetes, including CI/CD on Kubernetes. Credentials named on the profile: CKA, CKAD, Microsoft Certified Trainer and HPE Certified Instructor.",
+      "DevOps Tech Lead at CloudThat. 10+ years. Microsoft Certified Trainer and HPE Certified Instructor, with CKA and CKAD on the profile headline. Trains Docker, Kubernetes, Amazon EKS and cybersecurity.",
   },
   {
-    slug: "amit-mishra",
+    slug: "amit-mishra-aa77477b",
     name: "Amit Mishra",
-    headline: "Delivery Solution Architect for multi-cloud and data platforms. Mentor at DevOps Institute.",
+    headline: "Multi-cloud and hybrid solution architect. Mentor at DevOps Institute.",
     jobTitle: "Delivery Solution Architect",
     employer: "Databricks",
     experience: "18+ years",
-    expertise: ["AWS", "Azure", "GCP", "Cloud migration", "Data platforms", "MLOps"],
+    expertise: ["AWS", "Azure", "GCP", "Data platforms", "Cloud migration"],
     linkedin: "https://www.linkedin.com/in/amit-mishra-aa77477b/",
     detail:
-      "Delivery Solution Architect at Databricks, with about 18 years in multi-cloud and hybrid architecture across AWS, Azure and GCP, including cloud migration, data platforms and MLOps. Earlier companies named on the profile include Cloudera, Deloitte and Accenture. This is an architecture and data role, not a DevOps job title.",
+      "Delivery Solution Architect at Databricks. 18+ years in multi-cloud and hybrid architecture across AWS, Azure and GCP, including Cloudera, data platforms and cloud migration. This is an architecture and data role, not a DevOps job title.",
   },
   {
-    slug: "arshad-mitha",
+    slug: "arshadmitha",
     name: "Arshad Mitha",
-    headline: "General Manager, with cloud administration and DevOps practice. Mentor at DevOps Institute.",
-    jobTitle: "General Manager",
+    headline: "Project and delivery leader with cloud and DevOps experience. Mentor at DevOps Institute.",
+    jobTitle: "Project Manager",
     employer: "Mathcoms",
-    expertise: ["Project management", "AWS", "Azure", "VMware", "Jenkins", "Terraform", "Git"],
+    experience: "9+ years",
+    expertise: ["Project management", "Cloud administration", "DevOps", "VMware", "Agile"],
     linkedin: "https://www.linkedin.com/in/arshadmitha/",
     detail:
-      "General Manager at Mathcoms. The profile summary also covers project management and cloud administration with AWS, Azure, VMware, Jenkins, Terraform and Git.",
+      "Project Manager at Mathcoms. A project and delivery leader with cloud and DevOps experience, including VMware, Citrix, Agile delivery and vendor negotiation. 9+ years. The profile headline also lists PMP and PRINCE2.",
   },
   {
-    slug: "priyanka-gawada",
+    slug: "priyanka-gawada-09106618",
     name: "Priyanka Gawada",
-    headline: "Technology Trainer for Java, AWS, DevOps and Python. Mentor at DevOps Institute.",
-    jobTitle: "Technology Trainer",
+    headline: "Technology trainer for full-stack development, AWS and DevOps. Mentor at DevOps Institute.",
+    jobTitle: "Specialist II, Technology Training",
     employer: "Mastek",
-    expertise: ["Java", "AWS", "DevOps", "Jenkins", "Python"],
+    experience: "18+ years",
+    expertise: ["Full-stack Java", "AWS", "DevOps", "Spring Boot", "MEAN/MERN"],
     linkedin: "https://www.linkedin.com/in/priyanka-gawada-09106618/",
     detail:
-      "Technology Trainer (Specialist II) at Mastek in Navi Mumbai. Trains Java full stack, AWS, DevOps with Jenkins, and Python, and holds the AWS Developer Associate certification.",
+      "Specialist II, Technology Training, at Mastek. 18+ years. Trains full-stack Java, MEAN and MERN, AWS, DevOps and Spring Boot. The profile headline lists AWS Certified.",
   },
   {
-    slug: "ankit-s",
-    name: "Ankit S.",
+    slug: "ankitshukla11",
+    name: "Ankit Shukla",
     headline: "DevSecOps and SRE engineer. Mentor at DevOps Institute.",
-    jobTitle: "Lead Module DevOps SRE Engineer",
+    jobTitle: "Lead Module Engineer DevOps SRE",
     employer: "Wipro",
     experience: "9+ years",
-    expertise: ["Kubernetes", "Argo CD", "Helm", "Terraform", "AWS", "DevSecOps", "Observability"],
+    expertise: ["DevSecOps", "SRE", "AWS", "Kubernetes", "Terraform", "CI/CD"],
     linkedin: "https://www.linkedin.com/in/ankitshukla11/",
     detail:
-      "Lead Module DevOps SRE Engineer at Wipro. The profile headline is DevSecOps and SRE engineer, and it also describes him as an AI-driven trainer. About 9.8 years in total, across Kubernetes on EKS, Argo CD, Helm, Terraform, AWS, CI/CD, and observability with OpenTelemetry and Grafana. Earlier: Senior DevOps Engineer at Paytm, and a role at Jio. The card uses the name shown on the profile, Ankit S.",
+      "Lead Module Engineer, DevOps SRE, at Wipro. 9+ years in DevSecOps and site reliability, including Python, CI/CD, AWS, Kubernetes, Terraform, Ansible, and Prometheus and Grafana. The profile describes him as an AI-driven trainer.",
   },
   {
-    slug: "mehar-nafis",
+    slug: "meharnafis",
     name: "Mehar Nafis",
-    headline: "GenAI and cloud architect. Mentor at DevOps Institute.",
-    jobTitle: "GenAI Solution Architect",
-    employer: "Frontier Business Systems Pvt. Ltd.",
-    expertise: ["Generative AI", "Cloud architecture", "AWS", "Azure"],
+    headline: "AI/ML solution architect. Mentor at DevOps Institute.",
+    jobTitle: "Solution Architect, AI/ML",
+    employer: "Frontier Business Systems",
+    expertise: ["AI/ML", "DevOps", "Terraform", "Kubernetes", "Ansible", "CI/CD"],
     linkedin: "https://www.linkedin.com/in/meharnafis/",
     detail:
-      "GenAI Solution Architect at Frontier Business Systems Pvt. Ltd., working on generative AI solution architecture on AWS and Azure. He holds Microsoft Certified: Azure AI Engineer Associate (February 2025). The role is GenAI and cloud architecture, not a DevOps job title.",
+      "Solution Architect for AI/ML at Frontier Business Systems. The profile headline also lists DevOps and corporate training and consulting. Skills include Terraform, Kubernetes, Ansible and CI/CD. No year count is shown.",
   },
   {
-    slug: "armugharaj-nadar",
+    slug: "senior-devops-engineer",
     name: "Armugharaj Nadar",
     headline: "Senior Cloud Platform Engineer. Mentor at DevOps Institute.",
     jobTitle: "Senior Cloud Platform Engineer",
     employer: "Zeidler Group",
     experience: "12+ years",
-    expertise: ["AWS", "Terraform", "Ansible", "Docker", "Kubernetes", "Jenkins"],
+    expertise: ["AWS", "Terraform", "Cloud-native platforms", "DevOps"],
     linkedin: "https://www.linkedin.com/in/senior-devops-engineer/",
     detail:
-      "Senior Cloud Platform Engineer at Zeidler Group, and also a Senior DevOps Engineer there. Earlier: Senior DevOps Engineer (Manager) at Reliance Jio in Mumbai. About 12+ years in DevOps, across AWS, Terraform, Ansible, Docker, Kubernetes and Jenkins.",
+      "Senior Cloud Platform Engineer (Sr Associate) at Zeidler Group, and a Senior DevOps Engineer. 12+ years with Terraform, AWS, cloud-native platforms and DevOps.",
   },
 ];
 
@@ -127,21 +130,27 @@ export function mentorInitials(name) {
 
 export function buildMentorPersonSchemas() {
   const origin = getSiteOrigin();
-  return MENTORS.map((mentor) => ({
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": `${origin}/trainers#${mentor.slug}`,
-    name: mentor.name,
-    jobTitle: mentor.jobTitle,
-    worksFor: { "@type": "Organization", name: mentor.employer },
-    sameAs: [mentor.linkedin],
-    knowsAbout: mentor.expertise,
-    affiliation: {
-      "@type": "EducationalOrganization",
-      "@id": `${origin}/#institute`,
-      name: PROVIDER_NAME,
-      url: origin,
-    },
-    url: `${origin}/trainers#${mentor.slug}`,
-  }));
+  return MENTORS.map((mentor) => {
+    const person = {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": `${origin}/trainers#${mentor.slug}`,
+      name: mentor.name,
+      jobTitle: mentor.jobTitle,
+      image: `${origin}/mentors/${mentor.slug}.jpg`,
+      sameAs: [mentor.linkedin],
+      knowsAbout: mentor.expertise,
+      affiliation: {
+        "@type": "EducationalOrganization",
+        "@id": `${origin}/#institute`,
+        name: PROVIDER_NAME,
+        url: origin,
+      },
+      url: `${origin}/trainers#${mentor.slug}`,
+    };
+    if (mentor.employer) {
+      person.worksFor = { "@type": "Organization", name: mentor.employer };
+    }
+    return person;
+  });
 }

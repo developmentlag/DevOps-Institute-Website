@@ -4,22 +4,32 @@ import { MENTORS, mentorInitials } from "@/data/mentors";
 function MentorAvatar({ mentor }) {
   const initials = mentorInitials(mentor.name);
   return (
-    <object
-      data={`/mentors/${mentor.slug}.jpg`}
-      type="image/jpeg"
-      width="72"
-      height="72"
-      aria-label={`${mentor.name} portrait`}
-      className="h-[72px] w-[72px] shrink-0 overflow-hidden rounded-full object-cover"
-    >
-      <span
-        className="flex h-[72px] w-[72px] items-center justify-center rounded-full bg-blue-700 text-base font-bold tracking-wide text-white"
-        aria-hidden="true"
-      >
+    <span className="relative inline-flex h-24 w-24 shrink-0 overflow-hidden rounded-full bg-blue-700">
+      <span className="absolute inset-0 flex items-center justify-center text-base font-bold tracking-wide text-white" aria-hidden="true">
         {initials}
       </span>
-    </object>
+      <img
+        src={`/mentors/${mentor.slug}.jpg`}
+        alt={`${mentor.name} portrait`}
+        width="96"
+        height="96"
+        className="relative h-24 w-24 rounded-full object-cover"
+        onError={(event) => {
+          event.currentTarget.style.display = "none";
+        }}
+      />
+    </span>
   );
+}
+
+function EmployerLine({ mentor }) {
+  if (mentor.employer) {
+    return <p className="mt-1 text-sm text-slate-700">Current employer: {mentor.employer}</p>;
+  }
+  if (mentor.former) {
+    return <p className="mt-1 text-sm text-slate-700">{mentor.former}</p>;
+  }
+  return null;
 }
 
 function LinkedInLink({ mentor }) {
@@ -42,7 +52,7 @@ export function MentorCards() {
         Mentor profiles
       </h2>
       <p className="mt-3 text-slate-700 leading-relaxed">
-        Employer names are plain text for the current job. They are not logos, and they do not mean the employer endorses DevOps Institute. Portrait files live at /mentors/ and the initials stand in until a photo is added.
+        Employer names are plain text. They are not logos, and they do not mean the employer endorses DevOps Institute. A card names a current employer only when the profile states one.
       </p>
       <ul className="mt-6 space-y-4">
         {MENTORS.map((mentor) => (
@@ -53,7 +63,7 @@ export function MentorCards() {
                 <h3 className="font-heading text-lg font-bold text-slate-900">{mentor.name}</h3>
                 <p className="mt-1 text-sm text-slate-700">{mentor.headline}</p>
                 {mentor.experience ? <p className="mt-1 text-sm font-medium text-slate-800">{mentor.experience}</p> : null}
-                <p className="mt-1 text-sm text-slate-700">Current employer: {mentor.employer}</p>
+                <EmployerLine mentor={mentor} />
               </div>
             </div>
             <ul className="mt-3 flex flex-wrap gap-2">
@@ -79,7 +89,7 @@ export function MentorTeaser() {
     <aside className="mt-4 max-w-3xl rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700">
       <p className="font-semibold text-slate-900">Learn from industry mentors</p>
       <p className="mt-1">
-        Classes draw on mentors who work in cloud, DevOps, platform and GenAI roles. The trainers page lists each person, the current employer in plain text, and a LinkedIn profile.
+        Classes draw on mentors who work in cloud, DevOps, delivery and AI/ML roles. The trainers page lists each person, the employer when the profile states one, and a LinkedIn profile.
       </p>
       <p className="mt-2">
         <Link to="/trainers" className="font-semibold text-blue-700 hover:text-blue-800">
@@ -102,7 +112,7 @@ export function MentorPreview() {
             Learn from industry mentors
           </h2>
           <p className="mt-3 text-base text-slate-600 leading-relaxed">
-            These mentors teach at the Powai campus and also work in cloud, DevOps, platform and GenAI roles. Employers are named in words only. A name here is not an endorsement, and it does not assign that person to every batch.
+            These mentors teach at the Powai campus across cloud, DevOps, delivery and AI/ML roles. Employers are named in words only. A name here is not an endorsement, and it does not assign that person to every batch.
           </p>
         </div>
         <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -117,7 +127,7 @@ export function MentorPreview() {
                     </Link>
                   </h3>
                   <p className="mt-1 text-sm text-slate-600">{mentor.headline}</p>
-                  <p className="mt-1 text-sm text-slate-700">Current employer: {mentor.employer}</p>
+                  <EmployerLine mentor={mentor} />
                 </div>
               </div>
             </li>

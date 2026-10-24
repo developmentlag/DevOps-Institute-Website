@@ -97,13 +97,13 @@ function withExtra(base, extra) {
 const TRUST = {
   "/trainers": {
     answer:
-      "DevOps Institute in Chandivali, Powai lists the mentors who teach its cloud, DevOps and GenAI batches. Each card names the person, the current employer in plain text, and a LinkedIn profile. Call 083695 18569 to ask who leads the next batch.",
+      "DevOps Institute in Chandivali, Powai lists the mentors who teach its cloud, DevOps and AI batches. Each card names the person, an employer only when the profile states one, and a LinkedIn profile. Call 083695 18569 to ask who leads the next batch.",
     sections: [
       {
         h2: "How should you read a mentor card?",
         paragraphs: [
-          "Each card names one mentor at DevOps Institute. The headline follows the public profile: a DevOps title stays a DevOps title, and a GenAI or architecture title stays that. Years appear only when the profile states a number, such as 18+ years. A missing number is not a claim of zero experience.",
-          "The current employer is the mentor's other job, written in words. It is not a logo, and it is not an endorsement of this institute. LinkedIn links point at the profile the institute was given. A card does not assign that person to a particular batch. Call 083695 18569 to ask who teaches the batch you would join.",
+          "Each card names one mentor at DevOps Institute. The headline follows the public profile: a DevOps title stays a DevOps title, and an architecture or training title stays that. Years use the lower figure the profile supports, such as 18+ years. A missing number is not a claim of zero experience.",
+          "Where a profile names a current employer, it is written in words. It is not a logo, and it is not an endorsement of this institute. Yogesh Devpura's card names a former role and does not name a current employer. LinkedIn links point at the profile the institute was given. A card does not assign that person to a particular batch. Call 083695 18569 to ask who teaches the batch you would join.",
         ],
       },
       {
@@ -114,15 +114,15 @@ const TRUST = {
     faqs: [
       {
         q: "Who are the mentors?",
-        a: "The trainers page lists Yogesh Devpura, Sirin Ali, Ninad Samudre, Amit Mishra, Arshad Mitha, Priyanka Gawada, Ankit S., Mehar Nafis and Armugharaj Nadar.",
+        a: "The trainers page lists Yogesh Devpura, Sirin Ali, Ninad Samudre, Amit Mishra, Arshad Mitha, Priyanka Gawada, Ankit Shukla, Mehar Nafis and Armugharaj Nadar.",
       },
       {
         q: "Does an employer endorse DevOps Institute?",
         a: "No. The employer is the mentor's current job, written in plain text. The name is not a logo and it is not an endorsement.",
       },
       {
-        q: "Is Mehar Nafis a DevOps engineer?",
-        a: "No. Mehar Nafis is a GenAI and cloud architect, and a GenAI Solution Architect at Frontier Business Systems Pvt. Ltd.",
+        q: "What does Mehar Nafis do?",
+        a: "He is a Solution Architect for AI/ML at Frontier Business Systems. The profile also lists DevOps and corporate training. The card does not state a year count.",
       },
       {
         q: "Who teaches the next batch?",
