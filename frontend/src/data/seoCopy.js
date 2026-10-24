@@ -142,15 +142,15 @@ const TRUST = {
         h2: "What review facts are on this website?",
         paragraphs: [
           `The site shows ${GOOGLE_REVIEWS_STATS.ratingValue} out of 5 from ${GOOGLE_REVIEWS_STATS.reviewCount} Google reviews. llms.txt uses the same figure, 4.7 from 130.`,
-          "The four stories below are copied from the testimonials already rendered on the homepage and course pages. They are not a fresh scrape, and they do not include a review date. TODO: add the Google review date beside each quote. TODO: replace the review link below with the Google Business Profile “write a review” URL. The only profile URL stored today is the share link.",
+          "The four stories below are copied from the testimonials already rendered on the homepage and course pages. They are not a fresh scrape, and they do not include a review date. Google review dates are not published. The link below is the stored profile share link, not a separate write-a-review URL.",
         ],
       },
     ],
     faqs: [
       { q: "What rating does the site show?", a: "4.7 from 130 Google reviews, in the site data used by the review badge." },
       { q: "Are the quotes verbatim?", a: "Yes. They match the testimonial text already published on this website." },
-      { q: "Why are there no dates?", a: "TODO: the repository does not store a Google review date for these quotes." },
-      { q: "How do I leave a review?", a: `TODO: add the write-a-review URL. The stored profile link is ${GOOGLE_BUSINESS_PROFILE_URLS[0]}.` },
+      { q: "Why are there no dates?", a: "The site does not store a Google review date for these quotes." },
+      { q: "How do I leave a review?", a: `A separate write-a-review URL is not published. The stored profile link is ${GOOGLE_BUSINESS_PROFILE_URLS[0]}.` },
     ],
     reviews: true,
   },
@@ -161,14 +161,14 @@ const TRUST = {
       {
         h2: "What can the filter show?",
         paragraphs: [
-          "Four people are named in the testimonials. Only Rajeswari Singh’s card says she was placed, at 6.5 LPA, and it still does not name an employer. The others describe training, a career shift or a role label. Filtering them does not create 450 records. TODO: add company, role and a consented photo for each person you want in the 450+ list. Schema below uses only the names and descriptions already published.",
+          "Four people are named in the testimonials. Only Rajeswari Singh’s card says she was placed, at 6.5 LPA, and it still does not name an employer. The others describe training, a career shift or a role label. Filtering them does not create 450 records. Company, role and a consented photo are not published for the rest of the 450+ list. Schema below uses only the names and descriptions already published.",
         ],
       },
     ],
     faqs: [
       { q: "How many placements are published as a total?", a: "450+ placed, with 350+ hiring partners." },
       { q: "Why are so few names listed?", a: "Because only four names are in the website content. The rest are not invented." },
-      { q: "What is 360° Placement Assurance?", a: "A published phrase. TODO: add the institute’s own definition of what it includes." },
+      { q: "What is 360° Placement Assurance?", a: "A published phrase. The institute has not published its own definition of what the phrase includes." },
       { q: "Where do I read the longer note?", a: "On the DevOps course in Mumbai with placement page." },
     ],
     placements: true,

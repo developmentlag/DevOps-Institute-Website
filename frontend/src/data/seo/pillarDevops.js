@@ -42,7 +42,7 @@ export const DEVOPS_PILLAR = {
       h2: "Which certifications does the course prepare you to attempt?",
       paragraphs: [
         "The site ties exam preparation to specific courses. AWS is described for people preparing for AWS certification exams. Azure mentions administrator or DevOps certifications. Kubernetes and Docker mention CKA and CKAD domains and practice labs. Terraform is taught as Infrastructure as Code on AWS and Azure, which is the skill the Terraform Associate exam also cares about, but this site does not name that exam on the Linux and Terraform page, so this pillar will not pretend it does. What is fair to say: the classroom prepares you for AWS, Azure, CKA and Terraform-shaped work because those tools are in the labs.",
-        "It is not fair to say the institute awards those certificates. Vendor exams are sat with the vendor. A course completion document is also not described in the repository, so this page does not invent a certificate title. TODO: add the official completion certificate name if the institute issues one.",
+        "It is not fair to say the institute awards those certificates. Vendor exams are sat with the vendor. A course completion document is also not described on this site, so this page does not invent a certificate title. An official completion certificate name is not published.",
       ],
     },
     {
@@ -70,7 +70,7 @@ export const DEVOPS_PILLAR = {
       h2: "How do the modules connect in a single project?",
       paragraphs: [
         "Treat the syllabus as one system, not eight souvenirs. A commit in Git should trigger Jenkins. Jenkins should build an image with the Dockerfile you wrote. The image should run on Kubernetes the same way it ran in Docker Compose. Terraform should be able to create the network and the cluster, or at least the cloud pieces the cluster needs. Ansible may set the host before Kubernetes takes over. ArgoCD may watch the manifest repository so a merge, not a manual kubectl apply, is what changes production. Prometheus should scrape the result, and Grafana should show whether the deploy helped.",
-        "That single story is already the published outcome list: a pipeline from commit to deployment, a containerised application, infrastructure from Terraform, dashboards and alerts, and a production-style incident. The syllabus page turns the same story into a table with a TODO in the hours column. Use the table when you want a checklist. Use this page when you want the reason the checklist is ordered this way.",
+        "That single story is already the published outcome list: a pipeline from commit to deployment, a containerised application, infrastructure from Terraform, dashboards and alerts, and a production-style incident. The syllabus page turns the same story into a table with unpublished hours. Use the table when you want a checklist. Use this page when you want the reason the checklist is ordered this way.",
         "If a module hour is missing, do not invent it in your notes and then quote the site. Call 083695 18569 and ask the counsellor for the current session plan. The four-month and 160-hour figures are the only durations this domain publishes for the flagship program.",
       ],
     },

@@ -81,6 +81,9 @@ function main() {
       }
     }
     if (/\bguarantee(d)?\b/i.test(text)) failures.push(`${route} contains guarantee`);
+    if (html.includes("TODO") || /not in the repository/i.test(html)) {
+      failures.push(`${route} contains a developer note (TODO or "not in the repository")`);
+    }
     if (/24999|priceCurrency|₹\s*\d/.test(html)) failures.push(`${route} contains a price`);
     if (!html.includes("https://devopsinstitutemumbai.co.in/")) failures.push(`${route} missing Thane link`);
 
@@ -116,6 +119,12 @@ function main() {
   if (!sitemap.includes("<lastmod>")) failures.push("sitemap missing lastmod");
   const llmsFull = path.join(BUILD_DIR, "llms-full.txt");
   if (!fs.existsSync(llmsFull) || fs.statSync(llmsFull).size < 1000) failures.push("llms-full.txt missing");
+  for (const name of ["llms.txt", "llms-full.txt"]) {
+    const crawl = fs.readFileSync(path.join(BUILD_DIR, name), "utf8");
+    if (crawl.includes("TODO") || /not in the repository/i.test(crawl)) {
+      failures.push(`${name} contains a developer note (TODO or "not in the repository")`);
+    }
+  }
   if (!fs.existsSync(path.join(BUILD_DIR, "404.html"))) failures.push("404.html missing");
   if (!fs.existsSync(path.join(BUILD_DIR, "7c4e9a1b8d2f46c0a5e3b917d6f04a28.txt"))) failures.push("IndexNow key file missing");
 

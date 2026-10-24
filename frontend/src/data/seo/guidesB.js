@@ -55,7 +55,7 @@ export const GUIDES_B = {
         h2: "Which salary figures appear on this website?",
         paragraphs: [
           "The public facts file names a 5–35 LPA salary range beside 450+ placed and 350+ hiring partners. Rajeswari Singh's testimonial says she got a package of 6.5 LPA as a fresher after the classroom course, and her card repeats 'Placed at 6.5 LPA'. She is described as a 2025 Vasai college graduate. No company is attached. No other student card states a package.",
-          "That is the entire salary dataset on this domain. A table of averages for India versus Mumbai is not here. TODO: add a dated, sourced table if the institute collects one. Until then, anyone quoting a precise Mumbai average from this site is quoting something the site does not say.",
+          "That is the entire salary dataset on this domain. A table of averages for India versus Mumbai is not here. A dated, sourced average is not published. Until then, anyone quoting a precise Mumbai average from this site is quoting something the site does not say.",
         ],
       },
       {
@@ -76,7 +76,7 @@ export const GUIDES_B = {
       { q: "What DevOps salary does the site publish for Mumbai?", a: "A range of 5–35 LPA, and one fresher example of 6.5 LPA. No city average is calculated here." },
       { q: "Who was placed at 6.5 LPA?", a: "Rajeswari Singh, identified as a 2025 Vasai college graduate. The employer is not named." },
       { q: "Is 5–35 LPA a promise?", a: "It is a published range. It is not a prediction for the next learner." },
-      { q: "Do experienced professionals have a separate table?", a: "No. TODO: add consented outcomes if you want that table." },
+      { q: "Do experienced professionals have a separate table?", a: "No. Consented outcomes for that table are not published." },
       { q: "Does the course fee appear next to salary?", a: "No. Fees are not printed. Call 083695 18569." },
       { q: "Where is the campus?", a: "Chandivali, Powai. The salary page does not change the address." },
     ],
@@ -89,7 +89,7 @@ export const GUIDES_B = {
         h2: "What order does this campus already use?",
         paragraphs: [
           "Linux and the shell, because everything later assumes SSH and a file system. Git and GitHub, because a pipeline without a known commit is theatre. A cloud console — AWS, Azure or GCP — because the servers have to exist somewhere. Docker, then Kubernetes, because packaging comes before orchestration. Ansible where a machine needs configuration, Terraform where the infrastructure itself should be a file. Jenkins and ArgoCD where the deploy should be repeatable. Prometheus and Grafana where you need to see the result. That is the 2026 roadmap this site can defend, because every tool is already on a course page.",
-          "Tools that are fashionable and absent from the catalogue are absent from this roadmap. Adding them would be a different course. TODO: update this page when the syllabus adds or drops a tool, and change the year in the URL only with a redirect from this one.",
+          "Tools that are fashionable and absent from the catalogue are absent from this roadmap. Adding them would be a different course. When the syllabus adds or drops a tool, this page changes with it. The year in the URL changes only with a redirect from this one.",
         ],
       },
       {
@@ -116,7 +116,7 @@ export const GUIDES_B = {
   },
   "/best-devops-course-in-mumbai": {
     answer:
-      "To choose a DevOps course in Mumbai, check lab time, a real classroom, batch size, the placement process, certifications, trainer experience and reviews. DevOps Institute in Chandivali, Powai publishes evidence on some of those and leaves TODO marks on the rest. Call 083695 18569. No other institute is named here.",
+      "To choose a DevOps course in Mumbai, check lab time, a real classroom, batch size, the placement process, certifications, trainer experience and reviews. DevOps Institute in Chandivali, Powai publishes evidence on some of those and leaves gaps on the rest. Call 083695 18569. No other institute is named here.",
     sections: [
       {
         h2: "What checklist should you use?",
@@ -127,7 +127,7 @@ export const GUIDES_B = {
       {
         h2: "How does this campus score on that checklist?",
         paragraphs: [
-          "The score column is evidence, not a mark out of ten. Inventing 9/10 would be a claim. 'Published' means the site already says it. 'Partly published' means a piece is missing. 'TODO' means you should not treat the row as satisfied.",
+          "The score column is evidence, not a mark out of ten. Inventing 9/10 would be a claim. 'Published' means the site already says it. 'Partly published' means a piece is missing. 'Not published' means you should not treat the row as satisfied.",
         ],
         table: {
           caption: "DevOps Institute, Powai campus, against a buyer's checklist",
@@ -136,11 +136,11 @@ export const GUIDES_B = {
             ["Lab time", "Partly published", "About 80% of every session is hands-on. Exact lab hours are not listed."],
             ["Real systems", "Published", "Course pages describe live AWS, Azure, GCP, Docker and Kubernetes labs."],
             ["Classroom", "Published", "Lodha Supremus, B 1307, Saki Vihar Road, Chandivali, Powai."],
-            ["Batch size", "TODO", "Not published. Ask before you enrol."],
-            ["Placement process", "Partly published", "Resume support, mock interviews, career guidance, 450+ placed, 100% Placement, 360° Placement Assurance. Company list TODO."],
+            ["Batch size", "Not published", "Not published. Ask before you enrol."],
+            ["Placement process", "Partly published", "Resume support, mock interviews, career guidance, 450+ placed, 100% Placement, 360° Placement Assurance. The company list is not published."],
             ["Certifications", "Partly published", "AWS, Azure and CKA or CKAD preparation is described. Vendor badges are not awarded by the institute."],
             ["Trainer experience", "Published", "Named mentors, roles, employers and LinkedIn profiles are on the trainers page. Years appear only where a profile states them."],
-            ["Reviews", "Published", "4.7 from 130 Google reviews, plus four named stories. Individual Google dates are TODO."],
+            ["Reviews", "Published", "4.7 from 130 Google reviews, plus four named stories. Individual Google dates are not published."],
             ["Affiliations", "Published", "NASSCOM, IBM, Govt. of India (MEITY), IIT Patna, and an IIT and Microsoft collaboration. Named in words, without logos."],
           ],
         },
@@ -163,7 +163,7 @@ export const GUIDES_B = {
     ],
     faqs: [
       { q: "Does this page rank other institutes?", a: "No. It gives a checklist and applies it only to DevOps Institute's Powai campus." },
-      { q: "Is batch size published?", a: "No. TODO: add the maximum batch size." },
+      { q: "Is batch size published?", a: "No. The maximum batch size is not published." },
       { q: "Are trainers named?", a: "Yes. The trainers page lists each mentor, the current employer in plain text, and a LinkedIn profile." },
       { q: "What review score is on the site?", a: "4.7 from 130 Google reviews, as shown in the site data and on the review badge." },
       { q: "Is self-paced available?", a: "No." },
@@ -177,14 +177,14 @@ export const GUIDES_B = {
       {
         h2: "How should you read this syllabus?",
         paragraphs: [
-          "Each module below uses a skill line already on the DevOps course, the tools named beside it, and a project line taken from the published outcomes. The hours cell says TODO because a per-module hour count is not in the repository. Do not replace TODO with a guess and then cite this page. The flagship program is still the four-month, 160-hour classroom. Print this page from the browser if you want a paper checklist for counselling.",
+          "Each module below uses a skill line already on the DevOps course, the tools named beside it, and a project line taken from the published outcomes. The hours cell says the hours are not published, because a per-module hour count is not on this site. Do not fill that cell with a guess and then cite this page. The flagship program is still the four-month, 160-hour classroom. Print this page from the browser if you want a paper checklist for counselling.",
         ],
       },
     ],
     syllabus: true,
     faqs: [
-      { q: "Are module hours final?", a: "No. They are marked TODO until the institute publishes them." },
-      { q: "Can I print the syllabus?", a: "Yes. Use the print control on this page. The HTML is the syllabus. There is no separate PDF in the repository." },
+      { q: "Are module hours final?", a: "No. They are not final until the institute publishes them." },
+      { q: "Can I print the syllabus?", a: "Yes. Use the print control on this page. The HTML is the syllabus. There is no separate PDF on this site." },
       { q: "Which tools are definitely on the course?", a: "Git, GitHub, Jenkins, Docker, Kubernetes, Ansible, Terraform, ArgoCD, Prometheus and Grafana." },
       { q: "What projects can I name?", a: "A CI/CD pipeline, a Kubernetes deployment, Terraform infrastructure, Prometheus and Grafana dashboards, and a production-style incident, as listed in the course outcomes." },
       { q: "Where is the narrative version?", a: "On the DevOps course pillar, which explains why the modules are in this order." },
@@ -197,56 +197,56 @@ export const SYLLABUS_MODULES = [
   {
     name: "Linux and Git foundations",
     tools: "Linux, Git, GitHub",
-    hours: "TODO",
+    hours: "Not published",
     project: "A repository another person can clone, branch and review, on a host you can administer over SSH.",
     detail: "The DevOps course starts here. The Linux course adds files, users, permissions, systemd, SSH and Bash if you need that depth before Jenkins.",
   },
   {
     name: "CI/CD with Jenkins",
     tools: "Jenkins, Git, GitHub",
-    hours: "TODO",
+    hours: "Not published",
     project: "A pipeline that builds when a commit lands, which is the start of the published end-to-end pipeline.",
     detail: "The course names Jenkins as the CI/CD tool. It does not publish a plugin catalogue.",
   },
   {
     name: "Docker",
     tools: "Docker, Docker Compose",
-    hours: "TODO",
+    hours: "Not published",
     project: "An image and a Compose stack. The Kubernetes course covers Dockerfiles and multi-stage builds in more detail.",
     detail: "Containers are the package the pipeline ships. The DevOps outcome says you containerise the application.",
   },
   {
     name: "Kubernetes",
     tools: "Kubernetes, kubectl, Helm",
-    hours: "TODO",
+    hours: "Not published",
     project: "Deploy, scale and roll back. Ingress and Helm are on the Kubernetes course skill list.",
     detail: "The published DevOps outcome is to deploy the containerised application to Kubernetes.",
   },
   {
     name: "Ansible",
     tools: "Ansible",
-    hours: "TODO",
-    project: "TODO: add the official Ansible lab name. The skill line is configuration management.",
+    hours: "Not published",
+    project: "The official Ansible lab name is not published. The skill line is configuration management.",
     detail: "Ansible is on the DevOps skill list beside Terraform. They are not described as the same tool.",
   },
   {
     name: "Terraform",
     tools: "Terraform, HCL",
-    hours: "TODO",
+    hours: "Not published",
     project: "Provision infrastructure. The Linux and Terraform course adds state, backends and modules for AWS and Azure.",
     detail: "The DevOps outcome says you provision infrastructure using Terraform.",
   },
   {
     name: "GitOps with ArgoCD",
     tools: "ArgoCD, Git",
-    hours: "TODO",
-    project: "TODO: add the official ArgoCD lab name. The skill line is GitOps workflows.",
+    hours: "Not published",
+    project: "The official ArgoCD lab name is not published. The skill line is GitOps workflows.",
     detail: "ArgoCD is named on the DevOps course. Jenkins remains the CI tool. Both can appear in one system.",
   },
   {
     name: "Monitoring and release practice",
     tools: "Prometheus, Grafana",
-    hours: "TODO",
+    hours: "Not published",
     project: "Dashboards and alerts, plus a production-style incident and release scenario.",
     detail: "These are the last two published DevOps outcomes. DevSecOps basics are also on the skill list, without a separate tool row.",
   },
