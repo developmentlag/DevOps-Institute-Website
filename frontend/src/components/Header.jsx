@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { CloudCog, Menu, X, Phone, MapPin, MessageCircle } from "lucide-react";
+import { CloudCog, Menu, X, Phone, MapPin, MessageCircle, ArrowUpRight } from "lucide-react";
 import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, WHATSAPP_URL, COURSES } from "@/data/site";
 
 const NAV = [
@@ -44,7 +44,7 @@ export default function Header() {
       <nav className="bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm" aria-label="Main navigation">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
-            <Link to="/" data-testid="header-logo-link" className="flex items-center gap-3 min-w-0 py-1">
+            <Link to="/" data-testid="header-logo-link" className="flex items-center gap-2.5 min-w-0 py-1">
               <img
                 src="/logo-color.png"
                 alt="DevOps Institute Powai"
@@ -53,23 +53,23 @@ export default function Header() {
                 className="h-16 sm:h-20 lg:h-24 w-auto object-contain shrink-0"
               />
               <span className="leading-tight min-w-0">
-                <span className="block font-heading font-extrabold text-slate-900 text-base sm:text-lg truncate">
+                <span className="block font-heading font-extrabold text-slate-900 text-base sm:text-lg whitespace-nowrap">
                   DevOps Institute
                 </span>
-                <span className="block text-[11px] font-medium text-slate-500 truncate">
-                  AWS, Azure &amp; GCP Course — Powai, Mumbai
+                <span className="block text-[11px] font-medium text-slate-500 whitespace-nowrap">
+                  AWS, Azure &amp; GCP Training
                 </span>
               </span>
             </Link>
 
-            <div className="hidden lg:flex items-center gap-1 xl:gap-1.5 shrink-0">
+            <div className="hidden lg:flex items-center gap-0.5 xl:gap-1 shrink-0">
               {NAV.map((item) => (
                 <NavLink
                   key={item.to}
                   to={item.to}
                   data-testid={item.testId}
                   className={({ isActive }) =>
-                    `px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${
+                    `px-2.5 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${
                       isActive ? "text-blue-700 bg-blue-50" : "text-slate-700 hover:text-slate-900 hover:bg-slate-100"
                     }`
                   }
@@ -78,6 +78,14 @@ export default function Header() {
                 </NavLink>
               ))}
               <div className="flex items-center gap-2 ml-2 shrink-0 flex-nowrap">
+                <a
+                  href="https://hire.devopsinstitute.co.in/"
+                  data-testid="header-hire-us-button"
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-slate-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-md hover:bg-slate-800 transition-colors whitespace-nowrap"
+                >
+                  Hire Us
+                  <ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden="true" />
+                </a>
                 <a
                   href={WHATSAPP_URL}
                   target="_blank"
@@ -129,6 +137,14 @@ export default function Header() {
                   {item.label}
                 </NavLink>
               ))}
+              <a
+                href="https://hire.devopsinstitute.co.in/"
+                data-testid="mobile-nav-hire-us-button"
+                className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-slate-900 px-3 py-3 text-sm font-semibold text-white hover:bg-slate-800 transition-colors"
+              >
+                Hire Us
+                <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+              </a>
               <p className="px-3 pt-3 pb-1 text-xs font-semibold uppercase tracking-wider text-slate-400">Our Courses</p>
               {COURSES.map((c) => (
                 <NavLink
