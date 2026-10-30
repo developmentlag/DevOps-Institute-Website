@@ -14,7 +14,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="preconnect" href="https://maps.google.com" />
         <link rel="preload" as="image" href="%PUBLIC_URL%/logo-color.png" />
-        <link rel="preload" as="image" href="%PUBLIC_URL%/campus/campus-branded-1.jpg" fetchpriority="high" />
+        <link
+            rel="preload"
+            as="image"
+            type="image/avif"
+            href="%PUBLIC_URL%/campus/gbp/gbp-4.avif"
+            imagesrcset="%PUBLIC_URL%/campus/gbp/gbp-4-800.avif 640w, %PUBLIC_URL%/campus/gbp/gbp-4.avif 1080w"
+            imagesizes="(min-width: 1024px) 640px, 100vw"
+            fetchpriority="high"
+        />
         <link
             href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
             rel="stylesheet"
@@ -84,12 +92,20 @@
               ],
               "provider": {
                 "@type": "EducationalOrganization",
-                "name": "DevOps Institute",
-                "url": "https://www.devopsinstitute.co.in",
+                "name": "DevOps Institute - AWS, Azure & GCP Course",
+                "url": "https://www.devopsinstitute.co.in/",
                 "telephone": "083695 18569",
                 "sameAs": [
+                  "https://www.devopsinstitute.co.in/",
                   "https://www.instagram.com/devopsinstituteinmumbai/",
-                  "https://share.google/lYg4hHYl2lYj3b976"
+                  "https://devopsinstitutemumbai.co.in/",
+                  "https://share.google/lYg4hHYl2lYj3b976",
+                  "https://maps.app.goo.gl/5hUDHH1WjKevbkQz8",
+                  "https://www.google.com/maps/place/Devops+Institute+-AWS,+Azure+%26+GCP+Course/@19.1185189,72.8903708,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c959af96f0ef:0x85a42f1a4ba0d52e!8m2!3d19.1185189!4d72.8903708!16s%2Fg%2F11nw1ycxkt"
+                ],
+                "hasMap": [
+                  "https://maps.app.goo.gl/5hUDHH1WjKevbkQz8",
+                  "https://www.google.com/maps/place/Devops+Institute+-AWS,+Azure+%26+GCP+Course/@19.1185189,72.8903708,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c959af96f0ef:0x85a42f1a4ba0d52e!8m2!3d19.1185189!4d72.8903708!16s%2Fg%2F11nw1ycxkt"
                 ],
                 "address": {
                   "@type": "PostalAddress",
@@ -154,14 +170,33 @@
               "name": "DevOps Institute - AWS, Azure & GCP Course",
               "alternateName": "DevOps Institute Mumbai",
               "description": "Classroom DevOps, AWS, Azure and GCP training institute in Chandivali, Powai, Mumbai. Become a DevOps engineer in 4 months with hands-on labs, weekend batches and placement support.",
-              "url": "https://www.devopsinstitute.co.in",
+              "url": "https://www.devopsinstitute.co.in/",
               "telephone": "083695 18569",
-              "image": "https://www.devopsinstitute.co.in/campus/campus-branded-1.jpg",
+              "image": [
+                {"@type": "ImageObject", "contentUrl": "https://www.devopsinstitute.co.in/campus/gbp/gbp-4.jpg", "width": 1080, "height": 1350, "caption": "DevOps classroom batch at DevOps Institute Powai campus, Mumbai, with the full batch at desks under pendant lights"},
+                {"@type": "ImageObject", "contentUrl": "https://www.devopsinstitute.co.in/campus/gbp/gbp-5.jpg", "width": 830, "height": 1164, "caption": "Campus entrance at DevOps Institute Powai, Mumbai, with Postgraduate Program in Cloud and DevOps signage on the glass door"},
+                {"@type": "ImageObject", "contentUrl": "https://www.devopsinstitute.co.in/campus/gbp/gbp-1.jpg", "width": 1080, "height": 1350, "caption": "DevOps classroom batch at DevOps Institute Powai campus, Mumbai, with students working on laptops"},
+                {"@type": "ImageObject", "contentUrl": "https://www.devopsinstitute.co.in/campus/gbp/gbp-3.jpg", "width": 1080, "height": 1350, "caption": "Wide view of a DevOps classroom batch at DevOps Institute Powai campus, Mumbai, under pendant lights"},
+                {"@type": "ImageObject", "contentUrl": "https://www.devopsinstitute.co.in/campus/gbp/gbp-8.jpg", "width": 900, "height": 1600, "caption": "Large DevOps classroom batch at DevOps Institute Powai campus, Mumbai, working on laptops"},
+                {"@type": "ImageObject", "contentUrl": "https://www.devopsinstitute.co.in/campus/gbp/gbp-2.jpg", "width": 900, "height": 1600, "caption": "Students in a DevOps classroom lab at DevOps Institute Powai campus, Mumbai"},
+                {"@type": "ImageObject", "contentUrl": "https://www.devopsinstitute.co.in/campus/gbp/gbp-6.jpg", "width": 1600, "height": 900, "caption": "DevOps classroom batch group photo at DevOps Institute Powai campus, Mumbai"},
+                {"@type": "ImageObject", "contentUrl": "https://www.devopsinstitute.co.in/campus/gbp/gbp-7.jpg", "width": 1354, "height": 900, "caption": "Students holding cloud and DevOps certificates at DevOps Institute Powai campus, Mumbai"},
+                {"@type": "ImageObject", "contentUrl": "https://www.devopsinstitute.co.in/campus/gbp/gbp-9.jpg", "width": 800, "height": 800, "caption": "Students in a DevOps classroom at DevOps Institute Powai campus, Mumbai"},
+                {"@type": "ImageObject", "contentUrl": "https://www.devopsinstitute.co.in/campus/gbp/gbp-10.jpg", "width": 816, "height": 1440, "caption": "Student thank-you portrait at DevOps Institute Powai campus, Mumbai"},
+                {"@type": "ImageObject", "contentUrl": "https://www.devopsinstitute.co.in/campus/campus-branded-1.jpg", "width": 960, "height": 1200, "caption": "DevOps classroom batch at DevOps Institute Powai campus, Mumbai"}
+              ],
               "logo": "https://www.devopsinstitute.co.in/logo-color.png",
               "priceRange": "₹₹",
               "sameAs": [
                 "https://www.instagram.com/devopsinstituteinmumbai/",
-                "https://share.google/lYg4hHYl2lYj3b976"
+                "https://devopsinstitutemumbai.co.in/",
+                "https://share.google/lYg4hHYl2lYj3b976",
+                "https://maps.app.goo.gl/5hUDHH1WjKevbkQz8",
+                "https://www.google.com/maps/place/Devops+Institute+-AWS,+Azure+%26+GCP+Course/@19.1185189,72.8903708,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c959af96f0ef:0x85a42f1a4ba0d52e!8m2!3d19.1185189!4d72.8903708!16s%2Fg%2F11nw1ycxkt"
+              ],
+              "hasMap": [
+                "https://maps.app.goo.gl/5hUDHH1WjKevbkQz8",
+                "https://www.google.com/maps/place/Devops+Institute+-AWS,+Azure+%26+GCP+Course/@19.1185189,72.8903708,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c959af96f0ef:0x85a42f1a4ba0d52e!8m2!3d19.1185189!4d72.8903708!16s%2Fg%2F11nw1ycxkt"
               ],
               "address": {
                 "@type": "PostalAddress",
@@ -173,14 +208,14 @@
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": 19.1076,
-                "longitude": 72.8983
+                "latitude": 19.1185189,
+                "longitude": 72.8903708
               }
             },
             {
               "@type": "WebSite",
               "@id": "https://www.devopsinstitute.co.in/#website",
-              "url": "https://www.devopsinstitute.co.in",
+              "url": "https://www.devopsinstitute.co.in/",
               "name": "DevOps Institute - AWS, Azure & GCP Course"
             }
           ]

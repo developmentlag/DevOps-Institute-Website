@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { MapPin, Phone, Navigation, Loader2, Star } from "lucide-react";
-import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, MAP_EMBED_URL, MAP_DIRECTIONS_URL, NEARBY_AREAS, GOOGLE_REVIEWS_STATS } from "@/data/site";
+import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, MAP_EMBED_URL, MAP_DIRECTIONS_URL, GBP_PROFILE_URL, NEARBY_AREAS, GOOGLE_REVIEWS_STATS } from "@/data/site";
 
 export default function CampusMap() {
   const [loaded, setLoaded] = useState(false);
@@ -40,6 +40,16 @@ export default function CampusMap() {
               ))}
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href={GBP_PROFILE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="campus-google-profile-link"
+                className="inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-900 shadow-sm hover:border-blue-600 transition-colors"
+              >
+                <MapPin className="h-4 w-4 text-blue-700" aria-hidden="true" />
+                View on Google / Reviews
+              </a>
               <a
                 href={MAP_DIRECTIONS_URL}
                 target="_blank"

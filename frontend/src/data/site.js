@@ -1,3 +1,5 @@
+import { GBP_PHOTOS } from "@/data/gbpPhotos";
+
 export const SITE_ORIGIN = "https://www.devopsinstitute.co.in";
 
 // In the browser, canonicals and JSON-LD follow the live origin. Prerender
@@ -146,8 +148,18 @@ export const HERO_STATS = [
   { value: "Weekend", label: "& weekday batches" },
 ];
 
+// Powai Google Business Profile. The short link resolves to
+// "Devops Institute -AWS, Azure & GCP Course" at 19.1185189, 72.8903708.
+// Feature id 0x3be7c959af96f0ef:0x85a42f1a4ba0d52e. CID decimal 9629873693209449774.
+export const GBP_PROFILE_URL = "https://maps.app.goo.gl/5hUDHH1WjKevbkQz8";
+export const GBP_PLACE_URL =
+  "https://www.google.com/maps/place/Devops+Institute+-AWS,+Azure+%26+GCP+Course/@19.1185189,72.8903708,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c959af96f0ef:0x85a42f1a4ba0d52e!8m2!3d19.1185189!4d72.8903708!16s%2Fg%2F11nw1ycxkt";
+export const GBP_CID = "9629873693209449774";
+export const GBP_LATITUDE = 19.1185189;
+export const GBP_LONGITUDE = 72.8903708;
+
 const MAP_QUERY = "Lodha Supremus, B 1307, Saki Vihar Rd, Chandivali, Powai, Mumbai, Maharashtra 400072";
-export const MAP_EMBED_URL = `https://maps.google.com/maps?q=${encodeURIComponent(MAP_QUERY)}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+export const MAP_EMBED_URL = `https://maps.google.com/maps?cid=${GBP_CID}&output=embed`;
 export const MAP_DIRECTIONS_URL = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(MAP_QUERY)}`;
 
 export const NEARBY_AREAS = [
@@ -614,7 +626,49 @@ export const AREA_SERVED = [
   "Mumbai",
 ];
 
-function powaiPostal() {
+export function publicSiteUrl() {
+  return `${getSiteOrigin().replace(/\/$/, "")}/`;
+}
+
+export function powaiSameAs(includeSite = false) {
+  const profiles = [
+    INSTAGRAM_URL,
+    THANE_HOME,
+    ...GOOGLE_BUSINESS_PROFILE_URLS,
+    GBP_PROFILE_URL,
+    GBP_PLACE_URL,
+  ];
+  return includeSite ? [publicSiteUrl(), ...profiles] : profiles;
+}
+
+export function powaiHasMap() {
+  return [GBP_PROFILE_URL, GBP_PLACE_URL, MAP_DIRECTIONS_URL];
+}
+
+export function powaiImageObjects() {
+  const origin = getSiteOrigin().replace(/\/$/, "");
+  const photos = GBP_PHOTOS.map((photo) => ({
+    "@type": "ImageObject",
+    contentUrl: `${origin}${photo.jpg}`,
+    url: `${origin}${photo.jpg}`,
+    width: photo.width,
+    height: photo.height,
+    caption: photo.alt,
+    encodingFormat: "image/jpeg",
+  }));
+  photos.push({
+    "@type": "ImageObject",
+    contentUrl: `${origin}/campus/campus-branded-1.jpg`,
+    url: `${origin}/campus/campus-branded-1.jpg`,
+    width: 960,
+    height: 1200,
+    caption: "DevOps classroom batch at DevOps Institute Powai campus, Mumbai",
+    encodingFormat: "image/jpeg",
+  });
+  return photos;
+}
+
+export function powaiPostal() {
   return {
     "@type": "PostalAddress",
     streetAddress: POWAI_STREET,
@@ -676,24 +730,32 @@ function visibleReviewSchema() {
 
 export const buildOrgSchema = () => {
   const origin = getSiteOrigin();
+  const home = publicSiteUrl();
+  const sameAs = powaiSameAs(false);
+  const images = powaiImageObjects();
+  const hasMap = powaiHasMap();
   // sameAs profiles can be added when the URLs exist: YouTube, LinkedIn, Facebook, Justdial, Sulekha.
-  const sameAs = [INSTAGRAM_URL, THANE_HOME, ...GOOGLE_BUSINESS_PROFILE_URLS];
   const memberOf = ["NASSCOM", "IBM", "Govt. of India (MEITY)", "IIT Patna"].map((name) => ({
     "@type": "Organization",
     name,
   }));
+  const alternateName = [PROVIDER_NAME, "DevOps Institute Mumbai", "Devops Institute -AWS, Azure & GCP Course"];
   return {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Organization",
         "@id": `${origin}/#organization`,
-        name: PROVIDER_NAME,
+        name: BUSINESS_NAME,
+        alternateName,
         legalName: BUSINESS_NAME,
-        url: origin,
+        url: home,
         logo: `${origin}/logo-color.png`,
+        image: images,
         telephone: PHONE,
+        address: powaiPostal(),
         sameAs,
+        hasMap,
         memberOf,
         subOrganization: [
           { "@id": `${origin}/#institute` },
@@ -704,24 +766,24 @@ export const buildOrgSchema = () => {
         "@type": ["EducationalOrganization", "School", "LocalBusiness"],
         "@id": `${origin}/#institute`,
         name: BUSINESS_NAME,
-        alternateName: "DevOps Institute Mumbai",
+        alternateName,
         description:
           "Classroom DevOps, AWS, Azure and GCP training institute in Chandivali, Powai, Mumbai. Become a DevOps engineer in 4 months with hands-on labs, weekend batches and placement support. The institute publishes an IIT and Microsoft collaboration. It is affiliated with NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna.",
-        url: origin,
+        url: home,
         telephone: PHONE,
-        image: `${origin}/campus/campus-branded-1.jpg`,
+        image: images,
         logo: `${origin}/logo-color.png`,
         priceRange: "₹₹",
         parentOrganization: { "@id": `${origin}/#organization` },
         sameAs,
+        hasMap,
         memberOf,
         address: powaiPostal(),
         geo: {
           "@type": "GeoCoordinates",
-          latitude: 19.1076,
-          longitude: 72.8983,
+          latitude: GBP_LATITUDE,
+          longitude: GBP_LONGITUDE,
         },
-        hasMap: MAP_DIRECTIONS_URL,
         openingHoursSpecification: [
           {
             "@type": "OpeningHoursSpecification",
@@ -741,9 +803,13 @@ export const buildOrgSchema = () => {
             url: `${origin}/courses/${c.slug}`,
             provider: {
               "@type": "EducationalOrganization",
-              name: PROVIDER_NAME,
-              sameAs: origin,
-              url: origin,
+              "@id": `${origin}/#institute`,
+              name: BUSINESS_NAME,
+              url: home,
+              telephone: PHONE,
+              address: powaiPostal(),
+              sameAs,
+              hasMap,
             },
           })),
         },
@@ -797,7 +863,7 @@ export const buildOrgSchema = () => {
       {
         "@type": "WebSite",
         "@id": `${origin}/#website`,
-        url: origin,
+        url: home,
         name: BUSINESS_NAME,
         publisher: { "@id": `${origin}/#organization` },
       },
@@ -858,11 +924,13 @@ export const buildFlagshipCourseSchema = () => {
     provider: {
       "@type": "EducationalOrganization",
       "@id": `${origin}/#institute`,
-      name: PROVIDER_NAME,
-      url: origin,
-      sameAs: [origin, INSTAGRAM_URL, THANE_HOME, ...GOOGLE_BUSINESS_PROFILE_URLS],
+      name: BUSINESS_NAME,
+      url: publicSiteUrl(),
       telephone: PHONE,
       address: powaiPostal(),
+      image: powaiImageObjects(),
+      sameAs: powaiSameAs(true),
+      hasMap: powaiHasMap(),
     },
     offers: paidOffer(origin),
     hasCourseInstance: [courseInstance(origin, "P4M")],
@@ -888,11 +956,13 @@ export const buildCourseSchema = (course) => {
     provider: {
       "@type": "EducationalOrganization",
       "@id": `${origin}/#institute`,
-      name: PROVIDER_NAME,
-      url: origin,
-      sameAs: [origin, INSTAGRAM_URL, THANE_HOME, ...GOOGLE_BUSINESS_PROFILE_URLS],
+      name: BUSINESS_NAME,
+      url: publicSiteUrl(),
       telephone: PHONE,
       address: powaiPostal(),
+      image: powaiImageObjects(),
+      sameAs: powaiSameAs(true),
+      hasMap: powaiHasMap(),
     },
     hasCourseInstance: [courseInstance(origin, duration)],
     offers: paidOffer(courseUrl),

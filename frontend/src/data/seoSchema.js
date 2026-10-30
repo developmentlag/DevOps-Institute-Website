@@ -1,6 +1,6 @@
 import { buildMentorPersonSchemas } from "@/data/mentors";
 import {
-  ADDRESS,
+  BUSINESS_NAME,
   GOOGLE_REVIEWS_STATS,
   LAST_UPDATED_ISO,
   PHONE,
@@ -10,6 +10,10 @@ import {
   buildFaqSchema,
   buildOrgSchema,
   getSiteOrigin,
+  powaiHasMap,
+  powaiPostal,
+  powaiSameAs,
+  publicSiteUrl,
 } from "@/data/site";
 
 function courseLanding({ name, description, path, teaches, duration }) {
@@ -28,7 +32,15 @@ function courseLanding({ name, description, path, teaches, duration }) {
     inLanguage: "en",
     educationalLevel: "Beginner to Advanced",
     teaches,
-    provider: { "@id": `${origin}/#institute`, "@type": "EducationalOrganization", name: PROVIDER_NAME, url: origin },
+    provider: {
+      "@id": `${origin}/#institute`,
+      "@type": "EducationalOrganization",
+      name: BUSINESS_NAME,
+      url: publicSiteUrl(),
+      telephone: PHONE,
+      sameAs: powaiSameAs(false),
+      hasMap: powaiHasMap(),
+    },
     offers: {
       "@type": "Offer",
       category: "Paid",
@@ -120,9 +132,12 @@ export function buildSeoSchema(page) {
       "@context": "https://schema.org",
       "@type": "EducationalOrganization",
       "@id": `${getSiteOrigin()}/reviews#reviews`,
-      name: PROVIDER_NAME,
+      name: BUSINESS_NAME,
+      url: publicSiteUrl(),
       telephone: PHONE,
-      address: ADDRESS,
+      address: powaiPostal(),
+      sameAs: powaiSameAs(false),
+      hasMap: powaiHasMap(),
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: GOOGLE_REVIEWS_STATS.ratingValue,

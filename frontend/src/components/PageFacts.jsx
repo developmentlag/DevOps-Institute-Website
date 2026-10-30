@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ClassroomSpotlight from "@/components/ClassroomSpotlight";
 import { MentorTeaser } from "@/components/Mentors";
 import {
   ADDRESS,
@@ -107,6 +108,7 @@ export function AnswerBlock({ answer, mentors = true }) {
   return (
     <>
       <DirectAnswer>{answer}</DirectAnswer>
+      <ClassroomSpotlight />
       <KeyFacts />
       <UpdatedLine />
       {mentors ? <MentorTeaser /> : null}
