@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import EnquiryForm from "@/components/EnquiryForm";
 import CampusMap from "@/components/CampusMap";
+import StudentLifeGallery from "@/components/StudentLifeGallery";
 import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
 import { MentorCards } from "@/components/Mentors";
 import {
@@ -225,6 +226,7 @@ export default function SeoArticle({ page }) {
         {page.route.h1}
       </h1>
       <AnswerBlock answer={page.answer} mentors={page.route.path !== "/trainers"} />
+      {page.route.path === "/devops-course-in-powai" ? <StudentLifeGallery embedded /> : null}
       {page.route.path === "/trainers" ? <MentorCards /> : null}
 
       {page.sections.map((section) => (

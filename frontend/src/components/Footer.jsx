@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { CloudCog, Phone, MapPin, Navigation, Instagram, MessageCircle } from "lucide-react";
-import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, MAP_DIRECTIONS_URL, COURSES, INSTAGRAM_URL, WHATSAPP_URL } from "@/data/site";
+import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, MAP_DIRECTIONS_URL, GBP_PROFILE_URL, COURSES, INSTAGRAM_URL, WHATSAPP_URL } from "@/data/site";
 import { AREA_ROUTES, GUIDE_ROUTES } from "@/data/seoRoutes";
 
 export const MobileStickyBar = () => (
@@ -113,6 +113,16 @@ export default function Footer() {
             </p>
           </address>
           <div className="mt-4 flex flex-wrap gap-2.5">
+            <a
+              href={GBP_PROFILE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="footer-google-profile-link"
+              className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-800 px-4 py-2.5 text-sm font-semibold text-white hover:bg-slate-700 transition-colors"
+            >
+              <MapPin className="h-4 w-4 text-blue-300" aria-hidden="true" />
+              View on Google / Reviews
+            </a>
             <a
               href={MAP_DIRECTIONS_URL}
               target="_blank"

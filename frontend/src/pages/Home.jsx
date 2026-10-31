@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import {
   Cloud, Cloudy, CloudCog, GitBranch, Container, Terminal,
-  Phone, ArrowRight, CheckCircle2, MapPin, MessageCircle, Award, Users, CalendarClock, Star,
+  Phone, ArrowRight, CheckCircle2, MapPin, MessageCircle,
 } from "lucide-react";
 import Seo from "@/components/Seo";
+import StudentLifeGallery from "@/components/StudentLifeGallery";
 import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
 import { staticPage } from "@/data/pageMeta";
 import EnquiryForm from "@/components/EnquiryForm";
@@ -15,7 +16,7 @@ import { MentorPreview } from "@/components/Mentors";
 import FaqAccordion from "@/components/FaqAccordion";
 import {
   BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, WHATSAPP_URL,
-  COURSE_CARDS, WHY_CHOOSE, HOME_FAQS, HERO_STATS, GHATKOPAR_URL, buildFlagshipCourseSchema, buildOrgSchema, buildFaqSchema, buildBreadcrumbSchema,
+  COURSE_CARDS, WHY_CHOOSE, HOME_FAQS, GHATKOPAR_URL, buildFlagshipCourseSchema, buildOrgSchema, buildFaqSchema, buildBreadcrumbSchema,
 } from "@/data/site";
 
 const CARD_ICONS = [Cloud, Cloudy, CloudCog, GitBranch, Container, Container, Terminal, Terminal, GitBranch];
@@ -27,7 +28,6 @@ const HERO_CHIPS = [
   "Dedicated Placement Support",
 ];
 
-const STAT_ICONS = [Star, CalendarClock, Award, Users];
 const HOME_META = staticPage("/");
 
 const NEARBY_LINKS = [
@@ -61,8 +61,7 @@ export default function Home() {
       {/* HERO */}
       <section className="relative overflow-hidden bg-gradient-to-b from-blue-50 via-white to-white hero-grid" data-testid="hero-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-            <div>
+          <div className="max-w-3xl">
               <p className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-blue-700">
                 <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
                 Classroom Training in Powai, Mumbai
@@ -71,7 +70,9 @@ export default function Home() {
               <h1 className="mt-5 font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.12]">
                 Become a <span className="text-blue-700">DevOps Engineer</span> in Just 4 Months
               </h1>
+          </div>
               <AnswerBlock answer={HOME_META.answer} />
+          <div className="max-w-3xl">
               <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl">
                 100% practical <strong className="font-semibold text-slate-800">classroom DevOps training</strong> in
                 Chandivali, Powai — with hands-on AWS, Azure &amp; GCP labs, weekend &amp; weekday batches, and
@@ -117,48 +118,6 @@ export default function Home() {
                   <ArrowRight className="h-4 w-4 shrink-0 text-blue-600" aria-hidden="true" />
                 </a>
               </div>
-            </div>
-
-            {/* Hero image with floating placement card */}
-            <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-xl glow-blue bg-slate-100">
-                <img
-                  src="/campus/campus-branded-1.jpg"
-                  alt="DevOps classroom training batch in progress at DevOps Institute, Chandivali, Powai, Mumbai"
-                  width="960"
-                  height="1200"
-                  className="w-full h-full object-cover aspect-[4/3]"
-                  fetchPriority="high"
-                  decoding="async"
-                />
-                <span className="absolute top-4 left-4 inline-flex items-center gap-1.5 rounded-full bg-white/95 px-3 py-1.5 text-xs font-bold text-blue-700 shadow-sm">
-                  <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
-                  Live batch · Powai campus
-                </span>
-              </div>
-              <div className="absolute -bottom-5 -left-2 sm:left-4 rounded-xl border border-slate-200 bg-white px-5 py-3.5 shadow-lg" data-testid="hero-placement-card">
-                <p className="text-2xl font-extrabold text-emerald-600 leading-none font-heading">100%</p>
-                <p className="mt-1 text-xs font-medium text-slate-600">Placement support after training</p>
-              </div>
-            </div>
-          </div>
-
-          {/* stats strip */}
-          <div className="mt-14 sm:mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4" data-testid="hero-stats-strip">
-            {HERO_STATS.map((s, i) => {
-              const Icon = STAT_ICONS[i % STAT_ICONS.length];
-              return (
-                <div key={s.label} className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-blue-50 text-blue-700 shrink-0">
-                    <Icon className="h-5 w-5" aria-hidden="true" />
-                  </span>
-                  <div>
-                    <p className="font-heading text-lg font-extrabold text-slate-900 leading-none">{s.value}</p>
-                    <p className="mt-1 text-xs text-slate-600">{s.label}</p>
-                  </div>
-                </div>
-              );
-            })}
           </div>
         </div>
       </section>
@@ -204,6 +163,7 @@ export default function Home() {
         </div>
       </section>
 
+      <StudentLifeGallery />
       <CampusGallery />
       <VideoReels />
       <Testimonials />
