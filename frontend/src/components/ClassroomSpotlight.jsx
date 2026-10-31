@@ -13,9 +13,9 @@ import {
 
 const STAT_ICONS = [Star, CalendarClock, Award, Users];
 
-export default function ClassroomSpotlight() {
+export function ClassroomHighlight({ className = "mt-6" }) {
   return (
-    <section className="mt-6" data-testid="classroom-spotlight" aria-label="Powai classroom and Google Business Profile">
+    <div className={className} data-testid="classroom-highlight">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-start">
         <figure className="relative overflow-hidden rounded-2xl border border-slate-200 shadow-xl glow-blue bg-slate-100">
           <GbpPicture
@@ -51,38 +51,51 @@ export default function ClassroomSpotlight() {
           })}
         </div>
       </div>
+    </div>
+  );
+}
 
-      <div className="mt-5">
-        <div className="flex flex-col rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden">
-          <iframe
-            title={`Google Map of ${BUSINESS_NAME}, ${ADDRESS}`}
-            src={MAP_EMBED_URL}
-            className="w-full flex-1 min-h-[240px] bg-slate-100"
-            width="600"
-            height="240"
-            style={{ border: 0 }}
-            loading="lazy"
-            allowFullScreen
-            referrerPolicy="no-referrer-when-downgrade"
-            data-testid="classroom-google-map"
-          />
-          <div className="px-4 py-3 text-sm text-slate-700">
-            <a
-              href={GBP_PROFILE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-testid="gbp-profile-link"
-              className="font-semibold text-blue-700 hover:text-blue-800"
-            >
-              View on Google / Reviews
-            </a>
-            <p className="mt-2 leading-relaxed">
-              {BUSINESS_NAME}. {ADDRESS}. Phone{" "}
-              <a href={PHONE_TEL} className="font-semibold text-blue-700">{PHONE}</a>.
-            </p>
-          </div>
+export function ClassroomMapCard({ className = "mt-5" }) {
+  return (
+    <div className={className} data-testid="classroom-map-card">
+      <div className="flex flex-col rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden">
+        <iframe
+          title={`Google Map of ${BUSINESS_NAME}, ${ADDRESS}`}
+          src={MAP_EMBED_URL}
+          className="w-full flex-1 min-h-[240px] bg-slate-100"
+          width="600"
+          height="240"
+          style={{ border: 0 }}
+          loading="lazy"
+          allowFullScreen
+          referrerPolicy="no-referrer-when-downgrade"
+          data-testid="classroom-google-map"
+        />
+        <div className="px-4 py-3 text-sm text-slate-700">
+          <a
+            href={GBP_PROFILE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="gbp-profile-link"
+            className="font-semibold text-blue-700 hover:text-blue-800"
+          >
+            View on Google / Reviews
+          </a>
+          <p className="mt-2 leading-relaxed">
+            {BUSINESS_NAME}. {ADDRESS}. Phone{" "}
+            <a href={PHONE_TEL} className="font-semibold text-blue-700">{PHONE}</a>.
+          </p>
         </div>
       </div>
+    </div>
+  );
+}
+
+export default function ClassroomSpotlight() {
+  return (
+    <section className="mt-6" data-testid="classroom-spotlight" aria-label="Powai classroom and Google Business Profile">
+      <ClassroomHighlight className="" />
+      <ClassroomMapCard />
     </section>
   );
 }

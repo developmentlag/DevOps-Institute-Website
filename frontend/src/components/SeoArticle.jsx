@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import EnquiryForm from "@/components/EnquiryForm";
 import CampusMap from "@/components/CampusMap";
 import StudentLifeGallery from "@/components/StudentLifeGallery";
-import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
-import { MentorCards } from "@/components/Mentors";
+import { AnswerBlock, Breadcrumbs, DirectAnswer, KeyFacts, UpdatedLine } from "@/components/PageFacts";
+import { ClassroomHighlight, ClassroomMapCard } from "@/components/ClassroomSpotlight";
+import PracticalTrainingCta from "@/components/PracticalTrainingCta";
+import { MentorCards, MentorTeaser } from "@/components/Mentors";
 import {
   ADDRESS,
   GHATKOPAR_URL,
@@ -16,7 +18,7 @@ import {
   VASHI_URL,
   WHATSAPP_URL,
 } from "@/data/site";
-import { AREA_ROUTES, GUIDE_ROUTES, SEO_ROUTES, TRUST_ROUTES } from "@/data/seoRoutes";
+import { AREA_ROUTES, CLOUD_AREA_ROUTES, GUIDE_ROUTES, SEO_ROUTES, TRUST_ROUTES } from "@/data/seoRoutes";
 
 function SectionTable({ table }) {
   if (!table) return null;
@@ -176,6 +178,7 @@ function SitemapBlock() {
       ],
     },
     { title: "DevOps course near you", links: AREA_ROUTES.map((route) => ({ href: route.path, label: route.h1 })) },
+    { title: "Cloud computing course near you", links: CLOUD_AREA_ROUTES.map((route) => ({ href: route.path, label: route.h1 })) },
     { title: "Guides", links: GUIDE_ROUTES.map((route) => ({ href: route.path, label: route.h1 })) },
     {
       title: "Campus and trust",
@@ -225,7 +228,16 @@ export default function SeoArticle({ page }) {
       <h1 className="font-heading text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 leading-tight">
         {page.route.h1}
       </h1>
-      <AnswerBlock answer={page.answer} mentors={page.route.path !== "/trainers"} />
+      {page.classroomFirst ? (
+        <>
+          <ClassroomHighlight />
+          <PracticalTrainingCta demoHref="#seo-enquiry" testIdPrefix="area-hero" />
+          <DirectAnswer>{page.answer}</DirectAnswer>
+          <UpdatedLine />
+        </>
+      ) : (
+        <AnswerBlock answer={page.answer} mentors={page.route.path !== "/trainers"} />
+      )}
       {page.route.path === "/devops-course-in-powai" ? <StudentLifeGallery embedded /> : null}
       {page.route.path === "/trainers" ? <MentorCards /> : null}
 
@@ -271,7 +283,14 @@ export default function SeoArticle({ page }) {
         </nav>
       ) : null}
 
-      <section className="no-print mt-12 rounded-xl border border-slate-200 p-5">
+      {page.classroomFirst ? (
+        <>
+          <MentorTeaser />
+          <KeyFacts />
+        </>
+      ) : null}
+
+      <section id="seo-enquiry" className="no-print mt-12 rounded-xl border border-slate-200 p-5">
         <h2 className="font-heading text-2xl font-bold text-slate-900">Ask about the next batch</h2>
         <p className="mt-2 text-slate-700">
           {ADDRESS}. Phone <a className="font-semibold text-blue-700" href={PHONE_TEL}>{PHONE}</a>.{" "}
@@ -282,6 +301,7 @@ export default function SeoArticle({ page }) {
         </div>
       </section>
 
+      {page.classroomFirst ? <ClassroomMapCard className="mt-10" /> : null}
       {page.showMap ? <CampusMap /> : null}
     </article>
   );

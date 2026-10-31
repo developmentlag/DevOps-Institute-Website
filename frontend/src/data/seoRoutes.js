@@ -1,5 +1,7 @@
 /** Slim route list for the footer, sitemap and prerender. Essays live in seoCopy.js. */
 
+import { localSeoRoutes } from "@/data/seo/localBatch";
+
 export const SEO_ROUTES = [
   route("/devops-course-in-mumbai", "area", "DevOps Course in Mumbai with Placement | Powai", "DevOps Course in Mumbai with Placement", "DevOps course in Mumbai with placement at the Chandivali, Powai campus. Classroom labs and weekday or weekend batches. Call 083695 18569.", "Hub for every Mumbai area page, the Powai campus and placement facts."),
   route("/devops-course-in-powai", "area", "DevOps Course in Powai with Placement | Mumbai", "DevOps Course in Powai, Mumbai with Placement", "DevOps course in Powai with placement. Classroom training at Lodha Supremus, near Powai Lake and Hiranandani. Call 083695 18569.", "Powai learners: commute from the lake and Hiranandani to the Chandivali campus."),
@@ -45,6 +47,7 @@ export const SEO_ROUTES = [
   route("/placements", "trust", "DevOps Placements | 450+ Placed, Powai", "DevOps Placements at the Powai Campus", "Placement stories and the published 450+ placed, 100% Placement and 360° Placement Assurance. Call 083695 18569.", "Filterable placement and student stories from names already on the site."),
   route("/sitemap", "utility", "Sitemap | DevOps Institute Powai", "HTML Sitemap", "HTML sitemap of DevOps Institute courses, Mumbai area pages and guides for the Powai campus.", "Human-readable list of every public URL on this site."),
   route("/404", "utility", "Page not found | DevOps Institute", "Page not found", "This page is not on the DevOps Institute Powai site. Use the sitemap or call 083695 18569.", "Not-found page. It is noindex and is not listed in the sitemap.", { index: false }),
+  ...localSeoRoutes,
 ];
 
 function route(path, group, title, h1, description, summary, extra = {}) {
@@ -56,5 +59,6 @@ export function seoRoute(path) {
 }
 
 export const AREA_ROUTES = SEO_ROUTES.filter((item) => item.path.startsWith("/devops-course-in-") && item.group === "area");
+export const CLOUD_AREA_ROUTES = SEO_ROUTES.filter((item) => item.path.startsWith("/cloud-computing-course-in-"));
 export const GUIDE_ROUTES = SEO_ROUTES.filter((item) => item.group === "guide");
 export const TRUST_ROUTES = SEO_ROUTES.filter((item) => item.group === "trust");

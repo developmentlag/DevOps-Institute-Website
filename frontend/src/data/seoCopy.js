@@ -11,6 +11,7 @@ import { devopsShared, cloudShared } from "@/data/seo/sharedBlocks";
 import { LENGTH_BOOST } from "@/data/seo/lengthBoost";
 import { MENTORS } from "@/data/mentors";
 import { AFFILIATION_LINE, TESTIMONIALS, GOOGLE_REVIEWS_STATS, GOOGLE_BUSINESS_PROFILE_URLS } from "@/data/site";
+import { cloudHubLinks, getLocalPage, MUMBAI_CLOUD_HUB_SECTION, MUMBAI_DEVOPS_HUB_SECTION } from "@/data/seo/localBatch";
 
 const AREAS = { ...AREA_EAST, ...AREA_WEST };
 
@@ -236,15 +237,34 @@ export function getSeoPage(path) {
   const route = SEO_ROUTES.find((item) => item.path === path);
   if (!route) return null;
 
+  const local = getLocalPage(path);
+  if (local) {
+    return {
+      route,
+      answer: local.answer,
+      sections: local.sections,
+      faqs: local.faqs,
+      links: local.links,
+      crumbs: local.crumbs,
+      showMap: false,
+      classroomFirst: true,
+      areaServed: local.areaServed,
+      schemaTeaches: local.schemaTeaches,
+      schemaDuration: local.schemaDuration,
+    };
+  }
+
   if (route.group === "area") {
     const slug = path.replace("/devops-course-in-", "");
     const base = AREAS[slug];
     if (!base) return null;
     const page = withExtra(base, AREA_EXTRA[slug]);
+    const sections = withAffiliationSection([...page.sections, ...devopsShared()]);
+    if (slug === "mumbai") sections.push(MUMBAI_DEVOPS_HUB_SECTION);
     return {
       route,
       ...page,
-      sections: withAffiliationSection([...page.sections, ...devopsShared()]),
+      sections,
       links: areaLinks(slug),
       showMap: true,
       crumbs: slug === "mumbai"
@@ -263,11 +283,17 @@ export function getSeoPage(path) {
   if (route.group === "topic") {
     const base = TOPIC_PAGES[path];
     if (!base) return null;
+    const sections = withAffiliationSection([...base.sections, ...cloudShared(topicFocus(path)), ...(LENGTH_BOOST[path] || [])]);
+    let links = topicLinks(path);
+    if (path === "/cloud-computing-course-in-mumbai") {
+      sections.push(MUMBAI_CLOUD_HUB_SECTION);
+      links = [...cloudHubLinks(), ...links];
+    }
     return {
       route,
       ...base,
-      sections: withAffiliationSection([...base.sections, ...cloudShared(topicFocus(path)), ...(LENGTH_BOOST[path] || [])]),
-      links: topicLinks(path),
+      sections,
+      links,
       showMap: true,
       crumbs: [
         { name: "Home", href: "/" },
