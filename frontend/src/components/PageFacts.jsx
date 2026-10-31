@@ -104,14 +104,24 @@ export function UpdatedLine() {
   return <p className="mt-3 text-sm text-slate-500">Last updated: {LAST_UPDATED_LABEL}</p>;
 }
 
-export function AnswerBlock({ answer, mentors = true }) {
+export function AnswerBlock({ answer, mentors = true, afterSpotlight = null }) {
   return (
     <>
       <DirectAnswer>{answer}</DirectAnswer>
       <ClassroomSpotlight />
-      <KeyFacts />
+      {afterSpotlight}
       <UpdatedLine />
       {mentors ? <MentorTeaser /> : null}
     </>
+  );
+}
+
+export function KeyFactsSection() {
+  return (
+    <section id="key-facts" className="py-12 sm:py-16 bg-white border-t border-slate-200" data-testid="key-facts">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <KeyFacts />
+      </div>
+    </section>
   );
 }
