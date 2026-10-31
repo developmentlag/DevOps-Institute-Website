@@ -39,6 +39,7 @@ export function cloudShared(focus) {
     aws: "This page focuses on AWS: IAM, EC2, S3, VPC, RDS, CloudWatch and CloudFormation, as listed on the AWS course.",
     azure: "This page focuses on Microsoft Azure: virtual machines, virtual networks, Entra ID, AKS and Azure DevOps, as listed on the Azure course.",
     kubernetes: "This page focuses on Docker and Kubernetes: images, pods, deployments, ingress and Helm, as listed on the Kubernetes course.",
+    devops: "This page focuses on a DevOps skill path: Git, Jenkins, Docker, Kubernetes, Ansible, Terraform, CI/CD and monitoring, as listed on the DevOps course.",
   }[focus];
   return [
     {

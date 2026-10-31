@@ -214,6 +214,7 @@ function topicFocus(path) {
   if (path.includes("kubernetes")) return "kubernetes";
   if (path.includes("azure")) return "azure";
   if (path.includes("aws")) return "aws";
+  if (/(git|jenkins|docker|ansible|cicd)-course/.test(path)) return "devops";
   return "cloud";
 }
 
@@ -225,7 +226,13 @@ function topicLinks(path) {
   ];
   if (path.includes("aws")) links.push({ href: "/courses/aws", label: "AWS course" });
   else if (path.includes("azure")) links.push({ href: "/courses/azure", label: "Azure course" });
+  else if (path.includes("gcp")) links.push({ href: "/courses/gcp", label: "GCP course" });
   else if (path.includes("kubernetes")) links.push({ href: "/courses/kubernetes-docker", label: "Kubernetes course" });
+  else if (path.includes("sre")) links.push({ href: "/courses/sre", label: "SRE course" });
+  else if (/(git|jenkins|docker|ansible|cicd)-course/.test(path)) {
+    links.push({ href: "/courses/devops", label: "DevOps course" });
+    links.push({ href: "/devops-course-syllabus", label: "DevOps course syllabus" });
+  }
   else links.push({ href: "/courses/aws", label: "AWS course" }, { href: "/courses/azure", label: "Azure course" }, { href: "/courses/gcp", label: "GCP course" });
   if (path.includes("powai")) links.push({ href: "/devops-course-in-powai", label: "DevOps course in Powai" });
   if (path.includes("andheri")) links.push({ href: "/devops-course-in-andheri", label: "DevOps course in Andheri" });

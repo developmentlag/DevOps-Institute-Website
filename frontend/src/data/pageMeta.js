@@ -67,15 +67,22 @@ export const STATIC_PAGES = [
 ];
 
 const COURSE_TEXT = {
+  "cloud-computing": "Cloud Computing Course in Mumbai",
   aws: "AWS Course in Mumbai with Placement",
   azure: "Azure Course in Mumbai",
   gcp: "GCP Course in Mumbai",
   devops: "DevOps Course in Mumbai with Placement",
   "kubernetes-docker": "Kubernetes & Docker Course in Mumbai",
   "linux-terraform": "Linux & Terraform Course in Mumbai",
+  sre: "SRE Course in Mumbai",
+  monitoring: "Monitoring & Observability Course in Mumbai",
+  "ai-ml": "AI & ML Course in Mumbai",
+  "cyber-security": "Cyber Security Course in Mumbai",
 };
 
 export const COURSE_ANSWERS = {
+  "cloud-computing":
+    "DevOps Institute in Chandivali, Powai teaches a cloud computing course in Mumbai with practical AWS, Azure and GCP labs. Learners work through core cloud services, networking, identity and deployment concepts at Lodha Supremus. Weekday and weekend batches are available. Call 083695 18569 for current details.",
   aws:
     "DevOps Institute in Chandivali, Powai teaches an AWS course in Mumbai with placement support. Labs cover IAM, EC2, S3, VPC, RDS and CloudWatch at Lodha Supremus, in weekday or weekend batches. The work sits inside the published four-month classroom path. Call 083695 18569.",
   azure:
@@ -88,6 +95,14 @@ export const COURSE_ANSWERS = {
     "DevOps Institute in Chandivali, Powai teaches Kubernetes and Docker in Mumbai. Labs cover images, pods, ingress and Helm at Lodha Supremus, with weekday and weekend batches. Placement support uses the institute's published lines. Call 083695 18569 for the next batch.",
   "linux-terraform":
     "DevOps Institute in Chandivali, Powai teaches Linux and Terraform in Mumbai. Labs cover the shell, Bash and infrastructure as code at Lodha Supremus, with weekday and weekend batches. The campus phone is 083695 18569. Ask which batch still has seats.",
+  sre:
+    "DevOps Institute in Chandivali, Powai teaches an SRE course in Mumbai. Labs cover observability, incident response, SLIs and production operations at Lodha Supremus, with weekday and weekend batches. Call 083695 18569 for the next start date.",
+  monitoring:
+    "DevOps Institute in Chandivali, Powai teaches a monitoring and observability course in Mumbai. Labs cover Prometheus, Grafana, dashboards, logs and alerting for cloud and Kubernetes environments. Weekday and weekend batches run at Lodha Supremus. Call 083695 18569 for details.",
+  "ai-ml":
+    "DevOps Institute in Chandivali, Powai teaches an AI and machine learning course in Mumbai. Labs cover Python, data preparation, model training and evaluation at Lodha Supremus, with practical project workflows. Call 083695 18569 for current batch details.",
+  "cyber-security":
+    "DevOps Institute in Chandivali, Powai teaches a cyber security course in Mumbai. Practical topics include networking, system hardening, threat awareness and defensive monitoring at Lodha Supremus. Call 083695 18569 for batch and syllabus details.",
 };
 
 export function staticPage(route) {

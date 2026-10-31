@@ -177,6 +177,62 @@ export const NEARBY_AREAS = [
 
 export const COURSES = [
   {
+    slug: "cloud-computing",
+    icon: "cloud",
+    name: "Cloud Computing Course",
+    shortName: "Cloud Computing",
+    tagline: "Multi-Cloud Fundamentals & Career Training",
+    cardDesc:
+      "A practical cloud computing course in Mumbai covering AWS, Azure and GCP with lab-first learning and placement support.",
+    metaTitle: "Cloud Computing Course in Mumbai with Placement | Powai",
+    metaDescription:
+      "Cloud computing course in Mumbai with placement support. AWS, Azure and GCP labs at the Chandivali, Powai campus. Call 083695 18569.",
+    h1: "Cloud Computing Course in Mumbai — Multi-Cloud Training in Powai",
+    intro:
+      "This cloud computing course in Mumbai is designed for learners who want a practical foundation across AWS, Azure and GCP before choosing a specialist path. At our Chandivali, Powai campus, you work on real cloud services, networks, identity and deployment workflows with hands-on instruction and placement guidance. If you are comparing cloud courses in Mumbai or want a broad starting point, this program gives you the core multi-cloud skill set.",
+    whoFor: [
+      "Students and fresh graduates starting a cloud career",
+      "Working professionals exploring AWS, Azure or GCP roles",
+      "Developers wanting a strong understanding of cloud architecture",
+      "IT learners looking for a broad cloud foundation before specialisation",
+    ],
+    skills: [
+      "Cloud fundamentals and service models",
+      "AWS, Azure and GCP console basics",
+      "Identity, access and network fundamentals",
+      "Compute, storage and database basics across clouds",
+      "Hands-on deployment and service comparisons",
+      "Monitoring, security and cost-awareness concepts",
+      "Cloud project workflows and role readiness",
+    ],
+    outcomes: [
+      "Understand how major public cloud platforms compare in real workloads",
+      "Navigate AWS, Azure and GCP consoles and core services confidently",
+      "Build secure and scalable cloud deployment foundations",
+      "Choose the right specialist path for AWS, Azure or GCP",
+      "Prepare for placement and cloud-focused role interviews",
+    ],
+    tools: ["AWS", "Azure", "GCP", "Cloud Console", "IAM", "Networking", "Compute", "Storage", "Monitoring"],
+    faqs: [
+      {
+        q: "Is this course only for one cloud provider?",
+        a: "No. This cloud computing course gives you a foundation across AWS, Azure and GCP so you understand the common patterns and differences before choosing a specialisation.",
+      },
+      {
+        q: "Do I need previous cloud experience?",
+        a: "No. The course starts with cloud basics and builds toward real practical labs in the classroom.",
+      },
+      {
+        q: "Is the class held in Powai?",
+        a: `Yes. The course runs at ${ADDRESS}, in Chandivali, Powai, Mumbai, with weekday and weekend batch options.`,
+      },
+      {
+        q: "How do I get the batch and fee details?",
+        a: `Call ${PHONE} or submit the enquiry form and our counsellor will share the current batch schedule, syllabus and fees.`,
+      },
+    ],
+  },
+  {
     slug: "aws",
     icon: "cloud",
     name: "AWS Course",
@@ -518,9 +574,207 @@ export const COURSES = [
       },
     ],
   },
+  {
+    slug: "sre",
+    icon: "cloudCog",
+    name: "SRE Course",
+    shortName: "SRE",
+    tagline: "Site Reliability Engineering Training",
+    cardDesc:
+      "SRE course in Mumbai covering observability, service reliability, incident response, automation and production operations.",
+    metaTitle: "SRE Course in Mumbai with Placement | Powai",
+    metaDescription:
+      "SRE course in Mumbai with placement support. Learn observability, incident response, SLIs and monitoring at the Powai campus. Call 083695 18569.",
+    h1: "SRE Course in Mumbai — Site Reliability Engineering Training in Powai",
+    intro:
+      "This SRE course in Mumbai is built for engineers who want to run services reliably at scale. At our Chandivali, Powai campus, you learn how production systems fail, how monitoring and alerting work in real environments, and how to improve uptime through automation, incident management and platform thinking. It is ideal for developers, DevOps engineers and operations professionals preparing for production-facing roles in cloud environments.",
+    whoFor: [
+      "Developers moving into production support and reliability roles",
+      "DevOps engineers who want deeper SRE capabilities",
+      "System administrators and operations engineers handling uptime and scale",
+      "IT professionals preparing for cloud platform and production engineering work",
+    ],
+    skills: [
+      "Reliability fundamentals: SLIs, SLOs and error budgets",
+      "Monitoring, alerting and observability with Prometheus and Grafana",
+      "Incident management, postmortems and root cause analysis",
+      "Service reliability engineering and capacity planning",
+      "Linux and networking fundamentals for production systems",
+      "Automation with scripting and infrastructure tooling",
+      "CI/CD, deployment safety and release strategies",
+      "Kubernetes operational health and troubleshooting",
+    ],
+    outcomes: [
+      "Design and operate production-grade monitoring and alerting",
+      "Understand and apply SRE principles in real systems",
+      "Respond to incidents with structured runbooks and postmortems",
+      "Improve service reliability using automation and observability",
+      "Operate services more confidently in cloud and Kubernetes environments",
+    ],
+    tools: ["Prometheus", "Grafana", "Linux", "Kubernetes", "Helm", "Git", "Jenkins", "Alerting", "Monitoring", "Logs"],
+    faqs: [
+      {
+        q: "Is the SRE course suitable for DevOps engineers?",
+        a: "Yes. This course is a natural next step for DevOps learners who want to move into production reliability, observability and incident response work.",
+      },
+      {
+        q: "Does the SRE course cover monitoring and alerting?",
+        a: "Yes. You work with observability basics, dashboards, alert policies, logs, uptime checks and production feedback loops.",
+      },
+      {
+        q: "Is the class held at the Powai campus?",
+        a: `Yes. The training runs at ${ADDRESS}, in Chandivali, Powai, Mumbai, with weekday and weekend batch options.`,
+      },
+      {
+        q: "How do I enquire about the SRE batch and fees?",
+        a: `Call ${PHONE} or send the enquiry form on this page and our counsellor will share the batch timings, current fees and course details.`,
+      },
+    ],
+  },
+  {
+    slug: "monitoring",
+    icon: "cloudCog",
+    name: "Monitoring & Observability Course",
+    shortName: "Monitoring",
+    tagline: "Monitoring, Alerting & Observability Training",
+    cardDesc:
+      "Monitoring and observability course in Mumbai covering Prometheus, Grafana, logs, alerts and production dashboards.",
+    metaTitle: "Monitoring Course in Mumbai | Powai Campus",
+    metaDescription:
+      "Monitoring course in Mumbai covering Prometheus, Grafana, dashboards, alerts and logs at the Powai campus. Call 083695 18569.",
+    h1: "Monitoring & Observability Course in Mumbai — Production Visibility in Powai",
+    intro:
+      "This monitoring course in Mumbai is built for engineers who want to understand how production systems are watched, measured and troubleshot. At our Chandivali, Powai campus, you learn observability practices that help teams see failures early, alert the right people and act with confidence. It is ideal for cloud, DevOps and infrastructure learners who want better visibility into modern services.",
+    whoFor: [
+      "Developers who want deeper operational visibility",
+      "DevOps engineers building production dashboards and alerts",
+      "System administrators and SRE aspirants",
+      "IT professionals working with Linux, Kubernetes and cloud services",
+    ],
+    skills: [
+      "Monitoring fundamentals and system metrics",
+      "Prometheus and Grafana setup and dashboards",
+      "Log pipelines, aggregation and troubleshooting",
+      "Alerting strategies and severity tuning",
+      "Uptime, latency and service health concepts",
+      "Observability for cloud and Kubernetes environments",
+      "Runbook-driven response and incident awareness",
+    ],
+    outcomes: [
+      "Build practical monitoring and alerting workflows for services",
+      "Interpret dashboards, logs and system metrics with confidence",
+      "Detect bottlenecks and production issues earlier",
+      "Create better operational visibility for Cloud and Kubernetes environments",
+      "Support SRE and production operations with data-driven decisions",
+    ],
+    tools: ["Prometheus", "Grafana", "Linux", "Logs", "Alerting", "Dashboards", "Kubernetes", "Monitoring"],
+    faqs: [
+      {
+        q: "Is this course for beginners or experienced engineers?",
+        a: "It is accessible to both. Beginners benefit from the fundamentals, while experienced engineers get stronger monitoring and alerting workflow skills.",
+      },
+      {
+        q: "Does it include Grafana and Prometheus?",
+        a: "Yes. Prometheus, Grafana and alert configuration are central to the monitoring and observability labs.",
+      },
+      {
+        q: "Does the course cover Kubernetes monitoring?",
+        a: "Yes. You learn how to monitor health, resource usage and production signals in Kubernetes-based systems.",
+      },
+      {
+        q: "How do I enquire about the batch and fees?",
+        a: `Call ${PHONE} and our counsellor will share the current batch schedule and fee details.`,
+      },
+    ],
+  },
+  {
+    slug: "ai-ml",
+    icon: "cloudCog",
+    name: "AI & ML Course",
+    shortName: "AI & ML",
+    tagline: "AI & Machine Learning Training",
+    cardDesc:
+      "AI and ML course in Mumbai covering Python, ML workflows, data pipelines and practical model development.",
+    metaTitle: "AI & ML Course in Mumbai | Powai Campus",
+    metaDescription:
+      "AI and ML course in Mumbai with Python, data preparation and model-building labs at the Powai campus. Call 083695 18569.",
+    h1: "AI & ML Course in Mumbai — Practical Machine Learning Training in Powai",
+    intro:
+      "This AI and ML course in Mumbai helps learners move from fundamentals to practical, project-based understanding of machine learning and data-driven problem solving. At the Chandivali, Powai campus, you work with Python, data preparation, model training and evaluation using real lab exercises and industry-aligned workflows.",
+    whoFor: [
+      "Students and graduates moving into AI and data careers",
+      "Developers wanting AI and ML skills for product work",
+      "Professionals exploring AI-driven business and automation use cases",
+      "Learners ready for a practical ML foundation before advanced study",
+    ],
+    skills: [
+      "Python for data science and AI workflows",
+      "Data cleaning, preparation and feature engineering",
+      "Machine learning algorithms and evaluation metrics",
+      "Model training, validation and deployment thinking",
+      "AI project lifecycle and business problem framing",
+      "Statistics, experimentation and model interpretation",
+    ],
+    outcomes: [
+      "Work with real data and build practical ML models",
+      "Understand the AI project lifecycle from problem to evaluation",
+      "Use Python to analyse, prepare and model data",
+      "Choose the right ML approach for a business or technical use case",
+      "Build a strong base for advanced AI and data roles",
+    ],
+    tools: ["Python", "Jupyter", "Pandas", "Scikit-learn", "NumPy", "Data", "Modeling", "AI"],
+    faqs: [
+      { q: "Is the AI course beginner-friendly?", a: "Yes. It starts with the foundations of Python and data workflows, then moves into practical ML concepts." },
+      { q: "Does it include project-based practice?", a: "Yes. The learning style is practical and project-driven, with labs focused on real datasets and model evaluation." },
+      { q: "How do I enquire about the next batch?", a: `Call ${PHONE} and our counsellor will share the current batch and fee details.` },
+    ],
+  },
+  {
+    slug: "cyber-security",
+    icon: "cloudCog",
+    name: "Cyber Security Course",
+    shortName: "Cyber Security",
+    tagline: "Security Fundamentals & Practical Defense Training",
+    cardDesc:
+      "Cyber security course in Mumbai covering networking, system security, vulnerabilities and defensive monitoring basics.",
+    metaTitle: "Cyber Security Course in Mumbai | Powai Campus",
+    metaDescription:
+      "Cyber security course in Mumbai covering networking, hardening and defensive monitoring at the Powai campus. Call 083695 18569.",
+    h1: "Cyber Security Course in Mumbai — Practical Security Training in Powai",
+    intro:
+      "This cyber security course in Mumbai covers the security mindset, core infrastructure protection techniques and practical defensive approaches used in modern environments. At our Chandivali, Powai campus, you learn key concepts in networking, operating systems, vulnerabilities, monitoring and safe operations while preparing for real-world security awareness and response tasks.",
+    whoFor: [
+      "Students entering IT security roles",
+      "IT and network professionals wanting stronger security awareness",
+      "Developers and admins who need security fundamentals",
+      "Professionals exploring cybersecurity careers or transitions",
+    ],
+    skills: [
+      "Networking and security fundamentals",
+      "Vulnerabilities, threats and risk awareness",
+      "System and application hardening basics",
+      "Security monitoring and defensive workflows",
+      "Identity, access and safe configuration principles",
+      "Incident awareness and response basics",
+    ],
+    outcomes: [
+      "Understand core security principles across systems and networks",
+      "Recognise common risks, exposures and defensive patterns",
+      "Work with safer configurations and security-aware operations",
+      "Improve cyber awareness for cloud, server and application environments",
+      "Build a practical base for security-focused roles",
+    ],
+    tools: ["Linux", "Networking", "Security", "Monitoring", "Threats", "IAM", "Hardening"],
+    faqs: [
+      { q: "Is cyber security suitable for beginners?", a: "Yes. The course starts from core concepts and builds toward practical defensive practices." },
+      { q: "Does it include monitoring and incident awareness?", a: "Yes. Defensive monitoring and incident awareness are part of the learning path." },
+      { q: "How do I join the cyber security course?", a: `Call ${PHONE} and our counsellor will share the current batch, syllabus and fees.` },
+    ],
+  },
 ];
 
 export const COURSE_CARDS = [
+  { title: "Cloud Computing", desc: "AWS, Azure and GCP fundamentals with practical, lab-first cloud learning.", to: "/courses/cloud-computing", testId: "course-card-cloud-computing" },
   { title: "AWS", desc: "IAM, EC2, S3, VPC, monitoring and real deployments on Amazon Web Services.", to: "/courses/aws", testId: "course-card-aws" },
   { title: "Microsoft Azure", desc: "Virtual machines, networking, Entra ID, AKS and Azure DevOps pipelines.", to: "/courses/azure", testId: "course-card-azure" },
   { title: "Google Cloud (GCP)", desc: "Compute Engine, GKE, Cloud Storage and CI/CD with Cloud Build.", to: "/courses/gcp", testId: "course-card-gcp" },
@@ -529,6 +783,10 @@ export const COURSE_CARDS = [
   { title: "Docker", desc: "Images, Dockerfiles, multi-stage builds and Docker Compose stacks.", to: "/courses/kubernetes-docker", testId: "course-card-docker" },
   { title: "Linux", desc: "Command line, users, services, networking and Bash scripting.", to: "/courses/linux-terraform", testId: "course-card-linux" },
   { title: "Terraform", desc: "Infrastructure as Code, state management and multi-cloud provisioning.", to: "/courses/linux-terraform", testId: "course-card-terraform" },
+  { title: "SRE", desc: "Observability, reliability, incidents, SLIs/SLOs and production operations.", to: "/courses/sre", testId: "course-card-sre" },
+  { title: "Monitoring", desc: "Prometheus, Grafana, dashboards, alerts and production observability workflows.", to: "/courses/monitoring", testId: "course-card-monitoring" },
+  { title: "AI & ML", desc: "Python, model building, evaluation and practical machine learning workflows.", to: "/courses/ai-ml", testId: "course-card-ai-ml" },
+  { title: "Cyber Security", desc: "Security fundamentals, networking, hardening and defensive monitoring.", to: "/courses/cyber-security", testId: "course-card-cyber-security" },
   { title: "CI/CD", desc: "Automated build, test and deployment pipelines with Jenkins and GitOps.", to: "/courses/devops", testId: "course-card-cicd" },
 ];
 
