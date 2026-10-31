@@ -51,7 +51,7 @@ export default function CourseDetail() {
               <h1 className="mt-3 font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 max-w-3xl leading-[1.15]">
                 {course.h1}
               </h1>
-              <AnswerBlock answer={COURSE_ANSWERS[course.slug]} />
+              <AnswerBlock answer={COURSE_ANSWERS[course.slug]} demoHref="#course-enquiry" />
               <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl">{course.intro}</p>
               <div className="mt-7 flex flex-col sm:flex-row gap-3">
                 <a

@@ -29,7 +29,7 @@ export default function Contact() {
           <h1 className="mt-3 font-heading text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 max-w-3xl leading-[1.15]">
             Contact DevOps Institute in Chandivali, Powai
           </h1>
-          <AnswerBlock answer={meta.answer} />
+          <AnswerBlock answer={meta.answer} demoHref="#enquiry" />
           <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl">
             Questions about an AWS course in Mumbai, Azure training in Powai, or our DevOps programs? Call us, send an
             enquiry, or visit the campus — we are happy to help you plan your cloud career.
@@ -37,7 +37,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-24">
+      <section id="enquiry" className="py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="space-y-6">

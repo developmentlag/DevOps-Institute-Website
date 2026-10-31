@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import EnquiryForm from "@/components/EnquiryForm";
 import CampusMap from "@/components/CampusMap";
 import StudentLifeGallery from "@/components/StudentLifeGallery";
-import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
+import { AnswerBlock, Breadcrumbs, DirectAnswer, UpdatedLine } from "@/components/PageFacts";
 import { MentorCards } from "@/components/Mentors";
 import {
   ADDRESS,
@@ -225,9 +225,20 @@ export default function SeoArticle({ page }) {
       <h1 className="font-heading text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 leading-tight">
         {page.route.h1}
       </h1>
-      <AnswerBlock answer={page.answer} mentors={page.route.path !== "/trainers"} />
+      <AnswerBlock
+        answer={page.answer}
+        mentors={page.route.path !== "/trainers"}
+        showAnswer={page.route.path !== "/trainers"}
+        demoHref="#enquiry"
+      />
       {page.route.path === "/devops-course-in-powai" ? <StudentLifeGallery embedded /> : null}
-      {page.route.path === "/trainers" ? <MentorCards /> : null}
+      {page.route.path === "/trainers" ? (
+        <>
+          <MentorCards />
+          <DirectAnswer>{page.answer}</DirectAnswer>
+          <UpdatedLine />
+        </>
+      ) : null}
 
       {page.sections.map((section) => (
         <section key={section.h2} className="mt-10">
@@ -271,7 +282,7 @@ export default function SeoArticle({ page }) {
         </nav>
       ) : null}
 
-      <section className="no-print mt-12 rounded-xl border border-slate-200 p-5">
+      <section id="enquiry" className="no-print mt-12 rounded-xl border border-slate-200 p-5">
         <h2 className="font-heading text-2xl font-bold text-slate-900">Ask about the next batch</h2>
         <p className="mt-2 text-slate-700">
           {ADDRESS}. Phone <a className="font-semibold text-blue-700" href={PHONE_TEL}>{PHONE}</a>.{" "}
