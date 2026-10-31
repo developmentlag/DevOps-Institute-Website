@@ -73,3 +73,13 @@ A comprehensive 4-month classroom training program in Powai, Mumbai, designed to
 - **Is placement support provided?** Yes, complete placement assistance with resume preparation, mock interview loops, and hiring partner referrals in Mumbai.
 - **What are the batch options?** Flexible weekend batches for working professionals and weekday batches for freshers.
 - **How to contact?** Call 083695 18569 or visit https://www.devopsinstitute.co.in/contact.
+
+---
+
+## 6. Batch 1 suburb classroom pages (Powai campus)
+
+One campus: Lodha Supremus, Chandivali. Do not treat Ghatkopar, Thane or Navi Mumbai as pages on this domain; those addresses are on https://devopsinstitutemumbai.co.in/. The build also writes the full text of each page into this file from the page source.
+
+- DevOps: /devops-course-in-chembur, /devops-course-in-vidyavihar, /devops-course-in-vile-parle, /devops-course-in-jogeshwari, /devops-course-in-kandivali, /devops-course-in-wadala
+- Cloud computing: /cloud-computing-course-in-chembur, /cloud-computing-course-in-vidyavihar, /cloud-computing-course-in-vile-parle, /cloud-computing-course-in-jogeshwari, /cloud-computing-course-in-kandivali, /cloud-computing-course-in-wadala, /cloud-computing-course-in-vikhroli, /cloud-computing-course-in-kanjurmarg, /cloud-computing-course-in-bhandup, /cloud-computing-course-in-mulund, /cloud-computing-course-in-kurla, /cloud-computing-course-in-saki-naka, /cloud-computing-course-in-goregaon, /cloud-computing-course-in-chandivali
+- Hubs: /devops-course-in-mumbai and /cloud-computing-course-in-mumbai

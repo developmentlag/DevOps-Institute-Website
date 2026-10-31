@@ -50,3 +50,27 @@ Named mentors at the Powai campus. Each person is a mentor at DevOps Institute. 
 - In Collaboration With IIT, Microsoft
 - 100% Placement Assurance, 350+ hiring partners, 450+ placed, 5–35 LPA salary range
 - Courses: DevOps course, DevOps course with placement, DevOps and cloud computing course, AWS, Azure, GCP, Kubernetes & Docker, SRE
+
+## Batch 1 suburb pages (Powai campus only)
+These classroom pages are for Lodha Supremus, Chandivali. Ghatkopar, Thane and Navi Mumbai stay on https://devopsinstitutemumbai.co.in/. Andheri East remains on the existing Andheri page. Hubs: https://www.devopsinstitute.co.in/devops-course-in-mumbai and https://www.devopsinstitute.co.in/cloud-computing-course-in-mumbai
+
+- https://www.devopsinstitute.co.in/devops-course-in-chembur
+- https://www.devopsinstitute.co.in/devops-course-in-vidyavihar
+- https://www.devopsinstitute.co.in/devops-course-in-vile-parle
+- https://www.devopsinstitute.co.in/devops-course-in-jogeshwari
+- https://www.devopsinstitute.co.in/devops-course-in-kandivali
+- https://www.devopsinstitute.co.in/devops-course-in-wadala
+- https://www.devopsinstitute.co.in/cloud-computing-course-in-chembur
+- https://www.devopsinstitute.co.in/cloud-computing-course-in-vidyavihar
+- https://www.devopsinstitute.co.in/cloud-computing-course-in-vile-parle
+- https://www.devopsinstitute.co.in/cloud-computing-course-in-jogeshwari
+- https://www.devopsinstitute.co.in/cloud-computing-course-in-kandivali
+- https://www.devopsinstitute.co.in/cloud-computing-course-in-wadala
+- https://www.devopsinstitute.co.in/cloud-computing-course-in-vikhroli
+- https://www.devopsinstitute.co.in/cloud-computing-course-in-kanjurmarg
+- https://www.devopsinstitute.co.in/cloud-computing-course-in-bhandup
+- https://www.devopsinstitute.co.in/cloud-computing-course-in-mulund
+- https://www.devopsinstitute.co.in/cloud-computing-course-in-kurla
+- https://www.devopsinstitute.co.in/cloud-computing-course-in-saki-naka
+- https://www.devopsinstitute.co.in/cloud-computing-course-in-goregaon
+- https://www.devopsinstitute.co.in/cloud-computing-course-in-chandivali

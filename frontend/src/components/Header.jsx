@@ -8,6 +8,7 @@ const NAV = [
   { to: "/about", label: "About", testId: "header-nav-about-link" },
   { to: "/courses", label: "Courses", testId: "header-nav-courses-link" },
   { to: "/devops-course-in-mumbai", label: "Mumbai", testId: "header-nav-mumbai-link" },
+  { to: "/cloud-computing-course-in-mumbai", label: "Cloud", testId: "header-nav-cloud-link" },
   { to: "/placements", label: "Placements", testId: "header-nav-placements-link" },
   { to: "/faqs", label: "FAQs", testId: "header-nav-faqs-link" },
   { to: "/contact", label: "Contact Us", testId: "header-nav-contact-link" },
