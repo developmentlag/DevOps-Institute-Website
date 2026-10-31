@@ -1,7 +1,7 @@
 // Photographs supplied from the Powai Google Business Profile.
 // gbp-4 is the full batch under the pendant lights (the block under each H1).
-// gbp-5 is the glass-door campus entrance with the postgraduate Cloud & DevOps sign
-// (shown beside the map). The other eight are the student-life gallery.
+// gbp-5 is the glass-door campus entrance. It is not shown in that block.
+// The other eight photos are the student-life gallery.
 // Alt text describes the scene. It does not name anyone in the photo.
 
 const BASE = "/campus/gbp";

@@ -1,6 +1,6 @@
 import { MapPin, Star, CalendarClock, Award, Users } from "lucide-react";
 import GbpPicture from "@/components/GbpPicture";
-import { GBP_ENTRANCE, GBP_HERO } from "@/data/gbpPhotos";
+import { GBP_HERO } from "@/data/gbpPhotos";
 import {
   ADDRESS,
   BUSINESS_NAME,
@@ -52,18 +52,7 @@ export default function ClassroomSpotlight() {
         </div>
       </div>
 
-      <div className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch">
-        <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-          <GbpPicture
-            photo={GBP_ENTRANCE}
-            sizes="(min-width: 768px) 50vw, 100vw"
-            className="h-full w-full object-cover aspect-[4/5] md:aspect-[3/4]"
-          />
-          <figcaption className="px-4 py-3 text-sm text-slate-700">
-            Campus entrance at Lodha Supremus, Chandivali, Powai, Mumbai. Postgraduate Program in Cloud &amp; DevOps signage.
-          </figcaption>
-        </figure>
-
+      <div className="mt-5">
         <div className="flex flex-col rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden">
           <iframe
             title={`Google Map of ${BUSINESS_NAME}, ${ADDRESS}`}
