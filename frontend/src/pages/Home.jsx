@@ -4,7 +4,6 @@ import {
   Phone, ArrowRight, CheckCircle2, MapPin, MessageCircle,
 } from "lucide-react";
 import Seo from "@/components/Seo";
-import PracticalTrainingCta from "@/components/PracticalTrainingCta";
 import StudentLifeGallery from "@/components/StudentLifeGallery";
 import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
 import { staticPage } from "@/data/pageMeta";
@@ -71,8 +70,7 @@ export default function Home() {
                 Become a <span className="text-blue-700">DevOps Engineer</span> in Just 4 Months
               </h1>
           </div>
-              <AnswerBlock answer={HOME_META.answer} />
-              <PracticalTrainingCta demoHref="#enquiry" testIdPrefix="hero" />
+              <AnswerBlock answer={HOME_META.answer} demoHref="#enquiry" />
         </div>
       </section>
 
