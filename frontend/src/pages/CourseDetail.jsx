@@ -7,8 +7,40 @@ import Testimonials from "@/components/Testimonials";
 import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
 import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, COURSES, buildCourseSchema, buildBreadcrumbSchema, buildFaqSchema } from "@/data/site";
 import { COURSE_ANSWERS } from "@/data/pageMeta";
+import { AREA_ROUTES, CLOUD_AREA_ROUTES } from "@/data/seoRoutes";
 
 const ICONS = { cloud: Cloud, cloudy: Cloudy, cloudCog: CloudCog, gitBranch: GitBranch, container: Container, terminal: Terminal };
+
+function AreaClassroomLinks({ slug }) {
+  const cloud = slug === "aws" || slug === "azure" || slug === "gcp";
+  const devops = slug === "devops" || slug === "kubernetes-docker" || slug === "linux-terraform";
+  if (!cloud && !devops) return null;
+  const routes = cloud ? CLOUD_AREA_ROUTES : AREA_ROUTES;
+  const hub = cloud ? "/cloud-computing-course-in-mumbai" : "/devops-course-in-mumbai";
+  const hubLabel = cloud ? "Cloud computing course in Mumbai" : "DevOps course in Mumbai";
+  return (
+    <section className="pb-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-slate-900">
+          {cloud ? "Cloud computing course near you" : "DevOps course near you"}
+        </h2>
+        <p className="mt-3 text-sm text-slate-600">
+          <Link to={hub} className="font-semibold text-blue-700">{hubLabel}</Link>
+          {" "}lists every suburb page for the Chandivali classroom. Thane and Navi Mumbai use the sister site.
+        </p>
+        <ul className="mt-4 flex flex-wrap gap-2">
+          {routes.map((route) => (
+            <li key={route.path}>
+              <Link to={route.path} className="inline-flex rounded-full border border-slate-200 px-3 py-1.5 text-sm text-slate-700 hover:border-blue-400 hover:text-blue-700">
+                {route.h1}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
 
 export default function CourseDetail() {
   const { slug } = useParams();
@@ -176,6 +208,8 @@ export default function CourseDetail() {
           </div>
         </div>
       </section>
+
+      <AreaClassroomLinks slug={course.slug} />
 
       <section className="pb-16 sm:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

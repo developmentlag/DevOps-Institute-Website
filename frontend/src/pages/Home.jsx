@@ -34,6 +34,12 @@ const NEARBY_LINKS = [
   { label: "Kanjurmarg", href: "/devops-course-in-kanjurmarg" },
   { label: "Ghatkopar", href: GHATKOPAR_URL, external: true },
   { label: "Vikhroli", href: "/devops-course-in-vikhroli" },
+  { label: "Chembur", href: "/devops-course-in-chembur" },
+  { label: "Vidyavihar", href: "/devops-course-in-vidyavihar" },
+  { label: "Jogeshwari", href: "/devops-course-in-jogeshwari" },
+  { label: "Vile Parle", href: "/devops-course-in-vile-parle" },
+  { label: "Kandivali", href: "/devops-course-in-kandivali" },
+  { label: "Wadala", href: "/devops-course-in-wadala" },
 ];
 
 export default function Home() {

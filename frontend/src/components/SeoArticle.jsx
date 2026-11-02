@@ -5,6 +5,7 @@ import CampusMap from "@/components/CampusMap";
 import StudentLifeGallery from "@/components/StudentLifeGallery";
 import { AnswerBlock, Breadcrumbs, DirectAnswer, UpdatedLine } from "@/components/PageFacts";
 import { MentorCards } from "@/components/Mentors";
+import { MapPin } from "lucide-react";
 import {
   ADDRESS,
   GHATKOPAR_URL,
@@ -16,7 +17,7 @@ import {
   VASHI_URL,
   WHATSAPP_URL,
 } from "@/data/site";
-import { AREA_ROUTES, GUIDE_ROUTES, SEO_ROUTES, TRUST_ROUTES } from "@/data/seoRoutes";
+import { AREA_ROUTES, CLOUD_AREA_ROUTES, GUIDE_ROUTES, SEO_ROUTES, TRUST_ROUTES } from "@/data/seoRoutes";
 
 function SectionTable({ table }) {
   if (!table) return null;
@@ -176,6 +177,7 @@ function SitemapBlock() {
       ],
     },
     { title: "DevOps course near you", links: AREA_ROUTES.map((route) => ({ href: route.path, label: route.h1 })) },
+    { title: "Cloud computing course near you", links: CLOUD_AREA_ROUTES.map((route) => ({ href: route.path, label: route.h1 })) },
     { title: "Guides", links: GUIDE_ROUTES.map((route) => ({ href: route.path, label: route.h1 })) },
     {
       title: "Campus and trust",
@@ -221,6 +223,12 @@ function SitemapBlock() {
 export default function SeoArticle({ page }) {
   return (
     <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      {page.classroomFirst ? (
+        <p className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-blue-700 mb-4">
+          <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
+          Classroom Training in Powai, Mumbai
+        </p>
+      ) : null}
       <Breadcrumbs crumbs={page.crumbs} />
       <h1 className="font-heading text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 leading-tight">
         {page.route.h1}

@@ -82,7 +82,7 @@ function article(page) {
 
 export function buildSeoSchema(page) {
   const blocks = [
-    buildOrgSchema(),
+    buildOrgSchema(page.areaServed ? { areaServed: page.areaServed } : {}),
     buildBreadcrumbSchema(page.crumbs.map((crumb) => ({ name: crumb.name, url: crumb.href }))),
   ];
   if (page.faqs && page.faqs.length) blocks.push(buildFaqSchema(page.faqs));
@@ -101,13 +101,13 @@ export function buildSeoSchema(page) {
         name: page.route.h1,
         description: page.route.description,
         path,
-        teaches: [
+        teaches: page.schemaTeaches || [
           "Linux and Git",
           "AWS, Azure and Google Cloud",
           "Docker and Kubernetes",
           "Terraform and CI/CD",
         ],
-        duration: "P4M",
+        duration: page.schemaDuration === undefined ? "P4M" : page.schemaDuration,
       }),
     );
   }

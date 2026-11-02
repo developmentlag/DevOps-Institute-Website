@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { CloudCog, Phone, MapPin, Navigation, Instagram, MessageCircle } from "lucide-react";
 import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, MAP_DIRECTIONS_URL, GBP_PROFILE_URL, COURSES, INSTAGRAM_URL, WHATSAPP_URL } from "@/data/site";
-import { AREA_ROUTES, GUIDE_ROUTES } from "@/data/seoRoutes";
+import { AREA_ROUTES, CLOUD_AREA_ROUTES, GUIDE_ROUTES } from "@/data/seoRoutes";
 
 export const MobileStickyBar = () => (
   <div
@@ -156,7 +156,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 text-sm">
           <nav aria-label="Course guides">
             <p className="font-heading font-bold text-white text-sm uppercase tracking-wider">Courses</p>
             <ul className="mt-4 space-y-2">
@@ -175,6 +175,16 @@ export default function Footer() {
             <p className="font-heading font-bold text-white text-sm uppercase tracking-wider">DevOps course near you</p>
             <ul className="mt-4 space-y-2">
               {AREA_ROUTES.map((route) => (
+                <li key={route.path}>
+                  <Link to={route.path} className="hover:text-sky-400">{route.h1}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <nav aria-label="Cloud computing course near you">
+            <p className="font-heading font-bold text-white text-sm uppercase tracking-wider">Cloud course near you</p>
+            <ul className="mt-4 space-y-2">
+              {CLOUD_AREA_ROUTES.map((route) => (
                 <li key={route.path}>
                   <Link to={route.path} className="hover:text-sky-400">{route.h1}</Link>
                 </li>

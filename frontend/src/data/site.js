@@ -173,6 +173,12 @@ export const NEARBY_AREAS = [
   "Kanjurmarg",
   "Ghatkopar",
   "Vikhroli",
+  "Chembur",
+  "Vidyavihar",
+  "Vile Parle",
+  "Jogeshwari",
+  "Kandivali",
+  "Wadala",
 ];
 
 export const COURSES = [
@@ -879,6 +885,12 @@ export const AREA_SERVED = [
   "Borivali",
   "Juhu",
   "Santacruz",
+  "Chembur",
+  "Vidyavihar",
+  "Vile Parle",
+  "Jogeshwari",
+  "Kandivali",
+  "Wadala",
   "Thane",
   "Navi Mumbai",
   "Mumbai",
@@ -986,7 +998,7 @@ function visibleReviewSchema() {
   };
 }
 
-export const buildOrgSchema = () => {
+export const buildOrgSchema = (options = {}) => {
   const origin = getSiteOrigin();
   const home = publicSiteUrl();
   const sameAs = powaiSameAs(false);
@@ -1050,7 +1062,9 @@ export const buildOrgSchema = () => {
             closes: "21:00",
           },
         ],
-        areaServed: AREA_SERVED,
+        areaServed: options.areaServed
+          ? [{ "@type": "AdministrativeArea", name: options.areaServed }]
+          : AREA_SERVED,
         hasOfferCatalog: {
           "@type": "OfferCatalog",
           name: "Cloud & DevOps Courses in Mumbai",
