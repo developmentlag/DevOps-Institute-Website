@@ -6,6 +6,8 @@ import { Analytics } from "@vercel/analytics/react";
 import SiteAnalytics from "@/components/SiteAnalytics";
 import Header from "@/components/Header";
 import Footer, { MobileStickyBar } from "@/components/Footer";
+import PageEndMap from "@/components/PageEndMap";
+import { KeyFactsSection } from "@/components/PageFacts";
 import FloatingActions from "@/components/FloatingActions";
 import Home from "@/pages/Home";
 import { lazyPage } from "@/lib/lazyPage";
@@ -51,6 +53,8 @@ export function AppShell() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
+        <KeyFactsSection />
+        <PageEndMap />
         <Footer />
         <div className="h-16 md:hidden" aria-hidden="true" />
       </div>
