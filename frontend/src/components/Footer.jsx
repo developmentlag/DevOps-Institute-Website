@@ -1,30 +1,7 @@
 import { Link } from "react-router-dom";
 import { CloudCog, Phone, MapPin, Navigation, Instagram, MessageCircle } from "lucide-react";
-import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, MAP_DIRECTIONS_URL, GBP_PROFILE_URL, COURSES, INSTAGRAM_URL, WHATSAPP_URL } from "@/data/site";
+import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, MAP_DIRECTIONS_URL, GBP_PROFILE_URL, COURSES, INSTAGRAM_URL, WHATSAPP_URL, PLACEMENT_DISCLAIMER } from "@/data/site";
 import { AREA_ROUTES, CLOUD_AREA_ROUTES, GUIDE_ROUTES } from "@/data/seoRoutes";
-
-export const MobileStickyBar = () => (
-  <div
-    className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-slate-900 border-t border-slate-800 p-3 flex gap-3 shadow-2xl"
-    data-testid="mobile-sticky-bar"
-  >
-    <a
-      href={PHONE_TEL}
-      data-testid="mobile-sticky-call-button"
-      className="flex-1 inline-flex items-center justify-center gap-2 rounded-lg bg-blue-700 py-3 text-sm font-semibold text-white"
-    >
-      <Phone className="h-4 w-4" aria-hidden="true" />
-      Call Now
-    </a>
-    <Link
-      to="/contact"
-      data-testid="mobile-sticky-enquire-button"
-      className="flex-1 inline-flex items-center justify-center gap-2 rounded-lg border border-slate-600 bg-slate-800 py-3 text-sm font-semibold text-white"
-    >
-      Enquire Now
-    </Link>
-  </div>
-);
 
 export default function Footer() {
   return (
@@ -214,9 +191,14 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} {BUSINESS_NAME}. All rights reserved.</p>
-          <p>AWS, Azure, GCP &amp; DevOps training in Chandivali, Powai, Mumbai.</p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col gap-3 text-xs text-slate-500">
+          <p data-testid="footer-placement-disclaimer" className="max-w-4xl leading-relaxed text-slate-400">
+            {PLACEMENT_DISCLAIMER}
+          </p>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+            <p>© {new Date().getFullYear()} {BUSINESS_NAME}. All rights reserved.</p>
+            <p>AWS, Azure, GCP &amp; DevOps training in Chandivali, Powai, Mumbai.</p>
+          </div>
         </div>
       </div>
     </footer>

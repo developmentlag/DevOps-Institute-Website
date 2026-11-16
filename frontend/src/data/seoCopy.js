@@ -84,7 +84,7 @@ function withAffiliationSection(sections) {
     {
       h2: "Which affiliations does DevOps Institute claim?",
       paragraphs: [
-        `${AFFILIATION_LINE} The names are written out in words. This page does not show affiliation logos.`,
+        AFFILIATION_LINE,
       ],
     },
   ];
@@ -158,7 +158,7 @@ const TRUST = {
   },
   "/placements": {
     answer:
-      "DevOps Institute in Chandivali, Powai publishes 450+ placed, 100% Placement and 360° Placement Assurance. This page lists only the alumni names already on the site, with company and photo left blank where the site never recorded them. Call 083695 18569 for the current batch.",
+      "DevOps Institute in Chandivali, Powai publishes 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support. This page lists only the alumni names already on the site, with company and photo left blank where the site never recorded them. Call 083695 18569 for the current batch.",
     sections: [
       {
         h2: "What can the filter show?",
@@ -170,7 +170,7 @@ const TRUST = {
     faqs: [
       { q: "How many placements are published as a total?", a: "450+ placed, with 350+ hiring partners." },
       { q: "Why are so few names listed?", a: "Because only four names are in the website content. The rest are not invented." },
-      { q: "What is 360° Placement Assurance?", a: "A published phrase. The institute has not published its own definition of what the phrase includes." },
+      { q: "What is 5 Tier-1 Interviews Assured + Dedicated Placement Support?", a: "Interview assurance applies upon completion of 80% attendance, capstone projects, and mock interview clearance. Past placement records reflect verified alumni outcomes." },
       { q: "Where do I read the longer note?", a: "On the DevOps course in Mumbai with placement page." },
     ],
     placements: true,

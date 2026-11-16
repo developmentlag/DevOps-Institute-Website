@@ -5,13 +5,13 @@ const phone = "083695 18569";
 export const TOPIC_PAGES = {
   "/cloud-computing-course-in-mumbai": {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom cloud computing course in Mumbai with 100% Placement support. You practise AWS, Azure and GCP at Lodha Supremus, with weekday and weekend batches. The published placement line includes 450+ placed. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a classroom cloud computing course in Mumbai with 5 Tier-1 Interviews Assured + Dedicated Placement Support. You practise AWS, Azure and GCP at Lodha Supremus, with weekday and weekend batches. The published placement line includes 450+ placed. Call 083695 18569.",
     sections: [
       {
         h2: "What is the cloud computing course in Mumbai?",
         paragraphs: [
           "On this site the cloud computing course means the practical AWS, Microsoft Azure and Google Cloud classes taught at the Powai campus, not a separate city-centre brand. AWS covers IAM, EC2, S3, VPC, RDS and CloudWatch. Azure covers virtual machines, virtual networks, Entra ID, storage, App Service, AKS and Azure DevOps pipelines. GCP covers Compute Engine, VPC, Cloud Storage, GKE, Cloud Build and Cloud Monitoring. Those lists are copied from the course pages already on this website.",
-          "People searching for a cloud computing course with placement want the career line as well as the console. The institute publishes 450+ placed, 100% Placement and 360° Placement Assurance, plus resume support, mock interviews and career guidance. Mentor names are on the trainers page. It does not publish a fee or a hiring-company roster. Those gaps stay marked rather than filled with guesses.",
+          "People searching for a cloud computing course with placement want the career line as well as the console. The institute publishes 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, plus resume support, mock interviews and career guidance. Mentor names are on the trainers page. It does not publish a fee or a hiring-company roster. Those gaps stay marked rather than filled with guesses.",
           "The Mumbai hub for DevOps lists every suburb. This page is the cloud equivalent: one campus, many origins. Metro Line 1 and Saki Naka station are the rail landmark. The address is Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali, Powai, Mumbai 400072.",
         ],
       },
@@ -26,7 +26,7 @@ export const TOPIC_PAGES = {
       { q: "Is the cloud course only AWS?", a: "No. AWS, Azure and GCP each have a course. The cloud pages describe that multi-cloud set." },
       { q: "Where do classes meet?", a: "At the Powai campus in Chandivali, not at a different cloud lab in each suburb." },
       { q: "Are there weekend batches?", a: "Yes. Weekday and weekend batches are published. The clock times are not. Call the campus." },
-      { q: "Does placement support apply?", a: "Yes. 450+ placed, 100% Placement and 360° Placement Assurance are the published lines." },
+      { q: "Does placement support apply?", a: "Yes. 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support are the published lines." },
       { q: "Which page is the long cloud syllabus?", a: "The cloud computing course pillar walks the tools in more detail and links back to each /courses page." },
       { q: "Do you publish prices?", a: `No. Call ${phone} for current fees.` },
       { q: "Where is Thane's cloud course?", a: "On https://devopsinstitutemumbai.co.in/. This domain does not copy Thane, Vashi or Ghatkopar pages." },
@@ -34,7 +34,7 @@ export const TOPIC_PAGES = {
   },
   "/cloud-computing-course-in-powai": {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom cloud computing course in Powai with 100% Placement support. AWS, Azure and GCP labs run at Lodha Supremus, near Powai Lake and Hiranandani. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a classroom cloud computing course in Powai with 5 Tier-1 Interviews Assured + Dedicated Placement Support. AWS, Azure and GCP labs run at Lodha Supremus, near Powai Lake and Hiranandani. Call 083695 18569.",
     sections: [
       {
         h2: "Why do Powai learners start with cloud before DevOps?",
@@ -46,7 +46,7 @@ export const TOPIC_PAGES = {
       {
         h2: "What can you say about certifications without over-claiming?",
         paragraphs: [
-          "The AWS course says working professionals join while preparing for AWS certification exams. The Azure course mentions administrator or DevOps certifications as a reason people enrol. The GCP course mentions Google Cloud certifications the same way. The institute does not say it awards those vendor certificates. Exam preparation and a vendor badge are different sentences. Placement support is separate again: 450+ placed, 100% Placement and 360° Placement Assurance.",
+          "The AWS course says working professionals join while preparing for AWS certification exams. The Azure course mentions administrator or DevOps certifications as a reason people enrol. The GCP course mentions Google Cloud certifications the same way. The institute does not say it awards those vendor certificates. Exam preparation and a vendor badge are different sentences. Placement support is separate again: 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support.",
         ],
       },
     ],
@@ -62,7 +62,7 @@ export const TOPIC_PAGES = {
   },
   "/cloud-computing-course-in-andheri": {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom cloud computing course for Andheri East and West, with 100% Placement support. You reach AWS, Azure and GCP labs via Metro Line 1 to Saki Naka. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a classroom cloud computing course for Andheri East and West, with 5 Tier-1 Interviews Assured + Dedicated Placement Support. You reach AWS, Azure and GCP labs via Metro Line 1 to Saki Naka. Call 083695 18569.",
     sections: [
       {
         h2: "What does an Andheri cloud student actually practise?",
@@ -74,7 +74,7 @@ export const TOPIC_PAGES = {
       {
         h2: "How does placement sit next to the cloud labs?",
         paragraphs: [
-          "The site does not publish a cloud-only placement statistic. It publishes 450+ placed, 100% Placement and 360° Placement Assurance for the institute, with 350+ hiring partners and a 5–35 LPA range in its public facts. One named fresher story, Rajeswari Singh, records 6.5 LPA. Use those sentences as they are. Do not turn them into a promise about your own offer. Resume reviews and mock interviews are the support activities named on the site.",
+          "The site does not publish a cloud-only placement statistic. It publishes 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support for the institute, with 350+ hiring partners and a 5–35 LPA range in its public facts. One named fresher story, Rajeswari Singh, records 6.5 LPA. Use those sentences as they are. Do not turn them into a promise about your own offer. Resume reviews and mock interviews are the support activities named on the site.",
         ],
       },
     ],
@@ -90,7 +90,7 @@ export const TOPIC_PAGES = {
   },
   "/aws-course-in-mumbai": {
     answer:
-      "DevOps Institute in Chandivali, Powai offers an AWS course in Mumbai with 100% Placement support. Labs cover IAM, EC2, S3, VPC, RDS and CloudWatch at Lodha Supremus. Weekday and weekend batches are published. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers an AWS course in Mumbai with 5 Tier-1 Interviews Assured + Dedicated Placement Support. Labs cover IAM, EC2, S3, VPC, RDS and CloudWatch at Lodha Supremus. Weekday and weekend batches are published. Call 083695 18569.",
     sections: [
       {
         h2: "What does the AWS course in Mumbai include?",
@@ -102,7 +102,7 @@ export const TOPIC_PAGES = {
       {
         h2: "Who should choose the Mumbai AWS course?",
         paragraphs: [
-          "Students, fresh graduates, system administrators, software developers and working professionals all fit the course page. The campus stays in Powai, but the audience stretches across Mumbai: Chandivali, Saki Vihar Road, Andheri East, Hiranandani and other nearby localities. The public placement line remains 450+ placed, 100% Placement and 360° Placement Assurance.",
+          "Students, fresh graduates, system administrators, software developers and working professionals all fit the course page. The campus stays in Powai, but the audience stretches across Mumbai: Chandivali, Saki Vihar Road, Andheri East, Hiranandani and other nearby localities. The public placement line remains 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support.",
         ],
       },
     ],
@@ -110,7 +110,7 @@ export const TOPIC_PAGES = {
       { q: "Is this AWS course in Mumbai or only Powai?", a: "It is a Mumbai course taught at the Powai campus in Chandivali, so it is relevant to Powai, Chandivali and nearby suburbs." },
       { q: "Do I need prior cloud experience?", a: "No. The course starts with cloud fundamentals and builds step by step." },
       { q: "Are the AWS labs hands-on?", a: "Yes. The page says learners work on real AWS services and account-based labs rather than slides only." },
-      { q: "Does this course include placement support?", a: "Yes. The institute publishes 450+ placed, 100% Placement and 360° Placement Assurance." },
+      { q: "Does this course include placement support?", a: "Yes. The institute publishes 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support." },
       { q: "Where is the full AWS syllabus?", a: "At /courses/aws. This page adds the Mumbai and local commute context." },
       { q: "Can I do Kubernetes later?", a: "Yes. Kubernetes and Docker are separate courses, and they are also part of the broader DevOps curriculum." },
       { q: "How do I get fee and batch details?", a: `Call ${phone}. No fee is published here.` },
@@ -118,7 +118,7 @@ export const TOPIC_PAGES = {
   },
   "/aws-course-in-powai": {
     answer:
-      "DevOps Institute in Chandivali, Powai offers an AWS course in Powai with 100% Placement support. Labs cover IAM, EC2, S3, VPC, RDS and CloudWatch at Lodha Supremus. Weekday and weekend batches are published. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers an AWS course in Powai with 5 Tier-1 Interviews Assured + Dedicated Placement Support. Labs cover IAM, EC2, S3, VPC, RDS and CloudWatch at Lodha Supremus. Weekday and weekend batches are published. Call 083695 18569.",
     sections: [
       {
         h2: "What does the AWS course in Powai include?",
@@ -130,7 +130,7 @@ export const TOPIC_PAGES = {
       {
         h2: "Who is the Powai AWS batch for?",
         paragraphs: [
-          "The course page names four groups: students and fresh graduates, system administrators, developers who need to deploy on AWS, and working professionals preparing for certification. Powai and Chandivali add only the journey. From Hiranandani or the lake you ride locally to Saki Vihar Road. From further out you use Saki Naka metro. The phone, 083695 18569, is the Powai campus. Placement support published with the institute is 450+ placed, 100% Placement and 360° Placement Assurance.",
+          "The course page names four groups: students and fresh graduates, system administrators, developers who need to deploy on AWS, and working professionals preparing for certification. Powai and Chandivali add only the journey. From Hiranandani or the lake you ride locally to Saki Vihar Road. From further out you use Saki Naka metro. The phone, 083695 18569, is the Powai campus. Placement support published with the institute is 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support.",
         ],
       },
     ],
@@ -138,7 +138,7 @@ export const TOPIC_PAGES = {
       { q: "Is this AWS course near Chandivali?", a: "Yes. The campus address is Lodha Supremus, B 1307, Saki Vihar Road, Chandivali, Powai." },
       { q: "Do I need cloud experience?", a: "No. The course starts with cloud fundamentals." },
       { q: "Are the labs on real AWS accounts?", a: "The course page says you work on real AWS accounts, not only slides." },
-      { q: "Does AWS training include placement support?", a: "The course is described with placement guidance, and the institute publishes 450+ placed, 100% Placement and 360° Placement Assurance." },
+      { q: "Does AWS training include placement support?", a: "The course is described with placement guidance, and the institute publishes 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support." },
       { q: "Where is the full AWS page?", a: "At /courses/aws. This Powai page points at it and adds the local commute." },
       { q: "Can I add Docker later?", a: "Yes. Kubernetes and Docker are a separate course, and they also appear inside the DevOps toolchain." },
       { q: "What about fees?", a: `Call ${phone}. No AWS fee is printed here.` },
@@ -146,7 +146,7 @@ export const TOPIC_PAGES = {
   },
   "/gcp-course-in-mumbai": {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a GCP course in Mumbai with 100% Placement support. You practise Compute Engine, Cloud Storage, IAM, GKE and Cloud Build at the Powai campus, with practical labs and weekday or weekend batches. Call 083695 18569 for the next start date.",
+      "DevOps Institute in Chandivali, Powai offers a GCP course in Mumbai with 5 Tier-1 Interviews Assured + Dedicated Placement Support. You practise Compute Engine, Cloud Storage, IAM, GKE and Cloud Build at the Powai campus, with practical labs and weekday or weekend batches. Call 083695 18569 for the next start date.",
     sections: [
       {
         h2: "What does the GCP course in Mumbai cover?",
@@ -158,7 +158,7 @@ export const TOPIC_PAGES = {
       {
         h2: "Who should look at GCP training?",
         paragraphs: [
-          "This course suits freshers, software developers, system administrators and professionals wanting to extend their cloud skills beyond AWS or Azure. Many learners combine GCP with Kubernetes, DevOps or multi-cloud projects. Weekend and weekday batches are available at the same Powai campus, and the institute's published placement support remains 450+ placed, 100% Placement and 360° Placement Assurance.",
+          "This course suits freshers, software developers, system administrators and professionals wanting to extend their cloud skills beyond AWS or Azure. Many learners combine GCP with Kubernetes, DevOps or multi-cloud projects. Weekend and weekday batches are available at the same Powai campus, and the institute's published placement support remains 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support.",
         ],
       },
     ],
@@ -172,7 +172,7 @@ export const TOPIC_PAGES = {
   },
   "/azure-course-in-mumbai": {
     answer:
-      "DevOps Institute in Chandivali, Powai offers an Azure course in Mumbai with 100% Placement support. You practise virtual machines, virtual networks, Entra ID, AKS and Azure DevOps at the Powai campus. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers an Azure course in Mumbai with 5 Tier-1 Interviews Assured + Dedicated Placement Support. You practise virtual machines, virtual networks, Entra ID, AKS and Azure DevOps at the Powai campus. Call 083695 18569.",
     sections: [
       {
         h2: "What does the Mumbai Azure course cover?",
@@ -184,7 +184,7 @@ export const TOPIC_PAGES = {
       {
         h2: "Where in Mumbai do you attend?",
         paragraphs: [
-          "At Lodha Supremus, Chandivali, Powai. Metro Line 1 to Saki Naka is the city-wide rail note. Suburb pages under the DevOps hub describe Andheri, Dadar, Kurla and the rest in more detail, and those same roads bring you to this Azure classroom. Thane's learners who want a Thane address should use https://devopsinstitutemumbai.co.in/ instead of assuming this page is local to Thane. The Powai phone is 083695 18569. Placement lines remain 450+ placed, 100% Placement and 360° Placement Assurance.",
+          "At Lodha Supremus, Chandivali, Powai. Metro Line 1 to Saki Naka is the city-wide rail note. Suburb pages under the DevOps hub describe Andheri, Dadar, Kurla and the rest in more detail, and those same roads bring you to this Azure classroom. Thane's learners who want a Thane address should use https://devopsinstitutemumbai.co.in/ instead of assuming this page is local to Thane. The Powai phone is 083695 18569. Placement lines remain 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support.",
         ],
       },
     ],
@@ -200,7 +200,7 @@ export const TOPIC_PAGES = {
   },
   "/kubernetes-course-in-mumbai": {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a Kubernetes course in Mumbai with 100% Placement support. You start with Docker and continue to pods, deployments, ingress and Helm at the Powai campus. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a Kubernetes course in Mumbai with 5 Tier-1 Interviews Assured + Dedicated Placement Support. You start with Docker and continue to pods, deployments, ingress and Helm at the Powai campus. Call 083695 18569.",
     sections: [
       {
         h2: "What does the Kubernetes course in Mumbai teach?",
@@ -212,7 +212,7 @@ export const TOPIC_PAGES = {
       {
         h2: "Who should pick Kubernetes instead of the full DevOps course?",
         paragraphs: [
-          "Pick this course if containers are the gap: developers packaging applications, administrators modernising a fleet, or engineers who already have a cloud account and now need a cluster. Pick the full DevOps course if you also need Jenkins, Ansible, Terraform and monitoring in one timetable. Mumbai learners from any suburb on the hub use Saki Naka and Saki Vihar Road to reach the same lab. Placement support published for the institute is 450+ placed, 100% Placement and 360° Placement Assurance. Call 083695 18569 for the batch.",
+          "Pick this course if containers are the gap: developers packaging applications, administrators modernising a fleet, or engineers who already have a cloud account and now need a cluster. Pick the full DevOps course if you also need Jenkins, Ansible, Terraform and monitoring in one timetable. Mumbai learners from any suburb on the hub use Saki Naka and Saki Vihar Road to reach the same lab. Placement support published for the institute is 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support. Call 083695 18569 for the batch.",
         ],
       },
     ],
@@ -222,13 +222,13 @@ export const TOPIC_PAGES = {
       { q: "Does it help with CKA or CKAD?", a: "The course page says it covers core exam domains and practice labs. It does not award the certificate itself." },
       { q: "Is Helm included?", a: "Yes. Helm charts are on the skill and tool lists." },
       { q: "Are there weekend batches?", a: "Yes. Weekend and weekday batches are published for the campus." },
-      { q: "What placement facts can I cite?", a: "450+ placed, 100% Placement and 360° Placement Assurance. Hiring-company names are not published." },
-      { q: "How do I get fees and dates?", a: `Call ${phone} or send the enquiry form. No price is printed.` },
+      { q: "What placement facts can I cite?", a: "450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support. Hiring-company names are not published." },
+      { q: "How do I get fees and dates?", a: `Call ${phone} or send the enquiry form. Course Fees Starting at ₹12,500/month (Easy EMI Options Available).` },
     ],
   },
   "/kubernetes-and-docker-training-in-mumbai": {
     answer:
-      "DevOps Institute in Chandivali, Powai offers Kubernetes and Docker training in Mumbai with 100% Placement support. You learn Docker fundamentals, Kubernetes objects, ingress, Helm and real cluster operations at the Powai campus, with weekend and weekday batches. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers Kubernetes and Docker training in Mumbai with 5 Tier-1 Interviews Assured + Dedicated Placement Support. You learn Docker fundamentals, Kubernetes objects, ingress, Helm and real cluster operations at the Powai campus, with weekend and weekday batches. Call 083695 18569.",
     sections: [
       {
         h2: "What is taught in the Kubernetes and Docker training?",
@@ -240,7 +240,7 @@ export const TOPIC_PAGES = {
       {
         h2: "Why do learners choose container training in Mumbai?",
         paragraphs: [
-          "If you want to build and ship code reliably across environments, Docker and Kubernetes are central. The course is designed to give you practical operating knowledge, not just a list of commands. The class timing is still the Powai classroom: Lodha Supremus, Chandivali, on Saki Vihar Road, with the published institute placement lines of 450+ placed, 100% Placement and 360° Placement Assurance.",
+          "If you want to build and ship code reliably across environments, Docker and Kubernetes are central. The course is designed to give you practical operating knowledge, not just a list of commands. The class timing is still the Powai classroom: Lodha Supremus, Chandivali, on Saki Vihar Road, with the published institute placement lines of 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support.",
         ],
       },
     ],
@@ -249,13 +249,13 @@ export const TOPIC_PAGES = {
       { q: "Is this training offered in Powai?", a: "Yes. It is delivered at the Powai campus in Chandivali, near the Saki Vihar Road cluster." },
       { q: "Does it include Helm and ingress?", a: "Yes. Helm, ingress and cluster networking are on the skill list, along with pods, services and RBAC." },
       { q: "Is this different from the full DevOps course?", a: "Yes. The DevOps course covers more tools, including Jenkins, Terraform and monitoring. This page focuses on containers and orchestration." },
-      { q: "Will I get placement support?", a: "The institute publishes 450+ placed, 100% Placement and 360° Placement Assurance for the campus." },
+      { q: "Will I get placement support?", a: "The institute publishes 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support for the campus." },
       { q: "What about fees or dates?", a: `Call ${phone} for the current batch schedule and fee details.` },
     ],
   },
   "/linux-course-in-mumbai": {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a Linux course in Mumbai with 100% Placement support. You learn shell usage, system administration, Bash scripting, process control, networking and real Linux skills required for DevOps roles at the Powai campus. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a Linux course in Mumbai with 5 Tier-1 Interviews Assured + Dedicated Placement Support. You learn shell usage, system administration, Bash scripting, process control, networking and real Linux skills required for DevOps roles at the Powai campus. Call 083695 18569.",
     sections: [
       {
         h2: "What does the Linux course in Mumbai cover?",
@@ -267,7 +267,7 @@ export const TOPIC_PAGES = {
       {
         h2: "Why is Linux important for cloud and DevOps careers?",
         paragraphs: [
-          "Most cloud servers, application runtimes and automation tools run on Linux. If you master the shell, process management, SSH, systemd and scripting basics, you move much faster through AWS, Azure, Docker and Kubernetes. The Powai campus keeps the training practical: the same classroom, the same placement guidance, and the published institute lines of 450+ placed, 100% Placement and 360° Placement Assurance.",
+          "Most cloud servers, application runtimes and automation tools run on Linux. If you master the shell, process management, SSH, systemd and scripting basics, you move much faster through AWS, Azure, Docker and Kubernetes. The Powai campus keeps the training practical: the same classroom, the same placement guidance, and the published institute lines of 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support.",
         ],
       },
     ],
@@ -276,13 +276,13 @@ export const TOPIC_PAGES = {
       { q: "Do I need Linux experience before AWS or DevOps?", a: "Not necessarily, but it makes the cloud and DevOps modules much easier to follow." },
       { q: "Is this taught at the Powai campus?", a: "Yes. The campus address is Lodha Supremus, B 1307, Saki Vihar Road, Chandivali, Powai, Mumbai." },
       { q: "Will I learn Bash scripting?", a: "Yes. Bash automation, shell commands and scripting are part of the Linux course." },
-      { q: "Does Linux training include placement support?", a: "The course is taught at the same campus with the institute's published placement support: 450+ placed, 100% Placement and 360° Placement Assurance." },
+      { q: "Does Linux training include placement support?", a: "The course is taught at the same campus with the institute's published placement support: 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support." },
       { q: "How do I ask for fees and batches?", a: `Call ${phone}. The current fee and batch calendar are shared by phone.` },
     ],
   },
   "/terraform-course-in-mumbai": {
     answer:
-      "DevOps Institute in Chandivali, Powai offers Terraform training in Mumbai with 100% Placement support. You learn HCL, modules, state management, reusable infrastructure patterns and cloud provisioning for AWS and Azure at the Powai campus. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers Terraform training in Mumbai with 5 Tier-1 Interviews Assured + Dedicated Placement Support. You learn HCL, modules, state management, reusable infrastructure patterns and cloud provisioning for AWS and Azure at the Powai campus. Call 083695 18569.",
     sections: [
       {
         h2: "What does the Terraform course in Mumbai teach?",
@@ -303,7 +303,7 @@ export const TOPIC_PAGES = {
       { q: "Does the course use real AWS and Azure resources?", a: "The course page describes writing Terraform to provision actual cloud resources rather than only theory or mock diagrams." },
       { q: "Is Terraform different from DevOps?", a: "Terraform is a major part of DevOps but is a specific skill path for infrastructure as code and automation." },
       { q: "Is this taught at the Powai campus?", a: "Yes. The address is Lodha Supremus, B 1307, Saki Vihar Road, Chandivali, Powai, Mumbai." },
-      { q: "Will I get placement support?", a: "The institute states 450+ placed, 100% Placement and 360° Placement Assurance at the campus." },
+      { q: "Will I get placement support?", a: "The institute states 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support at the campus." },
       { q: "How do I ask for batch details?", a: `Call ${phone} and our counsellor will share the current timetable and fee details.` },
     ],
   },
@@ -514,7 +514,7 @@ export const TOPIC_PAGES = {
   },
   "/sre-course-in-mumbai": {
     answer:
-      "DevOps Institute in Chandivali, Powai offers an SRE course in Mumbai with 100% Placement support. You learn monitoring, observability, incident response, SLIs, SLOs and production operations at the Powai campus, with practical labs and weekday or weekend batches. Call 083695 18569 for details.",
+      "DevOps Institute in Chandivali, Powai offers an SRE course in Mumbai with 5 Tier-1 Interviews Assured + Dedicated Placement Support. You learn monitoring, observability, incident response, SLIs, SLOs and production operations at the Powai campus, with practical labs and weekday or weekend batches. Call 083695 18569 for details.",
     sections: [
       {
         h2: "What does the SRE course in Mumbai cover?",
@@ -535,7 +535,7 @@ export const TOPIC_PAGES = {
       { q: "Does the course include monitoring and alerting?", a: "Yes. Observability, dashboards, alerting and detection are core SRE topics in the course." },
       { q: "Will I work with Kubernetes and cloud systems?", a: "Yes. Kubernetes operations, troubleshooting and production health are part of the curriculum." },
       { q: "Is it taught at the Powai campus?", a: "Yes. The campus is Lodha Supremus, B 1307, Saki Vihar Road, Chandivali, Powai, Mumbai 400072." },
-      { q: "Will I receive placement support?", a: "The institute publishes 450+ placed, 100% Placement and 360° Placement Assurance for the campus." },
+      { q: "Will I receive placement support?", a: "The institute publishes 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support for the campus." },
       { q: "How do I get batch details?", a: `Call ${phone} or send the enquiry form and the counsellor will share the batch timings and fees.` },
     ],
   },

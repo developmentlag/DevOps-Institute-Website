@@ -1,4 +1,5 @@
 import { buildMentorPersonSchemas } from "@/data/mentors";
+import { ownerFaqs, ownerKeyPage } from "@/data/ownerKeyPages";
 import {
   BUSINESS_NAME,
   GOOGLE_REVIEWS_STATS,
@@ -80,6 +81,26 @@ function article(page) {
   };
 }
 
+function ownerCourseSchema(page) {
+  const origin = getSiteOrigin();
+  const url = `${origin}${page.route.path}`;
+  const owner = ownerKeyPage(page.route.path);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "@id": `${url}#course`,
+    name: page.route.h1,
+    description: page.route.description,
+    url,
+    provider: {
+      "@type": "EducationalOrganization",
+      name: "DevOps Institute",
+      url: publicSiteUrl(),
+    },
+    teaches: owner && owner.teaches ? owner.teaches : undefined,
+  };
+}
+
 export function buildSeoSchema(page) {
   const blocks = [
     buildOrgSchema(page.areaServed ? { areaServed: page.areaServed } : {}),
@@ -88,6 +109,9 @@ export function buildSeoSchema(page) {
   if (page.faqs && page.faqs.length) blocks.push(buildFaqSchema(page.faqs));
 
   const path = page.route.path;
+  const ownerFaqsForPage = ownerFaqs(path);
+  if (ownerFaqsForPage.length) blocks.push(buildFaqSchema(ownerFaqsForPage));
+  if (ownerKeyPage(path)) blocks.push(ownerCourseSchema(page));
   const coursePaths =
     page.route.group === "area" ||
     page.route.group === "topic" ||
@@ -98,7 +122,7 @@ export function buildSeoSchema(page) {
     path === "/aws-devops-course" ||
     path === "/azure-devops-course" ||
     path === "/kubernetes-docker-course";
-  if (coursePaths) {
+  if (coursePaths && !ownerKeyPage(path)) {
     blocks.push(
       courseLanding({
         name: page.route.h1,

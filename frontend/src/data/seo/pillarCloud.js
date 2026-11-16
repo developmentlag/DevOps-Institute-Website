@@ -1,6 +1,6 @@
 export const CLOUD_PILLAR = {
   answer:
-    "DevOps Institute in Chandivali, Powai offers a classroom cloud computing course covering AWS, Azure and GCP, with weekday and weekend batches and 100% Placement support. Labs run at Lodha Supremus. The published placement figures are the institute's, including 450+ placed. Call 083695 18569.",
+    "DevOps Institute in Chandivali, Powai offers a classroom cloud computing course covering AWS, Azure and GCP, with weekday and weekend batches and 5 Tier-1 Interviews Assured + Dedicated Placement Support. Labs run at Lodha Supremus. The published placement figures are the institute's, including 450+ placed. Call 083695 18569.",
   sections: [
     {
       h2: "What is a cloud computing course, as this campus teaches it?",
@@ -40,13 +40,13 @@ export const CLOUD_PILLAR = {
     {
       h2: "How does placement work for the cloud course?",
       paragraphs: [
-        "There is no second placement statistic for cloud. The institute figures are 450+ placed, 100% Placement and 360° Placement Assurance, with 350+ hiring partners. Resume support, mock interviews and career guidance are the activities named. Sneha P.'s story is the closest cloud-shaped quote: a weekend batch, AWS, Docker and Kubernetes, and the role label Cloud Support Engineer. Her employer is not named. Use the cloud placement page for that limit, and do not stretch one quote into a hiring list.",
+        "There is no second placement statistic for cloud. The institute figures are 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, with 350+ hiring partners. Resume support, mock interviews and career guidance are the activities named. Sneha P.'s story is the closest cloud-shaped quote: a weekend batch, AWS, Docker and Kubernetes, and the role label Cloud Support Engineer. Her employer is not named. Use the cloud placement page for that limit, and do not stretch one quote into a hiring list.",
       ],
     },
     {
       h2: "Where do you take the cloud course in Mumbai?",
       paragraphs: [
-        "At Lodha Supremus, B 1307, Saki Vihar Road, Tunga Village, Chandivali, Powai, Mumbai 400072. Phone 083695 18569. Metro Line 1 to Saki Naka is the rail landmark. Area pages for Powai and Andheri exist for the cloud course, and the Mumbai cloud page is the hub. Thane, Vashi and Ghatkopar stay on https://devopsinstitutemumbai.co.in/. DevOps Institute is affiliated with NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna, and works in collaboration with IIT and Microsoft. The names are written out in words. This page does not show affiliation logos.",
+        "At Lodha Supremus, B 1307, Saki Vihar Road, Tunga Village, Chandivali, Powai, Mumbai 400072. Phone 083695 18569. Metro Line 1 to Saki Naka is the rail landmark. Area pages for Powai and Andheri exist for the cloud course, and the Mumbai cloud page is the hub. Thane, Vashi and Ghatkopar stay on https://devopsinstitutemumbai.co.in/. DevOps Institute is affiliated with NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna, and works in collaboration with IIT and Microsoft.",
       ],
     },
   ],
@@ -55,7 +55,7 @@ export const CLOUD_PILLAR = {
     { q: "Is Kubernetes part of cloud or DevOps?", a: "Both. GKE and AKS appear on the cloud courses. Docker and Kubernetes also have their own course and sit inside the DevOps toolchain." },
     { q: "How long is it?", a: "The flagship figure is four months and 160 hours. Individual cloud schemas list 40 hours. Confirm your batch." },
     { q: "Can a beginner join?", a: "Yes. Each cloud course says it starts from fundamentals." },
-    { q: "Does placement support apply?", a: "Yes, using the institute lines: 450+ placed, 100% Placement and 360° Placement Assurance." },
+    { q: "Does placement support apply?", a: "Yes, using the institute lines: 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support." },
     { q: "Are fees listed?", a: "No. Call 083695 18569." },
     { q: "Which page is the local campus?", a: "The Powai cloud page and the Mumbai cloud hub. The classroom is Chandivali." },
   ],

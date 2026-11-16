@@ -5,7 +5,8 @@ import { Toaster } from "sonner";
 import { Analytics } from "@vercel/analytics/react";
 import SiteAnalytics from "@/components/SiteAnalytics";
 import Header from "@/components/Header";
-import Footer, { MobileStickyBar } from "@/components/Footer";
+import Footer from "@/components/Footer";
+import { StickyFeeBar } from "@/components/FeeHook";
 import PageEndMap from "@/components/PageEndMap";
 import { KeyFactsSection } from "@/components/PageFacts";
 import FloatingActions from "@/components/FloatingActions";
@@ -56,9 +57,9 @@ export function AppShell() {
         <KeyFactsSection />
         <PageEndMap />
         <Footer />
-        <div className="h-16 md:hidden" aria-hidden="true" />
+        <div className="h-36" aria-hidden="true" />
       </div>
-      <MobileStickyBar />
+      <StickyFeeBar />
       <FloatingActions />
       <Toaster position="top-center" richColors />
       <Analytics />

@@ -6,6 +6,7 @@ import FaqAccordion from "@/components/FaqAccordion";
 import Testimonials from "@/components/Testimonials";
 import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
 import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, COURSES, buildCourseSchema, buildBreadcrumbSchema, buildFaqSchema } from "@/data/site";
+import FeeHook from "@/components/FeeHook";
 import { COURSE_ANSWERS } from "@/data/pageMeta";
 import { AREA_ROUTES, CLOUD_AREA_ROUTES } from "@/data/seoRoutes";
 
@@ -89,6 +90,7 @@ export default function CourseDetail() {
               <h1 className="mt-3 font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 max-w-3xl leading-[1.15]">
                 {course.h1}
               </h1>
+              <FeeHook demoHref="#course-enquiry" testId="course-fee-hook" className="mt-6 max-w-3xl" />
               <AnswerBlock answer={COURSE_ANSWERS[course.slug]} demoHref="#course-enquiry" />
               <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl">{course.intro}</p>
               {SEQUENCE_PAGES[course.slug] ? (

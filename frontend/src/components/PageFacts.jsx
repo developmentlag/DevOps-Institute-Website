@@ -5,12 +5,11 @@ import { MentorTeaser } from "@/components/Mentors";
 import {
   ADDRESS,
   AFFILIATION_LINE,
-  ASSURANCE_LABEL,
   LAST_UPDATED_LABEL,
   PHONE,
   PHONE_TEL,
   PLACED_LABEL,
-  PLACEMENT_LABEL,
+  PLACEMENT_SUPPORT_LABEL,
   WHATSAPP_URL,
 } from "@/data/site";
 
@@ -96,12 +95,12 @@ export function KeyFacts() {
         </tr>
         <tr className="border-b border-slate-200">
           <th scope="row" className="text-left font-semibold px-3 py-2 align-top">Placement</th>
-          <td className="px-3 py-2">{PLACED_LABEL}, {PLACEMENT_LABEL}, {ASSURANCE_LABEL}</td>
+          <td className="px-3 py-2">{PLACED_LABEL}. {PLACEMENT_SUPPORT_LABEL}.</td>
         </tr>
         <tr>
           <th scope="row" className="text-left font-semibold px-3 py-2 align-top">Affiliations</th>
           <td className="px-3 py-2">
-            {AFFILIATION_LINE} Names are listed in words. Affiliation logos are not shown.
+            {AFFILIATION_LINE}
           </td>
         </tr>
       </tbody>

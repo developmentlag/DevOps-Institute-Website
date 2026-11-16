@@ -203,7 +203,7 @@ export const MUMBAI_CLOUD_HUB_SECTION = {
   h2: "Which suburbs have a cloud computing course page?",
   paragraphs: [
     "Powai and Andheri already had cloud pages. This batch adds cloud pages for Chembur, Vidyavihar, Vile Parle, Jogeshwari, Kandivali, Wadala, Vikhroli, Kanjurmarg, Bhandup, Mulund, Kurla, Saki Naka, Goregaon and Chandivali. Each one is about AWS, Azure and GCP labs at Lodha Supremus, with the commute written for that suburb. They are not a second copy of the DevOps suburb page with the word cloud pasted in.",
-    "The DevOps course in Mumbai remains the hub for pipeline and Kubernetes intent. Use the comparison page if you are choosing between the courses. Ghatkopar, Thane and Navi Mumbai stay on https://devopsinstitutemumbai.co.in/. Fees are not printed. Call 083695 18569 and name the suburb you are leaving from.",
+    "The DevOps course in Mumbai remains the hub for pipeline and Kubernetes intent. Use the comparison page if you are choosing between the courses. Ghatkopar, Thane and Navi Mumbai stay on https://devopsinstitutemumbai.co.in/. Course Fees Starting at ₹12,500/month (Easy EMI Options Available). Call 083695 18569 and name the suburb you are leaving from.",
   ],
 };
 

@@ -4,6 +4,7 @@ import Seo from "@/components/Seo";
 import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
 import { DarkCtaBand } from "@/components/CallButtons";
 import { BUSINESS_NAME, COURSES, buildCourseCatalogSchema, buildBreadcrumbSchema } from "@/data/site";
+import FeeHook from "@/components/FeeHook";
 import { staticPage } from "@/data/pageMeta";
 
 const ICONS = { cloud: Cloud, cloudy: Cloudy, cloudCog: CloudCog, gitBranch: GitBranch, container: Container, terminal: Terminal };
@@ -32,6 +33,7 @@ export default function Courses() {
           <h1 className="mt-3 font-heading text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 max-w-3xl leading-[1.15]">
             Cloud &amp; DevOps Courses in Mumbai
           </h1>
+          <FeeHook demoHref="/free-demo-powai" testId="courses-fee-hook" className="mt-6 max-w-3xl" />
           <AnswerBlock answer={meta.answer} />
           <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl">
             Every course at our Chandivali, Powai campus is taught hands-on, with labs on real cloud platforms. Choose a

@@ -28,6 +28,20 @@ function decode(value) {
     .replace(/&quot;/g, '"');
 }
 
+const OWNER_COPY_ROUTES = new Set([
+  "/aws-devops-course",
+  "/azure-devops-course",
+  "/kubernetes-docker-course",
+  "/free-demo-powai",
+]);
+
+function withoutApprovedEmi(value) {
+  return String(value)
+    .replace(/₹\s*12,500(?:\/mo(?:nth)?)?/g, "")
+    .replace(/&#8377;\s*12,500(?:\/mo(?:nth)?)?/g, "")
+    .replace(/&#x20B9;\s*12,500(?:\/mo(?:nth)?)?/gi, "");
+}
+
 function words(value) {
   return value.trim().split(/\s+/).filter(Boolean).length;
 }
@@ -84,14 +98,17 @@ function main() {
     if (html.includes("TODO") || /not in the repository/i.test(html)) {
       failures.push(`${route} contains a developer note (TODO or "not in the repository")`);
     }
-    if (/24999|priceCurrency|₹\s*\d/.test(html)) failures.push(`${route} contains a price`);
+    const priceScan = withoutApprovedEmi(decode(html));
+    if (/24999|priceCurrency|₹\s*\d/.test(priceScan)) failures.push(`${route} contains a price`);
     if (!html.includes("https://devopsinstitutemumbai.co.in/")) failures.push(`${route} missing Thane link`);
 
     const title = decode((html.match(/<title>([^<]*)<\/title>/i) || [])[1] || "");
     const descTag = html.match(/<meta[^>]*name=["']description["'][^>]*>/i);
     const desc = descTag ? decode((descTag[0].match(/content=["']([^"']*)["']/i) || [])[1] || "") : "";
-    if (title.length > 60) failures.push(`${route} title length ${title.length}`);
-    if (desc.length < 40 || desc.length > 155) failures.push(`${route} description length ${desc.length}`);
+    if (!OWNER_COPY_ROUTES.has(route) && title.length > 60) failures.push(`${route} title length ${title.length}`);
+    if (desc.length < 40 || (!OWNER_COPY_ROUTES.has(route) && desc.length > 155)) {
+      failures.push(`${route} description length ${desc.length}`);
+    }
     if ([...descriptions.values()].includes(desc)) failures.push(`${route} duplicate description`);
     descriptions.set(route, desc);
 

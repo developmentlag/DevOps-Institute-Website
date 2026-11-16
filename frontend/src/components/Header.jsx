@@ -72,6 +72,29 @@ export default function Header() {
 
             <div className="hidden lg:flex items-center gap-0.5 xl:gap-1 shrink-0">
               {NAV.map((item) => (
+                item.to === "/courses" ? (
+                  <div key={item.to} className="relative group">
+                    <NavLink
+                      to={item.to}
+                      data-testid={item.testId}
+                      className={({ isActive }) =>
+                        `px-2.5 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${
+                          isActive ? "text-blue-700 bg-blue-50" : "text-slate-700 hover:text-slate-900 hover:bg-slate-100"
+                        }`
+                      }
+                    >
+                      {item.label}
+                    </NavLink>
+                    <div className="invisible absolute left-0 top-full z-50 mt-1 w-64 rounded-lg border border-slate-200 bg-white py-2 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                      <Link to="/courses" className="block px-3 py-2 text-sm text-slate-700 hover:bg-slate-50">All courses</Link>
+                      {KEY_NAV.map((link) => (
+                        <Link key={link.to} to={link.to} className="block px-3 py-2 text-sm text-slate-700 hover:bg-slate-50">
+                          {link.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
                 <NavLink
                   key={item.to}
                   to={item.to}
@@ -84,6 +107,7 @@ export default function Header() {
                 >
                   {item.label}
                 </NavLink>
+                )
               ))}
               <div className="flex items-center gap-2 ml-2 shrink-0 flex-nowrap">
                 <a

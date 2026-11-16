@@ -2,7 +2,7 @@
 
 export const DEVOPS_PILLAR = {
   answer:
-    "DevOps Institute in Chandivali, Powai offers a classroom DevOps course with 100% Placement support, weekday and weekend batches, and a published four-month path to job-ready labs. The syllabus runs from Linux and Git through Jenkins, Docker, Kubernetes, Terraform and monitoring. Call 083695 18569.",
+    "DevOps Institute in Chandivali, Powai offers a classroom DevOps course with 5 Tier-1 Interviews Assured + Dedicated Placement Support, weekday and weekend batches, and a published four-month path to job-ready labs. The syllabus runs from Linux and Git through Jenkins, Docker, Kubernetes, Terraform and monitoring. Call 083695 18569.",
   sections: [
     {
       h2: "What is DevOps, in the sense this course teaches?",
@@ -78,14 +78,14 @@ export const DEVOPS_PILLAR = {
       h2: "What should you read next on this site?",
       paragraphs: [
         "Read the Mumbai hub if the remaining question is how you will reach Chandivali. Read the fees page if the remaining question is money: it explains what can change a fee and then tells you to call, because no number is printed. Read the buyer's guide if you are still deciding whether a classroom course is the right shape. It scores this institute only against a checklist, and it names no other training company.",
-        "Read the reviews page for the four student stories and the 4.7 rating from 130 Google reviews already shown on the site. Read the placements page for how 450+ placed, 100% Placement and 360° Placement Assurance are worded, and for the alumni names the site actually has. Read the trainers page for the named mentors, their current employers and LinkedIn profiles.",
+        "Read the reviews page for the four student stories and the 4.7 rating from 130 Google reviews already shown on the site. Read the placements page for how 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support are worded, and for the alumni names the site actually has. Read the trainers page for the named mentors, their current employers and LinkedIn profiles.",
       ],
     },
     {
       h2: "Where do you take the course if you live in Mumbai?",
       paragraphs: [
         "At DevOps Institute, Lodha Supremus, B 1307, Saki Vihar Road, Tunga Village, Chandivali, Powai, Mumbai 400072. Phone 083695 18569. Metro Line 1, Saki Naka station, is the rail landmark. The Mumbai hub links every suburb page this domain is willing to publish. Thane, Vashi, Navi Mumbai and Ghatkopar belong to https://devopsinstitutemumbai.co.in/ and are not rewritten here.",
-        "DevOps Institute is affiliated with NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna, and works in collaboration with IIT and Microsoft. The names are written out in words. This page does not show affiliation logos.",
+        "DevOps Institute is affiliated with NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna, and works in collaboration with IIT and Microsoft.",
       ],
     },
   ],
@@ -94,7 +94,7 @@ export const DEVOPS_PILLAR = {
     { q: "How long is the DevOps course?", a: "Four months is the published time to become job-ready. The flagship schema also publishes a 160-hour workload. Weekly clock times are not printed." },
     { q: "Can a fresher join?", a: "Yes. Basic computer skills are enough. Linux and Git are taught first." },
     { q: "Can someone with a job join?", a: "Yes. Weekend batches are published for working professionals, and weekday batches exist as well." },
-    { q: "Does the course include placement support?", a: "Yes. The institute publishes 450+ placed, 100% Placement and 360° Placement Assurance, with resume support, mock interviews and career guidance." },
+    { q: "Does the course include placement support?", a: "Yes. The institute publishes 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, with resume support, mock interviews and career guidance." },
     { q: "Which certifications are mentioned?", a: "AWS certification prep, Azure certification prep, and CKA or CKAD-style labs are mentioned on the relevant course pages. The institute does not say it awards those vendor certificates." },
     { q: "Where is the Mumbai campus?", a: "Lodha Supremus, B 1307, Saki Vihar Road, Chandivali, Powai, Mumbai 400072. Call 083695 18569." },
     { q: "Where is the printable syllabus?", a: "On the DevOps course syllabus page, which lists modules, tools and published projects and can be printed from the browser." },
