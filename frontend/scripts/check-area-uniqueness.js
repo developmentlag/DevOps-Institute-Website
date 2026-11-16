@@ -151,6 +151,44 @@ function main() {
   }
   console.log(`max shared-sentence ${(Math.round(maxRatio * 1000) / 10).toFixed(1)}% (${maxPair}), threshold ${THRESHOLD * 100}%`);
 
+  const { getSeoPage } = require("../src/data/seoCopy");
+  const { SEO_ROUTES } = require("../src/data/seoRoutes");
+  const KEY_PATHS = ["/aws-devops-course", "/azure-devops-course", "/kubernetes-docker-course", "/free-demo-powai"];
+  const corpus = [];
+  for (const route of SEO_ROUTES) {
+    if (route.index === false) continue;
+    const page = getSeoPage(route.path);
+    if (!page) continue;
+    const text = editorialText(page);
+    corpus.push({
+      path: route.path,
+      wordCount: words(text),
+      normalized: sentences(text).map((sentence) => normalize(sentence, page.label || "")),
+    });
+  }
+  for (const path of KEY_PATHS) {
+    const self = corpus.find((item) => item.path === path);
+    if (!self) {
+      failures.push(`${path} missing from uniqueness corpus`);
+      continue;
+    }
+    const minimum = path === "/free-demo-powai" ? 900 : 2500;
+    if (self.wordCount < minimum) failures.push(`${path} editorial word count ${self.wordCount} (need ${minimum})`);
+    let worst = 0;
+    let worstPath = "";
+    for (const other of corpus) {
+      if (other.path === path) continue;
+      const ratio = overlap(self.normalized, other.normalized);
+      if (ratio > worst) {
+        worst = ratio;
+        worstPath = other.path;
+      }
+    }
+    const pct = Math.round(worst * 1000) / 10;
+    console.log(`${path}\t${self.wordCount} words\tmax shared ${pct}% vs ${worstPath}`);
+    if (worst > THRESHOLD) failures.push(`${path} shares ${pct}% of sentences with ${worstPath}`);
+  }
+
   const reportPath = path.resolve(__dirname, "../build/area-uniqueness.json");
   if (fs.existsSync(path.dirname(reportPath))) {
     fs.writeFileSync(reportPath, JSON.stringify({ threshold: THRESHOLD, maxRatio, maxPair, rows, failures }, null, 2));

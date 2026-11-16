@@ -14,6 +14,13 @@ const NAV = [
   { to: "/contact", label: "Contact Us", testId: "header-nav-contact-link" },
 ];
 
+const KEY_NAV = [
+  { to: "/free-demo-powai", label: "Free Demo", testId: "header-nav-demo-link" },
+  { to: "/aws-devops-course", label: "AWS & DevOps", testId: "header-nav-aws-devops-link" },
+  { to: "/azure-devops-course", label: "Azure DevOps", testId: "header-nav-azure-devops-link" },
+  { to: "/kubernetes-docker-course", label: "Docker & Kubernetes", testId: "header-nav-kube-link" },
+];
+
 export default function Header() {
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
@@ -146,6 +153,21 @@ export default function Header() {
                 Hire Us
                 <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
               </a>
+              <p className="px-3 pt-3 pb-1 text-xs font-semibold uppercase tracking-wider text-slate-400">Key pages</p>
+              {KEY_NAV.map((item) => (
+                <NavLink
+                  key={item.to}
+                  to={item.to}
+                  data-testid={item.testId}
+                  className={({ isActive }) =>
+                    `block rounded-md px-3 py-2 text-sm font-medium ${
+                      isActive ? "text-blue-700 bg-blue-50" : "text-slate-700 hover:bg-slate-100"
+                    }`
+                  }
+                >
+                  {item.label}
+                </NavLink>
+              ))}
               <p className="px-3 pt-3 pb-1 text-xs font-semibold uppercase tracking-wider text-slate-400">Our Courses</p>
               {COURSES.map((c) => (
                 <NavLink

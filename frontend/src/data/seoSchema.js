@@ -94,7 +94,10 @@ export function buildSeoSchema(page) {
     path === "/devops-course" ||
     path === "/cloud-computing-course" ||
     path === "/devops-course-in-mumbai-with-placement" ||
-    path === "/cloud-computing-course-with-placement";
+    path === "/cloud-computing-course-with-placement" ||
+    path === "/aws-devops-course" ||
+    path === "/azure-devops-course" ||
+    path === "/kubernetes-docker-course";
   if (coursePaths) {
     blocks.push(
       courseLanding({

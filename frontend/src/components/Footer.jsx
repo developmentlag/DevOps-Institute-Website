@@ -85,6 +85,10 @@ export default function Footer() {
             <li><Link to="/faqs" data-testid="footer-faqs-link" className="hover:text-sky-400 transition-colors">FAQs</Link></li>
             <li><Link to="/trainers" data-testid="footer-trainers-link" className="hover:text-sky-400 transition-colors">Trainers</Link></li>
             <li><Link to="/contact" data-testid="footer-contact-link" className="hover:text-sky-400 transition-colors">Contact Us</Link></li>
+            <li><Link to="/free-demo-powai" data-testid="footer-demo-link" className="hover:text-sky-400 transition-colors">Free demo class</Link></li>
+            <li><Link to="/aws-devops-course" data-testid="footer-aws-devops-link" className="hover:text-sky-400 transition-colors">AWS Cloud and DevOps</Link></li>
+            <li><Link to="/azure-devops-course" data-testid="footer-azure-devops-link" className="hover:text-sky-400 transition-colors">Azure DevOps and AZ-900</Link></li>
+            <li><Link to="/kubernetes-docker-course" data-testid="footer-kubernetes-docker-link" className="hover:text-sky-400 transition-colors">Docker and Kubernetes labs</Link></li>
             <li><Link to="/privacy-policy" data-testid="footer-privacy-link" className="hover:text-sky-400 transition-colors">Privacy Policy</Link></li>
             <li>
               <a

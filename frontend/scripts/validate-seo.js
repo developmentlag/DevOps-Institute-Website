@@ -95,6 +95,18 @@ function main() {
     if ([...descriptions.values()].includes(desc)) failures.push(`${route} duplicate description`);
     descriptions.set(route, desc);
 
+    const canonicalTag = html.match(/<link[^>]*rel=["']canonical["'][^>]*>/i);
+    const canonicalHref = canonicalTag ? (canonicalTag[0].match(/href=["']([^"']+)["']/i) || [])[1] : "";
+    const expectedCanonical = `${SITE_ORIGIN}${route === "/" ? "/" : route}`;
+    if (canonicalHref !== expectedCanonical) failures.push(`${route} canonical ${canonicalHref || "missing"}`);
+    const h1Count = (html.match(/<h1\b/gi) || []).length;
+    if (h1Count !== 1) failures.push(`${route} has ${h1Count} h1 tags`);
+    if (!title) failures.push(`${route} missing title`);
+    if (!desc) failures.push(`${route} missing description`);
+    if (/id="root"\s*>\s*<\/div>/.test(html)) failures.push(`${route} root is empty`);
+    const bodyWords = words(text.replace(/You need to enable JavaScript to run this app\./g, " "));
+    if (bodyWords < 120) failures.push(`${route} body has ${bodyWords} words`);
+
     const direct = html.match(/data-direct-answer[^>]*>([\s\S]*?)<\/p>/i);
     if (direct) {
       const count = words(visibleText(direct[1]));
@@ -112,6 +124,9 @@ function main() {
       if (!exempt && !pillar && (areaOrTopic || route.startsWith("/devops-") || route.startsWith("/cloud-") || route.startsWith("/best-")) && count < 800) {
         failures.push(`${route} article is ${count} words, need 800`);
       }
+      const coursePages = ["/aws-devops-course", "/azure-devops-course", "/kubernetes-docker-course"];
+      if (coursePages.includes(route) && count < 2500) failures.push(`${route} article is ${count} words, need 2500`);
+      if (route === "/free-demo-powai" && count < 800) failures.push(`${route} article is ${count} words, need 800`);
     }
   }
 

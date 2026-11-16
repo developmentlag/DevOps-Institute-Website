@@ -12,6 +12,7 @@ import { LENGTH_BOOST } from "@/data/seo/lengthBoost";
 import { MENTORS } from "@/data/mentors";
 import { AFFILIATION_LINE, TESTIMONIALS, GOOGLE_REVIEWS_STATS, GOOGLE_BUSINESS_PROFILE_URLS } from "@/data/site";
 import { cloudHubLinks, getLocalPage, MUMBAI_CLOUD_HUB_SECTION, MUMBAI_DEVOPS_HUB_SECTION } from "@/data/seo/localBatch";
+import { KEY_PAGES } from "@/data/seo/keyPages";
 
 const AREAS = { ...AREA_EAST, ...AREA_WEST };
 
@@ -209,6 +210,7 @@ const GUIDES = {
   ...GUIDES_A,
   ...GUIDES_B,
   ...TRUST,
+  ...KEY_PAGES,
 };
 
 function topicFocus(path) {
@@ -312,7 +314,7 @@ export function getSeoPage(path) {
 
   const guide = GUIDES[path];
   if (!guide) return null;
-  const crumbs = [
+  const crumbs = guide.crumbs || [
     { name: "Home", href: "/" },
     { name: "Guides", href: "/sitemap" },
     { name: route.h1, href: path },
@@ -327,7 +329,7 @@ export function getSeoPage(path) {
       { href: "/devops-course-in-mumbai-with-placement", label: "DevOps course with placement" },
       { href: "/cloud-computing-course", label: "cloud computing course" },
     ],
-    showMap: path !== "/404" && path !== "/sitemap",
+    showMap: guide.showMap === false ? false : path !== "/404" && path !== "/sitemap",
     crumbs,
     syllabusModules: guide.syllabus ? SYLLABUS_MODULES : null,
   };

@@ -3,10 +3,9 @@
  *
  * Vercel's build image cannot launch headless Chrome, and a thrown prerender
  * used to fail the whole deployment. This script renders each public route
- * with React in Node and writes build/<route>/index.html. If rendering cannot
- * run, it logs the error and leaves the CRA shell in place so the deploy
- * still succeeds. scripts/validate-seo.js then fails the build when the HTML
- * or JSON-LD is wrong.
+ * with React in Node and writes build/<route>/index.html. A thrown prerender
+ * fails the build so an empty #root shell is not deployed. scripts/validate-seo.js
+ * then fails the build when the HTML or JSON-LD is wrong.
  */
 const fs = require("fs");
 const path = require("path");
@@ -72,14 +71,20 @@ function assertCrawlerFiles() {
 
   const llms = fs.readFileSync(path.join(BUILD_DIR, "llms.txt"), "utf8");
   for (const snippet of [
+    "IVYTECH INSTITUTE LLP",
+    "Flexible EMI plans starting at ₹12,500/month",
+    "5 Tier-1 Interviews Assured",
+    "https://www.devopsinstitute.co.in/aws-devops-course",
+    "https://www.devopsinstitute.co.in/azure-devops-course",
+    "https://www.devopsinstitute.co.in/kubernetes-docker-course",
+    "https://www.devopsinstitute.co.in/free-demo-powai",
+    "https://www.devopsinstitute.co.in/placements",
+    "https://www.devopsinstitute.co.in/contact",
     "https://devopsinstitutemumbai.co.in/",
-    "450+ placed",
-    "Powai, Mumbai",
-    "## Campuses (DevOps Institute)",
-    "https://datainstitute.in/",
   ]) {
     if (!llms.includes(snippet)) throw new Error(`llms.txt is missing ${snippet}`);
   }
+  if (/\bguarantee(d)?\b/i.test(llms)) throw new Error("llms.txt contains the word guarantee");
 }
 
 function installSourceLoader() {
@@ -233,23 +238,11 @@ function writeCrawlFiles() {
   }
   fs.writeFileSync(path.join(BUILD_DIR, "robots.txt"), robots);
 
-  const { SEO_ROUTES } = require("../src/data/seoRoutes");
-  const { COURSES } = require("../src/data/site");
-  const baseLlms = fs.readFileSync(path.join(PUBLIC_DIR, "llms.txt"), "utf8").trimEnd();
-  const lines = [
-    `- [Home](${SITE_ORIGIN}/): Classroom DevOps training in Powai, Mumbai with placement support.`,
-    `- [About](${SITE_ORIGIN}/about): Campus story, labs and the Chandivali address.`,
-    `- [Courses](${SITE_ORIGIN}/courses): AWS, Azure, GCP, DevOps, Kubernetes and Terraform.`,
-    ...COURSES.map((course) => `- [${course.name}](${SITE_ORIGIN}/courses/${course.slug}): ${course.metaDescription}`),
-    `- [Contact](${SITE_ORIGIN}/contact): Phone, map and enquiry form for the Powai campus.`,
-    `- [FAQs](${SITE_ORIGIN}/faqs): Published answers about courses, batches and the campus.`,
-    `- [Privacy](${SITE_ORIGIN}/privacy-policy): How enquiry details are handled.`,
-    ...SEO_ROUTES.filter((route) => route.index !== false).map(
-      (route) => `- [${route.title}](${SITE_ORIGIN}${route.path}): ${route.summary}`,
-    ),
-  ];
-  fs.writeFileSync(path.join(BUILD_DIR, "llms.txt"), `${baseLlms}\n\n## Pages\n${lines.join("\n")}\n`);
+  const baseLlms = fs.readFileSync(path.join(PUBLIC_DIR, "llms.txt"), "utf8");
+  const llmsText = baseLlms.endsWith("\n") ? baseLlms : `${baseLlms}\n`;
+  fs.writeFileSync(path.join(BUILD_DIR, "llms.txt"), llmsText);
 
+  const { SEO_ROUTES } = require("../src/data/seoRoutes");
   const { getSeoPage } = require("../src/data/seoCopy");
   const chunks = ["# DevOps Institute, Powai", "Address: Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali, Powai, Mumbai, Maharashtra 400072", "Phone: 083695 18569", ""];
   for (const route of SEO_ROUTES) {
@@ -335,7 +328,7 @@ function prerender() {
 try {
   prerender();
 } catch (error) {
-  console.warn("Prerender failed. Shipping the client-rendered build.");
+  console.warn("Prerender failed. Refusing to ship an empty client shell.");
   console.warn(error && error.stack ? error.stack : error);
-  process.exitCode = 0;
+  process.exitCode = 1;
 }

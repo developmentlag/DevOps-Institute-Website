@@ -37,6 +37,15 @@ export default function Courses() {
             Every course at our Chandivali, Powai campus is taught hands-on, with labs on real cloud platforms. Choose a
             single cloud or build a complete multi-cloud and DevOps skill set.
           </p>
+          <nav className="mt-6 max-w-3xl" aria-label="Combined classroom paths">
+            <h2 className="font-heading text-xl font-bold text-slate-900">Combined classroom paths</h2>
+            <ul className="mt-3 space-y-1.5 text-sm sm:text-base">
+              <li><Link to="/aws-devops-course" className="font-semibold text-blue-700">AWS Cloud and DevOps course</Link></li>
+              <li><Link to="/azure-devops-course" className="font-semibold text-blue-700">Azure DevOps and AZ-900 topics</Link></li>
+              <li><Link to="/kubernetes-docker-course" className="font-semibold text-blue-700">Docker and Kubernetes labs</Link></li>
+              <li><Link to="/free-demo-powai" className="font-semibold text-blue-700">Book a free demo class in Powai</Link></li>
+            </ul>
+          </nav>
         </div>
       </section>
 
