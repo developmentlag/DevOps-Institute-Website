@@ -56,6 +56,8 @@ class EnquiryCreate(AttributionFields):
     course: str = "General Enquiry"
     message: Optional[str] = ""
     source: Optional[str] = "website"
+    campus: str = Field(default="", max_length=80)
+    profile: str = Field(default="", max_length=40)
 
 
 class Enquiry(AttributionFields):
@@ -68,6 +70,8 @@ class Enquiry(AttributionFields):
     course: str
     message: str = ""
     source: str = "website"
+    campus: str = ""
+    profile: str = ""
     created_at: str = Field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
 
 

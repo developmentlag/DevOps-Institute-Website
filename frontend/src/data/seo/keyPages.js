@@ -108,7 +108,7 @@ export const KEY_PAGES = {
         h2: "Terraform beside the console, not instead of it",
         paragraphs: [
           "Terraform is already on the DevOps skill list and on the Linux and Terraform course. Learners on this AWS path still click the console first, because a module you have never seen in the portal becomes fiction inside a plan file. HCL comes after the VPC, the instance and the bucket are familiar. The published point of infrastructure as code is that the sample estate can be described and stood up again, not that the console is forbidden.",
-          "State, variables and a module boundary are discussed only as far as the existing Terraform course already goes. This page does not publish a private module registry, a remote-state product choice beyond what the syllabus already implies, or a claim that every Mumbai employer uses one layout. You leave with a story: console first, then a description of the same network, then a pipeline that could apply a change. That story is what mock interviews at this campus are built to rehearse. The placement lines the site already prints are 450+ placed, 100% Placement and 360° Placement Assurance, with 350+ hiring partners.",
+          "State, variables and a module boundary are discussed only as far as the existing Terraform course already goes. This page does not publish a private module registry, a remote-state product choice beyond what the syllabus already implies, or a claim that every Mumbai employer uses one layout. You leave with a story: console first, then a description of the same network, then a pipeline that could apply a change. That story is what mock interviews at this campus are built to rehearse. The placement lines the site already prints are 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, with 350+ hiring partners.",
         ],
       },
       {
@@ -128,7 +128,7 @@ export const KEY_PAGES = {
       {
         h2: "Placement words this page will repeat, and the ones it will not",
         paragraphs: [
-          "Repeat only what the placements page already allows. 450+ placed, 100% Placement and 360° Placement Assurance are published phrases. 350+ hiring partners is published. Four testimonial names exist on the site, and only Rajeswari Singh’s card records a placed outcome. This page will not invent the other names, the employer list, or a salary table. Company, role and a consented photo are not published for the rest of that 450+ figure. Read /placements before you treat a total as a personal offer.",
+          "Repeat only what the placements page already allows. 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support are published phrases. 350+ hiring partners is published. Four testimonial names exist on the site, and only Rajeswari Singh’s card records a placed outcome. This page will not invent the other names, the employer list, or a salary table. Company, role and a consented photo are not published for the rest of that 450+ figure. Read /placements before you treat a total as a personal offer.",
           "Mock interviews, resume reviews and career guidance are the support the guides already describe. They are practice, not a promise that a particular company will call. Sister campuses in Thane, Vashi and Ghatkopar are on https://devopsinstitutemumbai.co.in/ and are not a second Powai room. If your ride is to Thane West or to Vashi, use that site. If your ride is to Lodha Supremus, the AWS sequence in this classroom is the one on this URL.",
         ],
       },
@@ -136,7 +136,7 @@ export const KEY_PAGES = {
         h2: "Affiliations, reviews and the demo hour",
         paragraphs: [
           "The affiliation sentence this institute prints names NASSCOM, IBM, the Government of India through MEITY, and IIT Patna, and a collaboration with IIT and Microsoft. The names stay in words. This page does not add logos, and it does not say those bodies sit your exam or hire you. Reviews on the site are a 4.7 rating from 130 Google reviews, plus the stories already quoted. Dates for those Google reviews are not stored here.",
-          "Book the room before you book the batch. /free-demo-powai is the hour in the lab, and /contact is the address, the map and the enquiry form. Fees are not printed on this page. Ask them on the phone. Bring the catalog questions to the demo if you want the service list repeated in the room, and bring sequence questions here if you want to know when Terraform is allowed to describe the VPC you already clicked.",
+          "Book the room before you book the batch. /free-demo-powai is the hour in the lab, and /contact is the address, the map and the enquiry form. Course Fees Starting at ₹12,500/month (Easy EMI Options Available) Ask for the full fee structure on the phone. Bring the catalog questions to the demo if you want the service list repeated in the room, and bring sequence questions here if you want to know when Terraform is allowed to describe the VPC you already clicked.",
         ],
       },
       {
@@ -177,7 +177,7 @@ export const KEY_PAGES = {
       },
       {
         q: "What placement lines can I repeat?",
-        a: "450+ placed, 100% Placement, 360° Placement Assurance and 350+ hiring partners. Individual offers beyond the stories already on the site are not invented here.",
+        a: "450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support and 350+ hiring partners. Individual offers beyond the stories already on the site are not invented here.",
       },
       {
         q: "When should I use the demo page?",
@@ -252,7 +252,7 @@ export const KEY_PAGES = {
       {
         h2: "Reviews, placement lines and affiliations",
         paragraphs: [
-          "Google reviews published on this site are 4.7 from 130. The longer quotes already on the homepage are not retyped here as if they were new. Placement language stays inside the published set: 450+ placed, 100% Placement, 360° Placement Assurance, 350+ hiring partners. The placements page explains why only a few names are listed. This Azure page will not add a company logo wall.",
+          "Google reviews published on this site are 4.7 from 130. The longer quotes already on the homepage are not retyped here as if they were new. Placement language stays inside the published set: 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, 350+ hiring partners. The placements page explains why only a few names are listed. This Azure page will not add a company logo wall.",
           "Affiliations stay in words: NASSCOM, IBM, the Government of India through MEITY, IIT Patna, and a collaboration with IIT and Microsoft. None of those names is a shortcut around the portal lab. None of them is printed here as the body that issues AZ-900. If a sentence you read elsewhere upgrades those affiliations into an exam result, it is not a sentence from this page.",
         ],
       },
@@ -314,11 +314,11 @@ export const KEY_PAGES = {
       },
       {
         q: "Does this page list fees?",
-        a: "No fee is printed here. Call 083695 18569.",
+        a: "Course fees start at ₹12,500/month. Call 083695 18569 for the full fee structure.",
       },
       {
         q: "Which placement figures are published?",
-        a: "450+ placed, 100% Placement, 360° Placement Assurance and 350+ hiring partners. Read /placements for the limit on named stories.",
+        a: "450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support and 350+ hiring partners. Read /placements for the limit on named stories.",
       },
       {
         q: "Can I take this lab in Thane?",
@@ -377,7 +377,7 @@ export const KEY_PAGES = {
         h2: "Helm after you can do the work without it",
         paragraphs: [
           "Helm is how the catalog says you package a release. Using Helm on the first afternoon, before you have applied a deployment by hand, hides the objects you will have to debug later. The lab order on this page is deliberate: manifests you can read, then a chart that generates those manifests, then a release you can upgrade and roll back. If the chart is the only artifact you can discuss, the lab stopped too early.",
-          "The same order protects the interview story. A mock interview at this campus is there to rehearse what you built. You should be able to say what broke when a probe failed, what the service selector missed, or why a secret was not mounted. Those are classroom failures, not production outages borrowed from an employer. The placement phrases stay the published ones: 450+ placed, 100% Placement, 360° Placement Assurance, 350+ hiring partners.",
+          "The same order protects the interview story. A mock interview at this campus is there to rehearse what you built. You should be able to say what broke when a probe failed, what the service selector missed, or why a secret was not mounted. Those are classroom failures, not production outages borrowed from an employer. The placement phrases stay the published ones: 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, 350+ hiring partners.",
         ],
       },
       {
@@ -398,7 +398,7 @@ export const KEY_PAGES = {
         h2: "Affiliations and what a finished lab looks like",
         paragraphs: [
           "NASSCOM, IBM, the Government of India through MEITY, IIT Patna, and a collaboration with IIT and Microsoft are the affiliation words the site already uses. They do not replace a working ingress. A finished container lab, in the words the catalog already prints, is an image you can build, a Compose stack you can run, a workload you can roll back, an ingress you can explain, and a Helm release with RBAC that is not the cluster-admin shortcut.",
-          "Fees are not on this page. The demo hour at /free-demo-powai is how you see the benches before you decide. /contact holds the directions. Bring a question about weekday versus weekend, not a request for a price hidden in the HTML. After you enrol, the lab order above is the one this URL is willing to be judged against.",
+          "Course fees start at ₹12,500/month. The demo hour at /free-demo-powai is how you see the benches before you decide. /contact holds the directions. Bring a question about weekday versus weekend, not a request for a price hidden in the HTML. After you enrol, the lab order above is the one this URL is willing to be judged against.",
         ],
       },
       {
@@ -462,7 +462,7 @@ export const KEY_PAGES = {
       },
       {
         q: "What placement lines are safe to repeat?",
-        a: "450+ placed, 100% Placement, 360° Placement Assurance and 350+ hiring partners. Named stories stay on the placements page.",
+        a: "450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support and 350+ hiring partners. Named stories stay on the placements page.",
       },
       {
         q: "Can I see the lab before I join?",
@@ -503,7 +503,7 @@ export const KEY_PAGES = {
       {
         h2: "What the hour will not decide",
         paragraphs: [
-          "Fees are not printed on this site’s course pages, and they are not printed here either. Ask on the call. Do not treat a demo as a place where a price was supposed to be hidden in the HTML. Placement figures you may hear repeated are only the published ones: 450+ placed, 100% Placement, 360° Placement Assurance and 350+ hiring partners. The placements page is where those lines are unpacked, including the limit on how many alumni names the site actually holds.",
+          "Course Fees Starting at ₹12,500/month (Easy EMI Options Available) Ask on the call for the full fee structure. Do not treat a demo as a place where a price was supposed to be hidden in the HTML. Placement figures you may hear repeated are only the published ones: 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support and 350+ hiring partners. The placements page is where those lines are unpacked, including the limit on how many alumni names the site actually holds.",
           "A demo does not enrol you. It does not reserve a seat in a batch that is already full. It does not move the campus to your suburb. Area pages describe the ride to Lodha Supremus. This page assumes you are willing to come to Chandivali for the hour. If you are not, say so before you travel. Saki Vihar Road is the address: Lodha Supremus, B 1307, Tunga Village, Powai, Mumbai 400072.",
         ],
       },
@@ -525,7 +525,7 @@ export const KEY_PAGES = {
     faqs: [
       {
         q: "Is the demo class free?",
-        a: "Yes. The visit described on this page is a free demo class. The four-month course is a paid batch, and the fee is not printed here.",
+        a: "Yes. The visit described on this page is a free demo class. The four-month course is a paid batch, and the published starting point is Course Fees Starting at ₹12,500/month (Easy EMI Options Available), and the full fee structure is shared on request.",
       },
       {
         q: "How do I book?",
@@ -545,7 +545,7 @@ export const KEY_PAGES = {
       },
       {
         q: "Can I ask about placements during the visit?",
-        a: "You can ask. The figures the site publishes are 450+ placed, 100% Placement, 360° Placement Assurance and 350+ hiring partners. Read /placements for the detail.",
+        a: "You can ask. The figures the site publishes are 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support and 350+ hiring partners. Read /placements for the detail.",
       },
       {
         q: "Do I need a laptop?",

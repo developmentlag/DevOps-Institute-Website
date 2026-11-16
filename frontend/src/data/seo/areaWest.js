@@ -5,7 +5,7 @@ const phone = "083695 18569";
 export const AREA_WEST = {
   andheri: {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Andheri East and Andheri West, with 100% Placement support. Metro Line 1 connects both sides to Saki Naka, the station for Lodha Supremus. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Andheri East and Andheri West, with 5 Tier-1 Interviews Assured + Dedicated Placement Support. Metro Line 1 connects both sides to Saki Naka, the station for Lodha Supremus. Call 083695 18569.",
     sections: [
       {
         h2: "How do Andheri East and Andheri West share one page?",
@@ -27,14 +27,14 @@ export const AREA_WEST = {
       { q: "Which metro station do I get off at?", a: "Saki Naka on Metro Line 1, the Ghatkopar–Versova line." },
       { q: "Is Andheri station itself the campus?", a: "No. Andheri station is the western-line interchange. You still take Metro Line 1 to Saki Naka." },
       { q: "What will the labs cover?", a: "The DevOps course tools: Git, Jenkins, Docker, Kubernetes, Ansible, Terraform, ArgoCD, Prometheus and Grafana." },
-      { q: "Does placement support apply to Andheri students?", a: "Yes. 450+ placed, 100% Placement and 360° Placement Assurance are campus-wide published claims." },
+      { q: "Does placement support apply to Andheri students?", a: "Yes. 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support are campus-wide published claims." },
       { q: "Can I take AWS only, without the full DevOps track?", a: "Yes. There is an AWS course page and an AWS-in-Powai page. Compare them with the DevOps syllabus before you enrol." },
       { q: "How do I ask for fees?", a: `Call ${phone}. No fee figure is printed on this site.` },
     ],
   },
   goregaon: {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Goregaon, with 100% Placement support. Goregaon station is on the western line. Goregaon East can also approach via the Film City side toward Powai. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Goregaon, with 5 Tier-1 Interviews Assured + Dedicated Placement Support. Goregaon station is on the western line. Goregaon East can also approach via the Film City side toward Powai. Call 083695 18569.",
     sections: [
       {
         h2: "What are the two Goregaon ways to Chandivali?",
@@ -46,7 +46,7 @@ export const AREA_WEST = {
       {
         h2: "Who in Goregaon usually asks for a weekend batch?",
         paragraphs: [
-          "People who already cross the city for work and do not want a third peak-hour ride. The campus publishes weekend batches for that reason, and weekday batches for people whose hours allow them. About 80% of each session is hands-on, according to the About page. The placement lines you can quote are 450+ placed, 100% Placement and 360° Placement Assurance. Company names of hiring partners are not listed, even though 350+ hiring partners is a published count.",
+          "People who already cross the city for work and do not want a third peak-hour ride. The campus publishes weekend batches for that reason, and weekday batches for people whose hours allow them. About 80% of each session is hands-on, according to the About page. The placement lines you can quote are 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support. Company names of hiring partners are not listed, even though 350+ hiring partners is a published count.",
         ],
       },
     ],
@@ -62,7 +62,7 @@ export const AREA_WEST = {
   },
   malad: {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Malad, with 100% Placement support. The western-line ride to Andheri, then Metro Line 1 to Saki Naka, is the rail path. Call 083695 18569 about weekend batches if weekday travel is too long.",
+      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Malad, with 5 Tier-1 Interviews Assured + Dedicated Placement Support. The western-line ride to Andheri, then Metro Line 1 to Saki Naka, is the rail path. Call 083695 18569 about weekend batches if weekday travel is too long.",
     sections: [
       {
         h2: "How far is Malad from the Powai classroom, in plain terms?",
@@ -74,7 +74,7 @@ export const AREA_WEST = {
       {
         h2: "What should a Malad learner compare before enrolling?",
         paragraphs: [
-          "Compare the DevOps course with the cloud computing course if you are unsure whether you want pipelines or cloud foundations first. Compare this page with the Goregaon and Borivali pages only for the station, not for a different faculty. Read the placement page for 450+ placed, 100% Placement and 360° Placement Assurance. If a counsellor on another site offers Thane as a shorter ride, check https://devopsinstitutemumbai.co.in/ yourself. This domain will not rewrite that campus.",
+          "Compare the DevOps course with the cloud computing course if you are unsure whether you want pipelines or cloud foundations first. Compare this page with the Goregaon and Borivali pages only for the station, not for a different faculty. Read the placement page for 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support. If a counsellor on another site offers Thane as a shorter ride, check https://devopsinstitutemumbai.co.in/ yourself. This domain will not rewrite that campus.",
         ],
       },
     ],
@@ -90,7 +90,7 @@ export const AREA_WEST = {
   },
   "bandra-bkc": {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Bandra and BKC, with 100% Placement support. Bandra station and the Bandra Kurla Complex both feed toward Andheri and Metro Line 1 to Saki Naka. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Bandra and BKC, with 5 Tier-1 Interviews Assured + Dedicated Placement Support. Bandra station and the Bandra Kurla Complex both feed toward Andheri and Metro Line 1 to Saki Naka. Call 083695 18569.",
     sections: [
       {
         h2: "Why are Bandra and BKC on the same page?",
@@ -102,7 +102,7 @@ export const AREA_WEST = {
       {
         h2: "How should a BKC professional use weekend batches?",
         paragraphs: [
-          "BKC weekdays are long. The site already says weekend batches exist so working professionals can attend without leaving their jobs, and Umesh Sonawane's published note describes flexible batches and weekend support during a career shift. That is one story, not a roster. Call 083695 18569 and ask which weekend batch is actually open. Placement support published with the course remains 450+ placed, 100% Placement and 360° Placement Assurance.",
+          "BKC weekdays are long. The site already says weekend batches exist so working professionals can attend without leaving their jobs, and Umesh Sonawane's published note describes flexible batches and weekend support during a career shift. That is one story, not a roster. Call 083695 18569 and ask which weekend batch is actually open. Placement support published with the course remains 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support.",
         ],
       },
     ],
@@ -112,13 +112,13 @@ export const AREA_WEST = {
       { q: "Does the harbour line change the campus?", a: "No. It only changes how you reach Andheri or a road connection. The address does not change." },
       { q: "What cloud tools are available if I do not want only DevOps?", a: "AWS, Azure and GCP each have course pages. The cloud computing course ties them together." },
       { q: "Are mock interviews published as part of support?", a: "Yes. Resume support, mock interviews and career guidance are described on the site." },
-      { q: "Can I get a fee on email without calling?", a: "The public site does not list a fee. Use the enquiry form or the phone and ask for the current batch." },
+      { q: "Can I get a fee on email without calling?", a: "The published starting point is Course Fees Starting at ₹12,500/month (Easy EMI Options Available). Use the enquiry form or the phone and ask for the current batch." },
       { q: "Which pages are the neighbours?", a: "Dadar to the south and Kurla to the east are the two linked neighbours. They describe different stations and the same classroom." },
     ],
   },
   dadar: {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Dadar, with 100% Placement support. Dadar is the central and western interchange. You change again at Andheri or Ghatkopar for Metro Line 1 and get down at Saki Naka. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Dadar, with 5 Tier-1 Interviews Assured + Dedicated Placement Support. Dadar is the central and western interchange. You change again at Andheri or Ghatkopar for Metro Line 1 and get down at Saki Naka. Call 083695 18569.",
     sections: [
       {
         h2: "Why does Dadar need a separate commute note?",
@@ -130,7 +130,7 @@ export const AREA_WEST = {
       {
         h2: "What stays the same after the interchange?",
         paragraphs: [
-          "The course. Linux and Git first, then the CI/CD, container, Kubernetes, Terraform and monitoring modules published on the syllabus. Four months is the published job-ready duration. Weekday and weekend batches are both offered. Placement claims stay 450+ placed, 100% Placement and 360° Placement Assurance. The phone stays 083695 18569. Dadar does not get a private syllabus or a private fee.",
+          "The course. Linux and Git first, then the CI/CD, container, Kubernetes, Terraform and monitoring modules published on the syllabus. Four months is the published job-ready duration. Weekday and weekend batches are both offered. Placement claims stay 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support. The phone stays 083695 18569. Dadar does not get a private syllabus or a private fee.",
         ],
       },
     ],
@@ -146,7 +146,7 @@ export const AREA_WEST = {
   },
   borivali: {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Borivali, with 100% Placement support. It is a long western-line ride to Andheri, then Metro Line 1 to Saki Naka. Weekend batches are the published fit when weekday travel is too much. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Borivali, with 5 Tier-1 Interviews Assured + Dedicated Placement Support. It is a long western-line ride to Andheri, then Metro Line 1 to Saki Naka. Weekend batches are the published fit when weekday travel is too much. Call 083695 18569.",
     sections: [
       {
         h2: "What should Borivali learners know before they commit to the ride?",
@@ -158,7 +158,7 @@ export const AREA_WEST = {
       {
         h2: "Which published facts still apply at this distance?",
         paragraphs: [
-          "All of the campus facts. Address, phone 083695 18569, weekday and weekend batches, about 80% hands-on time, 450+ placed, 100% Placement, 360° Placement Assurance, and affiliations with NASSCOM, IBM, Govt. of India (MEITY), IIT Patna, and an IIT and Microsoft collaboration. Mentor names are on the trainers page. What does not appear is a Borivali classroom, a fee, or a list of hiring-company names. Those gaps are marked on the fees and placement pages.",
+          "All of the campus facts. Address, phone 083695 18569, weekday and weekend batches, about 80% hands-on time, 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, and affiliations with NASSCOM, IBM, Govt. of India (MEITY), IIT Patna, and an IIT and Microsoft collaboration. Mentor names are on the trainers page. What does not appear is a Borivali classroom, a fee, or a list of hiring-company names. Those gaps are marked on the fees and placement pages.",
         ],
       },
     ],
@@ -174,7 +174,7 @@ export const AREA_WEST = {
   },
   "juhu-santacruz": {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Juhu and Santacruz, with 100% Placement support. Juhu West uses SV Road toward Andheri. Santacruz East sits nearer the domestic airport and the Western Express Highway toward Saki Naka. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Juhu and Santacruz, with 5 Tier-1 Interviews Assured + Dedicated Placement Support. Juhu West uses SV Road toward Andheri. Santacruz East sits nearer the domestic airport and the Western Express Highway toward Saki Naka. Call 083695 18569.",
     sections: [
       {
         h2: "Why are Juhu and Santacruz written together?",
@@ -195,7 +195,7 @@ export const AREA_WEST = {
       { q: "How does Santacruz East differ from Juhu West?", a: "Santacruz East is nearer the domestic airport and the Western Express Highway. Juhu West uses Juhu Tara Road and SV Road toward Andheri first." },
       { q: "Which metro stop is shared?", a: "Saki Naka on Metro Line 1, after you reach the Andheri side of the line." },
       { q: "Can airline-shift workers use weekend batches?", a: "Weekend batches exist. Whether a given Saturday is open is a phone question, not a fact printed here." },
-      { q: "What placement claims are safe to repeat?", a: "450+ placed, 100% Placement and 360° Placement Assurance. Repeat those published lines only, and do not add a stronger promise the site has not made." },
+      { q: "What placement claims are safe to repeat?", a: "450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support. Repeat those published lines only, and do not add a stronger promise the site has not made." },
       { q: "Where is the cloud course for this area?", a: "The Andheri cloud page is the closest topic page, and the Mumbai cloud hub covers the whole city. The labs are still in Powai." },
       { q: "What is the address I should save?", a: "Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali, Powai, Mumbai 400072." },
     ],

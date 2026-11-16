@@ -6,7 +6,7 @@ import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL } from "@/data/site";
 const SECTIONS = [
   {
     title: "1. Information We Collect",
-    body: "When you submit an enquiry form on this website, we collect your name, phone number, and optionally your email address, course of interest and message. We also keep how you reached us, when that is known, including campaign details from the link you clicked (such as UTM parameters and Google click IDs), and save those details with your enquiry. Through Google Analytics and Google Ads we record the pages you visit, clicks on our Call and WhatsApp buttons, and those campaign details, along with standard technical information such as browser type. Your name, phone number and email are not sent to Google.",
+    body: "When you submit an enquiry form on this website, we collect your name, phone number, course of interest, preferred campus, current profile, and optionally your email address and message. We also keep how you reached us, when that is known, including campaign details from the link you clicked (such as UTM parameters and Google click IDs), and save those details with your enquiry. Through Google Analytics and Google Ads we record the pages you visit, clicks on our Call and WhatsApp buttons, and those campaign details, along with standard technical information such as browser type. Your name, phone number and email are not sent to Google.",
   },
   {
     title: "2. How We Use Your Information",

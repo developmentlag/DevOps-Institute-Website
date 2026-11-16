@@ -6,7 +6,7 @@ export const CLOUD_EXISTING = [
     "h1": "Cloud Computing Course in Vikhroli, Mumbai with Placement",
     "description": "Cloud computing course in Vikhroli with placement. AWS, Azure and GCP labs for the Godrej and LBS side of the central line. Call 083695 18569.",
     "summary": "Vikhroli cloud course for the Godrej and LBS side, taught at the Chandivali campus.",
-    "answer": "Vikhroli's cloud computing course with placement support is taught at Lodha Supremus in Chandivali, Powai, not inside the Godrej campus. Central-line riders continue to Ghatkopar and change to Metro Line 1 for Saki Naka. The labs are AWS, Azure and GCP. 450+ placed and 100% Placement are the published figures. Call 083695 18569.",
+    "answer": "Vikhroli's cloud computing course with placement support is taught at Lodha Supremus in Chandivali, Powai, not inside the Godrej campus. Central-line riders continue to Ghatkopar and change to Metro Line 1 for Saki Naka. The labs are AWS, Azure and GCP. 450+ placed and 5 Tier-1 Interviews Assured + Dedicated Placement Support are the published figures. Call 083695 18569.",
     "sections": [
       {
         "h2": "What cloud operations means beside the Vikhroli factory estate",
@@ -95,14 +95,14 @@ export const CLOUD_EXISTING = [
       {
         "h2": "Which placement lines a family from this suburb can repeat",
         "paragraphs": [
-          "There is no separate cloud placement total to quote. The institute figures are 450+ placed, 100% Placement and 360° Placement Assurance, with 350+ hiring partners. The salary range printed beside those lines is 5–35 LPA. Resume support, mock interviews and career guidance are the activities named. None of those sentences is an offer from a factory on the Godrej estate, and none of them is a cloud-only count. Hiring-partner names are not listed as a roll of companies that have booked this suburb. If someone asks you to inflate the figures because the commute is specific, refuse. The numbers do not grow because you boarded at this central-line station. Ask for the placement page if you want the activities spelled out again.",
+          "There is no separate cloud placement total to quote. The institute figures are 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, with 350+ hiring partners. The salary range printed beside those lines is 5–35 LPA. Resume support, mock interviews and career guidance are the activities named. None of those sentences is an offer from a factory on the Godrej estate, and none of them is a cloud-only count. Hiring-partner names are not listed as a roll of companies that have booked this suburb. If someone asks you to inflate the figures because the commute is specific, refuse. The numbers do not grow because you boarded at this central-line station. Ask for the placement page if you want the activities spelled out again.",
           "Reviews are a different published fact from placement totals. The figure to check is 4.7 from 130 Google reviews. The profile link is https://maps.app.goo.gl/5hUDHH1WjKevbkQz8. This page does not paste review quotations. Read the profile yourself and compare it with the placement page on this site. Affiliations, stated once and in words rather than as logos, are NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna, together with an IIT and Microsoft collaboration. Those names describe the institute. They are not a claim that a plant beside LBS Marg sponsored the labs. The affiliation names are spoken in full and are not printed as crests. Call 083695 18569 when you want the open cloud batch, and name the seat length before you talk about the ride."
         ]
       },
       {
         "h2": "What to settle on the phone before you leave LBS Marg",
         "paragraphs": [
-          "Settle four facts before you treat the trip as decided. First, the room is Lodha Supremus in Chandivali, not a lab inside Pirojshanagar. Second, the consoles are AWS, Azure and GCP, with the AWS finish line being a sample application deployed end to end. Third, you are choosing between a 40-hour individual cloud schema and the four-month 160-hour flagship, and only the counsellor can say which seat is open. Fourth, placement language stays inside 450+ placed, 100% Placement, 360° Placement Assurance, 350+ hiring partners and 5–35 LPA. If a sentence you were given adds a company, a price, or a travel time, it did not come from this page. Travel minutes are not printed because they change with the central line.",
+          "Settle four facts before you treat the trip as decided. First, the room is Lodha Supremus in Chandivali, not a lab inside Pirojshanagar. Second, the consoles are AWS, Azure and GCP, with the AWS finish line being a sample application deployed end to end. Third, you are choosing between a 40-hour individual cloud schema and the four-month 160-hour flagship, and only the counsellor can say which seat is open. Fourth, placement language stays inside 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, 350+ hiring partners and 5–35 LPA. If a sentence you were given adds a company, a price, or a travel time, it did not come from this page. Travel minutes are not printed because they change with the central line.",
           "Say which side of the station you start from, east or west, so the rail note matches your morning. Say whether JVLR is already part of your week or whether you will use the central line and the metro. Say if you want the Azure emphasis, because that is the pass where Sirin Ali's background is the relevant mentor note, still without pinning the batch to CloudThat. Weekend batches exist if a weekday ride after a shift is unrealistic, and weekday batches exist if you are already moving toward Powai. The phone is 083695 18569. Bring one system you already support, however small, so the first IAM exercise has a real gate list behind it."
         ]
       }
@@ -134,7 +134,7 @@ export const CLOUD_EXISTING = [
       },
       {
         "q": "Does Vikhroli have its own cloud placement total?",
-        "a": "No. There is no cloud-only total and no suburb quota. The lines you may repeat are 450+ placed, 100% Placement, 360° Placement Assurance, 350+ hiring partners and a 5–35 LPA range. Resume support, mock interviews and career guidance are the named activities. None of that is an offer from a plant near Pirojshanagar. Check reviews separately: 4.7 from 130 Google reviews."
+        "a": "No. There is no cloud-only total and no suburb quota. The lines you may repeat are 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, 350+ hiring partners and a 5–35 LPA range. Resume support, mock interviews and career guidance are the named activities. None of that is an offer from a plant near Pirojshanagar. Check reviews separately: 4.7 from 130 Google reviews."
       },
       {
         "q": "Who is named as an Azure mentor for Vikhroli callers?",
@@ -142,7 +142,7 @@ export const CLOUD_EXISTING = [
       },
       {
         "q": "Which review score can a Vikhroli family check before visiting?",
-        "a": "The published score is 4.7 from 130 Google reviews. Open the Google profile and read it there rather than expecting a quotation on this page. Placement figures stay separate: 450+ placed, 100% Placement and 360° Placement Assurance. Affiliations in words are NASSCOM, IBM, Govt. of India (MEITY), IIT Patna, and an IIT and Microsoft collaboration. The visit is to Lodha Supremus, not the Godrej campus."
+        "a": "The published score is 4.7 from 130 Google reviews. Open the Google profile and read it there rather than expecting a quotation on this page. Placement figures stay separate: 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support. Affiliations in words are NASSCOM, IBM, Govt. of India (MEITY), IIT Patna, and an IIT and Microsoft collaboration. The visit is to Lodha Supremus, not the Godrej campus."
       },
       {
         "q": "What should a Vikhroli caller say when asking about the cloud batch?",
@@ -157,7 +157,7 @@ export const CLOUD_EXISTING = [
     "h1": "Cloud Computing Course in Kanjurmarg, Mumbai with Placement",
     "description": "Cloud computing course in Kanjurmarg with placement. Multi-cloud labs at Lodha Supremus for the east and west of the station. Call 083695 18569.",
     "summary": "Kanjurmarg East and West cloud course, with the central line to the Powai labs.",
-    "answer": "Kanjurmarg East and Kanjurmarg West share one cloud computing course with placement support, at Lodha Supremus in Chandivali. The reliable rail path is the central line to Ghatkopar, then Metro Line 1 to Saki Naka. AWS, Azure and GCP are the labs. 450+ placed and 100% Placement are published. Call 083695 18569.",
+    "answer": "Kanjurmarg East and Kanjurmarg West share one cloud computing course with placement support, at Lodha Supremus in Chandivali. The reliable rail path is the central line to Ghatkopar, then Metro Line 1 to Saki Naka. AWS, Azure and GCP are the labs. 450+ placed and 5 Tier-1 Interviews Assured + Dedicated Placement Support are published. Call 083695 18569.",
     "sections": [
       {
         "h2": "Why both sides of this station share one cloud room",
@@ -246,7 +246,7 @@ export const CLOUD_EXISTING = [
       {
         "h2": "What placement language is safe to repeat from either side",
         "paragraphs": [
-          "Placement support does not split by platform of the station and does not split by cloud. The published lines are 450+ placed, 100% Placement and 360° Placement Assurance, plus 350+ hiring partners. The range printed with them is 5–35 LPA. There is no cloud-only total to add, and no east-side total either. Resume support, mock interviews and career guidance are the activities. Hiring partners are a count, not a list of firms you may promise to a neighbour. If a coaching chat adds a company name, that name did not come from this page. The figures stay the same whether you board on the JVLR side or the other one. Read the placement page before you repeat the range to family.",
+          "Placement support does not split by platform of the station and does not split by cloud. The published lines are 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, plus 350+ hiring partners. The range printed with them is 5–35 LPA. There is no cloud-only total to add, and no east-side total either. Resume support, mock interviews and career guidance are the activities. Hiring partners are a count, not a list of firms you may promise to a neighbour. If a coaching chat adds a company name, that name did not come from this page. The figures stay the same whether you board on the JVLR side or the other one. Read the placement page before you repeat the range to family.",
           "Reviews are counted separately from placement. The published rating is 4.7 from 130 Google reviews. The profile to open is https://maps.app.goo.gl/5hUDHH1WjKevbkQz8. Quotations are not copied here. Affiliations appear once, as words and not as logos: the institute is tied to NASSCOM and IBM, to Govt. of India (MEITY), to IIT Patna, and to a collaboration between IIT and Microsoft. Those are institute facts. They are not a partnership with a housing society on either side of the station. When you call 083695 18569, ask for the cloud seat length first and the placement sheet second, so the two conversations do not blur into a promise nobody printed. Open the profile yourself before you trust a caller's version of the rating."
         ]
       },
@@ -289,7 +289,7 @@ export const CLOUD_EXISTING = [
       },
       {
         "q": "What placement lines apply to a Kanjurmarg cloud student?",
-        "a": "The institute lines, not a cloud-only total. You may repeat 450+ placed, 100% Placement, 360° Placement Assurance, 350+ hiring partners and 5–35 LPA. Resume support, mock interviews and career guidance are the activities. East and west are not separate quotas. Reviews to check are 4.7 from 130 Google reviews at https://maps.app.goo.gl/5hUDHH1WjKevbkQz8. This page does not paste quotations."
+        "a": "The institute lines, not a cloud-only total. You may repeat 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, 350+ hiring partners and 5–35 LPA. Resume support, mock interviews and career guidance are the activities. East and west are not separate quotas. Reviews to check are 4.7 from 130 Google reviews at https://maps.app.goo.gl/5hUDHH1WjKevbkQz8. This page does not paste quotations."
       },
       {
         "q": "Who should a Kanjurmarg caller ask about if the question is multi-cloud design?",
@@ -308,7 +308,7 @@ export const CLOUD_EXISTING = [
     "h1": "Cloud Computing Course in Bhandup, Mumbai with Placement",
     "description": "Cloud computing course in Bhandup with placement. Central line via Ghatkopar to AWS, Azure and GCP labs in Chandivali. Call 083695 18569.",
     "summary": "Bhandup and Nahur cloud course via Ghatkopar to the Chandivali labs.",
-    "answer": "Bhandup's cloud computing course with placement support meets in Chandivali, Powai. Riders pass Kanjurmarg and Vikhroli, change at Ghatkopar, and leave Metro Line 1 at Saki Naka for Lodha Supremus. Nahur is the next station north, not a second campus. 450+ placed and 100% Placement are published. Call 083695 18569.",
+    "answer": "Bhandup's cloud computing course with placement support meets in Chandivali, Powai. Riders pass Kanjurmarg and Vikhroli, change at Ghatkopar, and leave Metro Line 1 at Saki Naka for Lodha Supremus. Nahur is the next station north, not a second campus. 450+ placed and 5 Tier-1 Interviews Assured + Dedicated Placement Support are published. Call 083695 18569.",
     "sections": [
       {
         "h2": "Who on the Bhandup industrial belt this cloud page is for",
@@ -397,7 +397,7 @@ export const CLOUD_EXISTING = [
       {
         "h2": "Which published outcomes travel with a Bhandup enrolment",
         "paragraphs": [
-          "There is no cloud-only placement total and no Nahur quota. The lines that travel with the enrolment are 450+ placed, 100% Placement and 360° Placement Assurance, with 350+ hiring partners and a printed range of 5–35 LPA. Resume help, mock interviews and career guidance are the activities behind those lines. They are institute activities at the Powai campus. They are not a promise from a factory on the eastern belt, and they do not grow because you changed trains twice. If a relative wants a company list, say the list is not published. The count of hiring partners is not a set of names you may invent. A longer commute does not add a private statistic.",
+          "There is no cloud-only placement total and no Nahur quota. The lines that travel with the enrolment are 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, with 350+ hiring partners and a printed range of 5–35 LPA. Resume help, mock interviews and career guidance are the activities behind those lines. They are institute activities at the Powai campus. They are not a promise from a factory on the eastern belt, and they do not grow because you changed trains twice. If a relative wants a company list, say the list is not published. The count of hiring partners is not a set of names you may invent. A longer commute does not add a private statistic.",
           "The review figure to verify yourself is 4.7 from 130 Google reviews. Use https://maps.app.goo.gl/5hUDHH1WjKevbkQz8 rather than a sentence repeated from memory. This article does not paste quotations. Affiliations are written once, in words: NASSCOM, IBM, the Government of India through MEITY, IIT Patna, and a collaboration of IIT with Microsoft. No crests are displayed. Those names are not the industrial estate's names. When you are ready to ask which cloud batch is open, the number is 083695 18569. Mention that you are comparing the short schema and the flagship so the answer cannot hide inside a slogan. Read the Google profile before you repeat the rating to anyone else, and keep affiliation names as words rather than as pictures. The Powai number is the one that matches this building."
         ]
       },
@@ -440,7 +440,7 @@ export const CLOUD_EXISTING = [
       },
       {
         "q": "What placement figures can a Bhandup family repeat?",
-        "a": "Only the institute lines: 450+ placed, 100% Placement, 360° Placement Assurance, 350+ hiring partners and 5–35 LPA. There is no cloud-only total. Resume support, mock interviews and career guidance are the activities. They are not an offer from an eastern-belt factory. Reviews are a separate check, 4.7 from 130 Google reviews. This page does not paste quotations."
+        "a": "Only the institute lines: 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, 350+ hiring partners and 5–35 LPA. There is no cloud-only total. Resume support, mock interviews and career guidance are the activities. They are not an offer from an eastern-belt factory. Reviews are a separate check, 4.7 from 130 Google reviews. This page does not paste quotations."
       },
       {
         "q": "Which affiliations are named on the Bhandup cloud page?",
@@ -459,7 +459,7 @@ export const CLOUD_EXISTING = [
     "h1": "Cloud Computing Course in Mulund, Mumbai with Placement",
     "description": "Cloud computing course in Mulund with placement. Eastern Express Highway or the central line to the Powai cloud labs. Call 083695 18569.",
     "summary": "Mulund cloud course, with a clear line between this campus and Thane or Airoli.",
-    "answer": "Mulund East and Mulund West use the same cloud computing course with placement support at Lodha Supremus, Chandivali. The central line toward Ghatkopar, or the Eastern Express Highway, is the journey. Airoli and Thane are not this campus. 450+ placed and 100% Placement are the published lines. Call 083695 18569.",
+    "answer": "Mulund East and Mulund West use the same cloud computing course with placement support at Lodha Supremus, Chandivali. The central line toward Ghatkopar, or the Eastern Express Highway, is the journey. Airoli and Thane are not this campus. 450+ placed and 5 Tier-1 Interviews Assured + Dedicated Placement Support are the published lines. Call 083695 18569.",
     "sections": [
       {
         "h2": "Why this is the long central-line ride in the set",
@@ -548,7 +548,7 @@ export const CLOUD_EXISTING = [
       {
         "h2": "Which placement lines Mulund readers may quote",
         "paragraphs": [
-          "Distance does not create a private placement statistic. There is no cloud-only total for this station, no east-side rate and no west-side rate. The lines you may quote are 450+ placed, 100% Placement and 360° Placement Assurance, together with 350+ hiring partners and the range 5–35 LPA. Resume support, mock interviews and career guidance are the activities. They happen as institute support at the Powai campus. They are not a Thane benefit copied across the boundary, and they are not an Airoli benefit either. If someone offers you a sharper number because you travel far, the sharper number is not on this site. Quote the printed range and stop. A relative's wish for a company list is not a source.",
+          "Distance does not create a private placement statistic. There is no cloud-only total for this station, no east-side rate and no west-side rate. The lines you may quote are 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, together with 350+ hiring partners and the range 5–35 LPA. Resume support, mock interviews and career guidance are the activities. They happen as institute support at the Powai campus. They are not a Thane benefit copied across the boundary, and they are not an Airoli benefit either. If someone offers you a sharper number because you travel far, the sharper number is not on this site. Quote the printed range and stop. A relative's wish for a company list is not a source.",
           "Reviews are the other check, and they are not a placement total. The published rating is 4.7 from 130 Google reviews. The profile is https://maps.app.goo.gl/5hUDHH1WjKevbkQz8. Open it yourself on the way home if you want, and do not expect quotations pasted into this article. Affiliations are named once, as prose: NASSCOM, IBM, Govt. of India (MEITY), IIT Patna, and an IIT and Microsoft collaboration. They are not logos, and they are not a joint venture with a check-naka business. Call 083695 18569 when you want the cloud batch that matches the length you can finish. Take the profile link with you and read the reviews there, without asking this article to recite them. Keep the affiliation names in ordinary sentences."
         ]
       },
@@ -591,7 +591,7 @@ export const CLOUD_EXISTING = [
       },
       {
         "q": "What placement lines may a Mulund family quote?",
-        "a": "450+ placed, 100% Placement, 360° Placement Assurance, 350+ hiring partners and 5–35 LPA. There is no cloud-only total and no bonus for a longer ride. Resume support, mock interviews and career guidance are the activities. They are not Thane figures copied across. Reviews to check separately are 4.7 from 130 Google reviews. This page does not paste quotations."
+        "a": "450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, 350+ hiring partners and 5–35 LPA. There is no cloud-only total and no bonus for a longer ride. Resume support, mock interviews and career guidance are the activities. They are not Thane figures copied across. Reviews to check separately are 4.7 from 130 Google reviews. This page does not paste quotations."
       },
       {
         "q": "Which review profile should a Mulund reader open?",
@@ -610,7 +610,7 @@ export const CLOUD_EXISTING = [
     "h1": "Cloud Computing Course in Kurla, Mumbai with Placement",
     "description": "Cloud computing course in Kurla with placement. Andheri-Kurla Road leads toward the AWS, Azure and GCP labs in Powai. Call 083695 18569.",
     "summary": "Kurla cloud course along Andheri-Kurla Road to the Powai campus.",
-    "answer": "Kurla already sits on the road that cloud computing students use. Andheri-Kurla Road runs toward Saki Naka, and Lodha Supremus is the last mile on Saki Vihar Road in Chandivali. AWS, Azure and GCP labs include placement support. 450+ placed and 100% Placement are published. Call 083695 18569.",
+    "answer": "Kurla already sits on the road that cloud computing students use. Andheri-Kurla Road runs toward Saki Naka, and Lodha Supremus is the last mile on Saki Vihar Road in Chandivali. AWS, Azure and GCP labs include placement support. 450+ placed and 5 Tier-1 Interviews Assured + Dedicated Placement Support are published. Call 083695 18569.",
     "sections": [
       {
         "h2": "Why Andheri-Kurla Road is the cloud corridor here",
@@ -699,7 +699,7 @@ export const CLOUD_EXISTING = [
       {
         "h2": "What placement support means for a student from this junction",
         "paragraphs": [
-          "Placement support is an institute fact, not a Kurla junction fact and not a BKC fact. There is no cloud-only total. The lines are 450+ placed, 100% Placement and 360° Placement Assurance, with 350+ hiring partners and a range of 5–35 LPA. Resume support, mock interviews and career guidance are the named activities. They are not a hiring desk inside Phoenix Marketcity and not a quota for people who use the harbour line. A longer explanation of the activities lives on the placement page. This article only fixes the boundary so a landmark does not grow extra numbers. A harbour-line ticket does not add a private placement rate, and neither does a job in the BKC direction.",
+          "Placement support is an institute fact, not a Kurla junction fact and not a BKC fact. There is no cloud-only total. The lines are 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, with 350+ hiring partners and a range of 5–35 LPA. Resume support, mock interviews and career guidance are the named activities. They are not a hiring desk inside Phoenix Marketcity and not a quota for people who use the harbour line. A longer explanation of the activities lives on the placement page. This article only fixes the boundary so a landmark does not grow extra numbers. A harbour-line ticket does not add a private placement rate, and neither does a job in the BKC direction.",
           "The review figure is separate. It is 4.7 from 130 Google reviews, on the profile https://maps.app.goo.gl/5hUDHH1WjKevbkQz8. Read it there. Quotations are not copied onto this corridor page. Affiliations are stated once, in words rather than as pictures: NASSCOM, IBM, Govt. of India (MEITY), IIT Patna, and a collaboration between IIT and Microsoft. Those names do not belong to the mall, the highway or BKC. When you call 083695 18569, ask for the cloud seat length first. Mention the road you will use only so the person understands you are not hunting a classroom at the railway junction. Open the profile yourself before repeating the rating. Keep affiliation names as ordinary words, not as printed crests."
         ]
       },
@@ -738,7 +738,7 @@ export const CLOUD_EXISTING = [
       },
       {
         "q": "What placement lines apply to Kurla cloud students?",
-        "a": "Institute lines only: 450+ placed, 100% Placement, 360° Placement Assurance, 350+ hiring partners and 5–35 LPA. There is no cloud-only total and no mall quota. Resume support, mock interviews and career guidance are the activities. They are not a BKC hiring desk. Reviews to check are 4.7 from 130 Google reviews. This page does not paste quotations from them."
+        "a": "Institute lines only: 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, 350+ hiring partners and 5–35 LPA. There is no cloud-only total and no mall quota. Resume support, mock interviews and career guidance are the activities. They are not a BKC hiring desk. Reviews to check are 4.7 from 130 Google reviews. This page does not paste quotations from them."
       },
       {
         "q": "Where can a Kurla family read the Google rating?",
@@ -761,7 +761,7 @@ export const CLOUD_EXISTING = [
     "h1": "Cloud Computing Course in Saki Naka, Mumbai with Placement",
     "description": "Cloud computing course in Saki Naka with placement. The Powai cloud labs are a last mile along Saki Vihar Road. Call 083695 18569.",
     "summary": "Saki Naka cloud course: last mile from the metro to Lodha Supremus.",
-    "answer": "Saki Naka is the Metro Line 1 station for the cloud computing course, and the classroom is still Lodha Supremus on Saki Vihar Road, not a lab inside the station. AWS, Azure and GCP are taught with placement support. 450+ placed and 100% Placement are the published outcomes. Call 083695 18569 about the open batch.",
+    "answer": "Saki Naka is the Metro Line 1 station for the cloud computing course, and the classroom is Lodha Supremus on Saki Vihar Road. AWS, Azure and GCP are taught there. 450+ placed and 5 Tier-1 Interviews Assured + Dedicated Placement Support are the published outcomes. Call 083695 18569.",
     "sections": [
       {
         "h2": "Who already works in the industrial and office belt",
@@ -850,7 +850,7 @@ export const CLOUD_EXISTING = [
       {
         "h2": "Which placement lines belong to the campus, not to one road",
         "paragraphs": [
-          "Working next to the campus does not create a private placement rate for the belt. There is no cloud-only total. The lines are 450+ placed, 100% Placement and 360° Placement Assurance, with 350+ hiring partners and the range 5–35 LPA. Resume support, mock interviews and career guidance are the activities. They are not a hiring arrangement with the industrial estate, and they are not stronger because your rickshaw ride is short. If a colleague turns 350+ into a list of towers on Andheri-Kurla Road, that list is fiction. The count is a count. The placement page is where the activities are described without new company names. Do not invent office towers to fill the count.",
+          "Working next to the campus does not create a private placement rate for the belt. There is no cloud-only total. The lines are 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, with 350+ hiring partners and the range 5–35 LPA. Resume support, mock interviews and career guidance are the activities. They are not a hiring arrangement with the industrial estate, and they are not stronger because your rickshaw ride is short. If a colleague turns 350+ into a list of towers on Andheri-Kurla Road, that list is fiction. The count is a count. The placement page is where the activities are described without new company names. Do not invent office towers to fill the count.",
           "Reviews are a campus figure too. The published rating is 4.7 from 130 Google reviews. The profile to open is https://maps.app.goo.gl/5hUDHH1WjKevbkQz8. This page does not paste quotations, even for readers who walk past the building often enough to feel they already know it. Affiliations stay in plain text, once: NASSCOM, IBM, Govt. of India (MEITY), IIT Patna, and an IIT and Microsoft collaboration. They are not logos on a gate in Jari Mari. Call 083695 18569 when you want the cloud batch, and say you are coming from an office on the belt so the answer is about the seat, not about how to find the metro. Read the profile before you repeat the rating in the office."
         ]
       },
@@ -889,7 +889,7 @@ export const CLOUD_EXISTING = [
       },
       {
         "q": "What placement figures apply to Saki Naka cloud students?",
-        "a": "The campus lines, not a belt quota: 450+ placed, 100% Placement, 360° Placement Assurance, 350+ hiring partners and 5–35 LPA. There is no cloud-only total. Resume support, mock interviews and career guidance are the activities. A short rickshaw ride does not improve the numbers. Reviews are separate: 4.7 from 130 Google reviews. Quotations are not pasted here."
+        "a": "The campus lines, not a belt quota: 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, 350+ hiring partners and 5–35 LPA. There is no cloud-only total. Resume support, mock interviews and career guidance are the activities. A short rickshaw ride does not improve the numbers. Reviews are separate: 4.7 from 130 Google reviews. Quotations are not pasted here."
       },
       {
         "q": "Which profile should a Saki Naka reader check for reviews?",
@@ -897,7 +897,7 @@ export const CLOUD_EXISTING = [
       },
       {
         "q": "Should a Saki Naka learner choose cloud or the existing DevOps page?",
-        "a": "Choose this page if the gap is AWS, Azure and GCP. The DevOps URL already on the site is for pipeline and cluster intent, and it is named once in the article above. The building is the same. The first lab is not. A 40-hour cloud schema and the 160-hour flagship are different seats. Call 083695 18569 and say which gap you mean. No price is printed."
+        "a": "Choose this page if the gap is AWS, Azure and GCP. The DevOps URL already on the site is for pipeline and cluster intent, and it is named once in the article above. The building is the same. The first lab is not. A 40-hour cloud schema and the 160-hour flagship are different seats. Call 083695 18569 and say which gap you mean. Course Fees Starting at ₹12,500/month (Easy EMI Options Available)."
       },
       {
         "q": "What should a Saki Naka caller say about the open cloud batch?",
@@ -912,7 +912,7 @@ export const CLOUD_EXISTING = [
     "h1": "Cloud Computing Course in Goregaon, Mumbai with Placement",
     "description": "Cloud computing course in Goregaon with placement. NESCO and Film City commutes end at the Powai multi-cloud labs. Call 083695 18569.",
     "summary": "Goregaon cloud course for NESCO, Film City and the western line.",
-    "answer": "Goregaon's cloud computing course with placement support is at Lodha Supremus in Chandivali, Powai. Western-line riders change at Andheri for Metro Line 1 and Saki Naka. Goregaon East can also think in Film City and Aarey terms toward Powai, without a made-up junction list. 450+ placed and 100% Placement are published. Call 083695 18569.",
+    "answer": "Goregaon's cloud computing course with placement support is at Lodha Supremus in Chandivali, Powai. Western-line riders change at Andheri for Metro Line 1 and Saki Naka. Goregaon East can also think in Film City and Aarey terms toward Powai, without a made-up junction list. 450+ placed and 5 Tier-1 Interviews Assured + Dedicated Placement Support are published. Call 083695 18569.",
     "sections": [
       {
         "h2": "How a NESCO day differs from a Film City day",
@@ -1001,7 +1001,7 @@ export const CLOUD_EXISTING = [
       {
         "h2": "What placement numbers a reader from this suburb can cite",
         "paragraphs": [
-          "There is no NESCO placement rate, no Film City rate and no cloud-only total. The lines you can cite are 450+ placed, 100% Placement and 360° Placement Assurance, with 350+ hiring partners and the range 5–35 LPA. Resume support, mock interviews and career guidance are the activities. They belong to the institute at the Powai campus. They do not grow because you changed at Andheri, and they do not shrink because you used the Aarey side of the map. If a colleague turns the hiring-partner count into a list of companies inside an office park, that list is not on this site. Quote the count or quote nothing. A longer western-line ride adds no private statistic.",
+          "There is no NESCO placement rate, no Film City rate and no cloud-only total. The lines you can cite are 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, with 350+ hiring partners and the range 5–35 LPA. Resume support, mock interviews and career guidance are the activities. They belong to the institute at the Powai campus. They do not grow because you changed at Andheri, and they do not shrink because you used the Aarey side of the map. If a colleague turns the hiring-partner count into a list of companies inside an office park, that list is not on this site. Quote the count or quote nothing. A longer western-line ride adds no private statistic.",
           "Reviews are a different published fact. The rating is 4.7 from 130 Google reviews. The profile is https://maps.app.goo.gl/5hUDHH1WjKevbkQz8. Open it yourself rather than trusting a forwarded sentence. This article does not paste quotations. Affiliations are spoken once, as words: NASSCOM, IBM, Govt. of India (MEITY), IIT Patna, and a collaboration of IIT and Microsoft. They are not logos, and they are not a partnership with a studio, a mall or an office tower. Call 083695 18569 when the day shape and the seat length are both clear enough to say in one breath. Read the profile on your own screen before you repeat the rating, and keep the affiliation names in ordinary speech rather than as pictures."
         ]
       },
@@ -1044,7 +1044,7 @@ export const CLOUD_EXISTING = [
       },
       {
         "q": "What placement lines can a Goregaon family cite?",
-        "a": "450+ placed, 100% Placement, 360° Placement Assurance, 350+ hiring partners and 5–35 LPA. There is no cloud-only total and no office-park list. Resume support, mock interviews and career guidance are the activities. They do not change with Andheri or Aarey. Reviews to check are 4.7 from 130 Google reviews. This page does not paste quotations."
+        "a": "450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, 350+ hiring partners and 5–35 LPA. There is no cloud-only total and no office-park list. Resume support, mock interviews and career guidance are the activities. They do not change with Andheri or Aarey. Reviews to check are 4.7 from 130 Google reviews. This page does not paste quotations."
       },
       {
         "q": "Where does a Goregaon reader verify the Google rating?",
@@ -1063,7 +1063,7 @@ export const CLOUD_EXISTING = [
     "h1": "Cloud Computing Course in Chandivali, Mumbai with Placement",
     "description": "Cloud computing course in Chandivali with placement. AWS, Azure and GCP labs inside Lodha Supremus on Saki Vihar Road. Call 083695 18569.",
     "summary": "Chandivali cloud course at the same building as the campus address.",
-    "answer": "Chandivali is where the cloud computing course actually meets. Lodha Supremus, B 1307, is on Saki Vihar Road, so many local learners skip a railway change. AWS, Azure and GCP labs include placement support. 450+ placed and 100% Placement are the published outcomes. Call 083695 18569.",
+    "answer": "Chandivali is where the cloud computing course actually meets. Lodha Supremus, B 1307, is on Saki Vihar Road, so many local learners skip a railway change. AWS, Azure and GCP labs include placement support. 450+ placed and 5 Tier-1 Interviews Assured + Dedicated Placement Support are the published outcomes. Call 083695 18569.",
     "sections": [
       {
         "h2": "Why people who already pass the tower still need a decision",
@@ -1152,7 +1152,7 @@ export const CLOUD_EXISTING = [
       {
         "h2": "Which placement lines and review facts sit with the address",
         "paragraphs": [
-          "Living beside the classroom does not create a local placement statistic. There is no cloud-only total for Chandivali. The lines are 450+ placed, 100% Placement and 360° Placement Assurance, with 350+ hiring partners and the range 5–35 LPA. Resume support, mock interviews and career guidance are the activities. They are institute activities in this building, not a benefit that scales with how often you walk past it. Hiring partners remain a count. They are not a directory of offices on Farm Road or inside Nirlon. If you need the activities described without new names, use the placement page. This article only stops the address from inflating the numbers. A familiar tower is not a higher rate.",
+          "Living beside the classroom does not create a local placement statistic. There is no cloud-only total for Chandivali. The lines are 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, with 350+ hiring partners and the range 5–35 LPA. Resume support, mock interviews and career guidance are the activities. They are institute activities in this building, not a benefit that scales with how often you walk past it. Hiring partners remain a count. They are not a directory of offices on Farm Road or inside Nirlon. If you need the activities described without new names, use the placement page. This article only stops the address from inflating the numbers. A familiar tower is not a higher rate.",
           "The review figure to read yourself is 4.7 from 130 Google reviews, on https://maps.app.goo.gl/5hUDHH1WjKevbkQz8. Quotations are not pasted here, even though the building is local enough that people feel they already know the room. Affiliations are spelled in words, once, because they belong to the institute that uses this tower: NASSCOM, IBM, Govt. of India (MEITY), IIT Patna, and an IIT and Microsoft collaboration. No logos. No park names added. Call 083695 18569 when you want the cloud batch in B 1307, and say the length and the consoles before you say that you can walk. Read the profile yourself, and keep affiliation names as words rather than as crests on the door. Do that before you visit."
         ]
       },
@@ -1199,7 +1199,7 @@ export const CLOUD_EXISTING = [
       },
       {
         "q": "What placement lines apply inside the Chandivali building?",
-        "a": "The institute lines, not a local bonus: 450+ placed, 100% Placement, 360° Placement Assurance, 350+ hiring partners and 5–35 LPA. There is no cloud-only total. Resume support, mock interviews and career guidance are the activities. They do not scale with how often you walk past the tower. Reviews are separate, 4.7 from 130 Google reviews. No quotations are pasted here."
+        "a": "The institute lines, not a local bonus: 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, 350+ hiring partners and 5–35 LPA. There is no cloud-only total. Resume support, mock interviews and career guidance are the activities. They do not scale with how often you walk past the tower. Reviews are separate, 4.7 from 130 Google reviews. No quotations are pasted here."
       },
       {
         "q": "What should a Chandivali caller say about the cloud batch?",

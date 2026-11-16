@@ -3,12 +3,12 @@ const phone = "083695 18569";
 export const GUIDES_A = {
   "/devops-course-in-mumbai-with-placement": {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a DevOps course in Mumbai with 100% Placement support and 360° Placement Assurance. The campus publishes 450+ placed learners, resume support, mock interviews and career guidance. Call 083695 18569 for the current batch.",
+      "DevOps Institute in Chandivali, Powai offers a DevOps course in Mumbai with 5 Tier-1 Interviews Assured + Dedicated Placement Support. The campus publishes 450+ placed learners, resume support, mock interviews and career guidance. Call 083695 18569 for the current batch.",
     sections: [
       {
         h2: "What does placement support mean on this site?",
         paragraphs: [
-          "The words the institute is willing to print are specific. 450+ placed. 100% Placement. 360° Placement Assurance. 350+ hiring partners. A salary range of 5–35 LPA. Resume support, mock interviews and guidance on cloud and DevOps roles. Those lines appear on the homepage facts, the llms.txt file shipped with the site, and the course descriptions. This page explains them. It does not add a hiring process the site does not already state.",
+          "The words the institute is willing to print are specific. 450+ placed. 5 Tier-1 Interviews Assured + Dedicated Placement Support. 350+ hiring partners. A salary range of 5–35 LPA. Resume support, mock interviews and guidance on cloud and DevOps roles. Those lines appear on the homepage facts, the llms.txt file shipped with the site, and the course descriptions. This page explains them. It does not add a hiring process the site does not already state.",
           "A step-by-step placement calendar is not published: how many mock interviews, when the resume review happens, and which companies are in the 350+ hiring partners. Until that document is added, the honest process is the one below, built only from sentences already on the site.",
         ],
       },
@@ -22,30 +22,30 @@ export const GUIDES_A = {
         ],
       },
       {
-        h2: "How should 360° Placement Assurance be read?",
+        h2: "How should 5 Tier-1 Interviews Assured + Dedicated Placement Support be read?",
         paragraphs: [
-          "It is a published phrase, next to 100% Placement and 450+ placed. This page does not turn it into a list of services the institute has not written down, and it does not turn the phrase into a stronger claim than the one already published. If you need the official meaning — what is included, for how long, and what a learner has to complete — ask on 083695 18569. The institute has not published its own definition of what the phrase includes.",
+          "Interview assurance applies upon completion of 80% attendance, capstone projects, and mock interview clearance. Past placement records reflect verified alumni outcomes. The line published with those conditions is 5 Tier-1 Interviews Assured + Dedicated Placement Support, beside 450+ placed. This page does not add services the institute has not written down.",
         ],
       },
     ],
     faqs: [
       { q: "How many learners does the site say were placed?", a: "450+ placed is the published figure, alongside 350+ hiring partners." },
-      { q: "What placement lines are approved?", a: "450+ placed, 100% Placement and 360° Placement Assurance." },
+      { q: "What placement lines are approved?", a: "450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support." },
       { q: "Does the site name hiring companies?", a: "No. The partner count is published. The company names are not. Only a verified list would belong here, and none is published." },
       { q: "Who is the named fresher placement?", a: "Rajeswari Singh, described as a 2025 Vasai college graduate placed at 6.5 LPA. Her employer is not named on the site." },
       { q: "Are there photos of alumni?", a: "Not as individual placement photos. Campus batch photos exist. A consented photo, role and company are not published for those stories." },
       { q: "Where is the classroom?", a: "Lodha Supremus, B 1307, Saki Vihar Road, Chandivali, Powai, Mumbai 400072." },
-      { q: "How do I ask about the current batch?", a: `Call ${phone} or use the enquiry form. Fees are not printed.` },
+      { q: "How do I ask about the current batch?", a: `Call ${phone} or use the enquiry form. Course Fees Starting at ₹12,500/month (Easy EMI Options Available).` },
     ],
   },
   "/cloud-computing-course-with-placement": {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a cloud computing course with 100% Placement support. AWS, Azure and GCP labs run in the same classroom as the DevOps course, with 450+ placed published for the institute. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a cloud computing course with 5 Tier-1 Interviews Assured + Dedicated Placement Support. AWS, Azure and GCP labs run in the same classroom as the DevOps course, with 450+ placed published for the institute. Call 083695 18569.",
     sections: [
       {
         h2: "Does the cloud course use the same placement claims?",
         paragraphs: [
-          "The site does not publish a separate cloud-only placement total. It publishes 450+ placed, 100% Placement and 360° Placement Assurance for the institute, and the AWS course is described with placement guidance. Using a second, larger number for cloud would be an invention. This page uses the institute figures and the cloud syllabus, and it says so.",
+          "The site does not publish a separate cloud-only placement total. It publishes 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support for the institute, and the AWS course is described with placement guidance. Using a second, larger number for cloud would be an invention. This page uses the institute figures and the cloud syllabus, and it says so.",
           "Cloud labs give you a different demo from a Jenkins pipeline. On AWS the published outcome is a sample application deployed end to end. On Azure it is virtual machines, Entra ID, App Service or AKS, and a pipeline in Azure DevOps. On GCP it is Compute Engine, a VPC, GKE and Cloud Build. Those are the stories mock interviews can use. The interview practice itself is the same published support: resume reviews, mock interviews and career guidance.",
         ],
       },
@@ -63,7 +63,7 @@ export const GUIDES_A = {
       },
     ],
     faqs: [
-      { q: "Is there a separate cloud placement statistic?", a: "No. Use the institute figures: 450+ placed, 100% Placement and 360° Placement Assurance." },
+      { q: "Is there a separate cloud placement statistic?", a: "No. Use the institute figures: 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support." },
       { q: "Which clouds are in the course?", a: "AWS, Microsoft Azure and Google Cloud, each with its own course page and labs." },
       { q: "Are hiring partners listed?", a: "The count 350+ is published. Names are not." },
       { q: "What salary figures exist?", a: "The published range is 5–35 LPA, and one fresher story records 6.5 LPA. No other salary table is on the site." },
@@ -142,7 +142,7 @@ export const GUIDES_A = {
   },
   "/devops-course-for-freshers": {
     answer:
-      "DevOps Institute in Chandivali, Powai accepts freshers on the DevOps course. You need basic computer skills. Linux and Git are taught first, in a classroom, with 100% Placement support and 450+ placed published for the institute. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai accepts freshers on the DevOps course. You need basic computer skills. Linux and Git are taught first, in a classroom, with 5 Tier-1 Interviews Assured + Dedicated Placement Support and 450+ placed published for the institute. Call 083695 18569.",
     sections: [
       {
         h2: "Can a fresher really start this DevOps course?",
@@ -161,7 +161,7 @@ export const GUIDES_A = {
       {
         h2: "What placement support is a fresher allowed to expect?",
         paragraphs: [
-          "The same published support as everyone else: resume reviews, mock interviews, career guidance, and the institute lines 450+ placed, 100% Placement and 360° Placement Assurance. A fresher should prepare a project story from the labs, because the site does not say that support replaces a portfolio. Company names are not listed. Do not add them in a counselling conversation as if this page had listed them.",
+          "The same published support as everyone else: resume reviews, mock interviews, career guidance, and the institute lines 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support. A fresher should prepare a project story from the labs, because the site does not say that support replaces a portfolio. Company names are not listed. Do not add them in a counselling conversation as if this page had listed them.",
         ],
       },
     ],
@@ -171,12 +171,12 @@ export const GUIDES_A = {
       { q: "Are weekday batches open to freshers?", a: "Weekday batches are published. Confirm the current one by phone." },
       { q: "Which course is the gentlest start?", a: "Linux and the cloud fundamentals inside AWS, Azure or GCP are the published beginner entries. The DevOps course itself also starts at Linux and Git." },
       { q: "Where is the campus?", a: "Lodha Supremus, Chandivali, Powai. Phone 083695 18569." },
-      { q: "Does the site promise every fresher an offer?", a: "It publishes 100% Placement and 450+ placed. It does not publish a fresher-only breakdown. Ask the counsellor how those lines apply to a first job." },
+      { q: "Does the site promise every fresher an offer?", a: "It publishes 5 Tier-1 Interviews Assured + Dedicated Placement Support and 450+ placed. It does not publish a fresher-only breakdown. Ask the counsellor how those lines apply to a first job." },
     ],
   },
   "/devops-course-for-working-professionals": {
     answer:
-      "DevOps Institute in Chandivali, Powai runs a DevOps course for working professionals, with weekend batches and 100% Placement support. You keep your job and attend classroom labs in Powai. Call 083695 18569 to match the batch to your shift.",
+      "DevOps Institute in Chandivali, Powai runs a DevOps course for working professionals, with weekend batches and 5 Tier-1 Interviews Assured + Dedicated Placement Support. You keep your job and attend classroom labs in Powai. Call 083695 18569 to match the batch to your shift.",
     sections: [
       {
         h2: "What does the site say about learning while you work?",
@@ -195,7 +195,7 @@ export const GUIDES_A = {
       {
         h2: "What does placement support look like if you already have a job?",
         paragraphs: [
-          "The site talks about career moves inside Mumbai's IT market, not only first jobs. Resume support and mock interviews still apply when you are changing role rather than starting from zero. The published totals remain 450+ placed, 100% Placement and 360° Placement Assurance, with a 5–35 LPA range that is wide enough to include experienced moves and fresher offers. The site does not say where inside that range a three-year administrator should land. Experienced outcomes are not published, and this page does not state a hike percentage.",
+          "The site talks about career moves inside Mumbai's IT market, not only first jobs. Resume support and mock interviews still apply when you are changing role rather than starting from zero. The published totals remain 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, with a 5–35 LPA range that is wide enough to include experienced moves and fresher offers. The site does not say where inside that range a three-year administrator should land. Experienced outcomes are not published, and this page does not state a hike percentage.",
         ],
       },
     ],

@@ -21,11 +21,14 @@ import {
   attributionFormFields,
   buildSnapshot,
   captureAttribution,
+  captureSessionClicks,
+  clearSessionClicks,
   clearStoredAttribution,
   formatSourceRef,
   getFirstTouch,
   getLastTouch,
   mergeAttribution,
+  readSessionClicks,
 } from "@/lib/attribution";
 
 const OLD_TAG_IDS = ["G-ZX967537RN", "AW-11481832955", "GT-KDQHDJD", "GT-T5PX83DC"];
@@ -42,6 +45,8 @@ beforeEach(() => {
   resetAnalyticsDedupe();
   window.gtag = jest.fn();
   window.fbq = jest.fn();
+  window.dataLayer = [];
+  clearSessionClicks();
   delete window.__doiPowaiMetaInitialHref;
   delete window.__doiPowaiMetaPixel;
   window.history.pushState({}, "", "/");
@@ -245,6 +250,9 @@ describe("lead events", () => {
     expect(window.gtag.mock.calls[1][2].send_to).toBe(ADS_WHATSAPP_SEND_TO);
     expect(window.fbq).toHaveBeenCalledTimes(1);
     expect(window.fbq).toHaveBeenCalledWith("track", "Contact");
+    expect(window.dataLayer).toEqual(
+      expect.arrayContaining([expect.objectContaining({ event: "whatsapp_click", click_location: "/" })]),
+    );
   });
 
   test("fires Contact once when the same call link is clicked again immediately", () => {
@@ -267,6 +275,7 @@ describe("lead events", () => {
 
     expect(window.fbq).toHaveBeenCalledTimes(1);
     expect(window.gtag.mock.calls.filter((call) => call[1] === "conversion")).toHaveLength(1);
+    expect(window.dataLayer.filter((entry) => entry && entry.event === "phone_click")).toHaveLength(1);
   });
 
   test("records a saved enquiry as generate_lead with the campaign attached", () => {
@@ -303,6 +312,21 @@ describe("lead events", () => {
     expect(window.gtag).toHaveBeenCalledTimes(2);
     expect(window.fbq).toHaveBeenCalledTimes(1);
     expect(window.fbq).toHaveBeenCalledWith("track", "Lead");
+    expect(window.dataLayer).toEqual(
+      expect.arrayContaining([expect.objectContaining({ event: "generate_lead", form_location: "/contact" })]),
+    );
+  });
+
+  test("keeps landing click ids in sessionStorage after the query string is gone", () => {
+    captureSessionClicks("?utm_source=google&utm_medium=cpc&utm_campaign=powai-search&gclid=click123&fbclid=fb999");
+    captureSessionClicks("");
+    expect(readSessionClicks()).toMatchObject({
+      utm_source: "google",
+      utm_medium: "cpc",
+      utm_campaign: "powai-search",
+      gclid: "click123",
+      fbclid: "fb999",
+    });
   });
 
   test("does not fire the enquiry conversion when gtag is missing, and still records the Meta lead", () => {

@@ -3,7 +3,7 @@ const phone = "083695 18569";
 export const GUIDES_B = {
   "/devops-vs-cloud-computing-course": {
     answer:
-      "DevOps Institute in Chandivali, Powai teaches both a DevOps course and a cloud computing course in the same classroom. DevOps centres on pipelines, containers and Terraform. Cloud centres on AWS, Azure and GCP. Both sit with 100% Placement support. Call 083695 18569 if you cannot choose.",
+      "DevOps Institute in Chandivali, Powai teaches both a DevOps course and a cloud computing course in the same classroom. DevOps centres on pipelines, containers and Terraform. Cloud centres on AWS, Azure and GCP. Both sit with 5 Tier-1 Interviews Assured + Dedicated Placement Support. Call 083695 18569 if you cannot choose.",
     sections: [
       {
         h2: "What is the difference in the work you will do?",
@@ -26,7 +26,7 @@ export const GUIDES_B = {
             ["Published outcome", "Pipeline, cluster, Terraform, dashboards", "Deploy and operate on a cloud account"],
             ["Where", "Lodha Supremus, Chandivali, Powai", "Same campus"],
             ["Batches", "Weekday, weekend, classroom, blended", "Weekday, weekend, classroom, blended"],
-            ["Placement lines", "450+ placed, 100% Placement, 360° Placement Assurance", "Same institute lines. No separate cloud total"],
+            ["Placement lines", "450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support", "Same institute lines. No separate cloud total"],
             ["Fees", "Call. Not printed", "Call. Not printed"],
           ],
         },
@@ -40,7 +40,7 @@ export const GUIDES_B = {
     ],
     faqs: [
       { q: "Is DevOps the same as a cloud course?", a: "No. DevOps on this site is the toolchain around delivery. Cloud is AWS, Azure and GCP. They are taught in the same building and often in one flagship program." },
-      { q: "Which one has placement support?", a: "The institute publishes 450+ placed, 100% Placement and 360° Placement Assurance. It does not split a different percentage out for cloud." },
+      { q: "Which one has placement support?", a: "The institute publishes 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support. It does not split a different percentage out for cloud." },
       { q: "Do I need cloud before Kubernetes?", a: "Not according to the Kubernetes page, which starts at Docker. Cloud still helps, because clusters usually run on a cloud account." },
       { q: "Are the batches different?", a: "Both use the campus weekday and weekend batches. Confirm the specific batch by phone." },
       { q: "Where do I read the syllabi?", a: "DevOps syllabus page, plus /courses/aws, /courses/azure, /courses/gcp and /courses/devops." },
@@ -68,7 +68,7 @@ export const GUIDES_B = {
       {
         h2: "How does salary relate to placement support?",
         paragraphs: [
-          "Placement support as published is resume help, mock interviews and career guidance, plus the totals 450+ placed, 100% Placement and 360° Placement Assurance. None of those sentences is a salary band for your offer. Use the placement page for the process gap, and use this page only for the two figures above. If a counsellor states a different number, ask them to publish it. This URL will not store an unpublished quote.",
+          "Placement support as published is resume help, mock interviews and career guidance, plus the totals 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support. None of those sentences is a salary band for your offer. Use the placement page for the process gap, and use this page only for the two figures above. If a counsellor states a different number, ask them to publish it. This URL will not store an unpublished quote.",
         ],
       },
     ],
@@ -77,13 +77,13 @@ export const GUIDES_B = {
       { q: "Who was placed at 6.5 LPA?", a: "Rajeswari Singh, identified as a 2025 Vasai college graduate. The employer is not named." },
       { q: "Is 5–35 LPA a promise?", a: "It is a published range. It is not a prediction for the next learner." },
       { q: "Do experienced professionals have a separate table?", a: "No. Consented outcomes for that table are not published." },
-      { q: "Does the course fee appear next to salary?", a: "No. Fees are not printed. Call 083695 18569." },
+      { q: "Does the course fee appear next to salary?", a: "No. Course Fees Starting at ₹12,500/month (Easy EMI Options Available). Call 083695 18569." },
       { q: "Where is the campus?", a: "Chandivali, Powai. The salary page does not change the address." },
     ],
   },
   "/devops-roadmap-2026": {
     answer:
-      "A 2026 DevOps roadmap from DevOps Institute in Chandivali, Powai follows the order already taught: Linux and Git, then a cloud, then Docker and Kubernetes, then Terraform and CI/CD, then monitoring. The classroom is in Powai, with 100% Placement support. Call 083695 18569.",
+      "A 2026 DevOps roadmap from DevOps Institute in Chandivali, Powai follows the order already taught: Linux and Git, then a cloud, then Docker and Kubernetes, then Terraform and CI/CD, then monitoring. The classroom is in Powai, with 5 Tier-1 Interviews Assured + Dedicated Placement Support. Call 083695 18569.",
     sections: [
       {
         h2: "What order does this campus already use?",
@@ -137,7 +137,7 @@ export const GUIDES_B = {
             ["Real systems", "Published", "Course pages describe live AWS, Azure, GCP, Docker and Kubernetes labs."],
             ["Classroom", "Published", "Lodha Supremus, B 1307, Saki Vihar Road, Chandivali, Powai."],
             ["Batch size", "Not published", "Not published. Ask before you enrol."],
-            ["Placement process", "Partly published", "Resume support, mock interviews, career guidance, 450+ placed, 100% Placement, 360° Placement Assurance. The company list is not published."],
+            ["Placement process", "Partly published", "Resume support, mock interviews, career guidance, 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support. The company list is not published."],
             ["Certifications", "Partly published", "AWS, Azure and CKA or CKAD preparation is described. Vendor badges are not awarded by the institute."],
             ["Trainer experience", "Published", "Named mentors, roles, employers and LinkedIn profiles are on the trainers page. Years appear only where a profile states them."],
             ["Reviews", "Published", "4.7 from 130 Google reviews, plus four named stories. Individual Google dates are not published."],

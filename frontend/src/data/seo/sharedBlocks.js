@@ -2,7 +2,7 @@ import { AFFILIATION_LINE } from "@/data/site";
 
 /** Factual blocks repeated because the facts are the same. Suburb pages add their own commute and FAQs. */
 
-const AFFILIATION_PARAGRAPH = `${AFFILIATION_LINE} The names are written out in words. This page does not show affiliation logos.`;
+const AFFILIATION_PARAGRAPH = AFFILIATION_LINE;
 
 export function devopsShared() {
   return [
@@ -21,7 +21,7 @@ export function devopsShared() {
     {
       h2: "What placement support is published?",
       paragraphs: [
-        "DevOps Institute publishes 450+ placed, 100% Placement and 360° Placement Assurance, with 350+ hiring partners and a published outcome range of 5–35 LPA. The support the site describes is resume reviews, mock interviews and career guidance. Hiring-company names are not listed. One fresher story, Rajeswari Singh, records 6.5 LPA. The placement page keeps those lines together.",
+        "DevOps Institute publishes 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, with 350+ hiring partners and a published outcome range of 5–35 LPA. The support the site describes is resume reviews, mock interviews and career guidance. Hiring-company names are not listed. One fresher story, Rajeswari Singh, records 6.5 LPA. The placement page keeps those lines together.",
       ],
     },
     {
@@ -57,7 +57,7 @@ export function cloudShared(focus) {
     {
       h2: "What placement support is published?",
       paragraphs: [
-        "The institute publishes 450+ placed, 100% Placement and 360° Placement Assurance for its training, plus resume support, mock interviews and career guidance. There is no separate cloud-only total on this site. Company names are not published. The placement page is the longer note.",
+        "The institute publishes 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support for its training, plus resume support, mock interviews and career guidance. There is no separate cloud-only total on this site. Company names are not published. The placement page is the longer note.",
       ],
     },
     {

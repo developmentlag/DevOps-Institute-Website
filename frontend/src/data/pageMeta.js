@@ -11,7 +11,7 @@ export const STATIC_PAGES = [
     description:
       "Classroom DevOps training in Powai, Mumbai: a 4-month path, weekday and weekend batches, and placement support. Call 083695 18569.",
     answer:
-      "DevOps Institute in Chandivali, Powai teaches a classroom DevOps course in Mumbai with placement support. The published program runs for four months, with weekday and weekend batches and hands-on AWS, Azure and GCP labs at Lodha Supremus. 450+ placed and 100% Placement are the published outcomes. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai teaches a classroom DevOps course in Mumbai with placement support. The published program runs for four months, with weekday and weekend batches and hands-on AWS, Azure and GCP labs at Lodha Supremus. 450+ placed and 5 Tier-1 Interviews Assured + Dedicated Placement Support are the published outcomes. Call 083695 18569.",
     jsonLd: true,
   },
   {
@@ -51,7 +51,7 @@ export const STATIC_PAGES = [
     description:
       "FAQs on DevOps Institute in Chandivali, Powai: courses, batches, tools and how to visit the campus. Call 083695 18569.",
     answer:
-      "These answers cover DevOps Institute in Chandivali, Powai: where the campus is, which AWS, Azure, GCP and DevOps courses run, and how weekday and weekend batches work. Fees are not printed. Call 083695 18569 and the campus will confirm the current batch.",
+      "These answers cover DevOps Institute in Chandivali, Powai: where the campus is, which AWS, Azure, GCP and DevOps courses run, and how weekday and weekend batches work. Course Fees Starting at ₹12,500/month (Easy EMI Options Available). Call 083695 18569 and the campus will confirm the current batch.",
     jsonLd: true,
   },
   {

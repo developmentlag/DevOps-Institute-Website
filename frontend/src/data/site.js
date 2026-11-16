@@ -40,8 +40,11 @@ export const GHATKOPAR_ADDRESS =
   "RCity Offices, Lal Bahadur Shastri Marg, adjoining RCity Mall, Ghatkopar West, Mumbai, Maharashtra 400086";
 
 export const PLACED_LABEL = "450+ placed";
-export const PLACEMENT_LABEL = "100% Placement";
-export const ASSURANCE_LABEL = "360° Placement Assurance";
+export const PLACEMENT_SUPPORT_LABEL = "5 Tier-1 Interviews Assured + Dedicated Placement Support";
+export const PLACEMENT_LABEL = PLACEMENT_SUPPORT_LABEL;
+export const ASSURANCE_LABEL = PLACEMENT_SUPPORT_LABEL;
+export const PLACEMENT_DISCLAIMER =
+  "Interview assurance applies upon completion of 80% attendance, capstone projects, and mock interview clearance. Past placement records reflect verified alumni outcomes.";
 export const HIRING_PARTNERS_LABEL = "350+ hiring partners";
 export const SALARY_RANGE_LABEL = "5–35 LPA";
 export const AFFILIATION_LINE =
@@ -51,6 +54,25 @@ export const WHATSAPP_NUMBER = "918369518569";
 export const WHATSAPP_MESSAGE =
   "Hi! I'm interested in the DevOps classroom training in Powai, Mumbai. Please share batch timings, fees and placement details.";
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+export const EMI_HOOK = "Course Fees Starting at ₹12,500/month (Easy EMI Options Available)";
+export const FEE_REQUEST_TEXT = "Fee structure & syllabus request";
+export const FEE_STRUCTURE_WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(FEE_REQUEST_TEXT)}`;
+export const ENQUIRY_COURSES = [
+  "AI & Cloud DevOps",
+  "AWS Cloud & DevOps",
+  "Azure DevOps",
+  "Kubernetes & Docker",
+  "Data Engineering",
+  "Agentic AI",
+];
+export const ENQUIRY_CAMPUSES = ["Powai - Mumbai", "Thane", "Vashi - Navi Mumbai", "Ghatkopar"];
+export const ENQUIRY_PROFILES = ["Fresher", "Working Professional"];
+export const COURSE_INTEREST_BY_SLUG = {
+  devops: "AI & Cloud DevOps",
+  aws: "AWS Cloud & DevOps",
+  azure: "Azure DevOps",
+  "kubernetes-docker": "Kubernetes & Docker",
+};
 
 export const CAMPUS_PHOTOS = [
   {
@@ -144,7 +166,7 @@ export const TESTIMONIALS = [
 export const HERO_STATS = [
   { value: "4.7 ★", label: "Google Reviews (5+ Yrs)" },
   { value: "4 Months", label: "To become job-ready" },
-  { value: "100%", label: "Classroom + placement support" },
+  { value: "5", label: "Tier-1 interviews assured" },
   { value: "Weekend", label: "& weekday batches" },
 ];
 
@@ -155,6 +177,7 @@ export const GBP_PROFILE_URL = "https://maps.app.goo.gl/5hUDHH1WjKevbkQz8";
 export const GBP_PLACE_URL =
   "https://www.google.com/maps/place/Devops+Institute+-AWS,+Azure+%26+GCP+Course/@19.1185189,72.8903708,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c959af96f0ef:0x85a42f1a4ba0d52e!8m2!3d19.1185189!4d72.8903708!16s%2Fg%2F11nw1ycxkt";
 export const GBP_CID = "9629873693209449774";
+export const GBP_REVIEWS_URL = `https://www.google.com/maps?cid=${GBP_CID}`;
 export const GBP_LATITUDE = 19.1185189;
 export const GBP_LONGITUDE = 72.8903708;
 
@@ -414,9 +437,9 @@ export const COURSES = [
     icon: "gitBranch",
     name: "DevOps Course",
     shortName: "DevOps",
-    tagline: "End-to-End DevOps & CI/CD Training with 100% Placement",
+    tagline: "End-to-End DevOps & CI/CD Training with 5 Tier-1 Interviews Assured + Dedicated Placement Support",
     cardDesc:
-      "A practical DevOps course in Mumbai with 100% placement support covering Git, Jenkins, Docker, Kubernetes, Terraform and CI/CD pipelines.",
+      "A practical DevOps course in Mumbai with 5 Tier-1 Interviews Assured + Dedicated Placement Support, covering Git, Jenkins, Docker, Kubernetes, Terraform and CI/CD pipelines.",
     metaTitle: "DevOps Course with Placement | Powai Campus",
     metaDescription:
       "DevOps course in Mumbai with placement support. Git, Jenkins, Docker, Kubernetes and Terraform labs in Powai. Call 083695 18569.",
@@ -955,6 +978,7 @@ function paidOffer(url) {
     category: "Paid",
     availability: "https://schema.org/InStock",
     url,
+    description: EMI_HOOK,
   };
 }
 
@@ -1180,7 +1204,7 @@ export const buildFlagshipCourseSchema = () => {
     "@id": `${origin}/#flagship-course`,
     name: "DevOps Course in Mumbai with Placement",
     description:
-      "4-month classroom DevOps training in Mumbai covering AWS, Azure, GCP, Docker, Kubernetes, Terraform & CI/CD pipelines with hands-on labs and 100% placement support.",
+      "4-month classroom DevOps training in Mumbai covering AWS, Azure, GCP, Docker, Kubernetes, Terraform and CI/CD pipelines with hands-on labs and 5 Tier-1 Interviews Assured + Dedicated Placement Support.",
     url: origin,
     courseCode: "DOI-DEVOPS",
     inLanguage: "en",

@@ -88,15 +88,16 @@ export default function About() {
                 Affiliations
               </h2>
               <p className="mt-4 text-base text-slate-600 leading-relaxed">
-                {AFFILIATION_LINE} These affiliations are named in words. This page does not show affiliation logos.
+                {AFFILIATION_LINE}
               </p>
               <h2 className="mt-10 font-heading text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
-                Facts still to publish
+                Trainers
               </h2>
-              <ul className="mt-4 list-disc pl-5 text-base text-slate-600 leading-relaxed space-y-2">
-                <li>Founding year is not published. The site says 5+ years of training and does not give a calendar year.</li>
-                <li>Mentor names, employers and LinkedIn profiles are on the <Link to="/trainers" className="font-semibold text-blue-700">trainers page</Link>. Portraits of named mentors are on the trainers page. Campus photos still do not caption individuals.</li>
-              </ul>
+              <p className="mt-4 text-base text-slate-600 leading-relaxed">
+                The institute has taught cloud and DevOps classes in Mumbai for 5+ years. Mentor names, employers and
+                LinkedIn profiles are on the{" "}
+                <Link to="/trainers" className="font-semibold text-blue-700">trainers page</Link>.
+              </p>
               <address className="not-italic mt-6 rounded-xl bg-slate-50 border border-slate-200 p-5 text-sm text-slate-700" data-testid="about-nap">
                 <p className="font-semibold text-slate-900">{BUSINESS_NAME}</p>
                 <p className="mt-1">{ADDRESS}</p>

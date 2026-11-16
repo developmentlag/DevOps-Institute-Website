@@ -5,7 +5,7 @@ const phone = "083695 18569";
 export const AREA_EAST = {
   mumbai: {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course in Mumbai with 100% Placement support and 360° Placement Assurance. One campus on Saki Vihar Road serves the city, with weekday and weekend batches and 450+ placed learners. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course in Mumbai with 5 Tier-1 Interviews Assured + Dedicated Placement Support. One campus on Saki Vihar Road serves the city, with weekday and weekend batches and 450+ placed learners. Call 083695 18569.",
     sections: [
       {
         h2: "Where is the DevOps course in Mumbai actually taught?",
@@ -26,7 +26,7 @@ export const AREA_EAST = {
       { q: "Is there more than one DevOps Institute campus in Mumbai on this domain?", a: `No. devopsinstitute.co.in is the Powai campus at Lodha Supremus, Chandivali. Thane, Vashi and Ghatkopar are published on https://devopsinstitutemumbai.co.in/.` },
       { q: "Which metro station is closest to the DevOps course?", a: "Saki Naka on Metro Line 1, the Ghatkopar–Versova line. From the station, continue along Saki Vihar Road to Lodha Supremus." },
       { q: "Do weekday and weekend batches both run in Mumbai?", a: `Yes. The site publishes weekday and weekend batches. Call ${phone} for the current timetable. A weekly hour-by-hour grid is not published yet.` },
-      { q: "Does the Mumbai course include placement support?", a: "Yes. The institute publishes 450+ placed, 100% Placement and 360° Placement Assurance, plus resume support, mock interviews and career guidance." },
+      { q: "Does the Mumbai course include placement support?", a: "Yes. The institute publishes 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, plus resume support, mock interviews and career guidance." },
       { q: "Where is the full DevOps syllabus?", a: "The module list with tools and published projects is on the DevOps course syllabus page, and the running course page is /courses/devops." },
       { q: "Can a fresher join the same batch as a working professional?", a: "Yes. The published eligibility is basic computer skills. The course starts with Linux and Git. Freshers and working professionals then share the same labs." },
       { q: "How do I ask about fees without a number on the website?", a: `This site does not publish a fee. Call ${phone} or WhatsApp the Powai number and ask for the current batch.` },
@@ -34,7 +34,7 @@ export const AREA_EAST = {
   },
   powai: {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course in Powai with 100% Placement support. The labs sit on Saki Vihar Road, a local ride from Powai Lake and Hiranandani, with weekday and weekend batches. 450+ placed is the published outcome. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course in Powai with 5 Tier-1 Interviews Assured + Dedicated Placement Support. The labs sit on Saki Vihar Road, a local ride from Powai Lake and Hiranandani, with weekday and weekend batches. 450+ placed is the published outcome. Call 083695 18569.",
     sections: [
       {
         h2: "Who in Powai is this DevOps course for?",
@@ -56,14 +56,14 @@ export const AREA_EAST = {
       { q: "Which station should a Powai resident use?", a: "Most local trips are by road. If you use the metro, alight at Saki Naka on Metro Line 1 and continue to Lodha Supremus." },
       { q: "Does Powai have its own weekend batch?", a: `Weekend and weekday batches are campus batches, not suburb-specific brands. Call ${phone} to hear which batch is open.` },
       { q: "What will I practise in the DevOps course?", a: "Linux, Git, Jenkins, Docker, Kubernetes, Ansible, Terraform, ArgoCD, Prometheus and Grafana, as listed on the DevOps course page." },
-      { q: "Is placement support part of the Powai course?", a: "Yes. Published claims are 450+ placed, 100% Placement and 360° Placement Assurance. Resume reviews, mock interviews and career guidance are the support described on the site." },
+      { q: "Is placement support part of the Powai course?", a: "Yes. Published claims are 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support. Resume reviews, mock interviews and career guidance are the support described on the site." },
       { q: "Can I see the labs before I enrol?", a: `The contact page has the map and the phone ${phone}. A campus visit is the right way to see the room. Do not rely on a stock photo alone.` },
-      { q: "Are fees listed for the Powai batch?", a: "No fee is printed on this site. Ask by phone or WhatsApp for the current figure." },
+      { q: "Are fees listed for the Powai batch?", a: "Course fees start at ₹12,500/month. Ask by phone or WhatsApp for the full fee structure." },
     ],
   },
   chandivali: {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course in Chandivali with 100% Placement support. The address is Lodha Supremus on Saki Vihar Road, so many Chandivali learners can reach class without a railway change. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course in Chandivali with 5 Tier-1 Interviews Assured + Dedicated Placement Support. The address is Lodha Supremus on Saki Vihar Road, so many Chandivali learners can reach class without a railway change. Call 083695 18569.",
     sections: [
       {
         h2: "Why does Chandivali get its own DevOps course page?",
@@ -85,14 +85,14 @@ export const AREA_EAST = {
       { q: "Do I need Saki Naka metro if I already live in Chandivali?", a: "Often no. The metro is the city-wide landmark. Local trips use Saki Vihar Road directly." },
       { q: "What batch modes run at this building?", a: "Weekday and weekend batches, classroom and a blended mode published on the course schema. Ask which one has seats." },
       { q: "Which course page has the tool list?", a: "The DevOps course at /courses/devops, plus the printable syllabus. This page does not replace that syllabus." },
-      { q: "What placement claims can I repeat to my family?", a: "Only the published ones: 450+ placed, 100% Placement and 360° Placement Assurance. Hiring-partner names are not listed on this site." },
+      { q: "What placement claims can I repeat to my family?", a: "Only the published ones: 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support. Hiring-partner names are not listed on this site." },
       { q: "Is there a Chandivali phone number different from Powai?", a: `No. The Powai campus phone is ${phone}. Thane uses a different number on the sister site.` },
       { q: "Can I compare this with the Thane campus?", a: "Yes, by opening https://devopsinstitutemumbai.co.in/. Do not expect this page to repeat Thane's address as if it were Chandivali." },
     ],
   },
   "saki-naka": {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course in Saki Naka with 100% Placement support. Saki Naka metro on Metro Line 1 is the station for Lodha Supremus on Saki Vihar Road. Call 083695 18569 about weekday or weekend batches.",
+      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course in Saki Naka with 5 Tier-1 Interviews Assured + Dedicated Placement Support. Saki Naka metro on Metro Line 1 is the station for Lodha Supremus on Saki Vihar Road. Call 083695 18569 about weekday or weekend batches.",
     sections: [
       {
         h2: "Why is Saki Naka the station on every other area page?",
@@ -114,14 +114,14 @@ export const AREA_EAST = {
       { q: "Is the DevOps Institute inside Saki Naka station?", a: "No. The campus is Lodha Supremus on Saki Vihar Road. The station is the arrival point, then a short last mile." },
       { q: "Can I attend after a shift on Andheri-Kurla Road?", a: `Weekday and weekend batches both exist. Call ${phone} and describe your shift so the counsellor can match a published batch, not an invented one.` },
       { q: "What does the course teach once I reach class?", a: "The published DevOps toolchain: Linux, Git, Jenkins, Docker, Kubernetes, Ansible, Terraform, ArgoCD, Prometheus and Grafana." },
-      { q: "Is placement support only for people who live in Saki Naka?", a: "No. 450+ placed, 100% Placement and 360° Placement Assurance are campus claims, not suburb quotas." },
+      { q: "Is placement support only for people who live in Saki Naka?", a: "No. 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support are campus claims, not suburb quotas." },
       { q: "Where should I read the syllabus?", a: "On the DevOps course syllabus page and on /courses/devops. Both describe the same Powai classroom." },
       { q: "Who do I call from Saki Naka?", a: `The Powai campus number ${phone}. The Thane number on the sister site is for that campus, not this building.` },
     ],
   },
   vikhroli: {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Vikhroli learners, with 100% Placement support. The usual rail path is the central line toward Ghatkopar, then Metro Line 1 to Saki Naka. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Vikhroli learners, with 5 Tier-1 Interviews Assured + Dedicated Placement Support. The usual rail path is the central line toward Ghatkopar, then Metro Line 1 to Saki Naka. Call 083695 18569.",
     sections: [
       {
         h2: "How does a Vikhroli commute reach Chandivali?",
@@ -133,7 +133,7 @@ export const AREA_EAST = {
       {
         h2: "Should Vikhroli students use the Ghatkopar campus instead?",
         paragraphs: [
-          "Only if you want that address. Ghatkopar is published at https://devopsinstitutemumbai.co.in/devops-institute-ghatkopar/ and is a different classroom. Vikhroli is close enough to Ghatkopar that some people will prefer it. This page is for the Powai labs: multi-cloud and DevOps tools, weekday and weekend batches, and the placement claims 450+ placed, 100% Placement and 360° Placement Assurance. Pick the building you will actually attend, then read that building's site.",
+          "Only if you want that address. Ghatkopar is published at https://devopsinstitutemumbai.co.in/devops-institute-ghatkopar/ and is a different classroom. Vikhroli is close enough to Ghatkopar that some people will prefer it. This page is for the Powai labs: multi-cloud and DevOps tools, weekday and weekend batches, and the placement claims 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support. Pick the building you will actually attend, then read that building's site.",
         ],
       },
     ],
@@ -149,7 +149,7 @@ export const AREA_EAST = {
   },
   kanjurmarg: {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Kanjurmarg, with 100% Placement support. Kanjurmarg station is on the central line between Vikhroli and Bhandup. The campus is the Powai classroom at Saki Naka's side of Metro Line 1. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Kanjurmarg, with 5 Tier-1 Interviews Assured + Dedicated Placement Support. Kanjurmarg station is on the central line between Vikhroli and Bhandup. The campus is the Powai classroom at Saki Naka's side of Metro Line 1. Call 083695 18569.",
     sections: [
       {
         h2: "What does the commute from Kanjurmarg look like?",
@@ -170,14 +170,14 @@ export const AREA_EAST = {
       { q: "Which metro do I catch?", a: "Metro Line 1 at Ghatkopar, toward Versova, and get down at Saki Naka." },
       { q: "How is this different from the Vikhroli page?", a: "The station and the landmarks differ. Vikhroli is one stop south. The classroom, phone and syllabus are the same." },
       { q: "Are freshers from Kanjurmarg eligible?", a: "Yes, if they have basic computer skills. The course starts from Linux and Git. Prior DevOps work is not required." },
-      { q: "What placement lines are approved?", a: "450+ placed, 100% Placement and 360° Placement Assurance. Company-by-company hiring lists are not published here." },
+      { q: "What placement lines are approved?", a: "450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support. Company-by-company hiring lists are not published here." },
       { q: "Can I take the cloud course instead?", a: "Yes. The cloud computing course page explains AWS, Azure and GCP. Many learners compare it with DevOps before they call." },
       { q: "What is the phone number?", a: `Powai campus: ${phone}. Do not use the Thane number if you intend to study in Chandivali.` },
     ],
   },
   bhandup: {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Bhandup learners, with 100% Placement support. The trip is longer than from Powai: central line toward Ghatkopar, then Metro Line 1 to Saki Naka. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Bhandup learners, with 5 Tier-1 Interviews Assured + Dedicated Placement Support. The trip is longer than from Powai: central line toward Ghatkopar, then Metro Line 1 to Saki Naka. Call 083695 18569.",
     sections: [
       {
         h2: "Is Bhandup too far for a weekday batch?",
@@ -189,7 +189,7 @@ export const AREA_EAST = {
       {
         h2: "What do you study once the commute is done?",
         paragraphs: [
-          "The same classroom as every other suburb page. Linux and Git, CI/CD with Jenkins, containers with Docker, orchestration with Kubernetes, configuration with Ansible, infrastructure as code with Terraform, GitOps with ArgoCD, and dashboards with Prometheus and Grafana. About four months is the published time to become job-ready on the flagship program. Placement support published alongside it is 450+ placed, 100% Placement and 360° Placement Assurance.",
+          "The same classroom as every other suburb page. Linux and Git, CI/CD with Jenkins, containers with Docker, orchestration with Kubernetes, configuration with Ansible, infrastructure as code with Terraform, GitOps with ArgoCD, and dashboards with Prometheus and Grafana. About four months is the published time to become job-ready on the flagship program. Placement support published alongside it is 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support.",
         ],
       },
     ],
@@ -205,7 +205,7 @@ export const AREA_EAST = {
   },
   mulund: {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Mulund, with 100% Placement support. Mulund is further north on the central line. The campus remains Lodha Supremus in Chandivali. Call 083695 18569 to match a weekday or weekend batch.",
+      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Mulund, with 5 Tier-1 Interviews Assured + Dedicated Placement Support. Mulund is further north on the central line. The campus remains Lodha Supremus in Chandivali. Call 083695 18569 to match a weekday or weekend batch.",
     sections: [
       {
         h2: "How do Mulund East and Mulund West reach the campus?",
@@ -217,7 +217,7 @@ export const AREA_EAST = {
       {
         h2: "What should a Mulund learner read before calling?",
         paragraphs: [
-          "Read the duration page so the four-month shape is clear, and the fees page so you know this site will not quote a price. Then read two neighbour pages if you want to compare stations: Bhandup is the closer central-line stop south of you, and Vikhroli is further south again. The placement page explains 450+ placed, 100% Placement and 360° Placement Assurance without adding companies the site has not named.",
+          "Read the duration page so the four-month shape is clear, and the fees page so you know the published starting point is Course Fees Starting at ₹12,500/month (Easy EMI Options Available). Then read two neighbour pages if you want to compare stations: Bhandup is the closer central-line stop south of you, and Vikhroli is further south again. The placement page explains 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support without adding companies the site has not named.",
         ],
       },
     ],
@@ -226,14 +226,14 @@ export const AREA_EAST = {
       { q: "Which metro station is the destination?", a: "Saki Naka on Metro Line 1, after a central-line ride to Ghatkopar." },
       { q: "Is Thane a shorter option from Mulund?", a: "It can be. The Thane campus is on https://devopsinstitutemumbai.co.in/. This domain will not copy that campus's pages." },
       { q: "What is the course length?", a: "The flagship program is published as four months to become job-ready. The weekly timetable is not printed. Call for it." },
-      { q: "Do you publish placement numbers?", a: "Yes: 450+ placed, 100% Placement and 360° Placement Assurance, and 350+ hiring partners. Individual employer names are not on the site." },
+      { q: "Do you publish placement numbers?", a: "Yes: 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, and 350+ hiring partners. Individual employer names are not on the site." },
       { q: "Can I switch from cloud to DevOps after I start?", a: `Ask the counsellor on ${phone}. Both tracks exist. This page cannot invent a transfer rule.` },
       { q: "Where is the map?", a: "Lower on this page. It embeds the Powai campus, not a Mulund pin." },
     ],
   },
   kurla: {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Kurla, with 100% Placement support. Kurla station connects the central and harbour lines, and Andheri-Kurla Road runs toward Saki Naka and the campus. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Kurla, with 5 Tier-1 Interviews Assured + Dedicated Placement Support. Kurla station connects the central and harbour lines, and Andheri-Kurla Road runs toward Saki Naka and the campus. Call 083695 18569.",
     sections: [
       {
         h2: "Why is Kurla a practical origin for this campus?",
@@ -245,7 +245,7 @@ export const AREA_EAST = {
       {
         h2: "What should you confirm before a Kurla weekday batch?",
         paragraphs: [
-          "Confirm the batch clock on the phone, because this site does not print one. Confirm whether you want DevOps or the cloud computing course. Confirm that you are not trying to reach the Thane campus: that phone and address live on https://devopsinstitutemumbai.co.in/. The Powai phone is 083695 18569. Placement language you can rely on is 450+ placed, 100% Placement and 360° Placement Assurance.",
+          "Confirm the batch clock on the phone, because this site does not print one. Confirm whether you want DevOps or the cloud computing course. Confirm that you are not trying to reach the Thane campus: that phone and address live on https://devopsinstitutemumbai.co.in/. The Powai phone is 083695 18569. Placement language you can rely on is 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support.",
         ],
       },
     ],
@@ -261,7 +261,7 @@ export const AREA_EAST = {
   },
   sion: {
     answer:
-      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Sion, with 100% Placement support. Sion station and Sion Circle are south of Kurla. You continue north toward Ghatkopar or along the Eastern Express Highway, then west to Saki Naka. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai offers a classroom DevOps course for Sion, with 5 Tier-1 Interviews Assured + Dedicated Placement Support. Sion station and Sion Circle are south of Kurla. You continue north toward Ghatkopar or along the Eastern Express Highway, then west to Saki Naka. Call 083695 18569.",
     sections: [
       {
         h2: "How does Sion connect to the Chandivali classroom?",
@@ -273,7 +273,7 @@ export const AREA_EAST = {
       {
         h2: "What does the course ask of a Sion learner?",
         paragraphs: [
-          "The same eligibility as everyone else: basic computer skills, with Linux and Git taught before the harder tools. You are not expected to arrive knowing Jenkins or Kubernetes. You are expected to attend a real classroom. The About page says about 80% of every session is hands-on. Placement support published with the course is 450+ placed, 100% Placement and 360° Placement Assurance. Trainer names are not published yet, and this page will not invent one.",
+          "The same eligibility as everyone else: basic computer skills, with Linux and Git taught before the harder tools. You are not expected to arrive knowing Jenkins or Kubernetes. You are expected to attend a real classroom. The About page says about 80% of every session is hands-on. Placement support published with the course is 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support. Trainer names are not published yet, and this page will not invent one.",
         ],
       },
     ],

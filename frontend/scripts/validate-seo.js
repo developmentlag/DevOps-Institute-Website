@@ -28,6 +28,13 @@ function decode(value) {
     .replace(/&quot;/g, '"');
 }
 
+function withoutApprovedEmi(value) {
+  return String(value)
+    .replace(/₹\s*12,500/g, "")
+    .replace(/&#8377;\s*12,500/g, "")
+    .replace(/&#x20B9;\s*12,500/gi, "");
+}
+
 function words(value) {
   return value.trim().split(/\s+/).filter(Boolean).length;
 }
@@ -84,7 +91,8 @@ function main() {
     if (html.includes("TODO") || /not in the repository/i.test(html)) {
       failures.push(`${route} contains a developer note (TODO or "not in the repository")`);
     }
-    if (/24999|priceCurrency|₹\s*\d/.test(html)) failures.push(`${route} contains a price`);
+    const priceScan = withoutApprovedEmi(decode(html));
+    if (/24999|priceCurrency|₹\s*\d/.test(priceScan)) failures.push(`${route} contains a price`);
     if (!html.includes("https://devopsinstitutemumbai.co.in/")) failures.push(`${route} missing Thane link`);
 
     const title = decode((html.match(/<title>([^<]*)<\/title>/i) || [])[1] || "");

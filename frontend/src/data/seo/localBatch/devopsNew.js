@@ -8,7 +8,7 @@ export const DEVOPS_NEW = [
       "DevOps course in Chembur with placement. Harbour line and monorail, then Metro Line 1 to the Powai classroom. Call 083695 18569.",
     summary: "Chembur harbour-line and monorail commute to the Chandivali DevOps classroom.",
     answer:
-      "DevOps Institute in Chandivali, Powai teaches a classroom DevOps course for Chembur with placement support. Harbour-line and monorail riders aim for Ghatkopar, then Metro Line 1 to Saki Naka and Lodha Supremus. Weekday and weekend batches both run. 450+ placed and 100% Placement are the published outcomes. Call 083695 18569.",
+      "DevOps Institute in Chandivali, Powai teaches a classroom DevOps course for Chembur with placement support. Harbour-line and monorail riders aim for Ghatkopar, then Metro Line 1 to Saki Naka and Lodha Supremus. Weekday and weekend batches both run. 450+ placed and 5 Tier-1 Interviews Assured + Dedicated Placement Support are the published outcomes. Call 083695 18569.",
     sections: [
       {
         h2: "Chembur monorail reaches Wadala and stops being useful for Powai",
@@ -40,7 +40,7 @@ export const DEVOPS_NEW = [
         h2: "Ghatkopar's own institute page is a different door from this Chembur plan",
         paragraphs: [
           "Chembur searches often collide with a Ghatkopar classroom because Ghatkopar is the rail target on the way to Powai. That other room is published at https://devopsinstitutemumbai.co.in/devops-institute-ghatkopar/ and it is not Lodha Supremus. Thane and Vashi sit on https://devopsinstitutemumbai.co.in/ and are also outside this domain. Read this Chembur page only if the building you intend to enter is B 1307 on Saki Vihar Road in Chandivali. If the shorter walk really is the Ghatkopar address, use the sister page and stop. Mixing the two in one counselling call wastes the first question. Say Chandivali or say Ghatkopar and keep the rest of the conversation on that choice. Brochures can make tool lists look similar. The door you walk into will not be the same door.",
-          "Deonar sits next door to Chembur, and plenty of households use Chembur station even when the home pin is slightly further east. They get the same campus choice, not a third building. Nothing on this URL creates a Deonar branch, a Govandi branch or a Tilak Nagar branch. Placement support travels with the course: 450+ placed, 100% Placement and 360° Placement Assurance are campus lines, together with 350+ hiring partners. The outcome range printed beside those lines is 5-35 LPA. No hiring-company list is printed, so this page will not supply brand names to make the harbour ride feel shorter. A parent who wants a logo should be told the list is absent, then pointed at the placement page for what is actually written.",
+          "Deonar sits next door to Chembur, and plenty of households use Chembur station even when the home pin is slightly further east. They get the same campus choice, not a third building. Nothing on this URL creates a Deonar branch, a Govandi branch or a Tilak Nagar branch. Placement support travels with the course: 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support are campus lines, together with 350+ hiring partners. The outcome range printed beside those lines is 5-35 LPA. No hiring-company list is printed, so this page will not supply brand names to make the harbour ride feel shorter. A parent who wants a logo should be told the list is absent, then pointed at the placement page for what is actually written.",
         ],
       },
       {
@@ -74,7 +74,7 @@ export const DEVOPS_NEW = [
       {
         h2: "Figures a Chembur household can repeat without adding a salary story",
         paragraphs: [
-          "Placement conversations in Chembur homes tend to ask for one number and one company. The lines this site will stand behind are the published ones: 450+ placed, 100% Placement, 360° Placement Assurance, 350+ hiring partners, and an outcome range of 5-35 LPA. That range is wide. It is not a forecast that a Chembur fresher lands at the top of it. No learner from this suburb is given a personal package on this URL, and no employer logo is added to justify the harbour ride. Read the placement page before you repeat a figure to a relative. If you add a company name this site does not print, you are no longer quoting the institute. Quote the lines, or do not quote numbers at all when the family asks what Chembur to Powai is supposed to produce.",
+          "Placement conversations in Chembur homes tend to ask for one number and one company. The lines this site will stand behind are the published ones: 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, 350+ hiring partners, and an outcome range of 5-35 LPA. That range is wide. It is not a forecast that a Chembur fresher lands at the top of it. No learner from this suburb is given a personal package on this URL, and no employer logo is added to justify the harbour ride. Read the placement page before you repeat a figure to a relative. If you add a company name this site does not print, you are no longer quoting the institute. Quote the lines, or do not quote numbers at all when the family asks what Chembur to Powai is supposed to produce.",
           "The Google rating sits apart from those placement lines. It is 4.7 from 130 Google reviews. The profile linked beside Diamond Garden is the external check, and the reviews page is the on-site frame. Individual quotations are not copied here, even when a household asks for one nice comment to forward on a phone. Use the rating to decide whether a visit is worth scheduling, then use the visit to decide whether month four of the harbour change still feels acceptable. A commute that felt clever in week one can feel heavy when the cluster labs run long. This page would rather say that before you block the calendar. If the visit raises a batch question the rating cannot answer, use 083695 18569 and name Chembur as the station you actually boarded.",
         ],
       },
@@ -113,7 +113,7 @@ export const DEVOPS_NEW = [
       },
       {
         q: "Which placement lines can a Chembur household repeat without adding a company?",
-        a: "Repeat only 450+ placed, 100% Placement, 360° Placement Assurance, 350+ hiring partners, and the outcome range 5-35 LPA. The range is wide and is not a Chembur forecast. No employer names are printed on this page. Read the placement page before a family meeting. Adding a company this site does not name means you are no longer quoting the institute, whatever station you used to get to class.",
+        a: "Repeat only 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, 350+ hiring partners, and the outcome range 5-35 LPA. The range is wide and is not a Chembur forecast. No employer names are printed on this page. Read the placement page before a family meeting. Adding a company this site does not name means you are no longer quoting the institute, whatever station you used to get to class.",
       },
       {
         q: "Is Yogesh Devpura assigned to the Chembur weekday or weekend DevOps batch?",
@@ -138,7 +138,7 @@ export const DEVOPS_NEW = [
       "DevOps course in Vidyavihar with placement. One central-line stop to Ghatkopar, then Metro Line 1 to Saki Naka. Call 083695 18569.",
     summary: "Vidyavihar central-line commute via Ghatkopar to the Powai DevOps classroom.",
     answer:
-      "A classroom DevOps course for Vidyavihar, with placement support, is taught at Lodha Supremus in Chandivali, Powai. Central-line riders change at Ghatkopar for Metro Line 1 and get off at Saki Naka. The campus runs weekday and weekend batches. Published outcomes include 450+ placed and 100% Placement. Call 083695 18569.",
+      "A classroom DevOps course for Vidyavihar, with placement support, is taught at Lodha Supremus in Chandivali, Powai. Central-line riders change at Ghatkopar for Metro Line 1 and get off at Saki Naka. The campus runs weekday and weekend batches. Published outcomes include 450+ placed and 5 Tier-1 Interviews Assured + Dedicated Placement Support. Call 083695 18569.",
     sections: [
       {
         h2: "Vidyavihar sits one central-line stop south of Ghatkopar",
@@ -163,7 +163,7 @@ export const DEVOPS_NEW = [
         h2: "KJ Somaiya and Rajawadi do not run this course",
         paragraphs: [
           "Rajawadi and KJ Somaiya sit on the east side of Vidyavihar, and both names dominate how students describe the suburb. This course is not conducted by Somaiya, not hosted as a Somaiya paper, and not a substitute for a college lab behind that gate. Students who walk out of a Somaiya or Rajawadi entrance and want this class still take the central line one stop to Ghatkopar and then the metro to Saki Naka. College identity does not buy a different syllabus or a closer building. If a corridor poster uses a phone number, check that it is 083695 18569 and that it names Chandivali. A poster in a college corridor is not an affiliation. Somaiya does not appear among the institute affiliations named later on this page.",
-          "Students from those gates often ask for a fee concession tied to a college identity card. No fee is printed for a Vidyavihar college, or for anyone else, and there is no identity-card price on this site. Ask by phone. What is published is a flagship of four months and 160 hours, with about 80% of a session spent on the keyboard rather than on slides. A timetable that already fills weekdays should look at the weekend batch before a weekday seat is assumed to be kind. Exam weeks make that choice sharper. The counsellor can match you only to a published batch. A clock grid is not printed, so the phrase after my last lecture has to be checked on the call, not guessed under this heading.",
+          "Students from those gates often ask for a fee concession tied to a college identity card. Course fees start at ₹12,500/month for a Vidyavihar college and for everyone else, and there is no identity-card price on this site. Ask by phone. What is published is a flagship of four months and 160 hours, with about 80% of a session spent on the keyboard rather than on slides. A timetable that already fills weekdays should look at the weekend batch before a weekday seat is assumed to be kind. Exam weeks make that choice sharper. The counsellor can match you only to a published batch. A clock grid is not printed, so the phrase after my last lecture has to be checked on the call, not guessed under this heading.",
         ],
       },
       {
@@ -190,7 +190,7 @@ export const DEVOPS_NEW = [
       {
         h2: "Placement lines for a first role and for an LBS Marg job-changer",
         paragraphs: [
-          "A first job and a role change both sit inside the published outcome range of 5-35 LPA, which is wide enough to cover very different family conversations. The campus also publishes 450+ placed, 100% Placement, 360° Placement Assurance and 350+ hiring partners. None of those lines is a Vidyavihar average, and none names the company that will call. Freshers from Rajawadi or Somaiya should not borrow the top of the range in a family meeting. People already employed on LBS Marg should not borrow it as a hike calculator. The placement page holds the institute's wording. This page adds the commute context only: any outcome is from the Chandivali course after you have attended it, not from a seminar on the Vidyavihar platform.",
+          "A first job and a role change both sit inside the published outcome range of 5-35 LPA, which is wide enough to cover very different family conversations. The campus also publishes 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support and 350+ hiring partners. None of those lines is a Vidyavihar average, and none names the company that will call. Freshers from Rajawadi or Somaiya should not borrow the top of the range in a family meeting. People already employed on LBS Marg should not borrow it as a hike calculator. The placement page holds the institute's wording. This page adds the commute context only: any outcome is from the Chandivali course after you have attended it, not from a seminar on the Vidyavihar platform.",
           "No hiring partner is listed by name, so a college noticeboard cannot be handed a logo sheet taken from this URL. If a logo sheet appears in a student group, it did not come from this page. Trust the printed lines and the phone call, not a forwarded sheet. Reviews are a separate pile of evidence: 4.7 from 130 Google reviews, profile at https://maps.app.goo.gl/5hUDHH1WjKevbkQz8, plus a reviews page that frames them without this article reproducing quotations. A student who wants that kind of proof should read those places and then visit the room. A rating does not move Lodha Supremus closer to a Somaiya gate, and it does not shorten the one stop that still has to be ridden.",
         ],
       },
@@ -212,7 +212,7 @@ export const DEVOPS_NEW = [
         h2: "What to say so a Vidyavihar call stays on the Chandivali room",
         paragraphs: [
           "A useful call names three places in order: Vidyavihar station, Ghatkopar for Metro Line 1, and Saki Naka for the campus. It also names the audience, student or working professional, because that is what changes the batch conversation. It does not ask anyone to confirm a kilometre figure or a platform number. Those are not published, and a polite invention would still be an invention. If a relative needs to understand the trip, send the station sequence and the address, not a voice note that says the class is basically in Ghatkopar. Ghatkopar is the change. Chandivali is the room. The sister site holds the other room. Blurring that sentence is why a one-stop commute still needs a full page.",
-          "After the call, keep the reading jobs separate. The DevOps course page and the syllabus page describe the work. The trainers page describes mentors without assigning them to you. The reviews page and the Google profile hold 4.7 from 130. The placement page holds 450+ placed, 100% Placement, 360° Placement Assurance, 350+ hiring partners and the 5-35 LPA range. This Vidyavihar URL holds the commute and the warning that Somaiya does not run the class. You are choosing a room in Powai that is one central-line stop and a metro ride from your station. You are not choosing a new college, and LBS Marg does not become a second campus because professionals already use it every day.",
+          "After the call, keep the reading jobs separate. The DevOps course page and the syllabus page describe the work. The trainers page describes mentors without assigning them to you. The reviews page and the Google profile hold 4.7 from 130. The placement page holds 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, 350+ hiring partners and the 5-35 LPA range. This Vidyavihar URL holds the commute and the warning that Somaiya does not run the class. You are choosing a room in Powai that is one central-line stop and a metro ride from your station. You are not choosing a new college, and LBS Marg does not become a second campus because professionals already use it every day.",
         ],
       },
     ],
@@ -239,7 +239,7 @@ export const DEVOPS_NEW = [
       },
       {
         q: "Which placement figures should a Vidyavihar family quote for this campus?",
-        a: "Quote 450+ placed, 100% Placement, 360° Placement Assurance, 350+ hiring partners, and the range 5-35 LPA. None of those is a Vidyavihar average, and no company is named. Freshers should not borrow the top of the range. People already working on LBS Marg should not treat it as a hike formula. Read the placement page. A logo sheet in a student group did not come from this URL.",
+        a: "Quote 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, 350+ hiring partners, and the range 5-35 LPA. None of those is a Vidyavihar average, and no company is named. Freshers should not borrow the top of the range. People already working on LBS Marg should not treat it as a hike formula. Read the placement page. A logo sheet in a student group did not come from this URL.",
       },
       {
         q: "Is Ninad Samudre assigned to a Vidyavihar weekend batch?",
@@ -268,7 +268,7 @@ export const DEVOPS_NEW = [
       "DevOps course in Vile Parle with placement. Western line to Andheri, then Metro Line 1 to the Chandivali campus. Call 083695 18569.",
     summary: "Vile Parle western-line ride to Andheri, then Metro Line 1, for the DevOps classroom.",
     answer:
-      "Vile Parle learners can take the DevOps course with placement support at the Chandivali campus in Powai. The western line reaches Andheri, then Metro Line 1 continues to Saki Naka for Lodha Supremus. Weekday and weekend batches are both published. 450+ placed and 100% Placement are the campus figures. Call 083695 18569.",
+      "Vile Parle learners can take the DevOps course with placement support at the Chandivali campus in Powai. The western line reaches Andheri, then Metro Line 1 continues to Saki Naka for Lodha Supremus. Weekday and weekend batches are both published. 450+ placed and 5 Tier-1 Interviews Assured + Dedicated Placement Support are the campus figures. Call 083695 18569.",
     sections: [
       {
         h2: "Vile Parle station sits between Andheri and Santacruz",
@@ -321,13 +321,13 @@ export const DEVOPS_NEW = [
         h2: "One toolchain whether the day started at the airport or at Irla",
         paragraphs: [
           "Once attendance looks plausible, the work is specific. Linux and Git come before Jenkins is treated as a deploy button. Docker comes before Kubernetes. Ansible and Terraform cover configuration and infrastructure as files. ArgoCD sits with deployment practice. Prometheus and Grafana are the monitoring pair on the published list. About 80% of a session is hands-on, which is the right expectation for a fresher who has not left slides, and for an airport-side professional whose current tools are operational tickets rather than a pipeline. The course pages are the detailed version of that list. This Vile Parle page only insists that both audiences sit the lab in Chandivali, not in a room rented beside the station or inside a college on SV Road.",
-          "Fees are the trap that both halves of the suburb fall into. No price is printed. Do not let a west-side fresher group fill one in, and do not let an east-side shift group do it either. Call 083695 18569 and ask for the fee and the open batch in one conversation. Write down what was said. A number that never appears on this domain should not be forwarded as a local Vile Parle rate. The same restraint applies to exam vouchers: if a counsellor mentions an exam, ask which course page already says it. This suburb URL will not invent a voucher to make NMIMS freshers or airport staff feel they are buying a certificate along with the commute.",
+          "Fees are the trap that both halves of the suburb fall into. Course Fees Starting at ₹12,500/month (Easy EMI Options Available). Do not let a west-side fresher group fill one in, and do not let an east-side shift group do it either. Call 083695 18569 and ask for the fee and the open batch in one conversation. Write down what was said. A fee other than the published ₹12,500/month starting EMI should not be forwarded as a local Vile Parle rate. The same restraint applies to exam vouchers: if a counsellor mentions an exam, ask which course page already says it. This suburb URL will not invent a voucher to make NMIMS freshers or airport staff feel they are buying a certificate along with the commute.",
         ],
       },
       {
         h2: "One published fresher figure at 6.5 LPA sits beside the wider range",
         paragraphs: [
-          "West-side freshers ask for a person, not only a range. The institute publishes Rajeswari Singh at 6.5 LPA as a fresher outcome. This page names her once and does not paste a testimonial. Her result is not a Vile Parle story and not an NMIMS story. It is a campus fresher example a west-side student may read on the placement page. The wider printed range is 5-35 LPA. A single result at 6.5 LPA does not make 6.5 a rate card, and it does not make the top of the range a number parents should be shown as typical. 450+ placed, 100% Placement, 360° Placement Assurance and 350+ hiring partners are the other lines. No company is attached to that fresher result in the material this article is allowed to use.",
+          "West-side freshers ask for a person, not only a range. The institute publishes Rajeswari Singh at 6.5 LPA as a fresher outcome. This page names her once and does not paste a testimonial. Her result is not a Vile Parle story and not an NMIMS story. It is a campus fresher example a west-side student may read on the placement page. The wider printed range is 5-35 LPA. A single result at 6.5 LPA does not make 6.5 a rate card, and it does not make the top of the range a number parents should be shown as typical. 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support and 350+ hiring partners are the other lines. No company is attached to that fresher result in the material this article is allowed to use.",
           "East-side professionals should not ignore that fresher card and invent a senior table to replace it. A separate experienced-outcome grid is not printed here. The same wide range has to carry both conversations, which makes it a poor slogan and a fair warning. If your airport-side role is already technical, say so when you call. The course still does not publish an exam that lets you skip Linux. You may move through the shell faster in practice and still owe the published labs. Placement support does not split into a Vile Parle East desk and a Vile Parle West desk. Read it on the placement page after you know you can reach Saki Naka on the days the batch actually meets.",
         ],
       },
@@ -373,7 +373,7 @@ export const DEVOPS_NEW = [
       },
       {
         q: "How should Vile Parle freshers read the published 6.5 LPA fresher figure?",
-        a: "She is the published fresher example, at 6.5 LPA. This page names her once and does not paste a testimonial. She is not described as a Vile Parle or NMIMS student. The wider range is 5-35 LPA, with 450+ placed, 100% Placement, 360° Placement Assurance and 350+ hiring partners. Do not turn 6.5 into a rate or 35 into a typical offer. No company is named beside that fresher result.",
+        a: "She is the published fresher example, at 6.5 LPA. This page names her once and does not paste a testimonial. She is not described as a Vile Parle or NMIMS student. The wider range is 5-35 LPA, with 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support and 350+ hiring partners. Do not turn 6.5 into a rate or 35 into a typical offer. No company is named beside that fresher result.",
       },
       {
         q: "Is Ankit Shukla the mentor reserved for Vile Parle airport staff?",
@@ -398,7 +398,7 @@ export const DEVOPS_NEW = [
       "DevOps course in Jogeshwari with placement. JVLR or the western line toward the Powai classroom in Chandivali. Call 083695 18569.",
     summary: "Jogeshwari JVLR and western-line routes to the Chandivali DevOps classroom.",
     answer:
-      "Jogeshwari has a DevOps course page because the Powai classroom is a real commute, not a local branch. JVLR and the western line toward Andheri both lead toward Lodha Supremus in Chandivali. Placement support is published as 450+ placed and 100% Placement. Ask 083695 18569 which batch still has room.",
+      "Jogeshwari has a DevOps course page because the Powai classroom is a real commute, not a local branch. JVLR and the western line toward Andheri both lead toward Lodha Supremus in Chandivali. Placement support is published as 450+ placed and 5 Tier-1 Interviews Assured + Dedicated Placement Support. Ask 083695 18569 which batch still has room.",
     sections: [
       {
         h2: "Jogeshwari lies between Goregaon and Andheri, with no local branch",
@@ -471,7 +471,7 @@ export const DEVOPS_NEW = [
       {
         h2: "Placement lines and the review score a Jogeshwari caller can check",
         paragraphs: [
-          "Placement support for anyone commuting from Jogeshwari uses the campus lines: 450+ placed, 100% Placement, 360° Placement Assurance, 350+ hiring partners, and an outcome range of 5-35 LPA. The range is not a local median. No company names are added to sweeten the western-line change or the link-road drive. No fresher story is introduced on this particular page. Read the placement page for the wording, then decide whether the labs are the work you want. The commute does not purchase a higher band. People sometimes ask for a story in which travel is compensated. None is published. You spend the commute in time. The fee, whatever the phone says it is, stays a separate unpublished number and should be requested on 083695 18569 rather than inferred from the range.",
+          "Placement support for anyone commuting from Jogeshwari uses the campus lines: 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, 350+ hiring partners, and an outcome range of 5-35 LPA. The range is not a local median. No company names are added to sweeten the western-line change or the link-road drive. No fresher story is introduced on this particular page. Read the placement page for the wording, then decide whether the labs are the work you want. The commute does not purchase a higher band. People sometimes ask for a story in which travel is compensated. None is published. You spend the commute in time. The fee, whatever the phone says it is, stays a separate unpublished number and should be requested on 083695 18569 rather than inferred from the range.",
           "Reviews are the other check that does not depend on JVLR. The figure is 4.7 from 130 Google reviews. Open https://maps.app.goo.gl/5hUDHH1WjKevbkQz8 and the reviews page rather than asking this article to paste quotations. A rider who wants to trust the room should pair that reading with one visit: Andheri, then Saki Naka, then B 1307. Go before you argue about four months. If the building is acceptable and the batch fits the route you tested, call 083695 18569 and state whether you used the link road or the metro change. If the building is acceptable and the route is not, this is the wrong campus for your week. The sister Ghatkopar URL is already on this page. Use it only with open eyes, and do not enrol in Chandivali while telling yourself you will attend somewhere else.",
         ],
       },
@@ -511,7 +511,7 @@ export const DEVOPS_NEW = [
       },
       {
         q: "Which placement lines apply to someone commuting from Jogeshwari?",
-        a: "450+ placed, 100% Placement, 360° Placement Assurance, 350+ hiring partners, and a range of 5-35 LPA. The range is not a Jogeshwari median. No company is added to sweeten JVLR or the western line, and this page does not add a fresher story. Travel is not described as compensated. The fee is unpublished. Ask 083695 18569. Read the placement page before repeating a figure at home.",
+        a: "450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, 350+ hiring partners, and a range of 5-35 LPA. The range is not a Jogeshwari median. No company is added to sweeten JVLR or the western line, and this page does not add a fresher story. Travel is not described as compensated. The fee is unpublished. Ask 083695 18569. Read the placement page before repeating a figure at home.",
       },
       {
         q: "Where does a Jogeshwari rider verify 4.7 from 130 Google reviews?",
@@ -528,7 +528,7 @@ export const DEVOPS_NEW = [
       "DevOps course in Kandivali with placement. Western line via Malad and Goregaon, then Metro Line 1 to Saki Naka. Call 083695 18569.",
     summary: "Kandivali western-line commute through Malad and Goregaon to the Powai DevOps classroom.",
     answer:
-      "Kandivali residents join the same Powai DevOps classroom, with placement support, rather than a classroom inside Thakur Village. The western line runs through Malad, Goregaon and Jogeshwari before Andheri, then Metro Line 1 reaches Saki Naka. 450+ placed and 100% Placement are published. Call 083695 18569.",
+      "Kandivali residents join the same Powai DevOps classroom, with placement support, rather than a classroom inside Thakur Village. The western line runs through Malad, Goregaon and Jogeshwari before Andheri, then Metro Line 1 reaches Saki Naka. 450+ placed and 5 Tier-1 Interviews Assured + Dedicated Placement Support are published. Call 083695 18569.",
     sections: [
       {
         h2: "Thakur Village is a Kandivali East landmark, not the lab",
@@ -581,7 +581,7 @@ export const DEVOPS_NEW = [
         h2: "Weekday fits Kandivali only if work already ends near the campus side",
         paragraphs: [
           "The exception is employment, not optimism. If the day already ends near Andheri, near SEEPZ, or in Powai, a weekday batch can be an honest Kandivali choice because you are not starting the whole chain from home after work. You may be beside the metro already, and the ride home can wait until after class. SEEPZ is named because people from this suburb work there and already travel the Andheri side. This page does not describe a shuttle, a company tie-up, or a reserved seat. It only says the geography of the workday changes the advice. If you work in Kandivali, the exception does not apply. If you work in Borivali, it does not apply. If you work in south Mumbai, it does not apply. Weekday is for a day that already finishes on the campus side of the city.",
-          "Test the exception before you use it in a counselling call. Leave the office at the hour a batch would require, once, and reach Saki Naka. If that trial fails, you do not have the exception, whatever the job title says. If it succeeds, call 083695 18569 and name the workplace area rather than only Kandivali. Ask which weekday sitting has room. Ask the fee, which is not printed anywhere on this domain. Keep the weekend in your own mind if the trial only barely worked. Four months will include bad trains even for people who work near Andheri. The course will not relocate to Thakur Village on those days. Your plan has to survive an ordinary bad week, not only the week you used as a demonstration.",
+          "Test the exception before you use it in a counselling call. Leave the office at the hour a batch would require, once, and reach Saki Naka. If that trial fails, you do not have the exception, whatever the job title says. If it succeeds, call 083695 18569 and name the workplace area rather than only Kandivali. Ask which weekday sitting has room. Ask for the full fee structure beyond the ₹12,500/month starting EMI. Keep the weekend in your own mind if the trial only barely worked. Four months will include bad trains even for people who work near Andheri. The course will not relocate to Thakur Village on those days. Your plan has to survive an ordinary bad week, not only the week you used as a demonstration.",
         ],
       },
       {
@@ -594,7 +594,7 @@ export const DEVOPS_NEW = [
       {
         h2: "A 6.5 LPA fresher figure is not a Kandivali township rate",
         paragraphs: [
-          "Freshers looking at a weekend batch still ask what one fresher outcome looks like. Rajeswari Singh is the published fresher name, at 6.5 LPA. She is mentioned once on this Kandivali page, without testimonial text, and she is not described as a Thakur Village or Charkop student. The placement page holds the card. Beside that single figure the campus range is 5-35 LPA. Quoting the top of the range to a parent in Lokhandwala Township would be a misuse. Quoting 6.5 as the package would also be a misuse. It is one published fresher result. 450+ placed, 100% Placement, 360° Placement Assurance and 350+ hiring partners are the totals that sit with it. No hiring company is named here to decorate the long western line.",
+          "Freshers looking at a weekend batch still ask what one fresher outcome looks like. Rajeswari Singh is the published fresher name, at 6.5 LPA. She is mentioned once on this Kandivali page, without testimonial text, and she is not described as a Thakur Village or Charkop student. The placement page holds the card. Beside that single figure the campus range is 5-35 LPA. Quoting the top of the range to a parent in Lokhandwala Township would be a misuse. Quoting 6.5 as the package would also be a misuse. It is one published fresher result. 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support and 350+ hiring partners are the totals that sit with it. No hiring company is named here to decorate the long western line.",
           "Experienced professionals, including people who already work near SEEPZ, do not get a second salary table. The same range has to cover too many situations, and this article will not invent bands inside it. Placement support is campus support. It does not grow because the commute was tiring, and it does not shrink because you attend on the weekend. Read the placement page with that restraint, then decide whether weekend attendance in Chandivali is something you want for the labs. If the only attraction is the top of a range, the ride from Charkop or Thakur Village will feel absurd well before the flagship ends. If the attraction is the toolchain, the ride is a cost you have already been asked to stare at. Accept the ride, or do not enrol.",
         ],
       },
@@ -629,7 +629,7 @@ export const DEVOPS_NEW = [
       },
       {
         q: "When can a Kandivali resident honestly ask for a weekday DevOps batch?",
-        a: "When the day already ends near Andheri, SEEPZ or Powai, so you are not starting from home after work. Working in Kandivali, Borivali or south Mumbai does not qualify. Test the office-to-Saki Naka trip once at batch hour before you rely on it. Then call 083695 18569, name the workplace, and ask which weekday sitting has room. The fee is not printed. A bad week will still happen.",
+        a: "When the day already ends near Andheri, SEEPZ or Powai, so you are not starting from home after work. Working in Kandivali, Borivali or south Mumbai does not qualify. Test the office-to-Saki Naka trip once at batch hour before you rely on it. Then call 083695 18569, name the workplace, and ask which weekday sitting has room. Course Fees Starting at ₹12,500/month (Easy EMI Options Available) A bad week will still happen.",
       },
       {
         q: "What does Kandivali still get for the longer ride to Chandivali?",
@@ -637,7 +637,7 @@ export const DEVOPS_NEW = [
       },
       {
         q: "How should Kandivali freshers read the published 6.5 LPA figure?",
-        a: "As one published fresher result, not as a Thakur Village or Charkop rate. This page cites that fresher once, at 6.5 LPA, without a testimonial. The range beside it is 5-35 LPA, with 450+ placed, 100% Placement, 360° Placement Assurance and 350+ hiring partners. Do not quote the top of the range as typical. No hiring company is named. The placement page holds the card.",
+        a: "As one published fresher result, not as a Thakur Village or Charkop rate. This page cites that fresher once, at 6.5 LPA, without a testimonial. The range beside it is 5-35 LPA, with 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support and 350+ hiring partners. Do not quote the top of the range as typical. No hiring company is named. The placement page holds the card.",
       },
       {
         q: "Where does a Kandivali visitor read 4.7 from 130 Google reviews?",
@@ -658,7 +658,7 @@ export const DEVOPS_NEW = [
       "DevOps course in Wadala with placement. Harbour line toward Kurla, then on to the Chandivali classroom in Powai. Call 083695 18569.",
     summary: "Wadala harbour-line commute via Kurla and Ghatkopar to the Powai DevOps classroom.",
     answer:
-      "Wadala's DevOps course with placement support meets at Lodha Supremus, Chandivali, not at the truck terminal or the monorail terminus. Harbour-line riders pass GTB Nagar and Chunabhatti toward Kurla, then aim for Ghatkopar and Saki Naka. 450+ placed and 100% Placement are the published lines. Call 083695 18569.",
+      "Wadala's DevOps course with placement support meets at Lodha Supremus, Chandivali, not at the truck terminal or the monorail terminus. Harbour-line riders pass GTB Nagar and Chunabhatti toward Kurla, then aim for Ghatkopar and Saki Naka. 450+ placed and 5 Tier-1 Interviews Assured + Dedicated Placement Support are the published lines. Call 083695 18569.",
     sections: [
       {
         h2: "Wadala Road station is the start, not the truck terminal",
@@ -720,7 +720,7 @@ export const DEVOPS_NEW = [
         h2: "The Powai toolchain is the only good reason for a Wadala rider to cross",
         paragraphs: [
           "Some readers will still want the room after the warning, and the reason has to be the lab. The published work is a shell and Git, a pipeline in Jenkins, containers in Docker, orchestration in Kubernetes, plus Ansible, Terraform, ArgoCD, and Prometheus with Grafana. About 80% hands-on means the trip was for typing, not for a suburb certificate. The 160 hours are the length of that work. No Wadala-only project title is printed, and this page will not invent one to make the freeway feel worthwhile. You do the campus labs or you do not. People who need a room near the truck terminal, the monorail, or BKC should stop and look for geography that matches that need. People who want the list above should keep the Chandivali address and test one route before they talk about a seat.",
-          "Basic computer skills are the published starting point. Freshers from Wadala are not barred, and professionals are not handed a separate advanced door. You share whichever Chandivali batch you can actually attend. There is no placement bonus for the longer ride, and there is no penalty beyond the tiredness you already understand. 450+ placed, 100% Placement, 360° Placement Assurance, 350+ hiring partners and the 5-35 LPA range are campus lines. They do not name a Wadala employer and they do not name a BKC employer. Do not add those names in a family meeting and cite this page. The placement page is the source for the lines. This page is the label on the commute. Read them as different documents or the range will be asked to justify a freeway pointed south.",
+          "Basic computer skills are the published starting point. Freshers from Wadala are not barred, and professionals are not handed a separate advanced door. You share whichever Chandivali batch you can actually attend. There is no placement bonus for the longer ride, and there is no penalty beyond the tiredness you already understand. 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, 350+ hiring partners and the 5-35 LPA range are campus lines. They do not name a Wadala employer and they do not name a BKC employer. Do not add those names in a family meeting and cite this page. The placement page is the source for the lines. This page is the label on the commute. Read them as different documents or the range will be asked to justify a freeway pointed south.",
         ],
       },
       {

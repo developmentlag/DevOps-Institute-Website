@@ -129,6 +129,11 @@ const gtag = (...args) => {
   if (typeof window.gtag === "function") window.gtag(...args);
 };
 
+const pushDataLayer = (payload) => {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push(payload);
+};
+
 const fbq = (...args) => {
   if (typeof window.fbq === "function") window.fbq(...args);
 };
@@ -240,6 +245,11 @@ export const handleLeadClick = (event) => {
 
   if (duplicate) return;
 
+  pushDataLayer({
+    event: kind === "call" ? "phone_click" : "whatsapp_click",
+    click_location: window.location.pathname,
+  });
+
   if (inPlace) {
     event.preventDefault();
     sendPair(gaEventName, conversionSendTo, params, () => {
@@ -276,6 +286,8 @@ export const trackPageView = () => {
 
 export const trackGenerateLead = ({ formSource = "", course = "" } = {}) => {
   captureAttribution();
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: "generate_lead", form_location: window.location.pathname });
   const params = capParams({
     form_source: formSource,
     course,

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { captureAttribution } from "@/lib/attribution";
+import { captureAttribution, captureSessionClicks } from "@/lib/attribution";
 import { installLeadClickTracker, trackPageView } from "@/lib/analytics";
 
 /**
@@ -26,6 +26,7 @@ export default function SiteAnalytics() {
   }, []);
 
   useEffect(() => {
+    captureSessionClicks(search);
     // Wait until every page effect has run so the title is the one just set
     // for this route, then send a single page view.
     const id = window.setTimeout(trackPageView, 0);

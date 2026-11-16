@@ -1,18 +1,17 @@
-import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import EnquiryForm from "@/components/EnquiryForm";
 import CampusMap from "@/components/CampusMap";
 import StudentLifeGallery from "@/components/StudentLifeGallery";
+import FeeHook from "@/components/FeeHook";
+import VerifiedOutcomes from "@/components/VerifiedOutcomes";
 import { AnswerBlock, Breadcrumbs, DirectAnswer, UpdatedLine } from "@/components/PageFacts";
 import { MentorCards } from "@/components/Mentors";
 import { MapPin } from "lucide-react";
 import {
   ADDRESS,
   GHATKOPAR_URL,
-  GOOGLE_BUSINESS_PROFILE_URLS,
   PHONE,
   PHONE_TEL,
-  TESTIMONIALS,
   THANE_HOME,
   VASHI_URL,
   WHATSAPP_URL,
@@ -86,79 +85,21 @@ function SyllabusTable({ modules }) {
   );
 }
 
-function ReviewsBlock() {
-  return (
-    <section className="mt-10">
-      <h2 className="font-heading text-2xl font-bold text-slate-900">Stories already published on this site</h2>
-      <ul className="mt-4 space-y-4">
-        {TESTIMONIALS.map((item) => (
-          <li key={item.name} className="rounded-xl border border-slate-200 p-4">
-            <p className="font-semibold text-slate-900">{item.name}</p>
-            <p className="text-sm text-slate-600">{item.role}. {item.company}.</p>
-            <blockquote className="mt-2 text-slate-800">{item.quote}</blockquote>
-            <p className="mt-2 text-sm text-slate-500">Google review dates are not published. Rating on the card: {item.rating} out of 5.</p>
-          </li>
-        ))}
-      </ul>
-      <p className="mt-4">
-        <a href={GOOGLE_BUSINESS_PROFILE_URLS[0]} className="font-semibold text-blue-700" rel="noopener noreferrer" target="_blank">
-          Leave us a Google review
-        </a>
-      </p>
-      <p className="mt-2 text-sm text-slate-600">
-        This is the stored Google Business Profile share link, not a write-a-review URL. A place id is not published.
-      </p>
-    </section>
-  );
-}
+const FEE_HOOK_PATHS = new Set([
+  "/devops-course",
+  "/cloud-computing-course",
+  "/aws-devops-course",
+  "/azure-devops-course",
+  "/kubernetes-docker-course",
+]);
 
-function PlacementsBlock() {
-  const [filter, setFilter] = useState("all");
-  const rows = useMemo(
-    () =>
-      TESTIMONIALS.map((item) => ({
-        ...item,
-        bucket: item.role.toLowerCase().includes("placed")
-          ? "placed"
-          : item.company.toLowerCase().includes("shift")
-            ? "shift"
-            : "story",
-      })),
-    [],
-  );
-  const visible = rows.filter((row) => filter === "all" || row.bucket === filter);
-  return (
-    <section className="mt-10">
-      <h2 className="font-heading text-2xl font-bold text-slate-900">Alumni named on this website</h2>
-      <label className="mt-4 block text-sm font-semibold text-slate-700" htmlFor="placement-filter">
-        Filter
-      </label>
-      <select
-        id="placement-filter"
-        className="mt-1 rounded-lg border border-slate-300 px-3 py-2 text-sm"
-        value={filter}
-        onChange={(event) => setFilter(event.target.value)}
-      >
-        <option value="all">All published stories</option>
-        <option value="placed">Placement package named</option>
-        <option value="shift">Career shift described</option>
-        <option value="story">Other published stories</option>
-      </select>
-      <ul className="mt-4 space-y-4">
-        {visible.map((item) => (
-          <li key={item.name} className="rounded-xl border border-slate-200 p-4">
-            <p className="font-semibold text-slate-900">{item.name}</p>
-            <p className="text-sm text-slate-700">{item.role}</p>
-            <p className="text-sm text-slate-600">Published detail: {item.company}</p>
-            <p className="text-sm text-slate-600">Employer name is not published.</p>
-            <p className="text-sm text-slate-600">A consented photo is not published.</p>
-            <p className="mt-2 text-slate-800">{item.quote}</p>
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
-}
+const INTEREST_BY_PATH = {
+  "/aws-devops-course": "AWS Cloud & DevOps",
+  "/azure-devops-course": "Azure DevOps",
+  "/kubernetes-docker-course": "Kubernetes & Docker",
+  "/devops-course": "AI & Cloud DevOps",
+  "/cloud-computing-course": "AI & Cloud DevOps",
+};
 
 function SitemapBlock() {
   const groups = [
@@ -233,6 +174,9 @@ export default function SeoArticle({ page }) {
       <h1 className="font-heading text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 leading-tight">
         {page.route.h1}
       </h1>
+      {FEE_HOOK_PATHS.has(page.route.path) ? (
+        <FeeHook demoHref="#enquiry" testId="seo-fee-hook" className="mt-6" />
+      ) : null}
       <AnswerBlock
         answer={page.answer}
         mentors={page.route.path !== "/trainers"}
@@ -259,8 +203,7 @@ export default function SeoArticle({ page }) {
       ))}
 
       {page.syllabusModules ? <SyllabusTable modules={page.syllabusModules} /> : null}
-      {page.reviews ? <ReviewsBlock /> : null}
-      {page.placements ? <PlacementsBlock /> : null}
+      {page.reviews || page.placements ? <VerifiedOutcomes embedded /> : null}
       {page.sitemap ? <SitemapBlock /> : null}
 
       {page.faqs && page.faqs.length > 0 ? (
@@ -297,7 +240,11 @@ export default function SeoArticle({ page }) {
           <a className="font-semibold text-blue-700" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">WhatsApp the campus</a>.
         </p>
         <div className="mt-4">
-          <EnquiryForm source={page.route.path} testIdPrefix="seo-enquiry" />
+          <EnquiryForm
+            source={page.route.path}
+            testIdPrefix="seo-enquiry"
+            defaultCourse={INTEREST_BY_PATH[page.route.path] || ""}
+          />
         </div>
       </section>
 
