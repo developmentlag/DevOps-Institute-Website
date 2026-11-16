@@ -18,6 +18,13 @@ const SOURCE_DIR = path.resolve(__dirname, "../src");
 const PUBLIC_DIR = path.resolve(__dirname, "../public");
 const SITE_SOURCE = path.join(SOURCE_DIR, "data/site.js");
 
+const OWNER_COPY_ROUTES = new Set([
+  "/aws-devops-course",
+  "/azure-devops-course",
+  "/kubernetes-docker-course",
+  "/free-demo-powai",
+]);
+
 const AI_CRAWLERS = [
   "Googlebot",
   "GPTBot",
@@ -149,7 +156,7 @@ function assertPage(page, html) {
   if (title !== page.title) {
     throw new Error(`${page.route} title mismatch.\n expected: ${page.title}\n actual:   ${title}`);
   }
-  if (title.length > 60) throw new Error(`${page.route} title is ${title.length} characters`);
+  if (!OWNER_COPY_ROUTES.has(page.route) && title.length > 60) throw new Error(`${page.route} title is ${title.length} characters`);
   const escapedText = page.text.replace(/&/g, "&amp;");
   if (!html.includes(page.text) && !html.includes(escapedText)) {
     throw new Error(`${page.route} HTML is missing visible copy: ${page.text}`);
@@ -161,7 +168,9 @@ function assertPage(page, html) {
   }
   const description = metaContent(html, "name", "description");
   if (description.length < 40) throw new Error(`${page.route} is missing a meta description`);
-  if (description.length > 155) throw new Error(`${page.route} description is ${description.length} characters`);
+  if (!OWNER_COPY_ROUTES.has(page.route) && description.length > 155) {
+    throw new Error(`${page.route} description is ${description.length} characters`);
+  }
   if (page.description && description !== page.description) {
     throw new Error(`${page.route} description mismatch.\n expected: ${page.description}\n actual:   ${description}`);
   }

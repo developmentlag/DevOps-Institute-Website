@@ -4,6 +4,9 @@ import CampusMap from "@/components/CampusMap";
 import StudentLifeGallery from "@/components/StudentLifeGallery";
 import FeeHook from "@/components/FeeHook";
 import VerifiedOutcomes from "@/components/VerifiedOutcomes";
+import OwnerKeyBody, { OwnerHero } from "@/components/OwnerKeyPage";
+import DemoBookingForm from "@/components/DemoBookingForm";
+import { ownerKeyPage } from "@/data/ownerKeyPages";
 import { AnswerBlock, Breadcrumbs, DirectAnswer, UpdatedLine } from "@/components/PageFacts";
 import { MentorCards } from "@/components/Mentors";
 import { MapPin } from "lucide-react";
@@ -88,21 +91,19 @@ function SyllabusTable({ modules }) {
 const FEE_HOOK_PATHS = new Set([
   "/devops-course",
   "/cloud-computing-course",
-  "/aws-devops-course",
-  "/azure-devops-course",
-  "/kubernetes-docker-course",
 ]);
-
-const INTEREST_BY_PATH = {
-  "/aws-devops-course": "AWS Cloud & DevOps",
-  "/azure-devops-course": "Azure DevOps",
-  "/kubernetes-docker-course": "Kubernetes & Docker",
-  "/devops-course": "AI & Cloud DevOps",
-  "/cloud-computing-course": "AI & Cloud DevOps",
-};
 
 function SitemapBlock() {
   const groups = [
+    {
+      title: "Featured courses and demo",
+      links: [
+        { href: "/aws-devops-course", label: "AWS Cloud & DevOps course" },
+        { href: "/azure-devops-course", label: "Microsoft Azure DevOps course" },
+        { href: "/kubernetes-docker-course", label: "Kubernetes & Docker course" },
+        { href: "/free-demo-powai", label: "Free demo class in Powai" },
+      ],
+    },
     {
       title: "Courses",
       links: [
@@ -162,6 +163,10 @@ function SitemapBlock() {
 }
 
 export default function SeoArticle({ page }) {
+  const owner = ownerKeyPage(page.route.path);
+  const demoHref = owner
+    ? (page.route.path === "/free-demo-powai" ? "#demo-form" : "/free-demo-powai")
+    : "#enquiry";
   return (
     <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {page.classroomFirst ? (
@@ -174,14 +179,15 @@ export default function SeoArticle({ page }) {
       <h1 className="font-heading text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 leading-tight">
         {page.route.h1}
       </h1>
+      <OwnerHero page={owner} />
       {FEE_HOOK_PATHS.has(page.route.path) ? (
         <FeeHook demoHref="#enquiry" testId="seo-fee-hook" className="mt-6" />
       ) : null}
       <AnswerBlock
         answer={page.answer}
         mentors={page.route.path !== "/trainers"}
-        showAnswer={page.route.path !== "/trainers"}
-        demoHref="#enquiry"
+        showAnswer={page.route.path !== "/trainers" && !owner}
+        demoHref={demoHref}
       />
       {page.route.path === "/devops-course-in-powai" ? <StudentLifeGallery embedded /> : null}
       {page.route.path === "/trainers" ? (
@@ -190,6 +196,19 @@ export default function SeoArticle({ page }) {
           <DirectAnswer>{page.answer}</DirectAnswer>
           <UpdatedLine />
         </>
+      ) : null}
+
+      {owner ? <OwnerKeyBody page={owner} /> : null}
+      {page.route.path === "/free-demo-powai" ? (
+        <section id="demo-form" className="no-print mt-10 rounded-xl border border-slate-200 p-5">
+          <h2 className="font-heading text-2xl font-bold text-slate-900">Book your free demo</h2>
+          <div className="mt-4">
+            <DemoBookingForm />
+          </div>
+        </section>
+      ) : null}
+      {owner ? (
+        <p className="mt-10 text-slate-700 leading-relaxed">{page.answer}</p>
       ) : null}
 
       {page.sections.map((section) => (
@@ -233,20 +252,18 @@ export default function SeoArticle({ page }) {
         </nav>
       ) : null}
 
-      <section id="enquiry" className="no-print mt-12 rounded-xl border border-slate-200 p-5">
-        <h2 className="font-heading text-2xl font-bold text-slate-900">Ask about the next batch</h2>
-        <p className="mt-2 text-slate-700">
-          {ADDRESS}. Phone <a className="font-semibold text-blue-700" href={PHONE_TEL}>{PHONE}</a>.{" "}
-          <a className="font-semibold text-blue-700" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">WhatsApp the campus</a>.
-        </p>
-        <div className="mt-4">
-          <EnquiryForm
-            source={page.route.path}
-            testIdPrefix="seo-enquiry"
-            defaultCourse={INTEREST_BY_PATH[page.route.path] || ""}
-          />
-        </div>
-      </section>
+      {page.route.path === "/free-demo-powai" ? null : (
+        <section id="enquiry" className="no-print mt-12 rounded-xl border border-slate-200 p-5">
+          <h2 className="font-heading text-2xl font-bold text-slate-900">Ask about the next batch</h2>
+          <p className="mt-2 text-slate-700">
+            {ADDRESS}. Phone <a className="font-semibold text-blue-700" href={PHONE_TEL}>{PHONE}</a>.{" "}
+            <a className="font-semibold text-blue-700" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">WhatsApp the campus</a>.
+          </p>
+          <div className="mt-4">
+            <EnquiryForm source={page.route.path} testIdPrefix="seo-enquiry" />
+          </div>
+        </section>
+      )}
 
       {page.showMap ? <CampusMap /> : null}
     </article>

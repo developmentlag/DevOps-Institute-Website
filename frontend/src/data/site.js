@@ -57,22 +57,6 @@ export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURICo
 export const EMI_HOOK = "Course Fees Starting at ₹12,500/month (Easy EMI Options Available)";
 export const FEE_REQUEST_TEXT = "Fee structure & syllabus request";
 export const FEE_STRUCTURE_WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(FEE_REQUEST_TEXT)}`;
-export const ENQUIRY_COURSES = [
-  "AI & Cloud DevOps",
-  "AWS Cloud & DevOps",
-  "Azure DevOps",
-  "Kubernetes & Docker",
-  "Data Engineering",
-  "Agentic AI",
-];
-export const ENQUIRY_CAMPUSES = ["Powai - Mumbai", "Thane", "Vashi - Navi Mumbai", "Ghatkopar"];
-export const ENQUIRY_PROFILES = ["Fresher", "Working Professional"];
-export const COURSE_INTEREST_BY_SLUG = {
-  devops: "AI & Cloud DevOps",
-  aws: "AWS Cloud & DevOps",
-  azure: "Azure DevOps",
-  "kubernetes-docker": "Kubernetes & Docker",
-};
 
 export const CAMPUS_PHOTOS = [
   {

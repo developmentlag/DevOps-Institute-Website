@@ -63,7 +63,7 @@ export const KEY_PAGES = {
     crumbs: [
       { name: "Home", href: "/" },
       { name: "Courses", href: "/courses" },
-      { name: "AWS Cloud and DevOps Course in the Powai Classroom", href: "/aws-devops-course" },
+      { name: "AWS Cloud & DevOps Engineering Course in Mumbai (Powai Campus)", href: "/aws-devops-course" },
     ],
     links: AWS_LINKS,
     answer:
@@ -201,7 +201,7 @@ export const KEY_PAGES = {
     crumbs: [
       { name: "Home", href: "/" },
       { name: "Courses", href: "/courses" },
-      { name: "Azure DevOps and AZ-900 Topics at the Powai Campus", href: "/azure-devops-course" },
+      { name: "Microsoft Azure Cloud & Azure DevOps Training in Mumbai", href: "/azure-devops-course" },
     ],
     links: AZURE_LINKS,
     answer:
@@ -346,7 +346,7 @@ export const KEY_PAGES = {
     crumbs: [
       { name: "Home", href: "/" },
       { name: "Courses", href: "/courses" },
-      { name: "Docker and Kubernetes Containerization Course in Powai", href: "/kubernetes-docker-course" },
+      { name: "Kubernetes & Docker Containerization Course in Mumbai (CKA-Aligned)", href: "/kubernetes-docker-course" },
     ],
     links: KUBE_LINKS,
     answer:
@@ -480,7 +480,7 @@ export const KEY_PAGES = {
     crumbs: [
       { name: "Home", href: "/" },
       { name: "Contact", href: "/contact" },
-      { name: "Book a Free Demo Class at the Powai Campus", href: "/free-demo-powai" },
+      { name: "Book Your Free Live DevOps & Cloud Demo Class in Powai, Mumbai", href: "/free-demo-powai" },
     ],
     links: DEMO_LINKS,
     answer:

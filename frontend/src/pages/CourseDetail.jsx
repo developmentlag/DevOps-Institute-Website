@@ -5,7 +5,7 @@ import EnquiryForm from "@/components/EnquiryForm";
 import FaqAccordion from "@/components/FaqAccordion";
 import Testimonials from "@/components/Testimonials";
 import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
-import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, COURSES, COURSE_INTEREST_BY_SLUG, buildCourseSchema, buildBreadcrumbSchema, buildFaqSchema } from "@/data/site";
+import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, COURSES, buildCourseSchema, buildBreadcrumbSchema, buildFaqSchema } from "@/data/site";
 import FeeHook from "@/components/FeeHook";
 import { COURSE_ANSWERS } from "@/data/pageMeta";
 import { AREA_ROUTES, CLOUD_AREA_ROUTES } from "@/data/seoRoutes";
@@ -206,7 +206,7 @@ export default function CourseDetail() {
               </address>
             </div>
             <div className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
-              <EnquiryForm defaultCourse={COURSE_INTEREST_BY_SLUG[course.slug] || ""} source={`course-${course.slug}`} testIdPrefix="course-enquiry" />
+              <EnquiryForm defaultCourse={course.name} source={`course-${course.slug}`} testIdPrefix="course-enquiry" />
             </div>
           </div>
         </div>

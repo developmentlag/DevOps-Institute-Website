@@ -11,8 +11,6 @@ const NINETY_DAYS_SECONDS = 90 * 24 * 60 * 60;
 const COOKIE_LIMIT = 3800;
 
 export const UTM_FIELDS = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"];
-export const SESSION_CLICK_FIELDS = ["utm_source", "utm_medium", "utm_campaign", "gclid", "fbclid"];
-const SESSION_KEY = "doi_session_click_ids";
 export const CLICK_FIELDS = ["gclid", "gbraid", "wbraid", "fbclid"];
 export const CONTEXT_FIELDS = ["referrer", "landing_page"];
 export const CAMPAIGN_FIELDS = [...UTM_FIELDS, ...CLICK_FIELDS];
@@ -155,43 +153,6 @@ export const clearStoredAttribution = () => {
   }
   try {
     document.cookie = `${STORAGE_KEY}=; Path=/; Max-Age=0`;
-  } catch {
-    /* ignore */
-  }
-};
-
-export const readSessionClicks = () => {
-  if (typeof window === "undefined" || !window.sessionStorage) return {};
-  try {
-    const parsed = JSON.parse(window.sessionStorage.getItem(SESSION_KEY) || "{}");
-    return parsed && typeof parsed === "object" ? parsed : {};
-  } catch {
-    return {};
-  }
-};
-
-/** Landing click ids for this tab. Later pages keep the values already stored. */
-export const captureSessionClicks = (search) => {
-  if (typeof window === "undefined" || !window.sessionStorage) return {};
-  const raw = search != null ? search : window.location.search;
-  const params = new URLSearchParams(raw.startsWith("?") ? raw.slice(1) : raw);
-  const current = readSessionClicks();
-  let changed = false;
-  SESSION_CLICK_FIELDS.forEach((key) => {
-    const value = clip(params.get(key) || "", FIELD_LIMITS[key] || 250);
-    if (value && current[key] !== value) {
-      current[key] = value;
-      changed = true;
-    }
-  });
-  if (changed) window.sessionStorage.setItem(SESSION_KEY, JSON.stringify(current));
-  return current;
-};
-
-export const clearSessionClicks = () => {
-  if (typeof window === "undefined" || !window.sessionStorage) return;
-  try {
-    window.sessionStorage.removeItem(SESSION_KEY);
   } catch {
     /* ignore */
   }
