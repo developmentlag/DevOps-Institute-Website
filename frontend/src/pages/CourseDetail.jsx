@@ -11,6 +11,12 @@ import { AREA_ROUTES, CLOUD_AREA_ROUTES } from "@/data/seoRoutes";
 
 const ICONS = { cloud: Cloud, cloudy: Cloudy, cloudCog: CloudCog, gitBranch: GitBranch, container: Container, terminal: Terminal };
 
+const SEQUENCE_PAGES = {
+  aws: { href: "/aws-devops-course", label: "AWS Cloud and DevOps course" },
+  azure: { href: "/azure-devops-course", label: "Azure DevOps and AZ-900 page" },
+  "kubernetes-docker": { href: "/kubernetes-docker-course", label: "Docker and Kubernetes lab order" },
+};
+
 function AreaClassroomLinks({ slug }) {
   const cloud = slug === "aws" || slug === "azure" || slug === "gcp";
   const devops = slug === "devops" || slug === "kubernetes-docker" || slug === "linux-terraform";
@@ -85,6 +91,14 @@ export default function CourseDetail() {
               </h1>
               <AnswerBlock answer={COURSE_ANSWERS[course.slug]} demoHref="#course-enquiry" />
               <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl">{course.intro}</p>
+              {SEQUENCE_PAGES[course.slug] ? (
+                <p className="mt-4 text-base text-slate-700 leading-relaxed max-w-3xl">
+                  <Link to={SEQUENCE_PAGES[course.slug].href} className="font-semibold text-blue-700">
+                    {SEQUENCE_PAGES[course.slug].label}
+                  </Link>
+                  {" "}explains how these labs are sequenced in the Powai classroom. This page remains the module catalog.
+                </p>
+              ) : null}
               <div className="mt-7 flex flex-col sm:flex-row gap-3">
                 <a
                   href={PHONE_TEL}

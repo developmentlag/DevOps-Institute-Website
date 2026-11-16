@@ -1,76 +1,21 @@
-# DevOps Institute - AWS, Azure & GCP Course
+# DevOps Institute (IVYTECH INSTITUTE LLP)
+> Classroom-first AI, Cloud, DevOps & Data Engineering training institute across the Mumbai Metropolitan Region (Powai, Thane, Vashi, Ghatkopar).
 
-> Practitioner-led classroom training and hands-on cloud labs for DevOps, Cloud Computing, Kubernetes, and Infrastructure as Code in Powai, Chandivali, Mumbai.
+## Core Value Proposition & Verifiable Outcomes
+- **Career Assurance:** 5 Tier-1 Interviews Assured with dedicated mock interviews, resume engineering, and placement support (450+ learners placed across 350+ hiring partners).
+- **Fees & EMI:** Flexible EMI plans starting at ₹12,500/month.
+- **Training Format:** 80% hands-on live production labs (AWS, Azure, Docker, Kubernetes, Terraform, CI/CD, Linux, Python, AIOps) taught by working industry practitioners.
+- **Verified Student Reviews:** Backed by verified Google Business Profile reviews across our Mumbai and Thane campuses.
 
-DevOps Institute provides practical, lab-first technology training for students and working IT professionals in Mumbai. All sessions are conducted on live cloud infrastructure with weekday and weekend batch options.
+## Campuses & Websites
+- **Mumbai (Powai Campus):** [https://www.devopsinstitute.co.in/](https://www.devopsinstitute.co.in/) | Phone: +91 83695 18569
+- **Thane, Navi Mumbai (Vashi) & Ghatkopar Campuses:** [https://devopsinstitutemumbai.co.in/](https://devopsinstitutemumbai.co.in/) | Phone: +91 84510 86339
 
-- **Campus Address:** Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali, Powai, Mumbai, Maharashtra 400072
-- **Direct Phone:** 083695 18569
-- **WhatsApp:** +91 8369518569
-- **Google Reviews & Rating:** 4.7 / 5.0 Star Rating across 130 Verified Google Reviews (5+ Years of Training Excellence)
-- **Primary Website:** https://www.devopsinstitute.co.in
-
-## Core Courses & Certifications
-
-- [DevOps Engineering Course](https://www.devopsinstitute.co.in/courses/devops): Complete CI/CD pipeline automation, Git, Jenkins, Docker, Kubernetes, Terraform, and Linux administration.
-- [AWS Cloud Course](https://www.devopsinstitute.co.in/courses/aws): Amazon Web Services infrastructure, IAM, EC2, S3, VPC networking, RDS databases, and CloudWatch monitoring.
-- [Microsoft Azure Course](https://www.devopsinstitute.co.in/courses/azure): Azure Virtual Machines, Azure VNet, Blob Storage, Entra ID (Azure AD), Resource Manager, and ARM/Bicep templates.
-- [Google Cloud Platform (GCP) Course](https://www.devopsinstitute.co.in/courses/gcp): Google Compute Engine, Cloud Storage, VPC networks, IAM, BigQuery fundamentals, and Google Kubernetes Engine (GKE).
-- [Kubernetes & Docker Training](https://www.devopsinstitute.co.in/courses/kubernetes-docker): Containerization, Dockerfiles, multi-stage builds, Kubernetes Pods, Deployments, Services, Helm charts, and cluster operations.
-- [Linux & Terraform Course](https://www.devopsinstitute.co.in/courses/linux-terraform): Enterprise Linux administration, Bash shell scripting, and Infrastructure as Code (IaC) with Terraform state management.
-
-## Key Information
-- **Location Advantage:** Situated in Chandivali, Powai — accessible from Andheri East, Saki Naka Metro, Hiranandani, Ghatkopar, and Kanjurmarg.
-- **Training Format:** 100% Practical Classroom Training + Live Cloud Labs.
-- **Batch Schedule:** Weekend batches for working IT professionals & Weekday batches for graduates.
-- **Career Support:** Resume building, DevOps project portfolio, mock interviews, and dedicated placement assistance in Mumbai's tech ecosystem.
-
-## Campuses (DevOps Institute)
-- Thane (main): DevOps Institute, 2nd Floor, Awfis, Kalpataru Prime, Neheru Nagar, Wagle Industrial Estate, Thane West, Thane, Maharashtra 400604. Phone: 084510 86339. https://devopsinstitutemumbai.co.in/
-- Vashi, Navi Mumbai: Cyberone, opp. CIDCO Exhibition Centre, Sector 30, Vashi, Navi Mumbai, Maharashtra 400703. Phone: 084510 86339. https://devopsinstitutemumbai.co.in/devops-institute-vashi-navi-mumbai/
-- Ghatkopar, Mumbai: RCity Offices, Lal Bahadur Shastri Marg, adjoining RCity Mall, Ghatkopar West, Mumbai, Maharashtra 400086. Phone: 088282 24247. https://devopsinstitutemumbai.co.in/devops-institute-ghatkopar/
-- Powai, Mumbai: Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali, Powai, Mumbai, Maharashtra 400072. Phone: 083695 18569. https://www.devopsinstitute.co.in/
-- Sister brand: Data Engineering Institute (AI Engineer & Agentic AI Course), Kalpataru Prime, Thane 400604. Phone: 099870 58393. https://datainstitute.in/
-
-## Mentors
-Named mentors at the Powai campus. Each person is a mentor at DevOps Institute. The employer is their current job, written in words, and is not an endorsement. Profiles: https://www.devopsinstitute.co.in/trainers
-
-- Yogesh Devpura — DevOps Architect, 18+ years. Formerly VP, Lead DevOps & Architect at ICICI Securities. No current employer is stated. Kubernetes, ArgoCD, GitOps, Terraform, CI/CD, AWS. https://www.linkedin.com/in/yogesh-devpura-baa8366
-- Sirin Ali — Subject Matter Expert, CloudThat. Microsoft Certified Trainer. 13+ years. Kubernetes, OpenShift, Docker, Azure, Ansible, Terraform. https://www.linkedin.com/in/sirin-ali/
-- Ninad Samudre — DevOps Tech Lead, CloudThat. 10+ years. Docker, Kubernetes, Amazon EKS, cybersecurity. https://www.linkedin.com/in/ninad-samudre-19439b1a5/
-- Amit Mishra — Delivery Solution Architect, Databricks. 18+ years. Multi-cloud and hybrid architecture, data platforms and cloud migration. Not a DevOps job title. https://www.linkedin.com/in/amit-mishra-aa77477b/
-- Arshad Mitha — Project Manager, Mathcoms. Project and delivery leader with cloud and DevOps experience. 9+ years. https://www.linkedin.com/in/arshadmitha/
-- Priyanka Gawada — Specialist II, Technology Training, Mastek. 18+ years. Full-stack Java, AWS, DevOps. https://www.linkedin.com/in/priyanka-gawada-09106618/
-- Ankit Shukla — Lead Module Engineer DevOps SRE, Wipro. 9+ years. DevSecOps, SRE, AWS, Kubernetes, Terraform. https://www.linkedin.com/in/ankitshukla11/
-- Mehar Nafis — Solution Architect, AI/ML, Frontier Business Systems. The profile also lists DevOps and corporate training. No year count is shown. https://www.linkedin.com/in/meharnafis/
-- Armugharaj Nadar — Senior Cloud Platform Engineer, Zeidler Group. 12+ years. AWS, Terraform, cloud-native platforms, DevOps. https://www.linkedin.com/in/senior-devops-engineer/
-
-## Key facts
-- Affiliated with NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna
-- In Collaboration With IIT, Microsoft
-- 100% Placement Assurance, 350+ hiring partners, 450+ placed, 5–35 LPA salary range
-- Courses: DevOps course, DevOps course with placement, DevOps and cloud computing course, AWS, Azure, GCP, Kubernetes & Docker, SRE
-
-## Batch 1 suburb pages (Powai campus only)
-These classroom pages are for Lodha Supremus, Chandivali. Ghatkopar, Thane and Navi Mumbai stay on https://devopsinstitutemumbai.co.in/. Andheri East remains on the existing Andheri page. Hubs: https://www.devopsinstitute.co.in/devops-course-in-mumbai and https://www.devopsinstitute.co.in/cloud-computing-course-in-mumbai
-
-- https://www.devopsinstitute.co.in/devops-course-in-chembur
-- https://www.devopsinstitute.co.in/devops-course-in-vidyavihar
-- https://www.devopsinstitute.co.in/devops-course-in-vile-parle
-- https://www.devopsinstitute.co.in/devops-course-in-jogeshwari
-- https://www.devopsinstitute.co.in/devops-course-in-kandivali
-- https://www.devopsinstitute.co.in/devops-course-in-wadala
-- https://www.devopsinstitute.co.in/cloud-computing-course-in-chembur
-- https://www.devopsinstitute.co.in/cloud-computing-course-in-vidyavihar
-- https://www.devopsinstitute.co.in/cloud-computing-course-in-vile-parle
-- https://www.devopsinstitute.co.in/cloud-computing-course-in-jogeshwari
-- https://www.devopsinstitute.co.in/cloud-computing-course-in-kandivali
-- https://www.devopsinstitute.co.in/cloud-computing-course-in-wadala
-- https://www.devopsinstitute.co.in/cloud-computing-course-in-vikhroli
-- https://www.devopsinstitute.co.in/cloud-computing-course-in-kanjurmarg
-- https://www.devopsinstitute.co.in/cloud-computing-course-in-bhandup
-- https://www.devopsinstitute.co.in/cloud-computing-course-in-mulund
-- https://www.devopsinstitute.co.in/cloud-computing-course-in-kurla
-- https://www.devopsinstitute.co.in/cloud-computing-course-in-saki-naka
-- https://www.devopsinstitute.co.in/cloud-computing-course-in-goregaon
-- https://www.devopsinstitute.co.in/cloud-computing-course-in-chandivali
+## Key Pages on devopsinstitute.co.in
+- [Homepage - DevOps & Cloud Institute Mumbai](https://www.devopsinstitute.co.in/)
+- [AWS Cloud & DevOps Course](https://www.devopsinstitute.co.in/aws-devops-course)
+- [Microsoft Azure DevOps & AZ-900 Course](https://www.devopsinstitute.co.in/azure-devops-course)
+- [Kubernetes & Docker Containerization Course](https://www.devopsinstitute.co.in/kubernetes-docker-course)
+- [Book a Free Demo Class in Powai, Mumbai](https://www.devopsinstitute.co.in/free-demo-powai)
+- [Placements & Verified Google Reviews](https://www.devopsinstitute.co.in/placements)
+- [Contact & Campus Directions](https://www.devopsinstitute.co.in/contact)
