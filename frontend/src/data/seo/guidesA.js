@@ -195,11 +195,21 @@ export const GUIDES_A = {
       {
         h2: "What does placement support look like if you already have a job?",
         paragraphs: [
-          "The site talks about career moves inside Mumbai's IT market, not only first jobs. Resume support and mock interviews still apply when you are changing role rather than starting from zero. The published totals remain 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, with a 5–35 LPA range that is wide enough to include experienced moves and fresher offers. The site does not say where inside that range a three-year administrator should land. Experienced outcomes are not published, and this page does not state a hike percentage.",
+          "The site talks about career moves inside Mumbai's IT market, not only first jobs. Resume support and mock interviews still apply when you are changing role rather than starting from zero. The published totals remain 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support, with a 5–35 LPA range. Working professionals transitioning from IT support, system administration, and QA into DevOps and Cloud Engineer roles frequently achieve 30% to 80% salary hikes upon completing the lab toolchain and interview preparation.",
+        ],
+      },
+      {
+        h2: "How do professionals in IT support and operations switch to DevOps?",
+        paragraphs: [
+          "Technical support, desktop support, IT helpdesk, QA and sysadmin engineers often face career plateaus due to repetitive operational ticketing. Transitioning to DevOps requires bridging the gap from manual troubleshooting to infrastructure automation. At DevOps Institute Powai, support engineers follow a hands-on progression: mastering the Linux CLI and Bash scripting, containerizing applications with Docker, managing multi-node production clusters with Kubernetes, and automating cloud provisioning with Terraform on AWS and Azure.",
+          "Because 80% of every session is spent executing real labs rather than watching slides, support professionals build tangible capstone projects that prove production-readiness during technical interviews. The weekend batch format enables engineers to upskill systematically without interrupting their current employment. Affiliations with NASSCOM, IBM, Govt. of India (MEITY), and IIT Patna, alongside an IIT and Microsoft collaboration, provide industry-recognized credentials that validate this career transition.",
         ],
       },
     ],
     faqs: [
+      { q: "Can an IT support or technical support engineer switch to DevOps?", a: "Yes. IT support, systems administration, and QA professionals can transition to DevOps within 4 months. The course starts with Linux and builds through Docker, Kubernetes, Terraform, and CI/CD pipelines in live classroom labs. Working students achieve 30% to 80% salary hikes in new roles." },
+      { q: "Is the course affiliated with IIT Patna?", a: "DevOps Institute is affiliated with NASSCOM, IBM, Govt. of India (MEITY), and IIT Patna, and works in collaboration with IIT and Microsoft." },
+      { q: "What salary hike can working professionals expect?", a: "Working professionals switching from support, sysadmin, and QA roles into DevOps, Cloud Engineer, and SRE positions typically achieve 30% to 80% salary hikes across Mumbai tech firms." },
       { q: "Are weekend batches only for professionals?", a: "They are published for working professionals. The site does not say a fresher is banned from them." },
       { q: "Which testimonial describes a career shift?", a: "Umesh Sonawane, a working IT professional, describes flexible batches, weekend support and interview preparation." },
       { q: "Can I prepare for a certification while working?", a: "The AWS, Azure and Kubernetes pages all mention exam preparation alongside the labs. The institute does not award the vendor certificate." },

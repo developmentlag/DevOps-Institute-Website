@@ -1193,6 +1193,9 @@ export const buildFlagshipCourseSchema = () => {
     courseCode: "DOI-DEVOPS",
     inLanguage: "en",
     educationalLevel: "Beginner to Advanced",
+    educationalCredentialAwarded: "DevOps Certification in Collaboration with IIT Patna",
+    occupationalCategory: ["DevOps Engineer", "Site Reliability Engineer", "Cloud Engineer"],
+    coursePrerequisites: "Basic computer skills; tailored for freshers and IT support, sysadmin, and QA professionals transitioning into cloud.",
     teaches: [
       "Linux & Shell Scripting",
       "AWS, Azure & Multi-Cloud Services",

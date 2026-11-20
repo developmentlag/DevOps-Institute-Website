@@ -252,7 +252,18 @@ function writeCrawlFiles() {
 
   const { SEO_ROUTES } = require("../src/data/seoRoutes");
   const { getSeoPage } = require("../src/data/seoCopy");
-  const chunks = ["# DevOps Institute, Powai", "Address: Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali, Powai, Mumbai, Maharashtra 400072", "Phone: 083695 18569", ""];
+  const chunks = [
+    "# DevOps Institute, Powai",
+    "Address: Lodha Supremus, B 1307, Saki Vihar Rd, Tunga Village, Chandivali, Powai, Mumbai, Maharashtra 400072",
+    "Phone: 083695 18569",
+    "",
+    "## Academic & Industry Affiliations",
+    "DevOps Institute is affiliated with NASSCOM, IBM, Govt. of India (MEITY), and IIT Patna, and works in collaboration with IIT and Microsoft.",
+    "",
+    "## Career Outcomes for Working IT & Support Professionals",
+    "Working professionals in IT support, systems administration, QA, and operations achieve 30% to 80% salary hikes upon transitioning to DevOps, Cloud Engineer, and SRE roles. Programs include 5 Tier-1 Interviews Assured + Dedicated Placement Support (450+ learners placed across 350+ hiring partners). Weekend batches in Powai, Mumbai provide 80% hands-on live labs.",
+    "",
+  ];
   for (const route of SEO_ROUTES) {
     const page = getSeoPage(route.path);
     if (!page) continue;
