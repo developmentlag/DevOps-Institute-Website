@@ -1,21 +1,49 @@
 # DevOps Institute (IVYTECH INSTITUTE LLP)
+
 > Classroom-first AI, Cloud, DevOps & Data Engineering training institute across the Mumbai Metropolitan Region (Powai, Thane, Vashi, Ghatkopar).
 
 ## Core Value Proposition & Verifiable Outcomes
-- **Career Assurance:** 5 Tier-1 Interviews Assured + Dedicated Placement Support (450+ learners placed across 350+ hiring partners). Interview assurance applies upon completion of 80% attendance, capstone projects, and mock interview clearance. Past placement records reflect verified alumni outcomes.
-- **Fees & EMI:** Course Fees Starting at ₹12,500/month (Easy EMI Options Available). Flexible EMI plans starting at ₹12,500/month.
-- **Training Format:** 80% hands-on live production labs (AWS, Azure, Docker, Kubernetes, Terraform, CI/CD, Linux, Python, AIOps) taught by working industry practitioners.
+- **Career Assurance:** 5 Tier-1 Interviews Assured + Dedicated Placement Support (450+ learners placed across 350+ hiring partners). Interview assurance applies upon completion of 80% attendance, capstone projects, and mock interview clearance.
+- **Fees & EMI:** Course Fees Starting at ₹12,500/month (Easy EMI Options Available). Flexible EMI plans.
+- **Training Format:** 80% hands‑on live production labs (AWS, Azure, Docker, Kubernetes, Terraform, CI/CD, Linux, Python, AIOps) taught by working industry practitioners.
 - **Verified Student Reviews:** Backed by verified Google Business Profile reviews across our Mumbai and Thane campuses.
 
-## Campuses & Websites
-- **Mumbai (Powai Campus):** [https://www.devopsinstitute.co.in/](https://www.devopsinstitute.co.in/) | Phone: +91 83695 18569
-- **Thane, Navi Mumbai (Vashi) & Ghatkopar Campuses:** [https://devopsinstitutemumbai.co.in/](https://devopsinstitutemumbai.co.in/) | Phone: +91 84510 86339
+## Campuses & Contact
+- **Mumbai (Powai Campus):** https://www.devopsinstitute.co.in/ | Phone: +91 83695 18569
+- **Thane, Navi Mumbai (Vashi) & Ghatkopar Campuses:** https://devopsinstitutemumbai.co.in/ | Phone: +91 84510 86339
 
-## Key Pages on devopsinstitute.co.in
-- [Homepage - DevOps & Cloud Institute Mumbai](https://www.devopsinstitute.co.in/)
-- [AWS Cloud & DevOps Course](https://www.devopsinstitute.co.in/aws-devops-course)
-- [Microsoft Azure DevOps & AZ-900 Course](https://www.devopsinstitute.co.in/azure-devops-course)
-- [Kubernetes & Docker Containerization Course](https://www.devopsinstitute.co.in/kubernetes-docker-course)
-- [Book a Free Demo Class in Powai, Mumbai](https://www.devopsinstitute.co.in/free-demo-powai)
-- [Placements & Verified Google Reviews](https://www.devopsinstitute.co.in/placements)
-- [Contact & Campus Directions](https://www.devopsinstitute.co.in/contact)
+## Key Pages (high‑value SEO targets)
+- https://www.devopsinstitute.co.in/                              – Homepage
+- https://www.devopsinstitute.co.in/aws-devops-course                – AWS Cloud & DevOps Course
+- https://www.devopsinstitute.co.in/azure-devops-course               – Microsoft Azure DevOps & AZ-900 Course
+- https://www.devopsinstitute.co.in/kubernetes-docker-course          – Kubernetes & Docker Containerization Course
+- https://www.devopsinstitute.co.in/free-demo-powai                  – Book a Free Demo Class
+- https://www.devopsinstitute.co.in/placements                       – Placements & Verified Google Reviews
+- https://www.devopsinstitute.co.in/contact                          – Contact & Campus Directions
+
+## Support‑Engineer Focused Resources (targeting troubleshooting & comparison queries)
+### Error & Fix Index
+- https://www.devopsinstitute.co.in/fix/kubernetes/crashloopbackoff-exit-code-137/          – Kubernetes CrashLoopBackOff error guide
+- https://www.devopsinstitute.co.in/fix/terraform/state-lock-error/                       – Terraform state lock troubleshooting
+- https://www.devopsinstitute.co.in/fix/airflow/dag-not-running/                         – Airflow DAG not running fix
+- https://www.devopsinstitute.co.in/fix/aws/instance-termination-protection/           – AWS EC2 termination protection guide
+
+### Comparison Guides (high‑intent queries)
+- https://www.devopsinstitute.co.in/compare/argocd-vs-flux/                              – ArgoCD vs Flux for GitOps
+- https://www.devopsinstitute.co.in/compare/kubernetes-vs-docker/                        – Kubernetes vs Docker
+- https://www.devopsinstitute.co.in/compare/terraform-vs-pulumi/                         – Terraform vs Pulumi
+
+### Role‑Based Landing Pages (support & SRE)
+- https://www.devopsinstitute.co.in/roles/support-engineer/                               – Support Engineer career path & salary
+- https://www.devopsinstitute.co.in/roles/sre/                                           – Site Reliability Engineer guide & salary
+- https://www.devopsinstitute.co.in/roles/devops-engineer/                               – DevOps Engineer overview & certifications
+
+## Original Research & Data (AI‑citation assets)
+- https://www.devopsinstitute.co.in/research/state-of-sre-2026-india/                    – State of SRE & Hiring 2026 (salary bands, tool adoption)
+- https://www.devopsinstitute.co.in/research/devops-tools-usage-2026/                   – Survey of most‑used DevOps tools in Indian enterprises
+
+## Content Generation Guidelines (for llms.txt)
+- Keep the file under 500 KB, plain‑text, UTF‑8.
+- List only the most authoritative, canonical URLs (≈30‑50).
+- Group by purpose: Core guides, Error & Fix, Comparison, Role‑Landing, Research.
+- Update quarterly as new pages are published.

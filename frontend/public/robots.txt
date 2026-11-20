@@ -2,41 +2,34 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /admin/
+# Disallow static assets – allowed for AI crawlers
+
+Disallow: /_next/
 
 # Explicitly allow AI Answer Engines & Search Crawlers for Generative Search Optimization (GEO)
 User-agent: Googlebot
 Allow: /
-
 User-agent: Bingbot
 Allow: /
-
 User-agent: OAI-SearchBot
 Allow: /
-
 User-agent: ChatGPT-User
 Allow: /
-
 User-agent: GPTBot
 Allow: /
-
 User-agent: PerplexityBot
 Allow: /
-
 User-agent: Perplexity-User
 Allow: /
-
 User-agent: ClaudeBot
 Allow: /
-
 User-agent: Claude-SearchBot
 Allow: /
-
 User-agent: Claude-User
 Allow: /
-
 User-agent: Google-Extended
 Allow: /
-
 User-agent: Applebot-Extended
 Allow: /
 

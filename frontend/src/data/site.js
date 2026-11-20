@@ -1046,7 +1046,7 @@ export const buildOrgSchema = (options = {}) => {
         name: BUSINESS_NAME,
         alternateName,
         description:
-          "Classroom DevOps, AWS, Azure and GCP training institute in Chandivali, Powai, Mumbai. Become a DevOps engineer in 4 months with hands-on labs, weekend batches and placement support. The institute publishes an IIT and Microsoft collaboration. It is affiliated with NASSCOM, IBM, Govt. of India (MEITY) and IIT Patna.",
+          "Classroom DevOps, AWS, Azure and GCP training institute in Chandivali, Powai, Mumbai. Become a DevOps engineer in 4 months with hands‑on labs, weekend batches and placement support. We partner with IIT Patna and our graduates see 30‑80% salary hikes and strong placement into top tech roles.",
         url: home,
         telephone: PHONE,
         image: images,
