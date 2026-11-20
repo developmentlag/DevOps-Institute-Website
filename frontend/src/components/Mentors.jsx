@@ -87,23 +87,31 @@ export function MentorCards() {
 
 export function MentorTeaser() {
   return (
-    <aside className="mt-4 max-w-3xl rounded-lg border border-slate-200 bg-white px-4 py-4 text-sm text-slate-700">
-      <p className="font-semibold text-slate-900">Learn from industry mentors</p>
-      <ul className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <aside className="mt-8 w-full rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 shadow-sm">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-3 mb-4">
+        <div>
+          <p className="font-heading text-lg font-bold text-slate-900">Learn from industry mentors</p>
+          <p className="text-xs sm:text-sm text-slate-500">Working engineers from top tech companies leading practical classroom labs</p>
+        </div>
+        <Link to="/trainers" className="hidden sm:inline-flex text-sm font-semibold text-blue-700 hover:text-blue-800 whitespace-nowrap">
+          Meet all mentors &rarr;
+        </Link>
+      </div>
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
         {MENTORS.map((mentor) => (
-          <li key={mentor.slug} className="flex items-start gap-3">
-            <MentorAvatar mentor={mentor} size={64} />
-            <div>
-              <p className="font-semibold text-slate-900">{mentor.name}</p>
-              <p className="text-slate-600">{mentor.jobTitle}</p>
+          <li key={mentor.slug} className="flex items-start gap-3 rounded-xl border border-slate-100 bg-slate-50/70 p-3 hover:bg-slate-50 transition-colors">
+            <MentorAvatar mentor={mentor} size={48} />
+            <div className="min-w-0 flex-1">
+              <p className="font-semibold text-slate-900 text-sm truncate">{mentor.name}</p>
+              <p className="text-xs text-slate-600 truncate">{mentor.jobTitle}</p>
               <EmployerLine mentor={mentor} />
               <LinkedInLink mentor={mentor} />
             </div>
           </li>
         ))}
       </ul>
-      <p className="mt-3">
-        <Link to="/trainers" className="font-semibold text-blue-700 hover:text-blue-800">
+      <p className="mt-4 sm:hidden">
+        <Link to="/trainers" className="font-semibold text-blue-700 hover:text-blue-800 text-sm">
           Meet the mentors
         </Link>
       </p>

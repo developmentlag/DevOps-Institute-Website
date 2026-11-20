@@ -9,7 +9,7 @@ import DemoBookingForm from "@/components/DemoBookingForm";
 import { ownerKeyPage } from "@/data/ownerKeyPages";
 import { AnswerBlock, Breadcrumbs, DirectAnswer, UpdatedLine } from "@/components/PageFacts";
 import { MentorCards } from "@/components/Mentors";
-import { MapPin } from "lucide-react";
+import { MapPin, Phone, MessageCircle } from "lucide-react";
 import {
   ADDRESS,
   GHATKOPAR_URL,
@@ -168,7 +168,7 @@ export default function SeoArticle({ page }) {
     ? (page.route.path === "/free-demo-powai" ? "#demo-form" : "/free-demo-powai")
     : "#enquiry";
   return (
-    <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <article className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
       {page.classroomFirst ? (
         <p className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-blue-700 mb-4">
           <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
@@ -176,7 +176,7 @@ export default function SeoArticle({ page }) {
         </p>
       ) : null}
       <Breadcrumbs crumbs={page.crumbs} />
-      <h1 className="font-heading text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 leading-tight">
+      <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
         {page.route.h1}
       </h1>
       <OwnerHero page={owner} />
@@ -208,14 +208,14 @@ export default function SeoArticle({ page }) {
         </section>
       ) : null}
       {owner ? (
-        <p className="mt-10 text-slate-700 leading-relaxed">{page.answer}</p>
+        <p className="mt-10 text-slate-700 leading-relaxed text-base sm:text-lg">{page.answer}</p>
       ) : null}
 
       {page.sections.map((section) => (
-        <section key={section.h2} className="mt-10">
-          <h2 className="font-heading text-2xl font-bold text-slate-900">{section.h2}</h2>
+        <section key={section.h2} className="mt-12 max-w-4xl">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-slate-900">{section.h2}</h2>
           {section.paragraphs.map((paragraph) => (
-            <p key={paragraph.slice(0, 80)} className="mt-3 text-slate-700 leading-relaxed">{paragraph}</p>
+            <p key={paragraph.slice(0, 80)} className="mt-3.5 text-slate-700 leading-relaxed text-base sm:text-lg">{paragraph}</p>
           ))}
           <SectionTable table={section.table} />
         </section>
@@ -226,13 +226,13 @@ export default function SeoArticle({ page }) {
       {page.sitemap ? <SitemapBlock /> : null}
 
       {page.faqs && page.faqs.length > 0 ? (
-        <section className="mt-10">
-          <h2 className="font-heading text-2xl font-bold text-slate-900">Frequently asked questions</h2>
-          <dl className="mt-4 space-y-4">
+        <section className="mt-14 rounded-2xl border border-slate-200 bg-slate-50/60 p-6 sm:p-8">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-slate-900">Frequently asked questions</h2>
+          <dl className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-5">
             {page.faqs.map((faq) => (
-              <div key={faq.q}>
-                <dt className="font-semibold text-slate-900">{faq.q}</dt>
-                <dd className="mt-1 text-slate-700">{faq.a}</dd>
+              <div key={faq.q} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                <dt className="font-semibold text-slate-900 text-base">{faq.q}</dt>
+                <dd className="mt-2 text-slate-700 text-sm sm:text-base leading-relaxed">{faq.a}</dd>
               </div>
             ))}
           </dl>
@@ -240,12 +240,12 @@ export default function SeoArticle({ page }) {
       ) : null}
 
       {page.links && page.links.length > 0 ? (
-        <nav className="mt-10" aria-label="Related pages">
+        <nav className="mt-12" aria-label="Related pages">
           <h2 className="font-heading text-2xl font-bold text-slate-900">Related pages</h2>
-          <ul className="mt-3 space-y-1">
+          <ul className="mt-3.5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
             {page.links.map((link) => (
               <li key={`${link.href}-${link.label}`}>
-                <Link to={link.href} className="text-blue-700 font-medium">{link.label}</Link>
+                <Link to={link.href} className="inline-flex items-center text-blue-700 font-medium hover:underline text-sm sm:text-base">{link.label}</Link>
               </li>
             ))}
           </ul>
@@ -253,14 +253,34 @@ export default function SeoArticle({ page }) {
       ) : null}
 
       {page.route.path === "/free-demo-powai" ? null : (
-        <section id="enquiry" className="no-print mt-12 rounded-xl border border-slate-200 p-5">
-          <h2 className="font-heading text-2xl font-bold text-slate-900">Ask about the next batch</h2>
-          <p className="mt-2 text-slate-700">
-            {ADDRESS}. Phone <a className="font-semibold text-blue-700" href={PHONE_TEL}>{PHONE}</a>.{" "}
-            <a className="font-semibold text-blue-700" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">WhatsApp the campus</a>.
-          </p>
-          <div className="mt-4">
-            <EnquiryForm source={page.route.path} testIdPrefix="seo-enquiry" />
+        <section id="enquiry" className="no-print mt-14 rounded-2xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div className="lg:col-span-5">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 border border-blue-200 px-3 py-1 text-xs font-bold text-blue-700 uppercase tracking-widest">
+                Classroom Batches
+              </span>
+              <h2 className="mt-3 font-heading text-2xl sm:text-3xl font-bold text-slate-900">Ask about the next batch</h2>
+              <p className="mt-3 text-slate-600 leading-relaxed text-sm sm:text-base">
+                Join our weekend or weekday practical lab batches in Powai. Inspect live labs, syllabus, fee breakdown and placement records.
+              </p>
+              <div className="mt-6 space-y-3 text-sm text-slate-700">
+                <p className="flex items-start gap-2.5">
+                  <MapPin className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" />
+                  <span>{ADDRESS}</span>
+                </p>
+                <p className="flex items-center gap-2.5">
+                  <Phone className="h-4 w-4 text-blue-600 shrink-0" />
+                  <a className="font-semibold text-blue-700 hover:underline" href={PHONE_TEL}>{PHONE}</a>
+                </p>
+                <p className="flex items-center gap-2.5">
+                  <MessageCircle className="h-4 w-4 text-[#25D366] shrink-0" />
+                  <a className="font-semibold text-emerald-700 hover:underline" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">WhatsApp the campus</a>
+                </p>
+              </div>
+            </div>
+            <div className="lg:col-span-7 bg-slate-50 rounded-xl border border-slate-200 p-5 sm:p-6">
+              <EnquiryForm source={page.route.path} testIdPrefix="seo-enquiry" />
+            </div>
           </div>
         </section>
       )}

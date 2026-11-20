@@ -5,14 +5,14 @@ import { HERO_STATS } from "@/data/site";
 
 const STAT_ICONS = [Star, CalendarClock, Award, Users];
 
-export function ClassroomPhoto() {
+export function ClassroomPhoto({ className = "" }) {
   return (
-    <figure className="relative mt-6 max-w-3xl overflow-hidden rounded-2xl border border-slate-200 shadow-xl glow-blue bg-slate-100" data-testid="classroom-spotlight">
+    <figure className={`relative w-full overflow-hidden rounded-2xl border border-slate-200 shadow-xl glow-blue bg-slate-100 ${className}`} data-testid="classroom-spotlight">
       <GbpPicture
         photo={GBP_HERO}
         priority
-        sizes="(min-width: 1024px) 720px, 100vw"
-        className="h-full w-full object-cover aspect-[16/10]"
+        sizes="(min-width: 1024px) 560px, 100vw"
+        className="h-full w-full object-cover aspect-[16/10] sm:aspect-[4/3] lg:aspect-[16/11]"
       />
       <span className="absolute top-4 left-4 inline-flex items-center gap-1.5 rounded-full bg-white/95 px-3 py-1.5 text-xs font-bold text-blue-700 shadow-sm">
         <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
@@ -26,9 +26,9 @@ export function ClassroomPhoto() {
   );
 }
 
-export function HighlightCards() {
+export function HighlightCards({ className = "" }) {
   return (
-    <div className="mt-6 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4" data-testid="hero-stats-strip">
+    <div className={`grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3.5 ${className}`} data-testid="hero-stats-strip">
       {HERO_STATS.map((stat, index) => {
         const Icon = STAT_ICONS[index % STAT_ICONS.length];
         return (

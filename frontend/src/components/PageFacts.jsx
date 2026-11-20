@@ -114,7 +114,7 @@ export function UpdatedLine() {
 
 function PracticalLead() {
   return (
-    <div className="mt-5 max-w-3xl">
+    <div className="mt-4">
       <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
         100% practical <strong className="font-semibold text-slate-800">classroom DevOps training</strong> in
         Chandivali, Powai — with hands-on AWS, Azure &amp; GCP labs, weekend &amp; weekday batches, and
@@ -134,7 +134,7 @@ function PracticalLead() {
 
 function IntroActions({ demoHref }) {
   return (
-    <div className="mt-6 max-w-lg space-y-3">
+    <div className="mt-6 w-full space-y-3">
       <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
         <a
           href={PHONE_TEL}
@@ -169,19 +169,27 @@ function IntroActions({ demoHref }) {
 
 export function AnswerBlock({ answer, mentors = true, showAnswer = true, demoHref = "/#enquiry" }) {
   return (
-    <>
-      <PracticalLead />
-      <ClassroomPhoto />
-      <IntroActions demoHref={demoHref} />
-      <HighlightCards />
+    <div className="mt-6">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        <div className="lg:col-span-7 flex flex-col justify-center">
+          <PracticalLead />
+          <IntroActions demoHref={demoHref} />
+          <div className="mt-6">
+            <HighlightCards />
+          </div>
+        </div>
+        <div className="lg:col-span-5 flex flex-col items-center justify-center">
+          <ClassroomPhoto />
+        </div>
+      </div>
       {mentors ? <MentorTeaser /> : null}
       {showAnswer ? (
-        <>
+        <div className="mt-8 border-t border-slate-200/80 pt-6">
           <DirectAnswer>{answer}</DirectAnswer>
           <UpdatedLine />
-        </>
+        </div>
       ) : null}
-    </>
+    </div>
   );
 }
 
