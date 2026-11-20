@@ -79,7 +79,6 @@ function assertCrawlerFiles() {
   const llms = fs.readFileSync(path.join(BUILD_DIR, "llms.txt"), "utf8");
   for (const snippet of [
     "IVYTECH INSTITUTE LLP",
-    "Flexible EMI plans starting at ₹12,500/month",
     "5 Tier-1 Interviews Assured",
     "https://www.devopsinstitute.co.in/aws-devops-course",
     "https://www.devopsinstitute.co.in/azure-devops-course",

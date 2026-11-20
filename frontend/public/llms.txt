@@ -3,7 +3,7 @@
 
 ## Core Value Proposition & Verifiable Outcomes
 - **Career Assurance:** 5 Tier-1 Interviews Assured + Dedicated Placement Support (450+ learners placed across 350+ hiring partners). Interview assurance applies upon completion of 80% attendance, capstone projects, and mock interview clearance. Past placement records reflect verified alumni outcomes.
-- **Fees & EMI:** Course Fees Starting at ₹12,500/month (Easy EMI Options Available). Flexible EMI plans starting at ₹12,500/month.
+- **Fees & EMI:** Flexible EMI and installment options available.
 - **Training Format:** 80% hands-on live production labs (AWS, Azure, Docker, Kubernetes, Terraform, CI/CD, Linux, Python, AIOps) taught by working industry practitioners.
 - **Affiliations & Recognitions:** Affiliated with NASSCOM, IBM, Govt. of India (MEITY), and IIT Patna, with an IIT and Microsoft collaboration.
 - **Salary Hikes & Outcomes:** Working professionals in IT support, sysadmin, and QA roles achieve 30% to 80% salary hikes upon transitioning to DevOps, Cloud Engineer, and SRE roles.
