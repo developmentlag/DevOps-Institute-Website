@@ -1,6 +1,6 @@
-export default function GbpPicture({ photo, priority = false, sizes, className }) {
+export default function GbpPicture({ photo, priority = false, sizes, className = "" }) {
   return (
-    <picture>
+    <picture className={`block h-full w-full ${className}`}>
       <source type="image/avif" srcSet={photo.avifSrcSet} sizes={sizes} />
       <source type="image/webp" srcSet={photo.webpSrcSet} sizes={sizes} />
       <img
@@ -13,7 +13,7 @@ export default function GbpPicture({ photo, priority = false, sizes, className }
         loading={priority ? "eager" : "lazy"}
         fetchPriority={priority ? "high" : undefined}
         decoding="async"
-        className={className}
+        className="h-full w-full object-cover"
       />
     </picture>
   );

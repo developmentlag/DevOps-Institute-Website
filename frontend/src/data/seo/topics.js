@@ -105,6 +105,14 @@ export const TOPIC_PAGES = {
           "Students, fresh graduates, system administrators, software developers and working professionals all fit the course page. The campus stays in Powai, but the audience stretches across Mumbai: Chandivali, Saki Vihar Road, Andheri East, Hiranandani and other nearby localities. The public placement line remains 450+ placed, 5 Tier-1 Interviews Assured + Dedicated Placement Support.",
         ],
       },
+      {
+        h2: "Hands-on AWS architecture labs and classroom projects",
+        paragraphs: [
+          "Every module at the Powai campus centers on live terminal configuration rather than theoretical slides. Learners practice multi-tier architecture setup by provisioning virtual private clouds, configuring public and private subnets, managing route tables, and attaching Internet Gateways with NAT Gateways for secure private database subnets.",
+          "During the coursework, students implement Auto Scaling Groups paired with Application Load Balancers to handle dynamic web traffic, configure AWS Certificate Manager for SSL/TLS encryption, and attach Elastic Block Store volumes with automated snapshots. Storage modules dive deep into S3 lifecycle policies, cross-region replication, and bucket access policies. For application monitoring, trainees configure Amazon CloudWatch metrics, alarms, and SNS email alerts alongside AWS CloudTrail audit logs.",
+          "By the conclusion of the training, each participant builds and deploys an end-to-end production architecture project incorporating high availability, automated failover, managed relational databases using Amazon RDS Multi-AZ, and security hardening following the AWS Well-Architected Framework guidelines.",
+        ],
+      },
     ],
     faqs: [
       { q: "Is this AWS course in Mumbai or only Powai?", a: "It is a Mumbai course taught at the Powai campus in Chandivali, so it is relevant to Powai, Chandivali and nearby suburbs." },

@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle2, MessageCircle, Phone } from "lucide-react";
 import { ClassroomPhoto, HighlightCards } from "@/components/ClassroomSpotlight";
 import { MentorTeaser } from "@/components/Mentors";
+import VideoReels from "@/components/VideoReels";
+import SuccessStories from "@/components/SuccessStories";
+import PartnershipCertification from "@/components/PartnershipCertification";
 import {
   ADDRESS,
   AFFILIATION_LINE,
@@ -167,21 +170,38 @@ function IntroActions({ demoHref }) {
   );
 }
 
-export function AnswerBlock({ answer, mentors = true, showAnswer = true, demoHref = "/#enquiry" }) {
+export function AnswerBlock({
+  children,
+  answer,
+  mentors = true,
+  showAnswer = true,
+  demoHref = "/#enquiry",
+  showSocialProof = true,
+}) {
   return (
-    <div className="mt-6">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
-        <div className="lg:col-span-7 flex flex-col justify-center">
-          <PracticalLead />
-          <IntroActions demoHref={demoHref} />
-          <div className="mt-6">
-            <HighlightCards />
+    <div className="mt-2">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+        <div className="lg:col-span-7 flex flex-col justify-between">
+          <div>
+            {children}
+            <PracticalLead />
           </div>
+          <IntroActions demoHref={demoHref} />
         </div>
-        <div className="lg:col-span-5 flex flex-col items-center justify-center">
-          <ClassroomPhoto />
+        <div className="lg:col-span-5 flex flex-col justify-stretch">
+          <ClassroomPhoto className="h-full w-full" />
         </div>
       </div>
+      <div className="mt-8 sm:mt-10">
+        <HighlightCards />
+      </div>
+      {showSocialProof ? (
+        <div className="mt-4 sm:mt-6">
+          <VideoReels />
+          <SuccessStories />
+          <PartnershipCertification />
+        </div>
+      ) : null}
       {mentors ? <MentorTeaser /> : null}
       {showAnswer ? (
         <div className="mt-8 border-t border-slate-200/80 pt-6">

@@ -36,7 +36,7 @@ export function AppShell() {
   return (
     <>
       <ScrollToTop />
-      <div className="min-h-screen flex flex-col bg-white">
+      <div className="min-h-screen flex flex-col bg-white overflow-x-clip">
         <Header />
         <main className="flex-1">
           <Routes>

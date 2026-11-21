@@ -59,6 +59,9 @@
     * {
         @apply border-border;
     }
+    html, body {
+        overflow-x: clip;
+    }
     body {
         @apply bg-background text-foreground;
         font-family: "DM Sans", system-ui, sans-serif;
@@ -82,6 +85,36 @@
     }
     .glow-blue {
         box-shadow: 0 20px 50px -20px rgba(30, 64, 175, 0.35);
+    }
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    @keyframes rollingMarquee {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            transform: translate3d(-50%, 0, 0);
+        }
+    }
+
+    .animate-rolling {
+        display: flex;
+        width: max-content;
+        animation: rollingMarquee 50s linear infinite;
+        will-change: transform;
+    }
+
+    .animate-rolling:hover,
+    .animate-rolling:focus-within {
+        animation-play-state: paused;
     }
 }
 

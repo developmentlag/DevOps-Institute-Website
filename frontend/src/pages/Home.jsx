@@ -10,7 +10,6 @@ import { staticPage } from "@/data/pageMeta";
 import EnquiryForm from "@/components/EnquiryForm";
 import CampusMap from "@/components/CampusMap";
 import CampusGallery from "@/components/CampusGallery";
-import VideoReels from "@/components/VideoReels";
 import FeeHook from "@/components/FeeHook";
 import VerifiedOutcomes from "@/components/VerifiedOutcomes";
 import { MentorPreview } from "@/components/Mentors";
@@ -60,19 +59,18 @@ export default function Home() {
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-gradient-to-b from-blue-50 via-white to-white hero-grid" data-testid="hero-section">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 relative">
-          <div className="max-w-3xl">
-              <p className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-blue-700">
-                <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
-                Classroom Training in Powai, Mumbai
-              </p>
-              <Breadcrumbs crumbs={[{ name: "Home", href: "/" }]} />
-              <h1 className="mt-5 font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.12]">
-                Become a <span className="text-blue-700">DevOps Engineer</span> in Just 4 Months
-              </h1>
-              <FeeHook demoHref="#enquiry" testId="home-fee-hook" className="mt-6 max-w-3xl" />
-          </div>
-              <AnswerBlock answer={HOME_META.answer} demoHref="#enquiry" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 relative">
+          <AnswerBlock answer={HOME_META.answer} demoHref="#enquiry">
+            <p className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-blue-700 w-fit">
+              <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
+              Classroom Training in Powai, Mumbai
+            </p>
+            <Breadcrumbs crumbs={[{ name: "Home", href: "/" }]} />
+            <h1 className="mt-4 font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.12]">
+              Become a <span className="text-blue-700">DevOps Engineer</span> in Just 4 Months
+            </h1>
+            <FeeHook demoHref="#enquiry" testId="home-fee-hook" className="mt-5" />
+          </AnswerBlock>
         </div>
       </section>
 
@@ -119,7 +117,6 @@ export default function Home() {
 
       <StudentLifeGallery />
       <CampusGallery />
-      <VideoReels />
       <VerifiedOutcomes />
       <MentorPreview />
 
