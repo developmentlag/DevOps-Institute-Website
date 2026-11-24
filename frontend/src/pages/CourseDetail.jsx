@@ -12,6 +12,13 @@ import { COURSE_ANSWERS } from "@/data/pageMeta";
 import { AREA_ROUTES, CLOUD_AREA_ROUTES } from "@/data/seoRoutes";
 
 const ICONS = { cloud: Cloud, cloudy: Cloudy, cloudCog: CloudCog, gitBranch: GitBranch, container: Container, terminal: Terminal };
+const COURSE_LOGOS = {
+  aws: "/images/course-logos/aws.svg",
+  azure: "/images/course-logos/azure.svg",
+  gcp: "/images/course-logos/gcp.svg",
+  "kubernetes-docker": "/images/course-logos/kubernetes.svg",
+  "linux-terraform": "/images/course-logos/terraform.svg",
+};
 
 const SEQUENCE_PAGES = {
   aws: { href: "/aws-devops-course", label: "AWS Cloud and DevOps course" },
@@ -85,8 +92,16 @@ export default function CourseDetail() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             <div className="lg:col-span-7 min-w-0">
               <div className="flex items-start gap-4 sm:gap-5">
-                <span className="hidden sm:flex h-14 w-14 items-center justify-center rounded-xl bg-blue-600 border border-blue-500 shrink-0">
-                  <Icon className="h-7 w-7 text-white" aria-hidden="true" />
+                <span className="hidden sm:flex h-14 w-14 items-center justify-center rounded-xl bg-white border border-slate-200 shadow-sm shrink-0 p-2.5">
+                  {COURSE_LOGOS[course.slug] ? (
+                    <img
+                      src={COURSE_LOGOS[course.slug]}
+                      alt={`${course.shortName} logo`}
+                      className="h-full w-full object-contain"
+                    />
+                  ) : (
+                    <Icon className="h-7 w-7 text-blue-600" aria-hidden="true" />
+                  )}
                 </span>
                 <div className="min-w-0">
                   <p className="text-xs font-semibold uppercase tracking-[0.15em] text-blue-600">{course.tagline}</p>

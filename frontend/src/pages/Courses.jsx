@@ -9,6 +9,13 @@ import FeeHook from "@/components/FeeHook";
 import { staticPage } from "@/data/pageMeta";
 
 const ICONS = { cloud: Cloud, cloudy: Cloudy, cloudCog: CloudCog, gitBranch: GitBranch, container: Container, terminal: Terminal };
+const COURSE_LOGOS = {
+  aws: "/images/course-logos/aws.svg",
+  azure: "/images/course-logos/azure.svg",
+  gcp: "/images/course-logos/gcp.svg",
+  "kubernetes-docker": "/images/course-logos/kubernetes.svg",
+  "linux-terraform": "/images/course-logos/terraform.svg",
+};
 
 export default function Courses() {
   const meta = staticPage("/courses");
@@ -64,8 +71,16 @@ export default function Courses() {
                   className="group bg-white rounded-xl border border-slate-200 hover:border-blue-300 shadow-sm hover:shadow-xl transition-all duration-300 p-6 sm:p-8 flex flex-col"
                 >
                   <div className="flex items-center gap-4">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50 border border-blue-100 shrink-0">
-                      <Icon className="h-6 w-6 text-blue-600" aria-hidden="true" />
+                    <span className="flex h-12 w-12 items-center justify-center rounded-lg bg-white border border-slate-200 shadow-sm shrink-0 p-2">
+                      {COURSE_LOGOS[course.slug] ? (
+                        <img
+                          src={COURSE_LOGOS[course.slug]}
+                          alt={`${course.shortName} logo`}
+                          className="h-full w-full object-contain"
+                        />
+                      ) : (
+                        <Icon className="h-6 w-6 text-blue-600" aria-hidden="true" />
+                      )}
                     </span>
                     <div>
                       <h2 className="font-heading text-xl sm:text-2xl font-bold text-slate-900">{course.name}</h2>
