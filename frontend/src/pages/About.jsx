@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { GraduationCap, FlaskConical, Users, Briefcase, ArrowRight } from "lucide-react";
 import Seo from "@/components/Seo";
 import CampusMap from "@/components/CampusMap";
+import PageEndContent from "@/components/PageEndContent";
 import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
 import { CallNowButton, DarkCtaBand } from "@/components/CallButtons";
 import { AFFILIATION_LINE, BUSINESS_NAME, ADDRESS, PHONE, buildBreadcrumbSchema, buildOrgSchema } from "@/data/site";
@@ -159,6 +160,7 @@ export default function About() {
         title="Start Your Cloud & DevOps Journey in Mumbai"
         subtitle="Call our Powai campus for batch timings, fees and a free counselling session on the right course for your goals."
       />
+      <PageEndContent />
     </div>
   );
 }

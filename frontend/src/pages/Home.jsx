@@ -12,11 +12,12 @@ import CampusMap from "@/components/CampusMap";
 import CampusGallery from "@/components/CampusGallery";
 import FeeHook from "@/components/FeeHook";
 import VerifiedOutcomes from "@/components/VerifiedOutcomes";
+import PageEndContent from "@/components/PageEndContent";
 import { MentorPreview } from "@/components/Mentors";
 import FaqAccordion from "@/components/FaqAccordion";
 import {
   BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, WHATSAPP_URL,
-  COURSE_CARDS, WHY_CHOOSE, HOME_FAQS, GHATKOPAR_URL, buildFlagshipCourseSchema, buildOrgSchema, buildFaqSchema, buildBreadcrumbSchema,
+  COURSE_CARDS, CAREER_GUIDE_CARDS, WHY_CHOOSE, HOME_FAQS, GHATKOPAR_URL, buildFlagshipCourseSchema, buildOrgSchema, buildFaqSchema, buildBreadcrumbSchema,
 } from "@/data/site";
 
 const CARD_ICONS = [Cloud, Cloudy, CloudCog, GitBranch, Container, Container, Terminal, Terminal, GitBranch];
@@ -111,6 +112,26 @@ export default function Home() {
                 </Link>
               );
             })}
+          </div>
+          <div className="mt-12">
+            <h3 className="font-heading text-xl sm:text-2xl font-bold text-slate-900">Career &amp; Skills Guides</h3>
+            <p className="mt-2 text-sm text-slate-600">Explore role-focused guides alongside the course catalog.</p>
+            <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {CAREER_GUIDE_CARDS.map((guide) => (
+                <Link
+                  key={guide.to}
+                  to={guide.to}
+                  data-testid={`career-guide-card-${guide.to.slice(1)}`}
+                  className="rounded-xl border border-slate-200 bg-slate-50 p-5 hover:border-blue-300 hover:bg-white transition-colors"
+                >
+                  <h4 className="font-heading font-bold text-slate-900">{guide.title}</h4>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600">{guide.desc}</p>
+                  <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-blue-700">
+                    Read guide <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  </span>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -246,6 +267,7 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
+      <PageEndContent />
       <section className="py-12 sm:py-16 lg:py-20" data-testid="faq-preview-section">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">

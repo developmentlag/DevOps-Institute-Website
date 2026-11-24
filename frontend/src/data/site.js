@@ -972,6 +972,18 @@ export const COURSE_CARDS = [
   { title: "CI/CD", desc: "Automated build, test and deployment pipelines with Jenkins and GitOps.", to: "/courses/devops", testId: "course-card-cicd" },
 ];
 
+export const CAREER_GUIDE_CARDS = [
+  { title: "OpenShift Administrator", desc: "OpenShift administration skills and related Kubernetes foundations.", to: "/openshift-administrator-course-in-mumbai" },
+  { title: "DevSecOps", desc: "Pipeline-security basics in the published DevOps curriculum.", to: "/devsecops-course-in-mumbai" },
+  { title: "Career Switch to DevOps", desc: "A practical learning path for working IT professionals.", to: "/career-switch-to-devops" },
+  { title: "DevOps Projects for Freshers", desc: "Project ideas using tools from the published curriculum.", to: "/devops-projects-for-freshers" },
+  { title: "DevOps Course Eligibility", desc: "Entry requirements and who can start learning DevOps.", to: "/devops-course-eligibility" },
+  { title: "CI/CD and GitOps", desc: "How Jenkins pipelines and ArgoCD GitOps fit together.", to: "/cicd-gitops-training-mumbai" },
+  { title: "Cloud Engineer Career Path", desc: "Explore AWS, Azure, GCP and DevOps learning options.", to: "/cloud-engineer-course-in-mumbai" },
+  { title: "DevOps Interview Preparation", desc: "Prepare to explain projects, pipelines and placement support.", to: "/devops-interview-preparation" },
+  { title: "Platform Engineering Career Guide", desc: "Explore Kubernetes, Terraform, GitOps and observability skills.", to: "/platform-engineering-career-guide" },
+];
+
 export const WHY_CHOOSE = [
   { title: "Practical, Lab-First Training", desc: "Every concept is followed by a guided lab on real cloud services, so you build skills by doing, not just listening." },
   { title: "Multi-Cloud Expertise", desc: "Train across AWS, Azure and GCP under one roof and understand how the platforms compare in real projects." },
@@ -1006,6 +1018,42 @@ export const HOME_FAQS = [
 
 export const ALL_FAQS = [
   ...HOME_FAQS,
+  {
+    q: "Does DevOps Institute offer a dedicated OpenShift administrator course?",
+    a: "The public course catalog lists Kubernetes and Docker training, but not a dedicated OpenShift course. Call the campus to confirm whether the current batch includes OpenShift-specific material.",
+  },
+  {
+    q: "What DevSecOps training is available in Mumbai?",
+    a: "The published DevOps curriculum includes basic pipeline-security topics. The catalog does not list a separate DevSecOps course or a specific security-scanner syllabus.",
+  },
+  {
+    q: "What is the eligibility for the DevOps course?",
+    a: "Basic computer skills are the published starting requirement. The site does not state a mandatory degree or prior DevOps experience; Linux and Git are taught first.",
+  },
+  {
+    q: "Can working IT professionals switch to DevOps?",
+    a: "IT support, QA, networking and system-administration professionals are among the audiences named for DevOps learning. Weekday and weekend batches are published; confirm current timings with the campus.",
+  },
+  {
+    q: "Are CI/CD and GitOps separate courses?",
+    a: "Jenkins CI/CD and ArgoCD GitOps are topics in the broader DevOps curriculum. The public catalog does not list separate CI/CD-only or GitOps-only courses.",
+  },
+  {
+    q: "Is there a course specifically named Cloud Engineer?",
+    a: "The catalog lists cloud computing and AWS, Azure and GCP courses, rather than a course titled Cloud Engineer. The cloud and DevOps pages describe the available learning paths.",
+  },
+  {
+    q: "Does the institute provide DevOps interview preparation?",
+    a: "Resume support, mock interviews and career guidance are listed as placement-support activities. A fixed interview question bank or number of mock rounds is not published.",
+  },
+  {
+    q: "Does DevOps Institute offer a platform-engineering course?",
+    a: "The catalog lists DevOps, cloud, Kubernetes and Terraform courses, but not a separate platform-engineering course. Their curricula include related skills such as Kubernetes, Terraform, GitOps and monitoring.",
+  },
+  {
+    q: "What DevOps projects can freshers practise?",
+    a: "Freshers can practise with tools in the published curriculum, such as Git, Jenkins, Docker, Kubernetes and Terraform. Project ideas are learning suggestions, not a fixed published assignment list.",
+  },
   {
     q: "Do you offer AWS, Azure, GCP, and DevOps training?",
     a: "Yes. DevOps Institute is a multi-cloud training institute in Powai, Mumbai, offering practical courses across AWS, Microsoft Azure, Google Cloud Platform and a complete DevOps toolchain including Kubernetes, Docker, Terraform and CI/CD.",

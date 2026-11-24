@@ -1,5 +1,5 @@
 import Seo from "@/components/Seo";
-import FaqAccordion from "@/components/FaqAccordion";
+import PageEndContent from "@/components/PageEndContent";
 import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
 import { CallNowButton, DarkCtaBand } from "@/components/CallButtons";
 import { BUSINESS_NAME, PHONE, ALL_FAQS, buildFaqSchema, buildBreadcrumbSchema } from "@/data/site";
@@ -39,8 +39,6 @@ export default function Faqs() {
 
       <section className="py-16 sm:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FaqAccordion items={ALL_FAQS} idPrefix="faqs" />
-
           <div className="mt-12 rounded-2xl bg-blue-50 border border-blue-100 p-8 text-center" data-testid="faqs-contact-card">
             <h2 className="font-heading text-xl sm:text-2xl font-bold text-slate-900">Still Have a Question?</h2>
             <p className="mt-2 text-sm text-slate-600 max-w-xl mx-auto">
@@ -58,6 +56,7 @@ export default function Faqs() {
         title="Ready to Build Practical Cloud & DevOps Skills?"
         subtitle="Join learners from Chandivali, Powai, Andheri East and across Mumbai at our hands-on training campus."
       />
+      <PageEndContent items={ALL_FAQS} idPrefix="faqs" />
     </div>
   );
 }

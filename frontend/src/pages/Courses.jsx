@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import { Cloud, Cloudy, CloudCog, GitBranch, Container, Terminal, ArrowRight, Clock, MapPin } from "lucide-react";
 import Seo from "@/components/Seo";
+import PageEndContent from "@/components/PageEndContent";
 import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
 import { DarkCtaBand } from "@/components/CallButtons";
-import { BUSINESS_NAME, COURSES, buildCourseCatalogSchema, buildBreadcrumbSchema } from "@/data/site";
+import { BUSINESS_NAME, COURSES, CAREER_GUIDE_CARDS, buildCourseCatalogSchema, buildBreadcrumbSchema } from "@/data/site";
 import FeeHook from "@/components/FeeHook";
 import { staticPage } from "@/data/pageMeta";
 
@@ -98,6 +99,30 @@ export default function Courses() {
             })}
           </div>
 
+          <section className="mt-16" aria-labelledby="career-guides-heading">
+            <h2 id="career-guides-heading" className="font-heading text-2xl sm:text-3xl font-bold text-slate-900">
+              Career &amp; Skills Guides
+            </h2>
+            <p className="mt-2 max-w-3xl text-sm sm:text-base text-slate-600">
+              These guides cover career paths and specialist topics; they are separate from the course catalog above.
+            </p>
+            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {CAREER_GUIDE_CARDS.map((guide) => (
+                <Link
+                  key={guide.to}
+                  to={guide.to}
+                  className="rounded-xl border border-slate-200 bg-slate-50 p-5 hover:border-blue-300 hover:bg-white transition-colors"
+                >
+                  <h3 className="font-heading font-bold text-slate-900">{guide.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600">{guide.desc}</p>
+                  <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-blue-700">
+                    Read guide <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </section>
+
           <div className="mt-12 rounded-2xl bg-slate-50 border border-slate-200 p-8">
             <div className="flex items-start gap-4">
               <Clock className="h-6 w-6 text-blue-600 shrink-0 mt-1" aria-hidden="true" />
@@ -119,6 +144,7 @@ export default function Courses() {
         title="Not Sure Which Course Fits Your Career Goals?"
         subtitle="Call our counsellors at the Powai campus — we will map your background to the right AWS, Azure, GCP or DevOps learning path."
       />
+      <PageEndContent />
     </div>
   );
 }

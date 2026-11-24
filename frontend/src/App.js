@@ -7,8 +7,6 @@ import SiteAnalytics from "@/components/SiteAnalytics";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { StickyFeeBar } from "@/components/FeeHook";
-import PageEndMap from "@/components/PageEndMap";
-import { KeyFactsSection } from "@/components/PageFacts";
 import FloatingActions from "@/components/FloatingActions";
 import Home from "@/pages/Home";
 import { lazyPage } from "@/lib/lazyPage";
@@ -54,8 +52,6 @@ export function AppShell() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
-        <KeyFactsSection />
-        <PageEndMap />
         <Footer />
         <div className="h-36" aria-hidden="true" />
       </div>

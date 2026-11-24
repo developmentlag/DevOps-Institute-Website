@@ -1,4 +1,5 @@
 import Seo from "@/components/Seo";
+import PageEndContent from "@/components/PageEndContent";
 import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
 import { staticPage } from "@/data/pageMeta";
 import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL } from "@/data/site";
@@ -83,6 +84,7 @@ export default function PrivacyPolicy() {
           </div>
         </div>
       </section>
+      <PageEndContent />
     </div>
   );
 }

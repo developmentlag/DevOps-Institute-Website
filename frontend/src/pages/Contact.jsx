@@ -1,5 +1,6 @@
 import { Phone, MapPin, Navigation, Clock, Train, Bus } from "lucide-react";
 import Seo from "@/components/Seo";
+import PageEndContent from "@/components/PageEndContent";
 import EnquiryForm from "@/components/EnquiryForm";
 import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
 import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, MAP_EMBED_URL, MAP_DIRECTIONS_URL, buildBreadcrumbSchema, buildOrgSchema } from "@/data/site";
@@ -120,6 +121,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      <PageEndContent />
     </div>
   );
 }

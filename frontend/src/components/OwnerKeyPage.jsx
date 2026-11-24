@@ -124,7 +124,7 @@ export default function OwnerKeyBody({ page }) {
   if (!page) return null;
   return (
     <div data-testid="owner-key-body">
-      {page.sections.map((section) => (
+      {page.sections.filter((section) => !section.faqs).map((section) => (
         <section key={section.h2} className="mt-10">
           <h2 className="font-heading text-2xl font-bold text-slate-900">{section.h2}</h2>
           {(section.paragraphs || []).map((paragraph) => (
@@ -150,16 +150,6 @@ export default function OwnerKeyBody({ page }) {
           ) : null}
           {section.table ? <ComparisonTable table={section.table} /> : null}
           {section.reviews ? <ReviewSnapshots /> : null}
-          {section.faqs ? (
-            <dl className="mt-4 space-y-4">
-              {section.faqs.map((faq) => (
-                <div key={faq.q}>
-                  <dt className="font-semibold text-slate-900">{faq.q}</dt>
-                  <dd className="mt-1 text-slate-700">{faq.a}</dd>
-                </div>
-              ))}
-            </dl>
-          ) : null}
         </section>
       ))}
     </div>

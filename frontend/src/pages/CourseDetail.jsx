@@ -2,7 +2,7 @@ import { Link, useParams, Navigate } from "react-router-dom";
 import { Cloud, Cloudy, CloudCog, GitBranch, Container, Terminal, CheckCircle2, Target, Wrench, Users, Phone, ArrowRight } from "lucide-react";
 import Seo from "@/components/Seo";
 import EnquiryForm from "@/components/EnquiryForm";
-import FaqAccordion from "@/components/FaqAccordion";
+import PageEndContent from "@/components/PageEndContent";
 import Testimonials from "@/components/Testimonials";
 import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
 import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, COURSES, buildCourseSchema, buildBreadcrumbSchema, buildFaqSchema } from "@/data/site";
@@ -214,17 +214,6 @@ export default function CourseDetail() {
 
       <Testimonials />
 
-      <section className="py-16 sm:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 text-center">
-            {course.shortName} Course FAQs
-          </h2>
-          <div className="mt-10">
-            <FaqAccordion items={course.faqs} idPrefix={`${course.slug}-faq`} />
-          </div>
-        </div>
-      </section>
-
       <AreaClassroomLinks slug={course.slug} />
 
       <section className="pb-16 sm:pb-24">
@@ -248,6 +237,8 @@ export default function CourseDetail() {
           </div>
         </div>
       </section>
+
+      <PageEndContent items={course.faqs} idPrefix={`${course.slug}-faq`} />
     </div>
   );
 }

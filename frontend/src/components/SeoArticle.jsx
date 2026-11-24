@@ -6,7 +6,8 @@ import FeeHook from "@/components/FeeHook";
 import VerifiedOutcomes from "@/components/VerifiedOutcomes";
 import OwnerKeyBody, { OwnerHero } from "@/components/OwnerKeyPage";
 import DemoBookingForm from "@/components/DemoBookingForm";
-import { ownerKeyPage } from "@/data/ownerKeyPages";
+import PageEndContent from "@/components/PageEndContent";
+import { ownerFaqs, ownerKeyPage } from "@/data/ownerKeyPages";
 import { AnswerBlock, Breadcrumbs, DirectAnswer, UpdatedLine } from "@/components/PageFacts";
 import { MentorCards } from "@/components/Mentors";
 import { MapPin, Phone, MessageCircle } from "lucide-react";
@@ -164,6 +165,7 @@ function SitemapBlock() {
 
 export default function SeoArticle({ page }) {
   const owner = ownerKeyPage(page.route.path);
+  const faqItems = [...(page.faqs || []), ...ownerFaqs(page.route.path)];
   const demoHref = owner
     ? (page.route.path === "/free-demo-powai" ? "#demo-form" : "/free-demo-powai")
     : "#enquiry";
@@ -189,6 +191,11 @@ export default function SeoArticle({ page }) {
         showAnswer={page.route.path !== "/trainers" && !owner}
         demoHref={demoHref}
       />
+      {page.faqs && page.faqs.length > 0 ? (
+        <a href="#page-faqs" className="mt-4 inline-flex text-sm font-semibold text-blue-700 hover:underline">
+          Jump to frequently asked questions
+        </a>
+      ) : null}
       {page.route.path === "/devops-course-in-powai" ? <StudentLifeGallery embedded /> : null}
       {page.route.path === "/trainers" ? (
         <>
@@ -224,20 +231,6 @@ export default function SeoArticle({ page }) {
       {page.syllabusModules ? <SyllabusTable modules={page.syllabusModules} /> : null}
       {page.reviews || page.placements ? <VerifiedOutcomes embedded /> : null}
       {page.sitemap ? <SitemapBlock /> : null}
-
-      {page.faqs && page.faqs.length > 0 ? (
-        <section className="mt-14 rounded-2xl border border-slate-200 bg-slate-50/60 p-6 sm:p-8">
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-slate-900">Frequently asked questions</h2>
-          <dl className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-5">
-            {page.faqs.map((faq) => (
-              <div key={faq.q} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-                <dt className="font-semibold text-slate-900 text-base">{faq.q}</dt>
-                <dd className="mt-2 text-slate-700 text-sm sm:text-base leading-relaxed">{faq.a}</dd>
-              </div>
-            ))}
-          </dl>
-        </section>
-      ) : null}
 
       {page.links && page.links.length > 0 ? (
         <nav className="mt-12" aria-label="Related pages">
@@ -286,6 +279,10 @@ export default function SeoArticle({ page }) {
       )}
 
       {page.showMap ? <CampusMap /> : null}
+      <PageEndContent
+        items={faqItems}
+        idPrefix={`seo-faq-${page.route.path.replace(/\W/g, "-").replace(/^-+|-+$/g, "")}`}
+      />
     </article>
   );
 }
