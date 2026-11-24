@@ -4,7 +4,8 @@ import Seo from "@/components/Seo";
 import EnquiryForm from "@/components/EnquiryForm";
 import PageEndContent from "@/components/PageEndContent";
 import Testimonials from "@/components/Testimonials";
-import { AnswerBlock, Breadcrumbs } from "@/components/PageFacts";
+import { Breadcrumbs, DirectAnswer } from "@/components/PageFacts";
+import { ClassroomPhoto } from "@/components/ClassroomSpotlight";
 import { BUSINESS_NAME, ADDRESS, PHONE, PHONE_TEL, COURSES, buildCourseSchema, buildBreadcrumbSchema, buildFaqSchema } from "@/data/site";
 import FeeHook from "@/components/FeeHook";
 import { COURSE_ANSWERS } from "@/data/pageMeta";
@@ -81,31 +82,51 @@ export default function CourseDetail() {
             { name: "Courses", href: "/courses" },
             { name: course.name, href: `/courses/${course.slug}` },
           ]} />
-          <div className="flex items-start gap-5">
-            <span className="hidden sm:flex h-14 w-14 items-center justify-center rounded-xl bg-blue-600 border border-blue-500 shrink-0">
-              <Icon className="h-7 w-7 text-white" aria-hidden="true" />
-            </span>
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600">{course.tagline}</p>
-              <h1 className="mt-3 font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 max-w-3xl leading-[1.15]">
-                {course.h1}
-              </h1>
-              <FeeHook demoHref="#course-enquiry" testId="course-fee-hook" className="mt-6 max-w-3xl" />
-              <AnswerBlock answer={COURSE_ANSWERS[course.slug]} demoHref="#course-enquiry" />
-              <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl">{course.intro}</p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+            <div className="lg:col-span-7 min-w-0">
+              <div className="flex items-start gap-4 sm:gap-5">
+                <span className="hidden sm:flex h-14 w-14 items-center justify-center rounded-xl bg-blue-600 border border-blue-500 shrink-0">
+                  <Icon className="h-7 w-7 text-white" aria-hidden="true" />
+                </span>
+                <div className="min-w-0">
+                  <p className="text-xs font-semibold uppercase tracking-[0.15em] text-blue-600">{course.tagline}</p>
+                  <h1 className="mt-3 font-heading text-3xl sm:text-4xl lg:text-[44px] font-extrabold tracking-tight text-slate-900 leading-[1.12]">
+                    {course.h1}
+                  </h1>
+                </div>
+              </div>
+
+              <FeeHook demoHref="#course-enquiry" testId="course-fee-hook" className="mt-6 max-w-2xl" />
+
+              <DirectAnswer>{COURSE_ANSWERS[course.slug] || course.intro}</DirectAnswer>
+              <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-2.5 max-w-2xl">
+                {[
+                  "100% classroom training",
+                  "Hands-on cloud labs",
+                  "Weekday & weekend batches",
+                  "Dedicated placement support",
+                ].map((item) => (
+                  <li key={item} className="flex items-center gap-2 text-sm font-medium text-slate-700">
+                    <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0" aria-hidden="true" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              <p className="mt-6 text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">{course.intro}</p>
               {SEQUENCE_PAGES[course.slug] ? (
-                <p className="mt-4 text-base text-slate-700 leading-relaxed max-w-3xl">
+                <p className="mt-4 text-sm sm:text-base text-slate-700 leading-relaxed max-w-2xl">
                   <Link to={SEQUENCE_PAGES[course.slug].href} className="font-semibold text-blue-700">
                     {SEQUENCE_PAGES[course.slug].label}
                   </Link>
                   {" "}explains how these labs are sequenced in the Powai classroom. This page remains the module catalog.
                 </p>
               ) : null}
-              <div className="mt-7 flex flex-col sm:flex-row gap-3">
+              <div className="mt-7 flex flex-col sm:flex-row gap-3 max-w-2xl">
                 <a
                   href={PHONE_TEL}
                   data-testid="course-call-button"
-                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-700 py-3 px-6 text-base font-semibold text-white shadow-md hover:bg-blue-800 transition-colors"
+                  className="flex-1 inline-flex items-center justify-center gap-2 rounded-lg bg-blue-700 py-3 px-5 text-base font-semibold text-white shadow-md hover:bg-blue-800 transition-colors"
                 >
                   <Phone className="h-4 w-4" aria-hidden="true" />
                   Call {PHONE}
@@ -113,11 +134,15 @@ export default function CourseDetail() {
                 <a
                   href="#course-enquiry"
                   data-testid="course-enquire-button"
-                  className="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white py-3 px-6 text-base font-semibold text-slate-900 hover:border-blue-400 transition-colors"
+                  className="flex-1 inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white py-3 px-5 text-base font-semibold text-slate-900 hover:border-blue-400 transition-colors"
                 >
                   Enquire Now
                 </a>
               </div>
+            </div>
+
+            <div className="lg:col-span-5 lg:pt-1">
+              <ClassroomPhoto className="h-[360px] sm:h-[420px] lg:h-[460px]" />
             </div>
           </div>
         </div>
